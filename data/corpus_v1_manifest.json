@@ -166,6 +166,13 @@
   },
   "known_issues": [
     "torch 2.14.1 is a CUDA 13.0 build while faiss-gpu 1.12.0 is a CUDA 12.8 build. FAISS is not in the current pipeline; re-test GPU FAISS if it is used again.",
-    "Corpus is a sample: at most 1000 trials per domain query, API default order. Do not expand v1; expansion is a later, separately versioned step."
+    "Corpus is a sample: at most 1000 trials per domain query, API default order. Do not expand v1; expansion is a later, separately versioned step.",
+    "Each domain is the first 1,000 results of the API's default ordering for its query.cond term, not a random sample. Results on corpus v1 cannot be generalized to ClinicalTrials.gov as a whole."
+  ],
+  "revisions": [
+    {
+      "date": "2026-10-30",
+      "change": "Added known_issues entry on non-random sampling (requested by user in M1 Step 2). In-project raw JSON set to mode 0444. No hashes or statistics changed."
+    }
   ]
 }
