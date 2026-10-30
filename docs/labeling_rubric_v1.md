@@ -1,8 +1,7 @@
 # Labeling Rubric v1 — Clinical Trial Relevance Judgments
 
 Applies to: `data/evaluation/query_specs_v1.json`, corpus v1
-(`data/corpus_v1_manifest.json`). Status: **DRAFT — items marked PROPOSED
-need the labeler's confirmation before labeling starts.**
+(`data/corpus_v1_manifest.json`). Status: **v1, confirmed 2026-10-30 except rows marked Open in §8.**
 
 ---
 
@@ -141,10 +140,18 @@ means "not yet looked at".
 | adolescents | age [12, 18) | as above |
 | over 65 / older adults | age [65, ∞) | as above |
 
+**Age semantics = "admits" (confirmed 2026-10-30).** An age constraint is
+satisfied when the trial's eligible age range *includes* at least part of the
+requested range. The trial does not have to be *restricted* to that group.
+Consequences: "pediatric" (Q18) includes mixed-age trials that admit
+children; "over 65" (Q15) removes very few trials, because most adult trials
+have no upper age limit. Do not lower a concept label because a trial is
+mixed-age — age is not part of your judgment.
+
 ## 6. Worked examples — Q01 "Recruiting NSCLC trials involving pembrolizumab"
 
 Evidence from Step 1 (`data/evaluation/q01_ceiling_v1_evidence.csv`).
-**These are the Q01 decisions drafted by the user and must be confirmed.**
+**Confirmed by the labeler (Step 3, 2026-10-30).**
 
 | Trial | Evidence | disease | intervention | role | Grade |
 |---|---|---|---|---|---|
@@ -166,8 +173,9 @@ population, so this is not a `broader` match.
 ## 6b. Worked examples — Q03 "Recruiting trials for Alzheimer's disease"
 
 From the zero-answer check (`data/evaluation/zero_answer_check_v1_evidence.csv`).
-No recruiting trial targets Alzheimer's disease itself. **To be confirmed by
-the labeler:**
+No recruiting trial targets Alzheimer's disease itself. **NCT05858996 as a
+possible broader match was confirmed by the labeler (2026-10-30); the other
+rows are guidance.**
 
 | Trial | Evidence | disease | Grade |
 |---|---|---|---|
@@ -177,8 +185,8 @@ the labeler:**
 | NCT06692296 | Friedreich ataxia ("neurodegenerative disorder") | absent_or_different | **0** |
 | any trial | "dementia" or "Alzheimer's" only in exclusion criteria | absent_or_different (R8) | **0** |
 
-If NCT05858996 is confirmed as grade 1, Q03 becomes a query with only
-partial answers: strict metrics are undefined, lenient metrics apply.
+Q03 is therefore a query with only partial answers: strict metrics are
+undefined, lenient metrics apply.
 
 ## 7. Worked examples — other hard cases
 
@@ -203,19 +211,28 @@ from the corpus).
 | Q02 breast cancer, Phase 3 | Exercise program for breast-cancer survivors (Phase 3) | exact | n/a | 2 | disease-only query |
 | Q05 breast cancer, female | Breast cancer trial, sex = ALL | exact | n/a | 2 | sex checked automatically |
 
-## 8. Query-scope definitions — PROPOSED, please confirm or edit
+## 8. Query-scope definitions
 
-| Query | Proposed scope |
-|---|---|
-| Q04 diabetes | Type 1, type 2, gestational and other specific diabetes types = exact. **Prediabetes = absent_or_different.** Diabetic complications (foot ulcer, retinopathy, nephropathy) = exact, because the population has diabetes. |
-| Q06 immunotherapy | Checkpoint inhibitors, cancer vaccines, cellular therapies (CAR-T, TIL, NK), bispecific T-cell engagers, cytokines (IL-2, interferon), oncolytic viruses. **Not** tumor-targeted monoclonal antibodies such as trastuzumab (these count as targeted therapy). |
-| Q07/Q23 cardiovascular disease | Heart and blood-vessel disease, including stroke, hypertension, peripheral artery disease, venous thromboembolism. **Risk factors alone** (dyslipidemia, obesity, diabetes) = absent_or_different unless the trial targets a cardiovascular disease or CV-event outcome. |
-| Q08 metastatic cancer | Trials whose population includes metastatic disease ("advanced or metastatic", "stage IV") = exact. "Advanced" with no metastatic mention = broader. Early-stage or locally advanced only = absent_or_different. |
-| Q09 targeted therapy | Small-molecule inhibitors of a specific molecular target (TKIs, PARP, CDK4/6, KRAS inhibitors), tumor-targeted monoclonal antibodies, antibody-drug conjugates, radioligand therapy. **Not** checkpoint inhibitors, cytotoxic chemotherapy or hormone therapy. |
-| Q10 infectious disease | Any infection (bacterial, viral, fungal, parasitic), including vaccine and prevention trials and sepsis. Post-infectious conditions (e.g. long COVID) = broader. |
-| Q12 weight loss | Population with obesity/overweight, or trials aiming at weight reduction = exact. Semaglutide for glycemic control only in T2DM (weight not a target) = absent_or_different. |
-| Q18 epilepsy | Epilepsy and epilepsy syndromes = exact. Febrile seizures or acute symptomatic/neonatal seizures alone = absent_or_different. |
-| Q20 Parkinson's disease | Parkinsonism including atypical parkinsonian syndromes = broader. |
+**Confirmed** = decided by the labeler on 2026-10-30. **Open** = an earlier
+proposal the labeler has not yet addressed; apply it provisionally and note
+`UNCERTAIN` if a pair depends on it.
+
+| Query | Scope | Status |
+|---|---|---|
+| Q04 diabetes | Type 1, type 2 and gestational diabetes = exact. **Prediabetes = absent_or_different.** | Confirmed |
+| Q04 diabetes | Diabetic complications (foot ulcer, retinopathy, nephropathy) = exact, because the population has diabetes. | Open |
+| Q06 immunotherapy | Checkpoint inhibitors, CAR-T, cancer vaccines, bispecific T-cell engagers, oncolytic viruses = exact. | Confirmed |
+| Q06 immunotherapy | Other cell therapies (TIL, NK cells) and cytokines (IL-2, interferon) = exact; tumor-targeted monoclonal antibodies (e.g. trastuzumab) are targeted therapy, not immunotherapy. | Open |
+| Q09 targeted therapy | Small-molecule kinase inhibitors, antigen-targeting monoclonal antibodies, antibody-drug conjugates = exact. | Confirmed |
+| Q09 targeted therapy | Non-kinase small-molecule targeted agents (PARP, KRAS inhibitors) and radioligand therapy = exact; checkpoint inhibitors, cytotoxic chemotherapy and hormone therapy = absent_or_different. | Open |
+| Q07/Q23 cardiovascular disease | Heart disease, stroke and hypertension = exact. **Risk factors alone** (dyslipidemia, obesity, diabetes) = absent_or_different. | Confirmed |
+| Q07/Q23 cardiovascular disease | Peripheral artery disease and venous thromboembolism = exact; risk-factor trials with a cardiovascular-event outcome = exact. | Open |
+| Q08 metastatic cancer | Trials enrolling advanced or metastatic disease = exact. **Locally advanced only = absent_or_different.** Early-stage only = absent_or_different. | Confirmed (replaces the earlier proposal that "advanced" without "metastatic" = broader) |
+| Q10 infectious disease | Treatment and prevention/vaccine trials for any infection = exact. | Confirmed |
+| Q10 infectious disease | Post-infectious conditions (e.g. long COVID) = broader. | Open |
+| Q12 weight loss | Obesity/overweight population or trials aiming at weight reduction = exact; semaglutide for glycemic control only = absent_or_different. | Open |
+| Q18 epilepsy | Epilepsy and epilepsy syndromes = exact; febrile, acute symptomatic or neonatal seizures alone = absent_or_different. | Open |
+| Q20 Parkinson's disease | Parkinsonism, including atypical parkinsonian syndromes = broader. | Open |
 
 ## 9. Procedure
 

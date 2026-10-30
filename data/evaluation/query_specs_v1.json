@@ -69,8 +69,8 @@
       ]
     },
     "split": "dev",
-    "has_answer": false,
-    "zero_answer_check": "needs_user_review (experiments/20, 2026-10-30)",
+    "has_answer": true,
+    "zero_answer_check": "user_confirmed_answerable (2026-10-30): no exact answer; NCT05858996 (dementia population) accepted as a possible broader match. Partial-answer query.",
     "notes": "Unchanged text. Expected zero-answer (Step 0 audit); must be verified including broader populations (e.g. all-cause dementia). Verification: no recruiting trial targets Alzheimer's disease (exact = 0), but NCT05858996 (older adults with dementia and pain) may be a 'broader' match (grade 1). has_answer stays false until the user decides; if confirmed, Q03 becomes a lenient-only query and needs a labeling pool."
   },
   {
@@ -95,7 +95,8 @@
     "split": "dev",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
-    "notes": "Unchanged; old min_age=18 rewritten as age_range [18, null] (same meaning)."
+    "notes": "Unchanged; old min_age=18 rewritten as age_range [18, null] (same meaning). Age semantics = 'admits': the trial's age range must overlap the requested range (missing bound = no limit); the trial need not be restricted to that age group.",
+    "age_semantics": "admits"
   },
   {
     "query_id": "Q05",
@@ -197,7 +198,8 @@
     "split": "dev",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
-    "notes": "Unchanged; min_age=18 rewritten as age_range [18, null]."
+    "notes": "Unchanged; min_age=18 rewritten as age_range [18, null]. Age semantics = 'admits': the trial's age range must overlap the requested range (missing bound = no limit); the trial need not be restricted to that age group.",
+    "age_semantics": "admits"
   },
   {
     "query_id": "Q09",
@@ -253,7 +255,8 @@
     "split": "dev",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
-    "notes": "Unchanged; min_age=18 rewritten as age_range [18, null]."
+    "notes": "Unchanged; min_age=18 rewritten as age_range [18, null]. Age semantics = 'admits': the trial's age range must overlap the requested range (missing bound = no limit); the trial need not be restricted to that age group.",
+    "age_semantics": "admits"
   },
   {
     "query_id": "Q11",
@@ -375,7 +378,8 @@
     "split": "test",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
-    "notes": "Any named anticoagulant is exact; antiplatelet-only or device-only (e.g. LAA occlusion) is absent_or_different."
+    "notes": "Any named anticoagulant is exact; antiplatelet-only or device-only (e.g. LAA occlusion) is absent_or_different. Age semantics = 'admits': the trial's age range must overlap the requested range (missing bound = no limit); the trial need not be restricted to that age group. Under 'admits', age >= 65 removes very few trials: almost every adult trial without an upper age limit admits people over 65.",
+    "age_semantics": "admits"
   },
   {
     "query_id": "Q16",
@@ -446,7 +450,8 @@
     "split": "dev",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
-    "notes": "Specific epilepsy syndromes (e.g. Dravet) are exact."
+    "notes": "Specific epilepsy syndromes (e.g. Dravet) are exact. Age semantics = 'admits': the trial's age range must overlap the requested range (missing bound = no limit); the trial need not be restricted to that age group. Under 'admits', 'pediatric' includes mixed-age trials that admit children (e.g. ages 2-65), not only child-specific trials.",
+    "age_semantics": "admits"
   },
   {
     "query_id": "Q19",
@@ -652,6 +657,7 @@
     "split": "test",
     "has_answer": false,
     "zero_answer_check": "verified_zero (experiments/20, 2026-10-30)",
-    "notes": "Zero-answer candidate; drug-only query (disease not_applicable). Must be verified including GLP-1/GIP incretin agonists (class_level)."
+    "notes": "Zero-answer candidate; drug-only query (disease not_applicable). Must be verified including GLP-1/GIP incretin agonists (class_level). Age semantics = 'admits': the trial's age range must overlap the requested range (missing bound = no limit); the trial need not be restricted to that age group. Verified zero-answer under 'admits'.",
+    "age_semantics": "admits"
   }
 ]

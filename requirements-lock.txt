@@ -1,5 +1,5 @@
 # Pinned lock of the clinical_rag_clean conda environment (Python 3.12.15).
-# Generated 2026-10-30 with: python -m pip list --format=freeze
+# Generated 2026-10-30 with: python -m pip list --format=freeze (regenerated after adding openpyxl)
 # NOTE: use 'python -m pip', not bare 'pip' (bare pip resolves to ~/.local/bin/pip on this server).
 # NOTE: torch is the CUDA 13.0 build (2.14.1+cu130); install it from the matching PyTorch CUDA index.
 # NOTE: faiss (GPU, CUDA 12.8 build) and mkl-* come from conda, not PyPI - see environment-lock.yml.
@@ -13,6 +13,7 @@ cloudpickle==3.1.2
 cuda-bindings==13.4.3
 cuda-pathfinder==1.8.3
 cuda-toolkit==13.0.3.0
+et_xmlfile==2.0.0
 faiss==1.12.0
 filelock==4.1.1
 fsspec==2026.9.0
@@ -49,6 +50,7 @@ nvidia-nccl-cu13==2.30.7
 nvidia-nvjitlink==13.4.92
 nvidia-nvshmem-cu13==3.4.5
 nvidia-nvtx==13.0.85
+openpyxl==3.1.5
 packaging==26.3
 pandas==3.0.6
 pip==26.2.1
