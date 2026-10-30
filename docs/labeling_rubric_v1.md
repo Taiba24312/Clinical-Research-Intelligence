@@ -73,7 +73,11 @@ pembrolizumab).
 **R2 — Broader must plausibly include the query population.** A solid-tumor
 basket trial is `broader` for an NSCLC query unless NSCLC is excluded. A
 "cardiovascular disease" trial is `broader` for an HFrEF query only if heart
-failure patients are eligible.
+failure patients are eligible. The broader population must be **defined by a
+disease category that contains the query condition** (dementia ⊃ Alzheimer's
+disease; solid tumors ⊃ NSCLC). General-population, healthy-volunteer or
+aging cohorts that merely list the condition among outcomes are
+`absent_or_different`. *(Clarified after the Q03 zero-answer check, see §6b.)*
 
 **R3 — Different named drug of the same class = absent_or_different**, not
 class_level. class_level is reserved for trials that name no specific drug.
@@ -158,6 +162,23 @@ Evidence from Step 1 (`data/evaluation/q01_ceiling_v1_evidence.csv`).
 Note on NCT06545682: "Solid Tumors" appears only inside "Response Evaluation
 Criteria in Solid Tumors" (RECIST). A measurement standard is not a
 population, so this is not a `broader` match.
+
+## 6b. Worked examples — Q03 "Recruiting trials for Alzheimer's disease"
+
+From the zero-answer check (`data/evaluation/zero_answer_check_v1_evidence.csv`).
+No recruiting trial targets Alzheimer's disease itself. **To be confirmed by
+the labeler:**
+
+| Trial | Evidence | disease | Grade |
+|---|---|---|---|
+| NCT05858996 | Older adults (≥ 60) with dementia confirmed by BIMS/AD8/CDR scores, plus pain | broader (R2: dementia ⊃ AD) | **1** |
+| NCT07646782 | General-population aging cohort; "Dementia" is one of 19 listed outcome conditions | absent_or_different (R2) | **0** |
+| NCT06914284 | Older adults with bipolar disorder; risk of progression to dementia | absent_or_different | **0** |
+| NCT06692296 | Friedreich ataxia ("neurodegenerative disorder") | absent_or_different | **0** |
+| any trial | "dementia" or "Alzheimer's" only in exclusion criteria | absent_or_different (R8) | **0** |
+
+If NCT05858996 is confirmed as grade 1, Q03 becomes a query with only
+partial answers: strict metrics are undefined, lenient metrics apply.
 
 ## 7. Worked examples — other hard cases
 

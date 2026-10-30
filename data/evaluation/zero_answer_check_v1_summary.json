@@ -1,0 +1,173 @@
+{
+  "Q03": {
+    "text": "Recruiting trials for Alzheimer's disease",
+    "structured_constraints": {
+      "status": [
+        "RECRUITING"
+      ]
+    },
+    "trials_satisfying_constraints": 501,
+    "trials_with_any_concept_mention": 62,
+    "possible_answers": [
+      "NCT02420470",
+      "NCT02841553",
+      "NCT05858996",
+      "NCT06692296",
+      "NCT06914284",
+      "NCT06989697",
+      "NCT07398508",
+      "NCT07646782"
+    ],
+    "flagged_only_matches": [
+      "NCT02440763",
+      "NCT04243720",
+      "NCT04296097",
+      "NCT04562194",
+      "NCT04962295",
+      "NCT05499741",
+      "NCT05713877",
+      "NCT05950659",
+      "NCT05986279",
+      "NCT05989620",
+      "NCT06236022",
+      "NCT06243354",
+      "NCT06388707",
+      "NCT06409754",
+      "NCT06472336",
+      "NCT06497595",
+      "NCT06603792",
+      "NCT06689865",
+      "NCT07036991",
+      "NCT07049003",
+      "NCT07120334",
+      "NCT07128186",
+      "NCT07220512",
+      "NCT07337096"
+    ],
+    "trials_with_exact_match_for_all_concepts_ignoring_constraints": 56,
+    "verdict": "needs_review",
+    "patterns": {
+      "disease": {
+        "exact": {
+          "Alzheimer": "alzheimer"
+        },
+        "broader": {
+          "dementia": "dementia",
+          "neurodegenerative disease": "neuro[\\s\\-]*degenerat"
+        },
+        "related": {
+          "cognitive impairment / decline": "cognitive\\s+(?:impairment|decline|disorder)|\\bMCI\\b",
+          "amyloid": "amyloid"
+        }
+      }
+    }
+  },
+  "Q24": {
+    "text": "Phase 3 trials of lecanemab for early Alzheimer's disease",
+    "structured_constraints": {
+      "phase": [
+        "PHASE3"
+      ]
+    },
+    "trials_satisfying_constraints": 444,
+    "trials_with_any_concept_mention": 18,
+    "possible_answers": [],
+    "flagged_only_matches": [],
+    "trials_with_exact_match_for_all_concepts_ignoring_constraints": 0,
+    "verdict": "verified_zero",
+    "patterns": {
+      "disease": {
+        "exact": {
+          "Alzheimer": "alzheimer"
+        },
+        "broader": {
+          "dementia": "dementia"
+        },
+        "related": {
+          "cognitive impairment": "cognitive\\s+impairment|\\bMCI\\b"
+        }
+      },
+      "intervention": {
+        "exact": {
+          "lecanemab": "lecanemab",
+          "Leqembi": "leqembi",
+          "BAN2401": "ban[\\s\\-]*2401"
+        },
+        "class": {
+          "anti-amyloid antibody (unnamed)": "anti[\\s\\-]*amyloid|amyloid[\\s\\-]*(?:beta|β)?\\s*(?:directed\\s+)?(?:monoclonal\\s+)?antibod"
+        },
+        "related": {
+          "other named anti-amyloid antibody": "aducanumab|donanemab|gantenerumab|solanezumab|crenezumab"
+        }
+      }
+    }
+  },
+  "Q25": {
+    "text": "Recruiting mavacamten trials for obstructive hypertrophic cardiomyopathy",
+    "structured_constraints": {
+      "status": [
+        "RECRUITING"
+      ]
+    },
+    "trials_satisfying_constraints": 501,
+    "trials_with_any_concept_mention": 19,
+    "possible_answers": [],
+    "flagged_only_matches": [],
+    "trials_with_exact_match_for_all_concepts_ignoring_constraints": 0,
+    "verdict": "verified_zero",
+    "patterns": {
+      "disease": {
+        "exact": {
+          "hypertrophic cardiomyopathy": "hypertrophic[\\s\\-]*(?:obstructive\\s+)?cardiomyopath|\\bo?HCM\\b"
+        },
+        "broader": {
+          "cardiomyopathy (any)": "cardiomyopath"
+        }
+      },
+      "intervention": {
+        "exact": {
+          "mavacamten": "mavacamten",
+          "Camzyos": "camzyos",
+          "MYK-461": "myk[\\s\\-]*461"
+        },
+        "class": {
+          "cardiac myosin inhibitor (unnamed)": "(?:cardiac\\s+)?myosin[\\s\\-]*inhibit"
+        },
+        "related": {
+          "other named myosin inhibitor": "aficamten|ck{D}274"
+        }
+      }
+    }
+  },
+  "Q26": {
+    "text": "Tirzepatide trials in adolescents",
+    "structured_constraints": {
+      "age_range": [
+        12,
+        18
+      ]
+    },
+    "trials_satisfying_constraints": 673,
+    "trials_with_any_concept_mention": 7,
+    "possible_answers": [],
+    "flagged_only_matches": [],
+    "trials_with_exact_match_for_all_concepts_ignoring_constraints": 5,
+    "verdict": "verified_zero",
+    "patterns": {
+      "intervention": {
+        "exact": {
+          "tirzepatide": "tirzepatide",
+          "Mounjaro": "mounjaro",
+          "Zepbound": "zepbound",
+          "LY3298176": "ly[\\s\\-]*3298176"
+        },
+        "class": {
+          "dual GIP/GLP-1 agonist (unnamed)": "gip[\\s\\-]*/?[\\s\\-]*glp|glp[\\s\\-]*1[\\s\\-]*/[\\s\\-]*gip|dual[\\s\\-]*(?:incretin|agonist)|twincretin"
+        },
+        "related": {
+          "GLP-1 receptor agonist": "glp[\\s\\-]*1"
+        }
+      }
+    }
+  }
+}

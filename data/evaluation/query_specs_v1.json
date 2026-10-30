@@ -3,12 +3,24 @@
     "query_id": "Q01",
     "text": "Recruiting NSCLC trials involving pembrolizumab",
     "domain": "oncology",
-    "category": ["original", "abbreviation", "multi_concept"],
+    "category": [
+      "original",
+      "abbreviation",
+      "multi_concept"
+    ],
     "core_concepts": {
-      "disease": {"concept": "non-small cell lung cancer"},
-      "intervention": {"concept": "pembrolizumab"}
+      "disease": {
+        "concept": "non-small cell lung cancer"
+      },
+      "intervention": {
+        "concept": "pembrolizumab"
+      }
     },
-    "structured_constraints": {"status": ["RECRUITING"]},
+    "structured_constraints": {
+      "status": [
+        "RECRUITING"
+      ]
+    },
     "split": "dev",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
@@ -18,12 +30,20 @@
     "query_id": "Q02",
     "text": "Phase 3 breast cancer trials",
     "domain": "oncology",
-    "category": ["original"],
+    "category": [
+      "original"
+    ],
     "core_concepts": {
-      "disease": {"concept": "breast cancer"},
+      "disease": {
+        "concept": "breast cancer"
+      },
       "intervention": null
     },
-    "structured_constraints": {"phase": ["PHASE3"]},
+    "structured_constraints": {
+      "phase": [
+        "PHASE3"
+      ]
+    },
     "split": "dev",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
@@ -33,27 +53,45 @@
     "query_id": "Q03",
     "text": "Recruiting trials for Alzheimer's disease",
     "domain": "neurology",
-    "category": ["original", "zero_answer"],
+    "category": [
+      "original",
+      "zero_answer"
+    ],
     "core_concepts": {
-      "disease": {"concept": "Alzheimer's disease"},
+      "disease": {
+        "concept": "Alzheimer's disease"
+      },
       "intervention": null
     },
-    "structured_constraints": {"status": ["RECRUITING"]},
+    "structured_constraints": {
+      "status": [
+        "RECRUITING"
+      ]
+    },
     "split": "dev",
     "has_answer": false,
-    "zero_answer_check": "pending",
-    "notes": "Unchanged text. Expected zero-answer (Step 0 audit); must be verified including broader populations (e.g. all-cause dementia)."
+    "zero_answer_check": "needs_user_review (experiments/20, 2026-10-30)",
+    "notes": "Unchanged text. Expected zero-answer (Step 0 audit); must be verified including broader populations (e.g. all-cause dementia). Verification: no recruiting trial targets Alzheimer's disease (exact = 0), but NCT05858996 (older adults with dementia and pain) may be a 'broader' match (grade 1). has_answer stays false until the user decides; if confirmed, Q03 becomes a lenient-only query and needs a labeling pool."
   },
   {
     "query_id": "Q04",
     "text": "Diabetes trials for adults",
     "domain": "metabolic_endocrine",
-    "category": ["original"],
+    "category": [
+      "original"
+    ],
     "core_concepts": {
-      "disease": {"concept": "diabetes mellitus"},
+      "disease": {
+        "concept": "diabetes mellitus"
+      },
       "intervention": null
     },
-    "structured_constraints": {"age_range": [18, null]},
+    "structured_constraints": {
+      "age_range": [
+        18,
+        null
+      ]
+    },
     "split": "dev",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
@@ -63,12 +101,21 @@
     "query_id": "Q05",
     "text": "Female patients with breast cancer",
     "domain": "oncology",
-    "category": ["original"],
+    "category": [
+      "original"
+    ],
     "core_concepts": {
-      "disease": {"concept": "breast cancer"},
+      "disease": {
+        "concept": "breast cancer"
+      },
       "intervention": null
     },
-    "structured_constraints": {"sex": ["FEMALE", "ALL"]},
+    "structured_constraints": {
+      "sex": [
+        "FEMALE",
+        "ALL"
+      ]
+    },
     "split": "dev",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
@@ -78,12 +125,23 @@
     "query_id": "Q06",
     "text": "Phase 2 trials using immunotherapy for cancer",
     "domain": "oncology",
-    "category": ["original", "broader_concept"],
+    "category": [
+      "original",
+      "broader_concept"
+    ],
     "core_concepts": {
-      "disease": {"concept": "cancer (any malignancy)"},
-      "intervention": {"concept": "immunotherapy (any)"}
+      "disease": {
+        "concept": "cancer (any malignancy)"
+      },
+      "intervention": {
+        "concept": "immunotherapy (any)"
+      }
     },
-    "structured_constraints": {"phase": ["PHASE2"]},
+    "structured_constraints": {
+      "phase": [
+        "PHASE2"
+      ]
+    },
     "split": "dev",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
@@ -93,12 +151,21 @@
     "query_id": "Q07",
     "text": "Observational studies for cardiovascular disease",
     "domain": "cardiovascular",
-    "category": ["original", "broader_concept"],
+    "category": [
+      "original",
+      "broader_concept"
+    ],
     "core_concepts": {
-      "disease": {"concept": "cardiovascular disease (any)"},
+      "disease": {
+        "concept": "cardiovascular disease (any)"
+      },
       "intervention": null
     },
-    "structured_constraints": {"study_type": ["OBSERVATIONAL"]},
+    "structured_constraints": {
+      "study_type": [
+        "OBSERVATIONAL"
+      ]
+    },
     "split": "dev",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
@@ -108,12 +175,25 @@
     "query_id": "Q08",
     "text": "Recruiting trials for metastatic cancer in adults",
     "domain": "oncology",
-    "category": ["original", "multi_constraint"],
+    "category": [
+      "original",
+      "multi_constraint"
+    ],
     "core_concepts": {
-      "disease": {"concept": "metastatic cancer (any primary site)"},
+      "disease": {
+        "concept": "metastatic cancer (any primary site)"
+      },
       "intervention": null
     },
-    "structured_constraints": {"status": ["RECRUITING"], "age_range": [18, null]},
+    "structured_constraints": {
+      "status": [
+        "RECRUITING"
+      ],
+      "age_range": [
+        18,
+        null
+      ]
+    },
     "split": "dev",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
@@ -123,12 +203,24 @@
     "query_id": "Q09",
     "text": "Phase 1 trials involving targeted therapy for solid tumors",
     "domain": "oncology",
-    "category": ["original", "broader_concept", "ambiguous"],
+    "category": [
+      "original",
+      "broader_concept",
+      "ambiguous"
+    ],
     "core_concepts": {
-      "disease": {"concept": "solid tumors (any)"},
-      "intervention": {"concept": "targeted therapy (any)"}
+      "disease": {
+        "concept": "solid tumors (any)"
+      },
+      "intervention": {
+        "concept": "targeted therapy (any)"
+      }
     },
-    "structured_constraints": {"phase": ["PHASE1"]},
+    "structured_constraints": {
+      "phase": [
+        "PHASE1"
+      ]
+    },
     "split": "dev",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
@@ -138,12 +230,26 @@
     "query_id": "Q10",
     "text": "Recruiting infectious disease trials for adults",
     "domain": "infectious_disease",
-    "category": ["original", "broader_concept", "multi_constraint"],
+    "category": [
+      "original",
+      "broader_concept",
+      "multi_constraint"
+    ],
     "core_concepts": {
-      "disease": {"concept": "infectious disease (any)"},
+      "disease": {
+        "concept": "infectious disease (any)"
+      },
       "intervention": null
     },
-    "structured_constraints": {"status": ["RECRUITING"], "age_range": [18, null]},
+    "structured_constraints": {
+      "status": [
+        "RECRUITING"
+      ],
+      "age_range": [
+        18,
+        null
+      ]
+    },
     "split": "dev",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
@@ -153,10 +259,16 @@
     "query_id": "Q11",
     "text": "Keytruda trials in lung cancer",
     "domain": "oncology",
-    "category": ["brand_name"],
+    "category": [
+      "brand_name"
+    ],
     "core_concepts": {
-      "disease": {"concept": "lung cancer (any type)"},
-      "intervention": {"concept": "pembrolizumab"}
+      "disease": {
+        "concept": "lung cancer (any type)"
+      },
+      "intervention": {
+        "concept": "pembrolizumab"
+      }
     },
     "structured_constraints": {},
     "split": "dev",
@@ -168,10 +280,16 @@
     "query_id": "Q12",
     "text": "Ozempic studies for weight loss",
     "domain": "metabolic_endocrine",
-    "category": ["brand_name"],
+    "category": [
+      "brand_name"
+    ],
     "core_concepts": {
-      "disease": {"concept": "obesity or overweight (weight reduction)"},
-      "intervention": {"concept": "semaglutide"}
+      "disease": {
+        "concept": "obesity or overweight (weight reduction)"
+      },
+      "intervention": {
+        "concept": "semaglutide"
+      }
     },
     "structured_constraints": {},
     "split": "test",
@@ -183,12 +301,24 @@
     "query_id": "Q13",
     "text": "Recruiting T2DM trials of SGLT2 inhibitors",
     "domain": "metabolic_endocrine",
-    "category": ["abbreviation", "broader_concept", "multi_constraint"],
+    "category": [
+      "abbreviation",
+      "broader_concept",
+      "multi_constraint"
+    ],
     "core_concepts": {
-      "disease": {"concept": "type 2 diabetes mellitus"},
-      "intervention": {"concept": "SGLT2 inhibitors (class)"}
+      "disease": {
+        "concept": "type 2 diabetes mellitus"
+      },
+      "intervention": {
+        "concept": "SGLT2 inhibitors (class)"
+      }
     },
-    "structured_constraints": {"status": ["RECRUITING"]},
+    "structured_constraints": {
+      "status": [
+        "RECRUITING"
+      ]
+    },
     "split": "test",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
@@ -198,12 +328,21 @@
     "query_id": "Q14",
     "text": "Phase III trials in HFrEF",
     "domain": "cardiovascular",
-    "category": ["abbreviation", "parser_phase_roman"],
+    "category": [
+      "abbreviation",
+      "parser_phase_roman"
+    ],
     "core_concepts": {
-      "disease": {"concept": "heart failure with reduced ejection fraction"},
+      "disease": {
+        "concept": "heart failure with reduced ejection fraction"
+      },
       "intervention": null
     },
-    "structured_constraints": {"phase": ["PHASE3"]},
+    "structured_constraints": {
+      "phase": [
+        "PHASE3"
+      ]
+    },
     "split": "test",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
@@ -213,12 +352,26 @@
     "query_id": "Q15",
     "text": "Anticoagulation trials in AFib patients over 65",
     "domain": "cardiovascular",
-    "category": ["abbreviation", "broader_concept", "parser_older_adults", "multi_constraint"],
+    "category": [
+      "abbreviation",
+      "broader_concept",
+      "parser_older_adults",
+      "multi_constraint"
+    ],
     "core_concepts": {
-      "disease": {"concept": "atrial fibrillation"},
-      "intervention": {"concept": "anticoagulants (class)"}
+      "disease": {
+        "concept": "atrial fibrillation"
+      },
+      "intervention": {
+        "concept": "anticoagulants (class)"
+      }
     },
-    "structured_constraints": {"age_range": [65, null]},
+    "structured_constraints": {
+      "age_range": [
+        65,
+        null
+      ]
+    },
     "split": "test",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
@@ -228,12 +381,21 @@
     "query_id": "Q16",
     "text": "Phase II ALS trials",
     "domain": "neurology",
-    "category": ["abbreviation", "parser_phase_roman"],
+    "category": [
+      "abbreviation",
+      "parser_phase_roman"
+    ],
     "core_concepts": {
-      "disease": {"concept": "amyotrophic lateral sclerosis"},
+      "disease": {
+        "concept": "amyotrophic lateral sclerosis"
+      },
       "intervention": null
     },
-    "structured_constraints": {"phase": ["PHASE2"]},
+    "structured_constraints": {
+      "phase": [
+        "PHASE2"
+      ]
+    },
     "split": "test",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
@@ -243,12 +405,20 @@
     "query_id": "Q17",
     "text": "Phase 1/2 melanoma trials",
     "domain": "oncology",
-    "category": ["parser_phase_combined"],
+    "category": [
+      "parser_phase_combined"
+    ],
     "core_concepts": {
-      "disease": {"concept": "melanoma"},
+      "disease": {
+        "concept": "melanoma"
+      },
       "intervention": null
     },
-    "structured_constraints": {"phase": ["PHASE1+PHASE2"]},
+    "structured_constraints": {
+      "phase": [
+        "PHASE1+PHASE2"
+      ]
+    },
     "split": "test",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
@@ -258,12 +428,21 @@
     "query_id": "Q18",
     "text": "Pediatric epilepsy trials",
     "domain": "neurology",
-    "category": ["parser_pediatric"],
+    "category": [
+      "parser_pediatric"
+    ],
     "core_concepts": {
-      "disease": {"concept": "epilepsy"},
+      "disease": {
+        "concept": "epilepsy"
+      },
       "intervention": null
     },
-    "structured_constraints": {"age_range": [0, 18]},
+    "structured_constraints": {
+      "age_range": [
+        0,
+        18
+      ]
+    },
     "split": "dev",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
@@ -273,12 +452,23 @@
     "query_id": "Q19",
     "text": "Interventional studies of HIV pre-exposure prophylaxis",
     "domain": "infectious_disease",
-    "category": ["abbreviation", "parser_interventional"],
+    "category": [
+      "abbreviation",
+      "parser_interventional"
+    ],
     "core_concepts": {
-      "disease": {"concept": "HIV infection (prevention)"},
-      "intervention": {"concept": "pre-exposure prophylaxis (PrEP, any agent)"}
+      "disease": {
+        "concept": "HIV infection (prevention)"
+      },
+      "intervention": {
+        "concept": "pre-exposure prophylaxis (PrEP, any agent)"
+      }
     },
-    "structured_constraints": {"study_type": ["INTERVENTIONAL"]},
+    "structured_constraints": {
+      "study_type": [
+        "INTERVENTIONAL"
+      ]
+    },
     "split": "test",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
@@ -288,12 +478,20 @@
     "query_id": "Q20",
     "text": "Parkinson's disease trials that are not yet recruiting",
     "domain": "neurology",
-    "category": ["parser_negation"],
+    "category": [
+      "parser_negation"
+    ],
     "core_concepts": {
-      "disease": {"concept": "Parkinson's disease"},
+      "disease": {
+        "concept": "Parkinson's disease"
+      },
       "intervention": null
     },
-    "structured_constraints": {"status": ["NOT_YET_RECRUITING"]},
+    "structured_constraints": {
+      "status": [
+        "NOT_YET_RECRUITING"
+      ]
+    },
     "split": "dev",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
@@ -303,12 +501,25 @@
     "query_id": "Q21",
     "text": "Completed tuberculosis trials, excluding observational studies",
     "domain": "infectious_disease",
-    "category": ["parser_negation", "multi_constraint"],
+    "category": [
+      "parser_negation",
+      "multi_constraint"
+    ],
     "core_concepts": {
-      "disease": {"concept": "tuberculosis (active or latent)"},
+      "disease": {
+        "concept": "tuberculosis (active or latent)"
+      },
       "intervention": null
     },
-    "structured_constraints": {"status": ["COMPLETED"], "study_type": ["INTERVENTIONAL", "EXPANDED_ACCESS"]},
+    "structured_constraints": {
+      "status": [
+        "COMPLETED"
+      ],
+      "study_type": [
+        "INTERVENTIONAL",
+        "EXPANDED_ACCESS"
+      ]
+    },
     "split": "test",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
@@ -318,13 +529,23 @@
     "query_id": "Q22",
     "text": "Which pembrolizumab studies for non-small cell lung cancer are currently enrolling patients?",
     "domain": "oncology",
-    "category": ["paraphrase"],
+    "category": [
+      "paraphrase"
+    ],
     "paraphrase_of": "Q01",
     "core_concepts": {
-      "disease": {"concept": "non-small cell lung cancer"},
-      "intervention": {"concept": "pembrolizumab"}
+      "disease": {
+        "concept": "non-small cell lung cancer"
+      },
+      "intervention": {
+        "concept": "pembrolizumab"
+      }
     },
-    "structured_constraints": {"status": ["RECRUITING"]},
+    "structured_constraints": {
+      "status": [
+        "RECRUITING"
+      ]
+    },
     "split": "dev",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
@@ -335,13 +556,22 @@
     "query_id": "Q23",
     "text": "Non-interventional cardiovascular disease studies",
     "domain": "cardiovascular",
-    "category": ["paraphrase", "parser_negation"],
+    "category": [
+      "paraphrase",
+      "parser_negation"
+    ],
     "paraphrase_of": "Q07",
     "core_concepts": {
-      "disease": {"concept": "cardiovascular disease (any)"},
+      "disease": {
+        "concept": "cardiovascular disease (any)"
+      },
       "intervention": null
     },
-    "structured_constraints": {"study_type": ["OBSERVATIONAL"]},
+    "structured_constraints": {
+      "study_type": [
+        "OBSERVATIONAL"
+      ]
+    },
     "split": "dev",
     "has_answer": true,
     "zero_answer_check": "not_applicable",
@@ -352,45 +582,76 @@
     "query_id": "Q24",
     "text": "Phase 3 trials of lecanemab for early Alzheimer's disease",
     "domain": "neurology",
-    "category": ["zero_answer"],
+    "category": [
+      "zero_answer"
+    ],
     "core_concepts": {
-      "disease": {"concept": "early Alzheimer's disease (MCI due to AD or mild AD dementia)"},
-      "intervention": {"concept": "lecanemab"}
+      "disease": {
+        "concept": "early Alzheimer's disease (MCI due to AD or mild AD dementia)"
+      },
+      "intervention": {
+        "concept": "lecanemab"
+      }
     },
-    "structured_constraints": {"phase": ["PHASE3"]},
+    "structured_constraints": {
+      "phase": [
+        "PHASE3"
+      ]
+    },
     "split": "dev",
     "has_answer": false,
-    "zero_answer_check": "pending",
+    "zero_answer_check": "verified_zero (experiments/20, 2026-10-30)",
     "notes": "Zero-answer candidate; must be verified including the anti-amyloid antibody class (class_level) and AD of any stage (broader)."
   },
   {
     "query_id": "Q25",
     "text": "Recruiting mavacamten trials for obstructive hypertrophic cardiomyopathy",
     "domain": "cardiovascular",
-    "category": ["zero_answer", "multi_constraint"],
+    "category": [
+      "zero_answer",
+      "multi_constraint"
+    ],
     "core_concepts": {
-      "disease": {"concept": "obstructive hypertrophic cardiomyopathy"},
-      "intervention": {"concept": "mavacamten"}
+      "disease": {
+        "concept": "obstructive hypertrophic cardiomyopathy"
+      },
+      "intervention": {
+        "concept": "mavacamten"
+      }
     },
-    "structured_constraints": {"status": ["RECRUITING"]},
+    "structured_constraints": {
+      "status": [
+        "RECRUITING"
+      ]
+    },
     "split": "test",
     "has_answer": false,
-    "zero_answer_check": "pending",
+    "zero_answer_check": "verified_zero (experiments/20, 2026-10-30)",
     "notes": "Zero-answer candidate; must be verified including cardiac myosin inhibitors (class_level) and hypertrophic cardiomyopathy of any type (broader)."
   },
   {
     "query_id": "Q26",
     "text": "Tirzepatide trials in adolescents",
     "domain": "metabolic_endocrine",
-    "category": ["zero_answer", "parser_pediatric"],
+    "category": [
+      "zero_answer",
+      "parser_pediatric"
+    ],
     "core_concepts": {
       "disease": null,
-      "intervention": {"concept": "tirzepatide"}
+      "intervention": {
+        "concept": "tirzepatide"
+      }
     },
-    "structured_constraints": {"age_range": [12, 18]},
+    "structured_constraints": {
+      "age_range": [
+        12,
+        18
+      ]
+    },
     "split": "test",
     "has_answer": false,
-    "zero_answer_check": "pending",
+    "zero_answer_check": "verified_zero (experiments/20, 2026-10-30)",
     "notes": "Zero-answer candidate; drug-only query (disease not_applicable). Must be verified including GLP-1/GIP incretin agonists (class_level)."
   }
 ]
