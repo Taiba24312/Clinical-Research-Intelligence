@@ -1,0 +1,277 @@
+{
+  "Q14": {
+    "text": "Phase III trials in HFrEF",
+    "structured_constraints": {
+      "phase": [
+        "PHASE3"
+      ]
+    },
+    "trials_satisfying_constraints": 444,
+    "trials_with_any_concept_mention": 75,
+    "possible_answers": [
+      "NCT00384722",
+      "NCT00462670",
+      "NCT00532688",
+      "NCT00590070",
+      "NCT00953303",
+      "NCT01005303",
+      "NCT01090310",
+      "NCT01147250",
+      "NCT01179048",
+      "NCT01247545",
+      "NCT01888796",
+      "NCT02323620",
+      "NCT03102827",
+      "NCT03505723",
+      "NCT03785405",
+      "NCT04420624",
+      "NCT04508023",
+      "NCT05540600",
+      "NCT07064473"
+    ],
+    "flagged_only_matches": [
+      "NCT00255528",
+      "NCT00286962",
+      "NCT00296218",
+      "NCT00300664",
+      "NCT00315120",
+      "NCT00330473",
+      "NCT00398541",
+      "NCT00400179",
+      "NCT00434811",
+      "NCT00444600",
+      "NCT00519870",
+      "NCT00798161",
+      "NCT00799903",
+      "NCT00841672",
+      "NCT00887146",
+      "NCT00939237",
+      "NCT01034683",
+      "NCT01123161",
+      "NCT01172392",
+      "NCT01462370",
+      "NCT01682759",
+      "NCT01755156",
+      "NCT01875341",
+      "NCT02015299",
+      "NCT02101788",
+      "NCT02121717",
+      "NCT02145468",
+      "NCT02163759",
+      "NCT02266030",
+      "NCT02467582",
+      "NCT02554851",
+      "NCT02563522",
+      "NCT02603705",
+      "NCT02798913",
+      "NCT02866175",
+      "NCT02894710",
+      "NCT02928094",
+      "NCT02982161",
+      "NCT03680261",
+      "NCT04163900",
+      "NCT04193722",
+      "NCT04341727",
+      "NCT04351724",
+      "NCT04361279",
+      "NCT04847141",
+      "NCT05280496",
+      "NCT05427084",
+      "NCT05547529",
+      "NCT05831202",
+      "NCT06270836",
+      "NCT06284122",
+      "NCT06464146",
+      "NCT06726265",
+      "NCT06819007",
+      "NCT07165223",
+      "NCT07385703"
+    ],
+    "trials_with_exact_match_any_constraints": 42,
+    "exact_match_trials_status_phase": {
+      "COMPLETED / NA": 6,
+      "UNKNOWN / ": 5,
+      "COMPLETED / ": 4,
+      "RECRUITING / ": 3,
+      "COMPLETED / PHASE3": 2,
+      "COMPLETED / PHASE4": 2,
+      "UNKNOWN / PHASE4": 2,
+      "UNKNOWN / NA": 2,
+      "RECRUITING / PHASE4": 2,
+      "RECRUITING / PHASE2": 2,
+      "WITHDRAWN / PHASE1": 1,
+      "SUSPENDED / ": 1,
+      "TERMINATED / PHASE3": 1,
+      "WITHDRAWN / NA": 1,
+      "WITHDRAWN / ": 1,
+      "TERMINATED / PHASE2": 1,
+      "COMPLETED / PHASE1; PHASE2": 1,
+      "NOT_YET_RECRUITING / NA": 1,
+      "ENROLLING_BY_INVITATION / PHASE4": 1,
+      "ENROLLING_BY_INVITATION / NA": 1,
+      "RECRUITING / NA": 1,
+      "NOT_YET_RECRUITING / ": 1
+    },
+    "verdict": "needs_review",
+    "patterns": {
+      "disease": {
+        "exact": {
+          "HFrEF": "hfref",
+          "reduced ejection fraction": "reduced\\s+ejection\\s+fraction",
+          "systolic heart failure": "systolic\\s+heart\\s+failure",
+          "LVEF threshold <= 40%": "(?:lvef|ejection\\s+fraction)\\s*(?:of\\s*)?(?:≤|<=|<|less\\s+than|below|under)\\s*(?:3\\d|40)\\s*%"
+        },
+        "broader": {
+          "heart failure (unspecified ejection fraction)": "heart\\s+failure"
+        },
+        "related": {
+          "HFpEF / HFmrEF": "hfpef|hfmref|preserved\\s+ejection|mildly\\s+reduced\\s+ejection"
+        }
+      }
+    }
+  },
+  "Q16": {
+    "text": "Phase II ALS trials",
+    "structured_constraints": {
+      "phase": [
+        "PHASE2"
+      ]
+    },
+    "trials_satisfying_constraints": 704,
+    "trials_with_any_concept_mention": 23,
+    "possible_answers": [
+      "NCT00005903",
+      "NCT01928420"
+    ],
+    "flagged_only_matches": [
+      "NCT00004437",
+      "NCT00086294",
+      "NCT00190970",
+      "NCT00506610",
+      "NCT00524420",
+      "NCT00799656",
+      "NCT03700580",
+      "NCT03990766",
+      "NCT04073459",
+      "NCT04917042",
+      "NCT05012566",
+      "NCT05059327",
+      "NCT05713877",
+      "NCT05972954",
+      "NCT06118788",
+      "NCT06335173",
+      "NCT06366724",
+      "NCT06849986",
+      "NCT07117942",
+      "NCT07555431",
+      "NCT07743554"
+    ],
+    "trials_with_exact_match_any_constraints": 12,
+    "exact_match_trials_status_phase": {
+      "UNKNOWN / NA": 2,
+      "COMPLETED / ": 1,
+      "TERMINATED / NA": 1,
+      "COMPLETED / PHASE3": 1,
+      "TERMINATED / PHASE4": 1,
+      "ACTIVE_NOT_RECRUITING / NA": 1,
+      "UNKNOWN / PHASE2": 1,
+      "UNKNOWN / ": 1,
+      "RECRUITING / PHASE1; PHASE2": 1,
+      "COMPLETED / PHASE1": 1,
+      "RECRUITING / PHASE4": 1
+    },
+    "verdict": "needs_review",
+    "patterns": {
+      "disease": {
+        "exact": {
+          "amyotrophic lateral sclerosis": "amyotrophic\\s+lateral\\s+sclerosis",
+          "ALS": "\\bals\\b",
+          "Lou Gehrig's disease": "lou\\s+gehrig"
+        },
+        "broader": {
+          "motor neuron disease": "motor\\s+neur(?:on|one)\\s+disease",
+          "neuromuscular disease": "neuromuscular\\s+disease",
+          "neurodegenerative disease": "neuro[\\s\\-]*degenerative\\s+disease"
+        },
+        "related": {
+          "other motor neuron disorders": "spinal\\s+muscular\\s+atrophy|primary\\s+lateral\\s+sclerosis|frontotemporal"
+        }
+      }
+    }
+  },
+  "Q20": {
+    "text": "Parkinson's disease trials that are not yet recruiting",
+    "structured_constraints": {
+      "status": [
+        "NOT_YET_RECRUITING"
+      ]
+    },
+    "trials_satisfying_constraints": 207,
+    "trials_with_any_concept_mention": 11,
+    "possible_answers": [
+      "NCT06809556",
+      "NCT06859229"
+    ],
+    "flagged_only_matches": [
+      "NCT07251829",
+      "NCT07361627",
+      "NCT07458646",
+      "NCT07525999",
+      "NCT07584681",
+      "NCT07675720",
+      "NCT07679919",
+      "NCT07720479",
+      "NCT07743554"
+    ],
+    "trials_with_exact_match_any_constraints": 93,
+    "exact_match_trials_status_phase": {
+      "COMPLETED / NA": 22,
+      "COMPLETED / ": 8,
+      "UNKNOWN / ": 8,
+      "COMPLETED / PHASE2": 7,
+      "COMPLETED / PHASE1": 5,
+      "RECRUITING / NA": 5,
+      "UNKNOWN / NA": 4,
+      "COMPLETED / PHASE4": 3,
+      "ACTIVE_NOT_RECRUITING / NA": 3,
+      "RECRUITING / ": 3,
+      "NOT_YET_RECRUITING / NA": 3,
+      "WITHDRAWN / EARLY_PHASE1": 2,
+      "TERMINATED / PHASE4": 2,
+      "COMPLETED / PHASE3": 1,
+      "UNKNOWN / PHASE4": 1,
+      "TERMINATED / NA": 1,
+      "TERMINATED / ": 1,
+      "ACTIVE_NOT_RECRUITING / PHASE3": 1,
+      "WITHDRAWN / ": 1,
+      "WITHDRAWN / NA": 1,
+      "RECRUITING / EARLY_PHASE1": 1,
+      "ACTIVE_NOT_RECRUITING / PHASE1": 1,
+      "RECRUITING / PHASE4": 1,
+      "RECRUITING / PHASE1; PHASE2": 1,
+      "ACTIVE_NOT_RECRUITING / PHASE2": 1,
+      "COMPLETED / PHASE1; PHASE2": 1,
+      "NOT_YET_RECRUITING / ": 1,
+      "RECRUITING / PHASE1": 1,
+      "NOT_YET_RECRUITING / PHASE2": 1,
+      "NOT_YET_RECRUITING / PHASE4": 1,
+      "NOT_YET_RECRUITING / PHASE1": 1
+    },
+    "verdict": "needs_review",
+    "patterns": {
+      "disease": {
+        "exact": {
+          "Parkinson's disease": "parkinson(?!ism)"
+        },
+        "broader": {
+          "parkinsonism (mixed)": "parkinsonism",
+          "movement disorders": "movement\\s+disorder",
+          "neurodegenerative disease": "neuro[\\s\\-]*degenerative\\s+disease"
+        },
+        "related": {
+          "atypical parkinsonism": "progressive\\s+supranuclear|multiple\\s+system\\s+atrophy|lewy\\s+bod"
+        }
+      }
+    }
+  }
+}
