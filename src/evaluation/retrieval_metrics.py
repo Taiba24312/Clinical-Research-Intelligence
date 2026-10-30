@@ -15,7 +15,8 @@ Query spec - JSON list, one object per query:
       },
       "structured_constraints": {                     # all keys optional
         "status": ["RECRUITING"],
-        "phase": ["PHASE2", "PHASE3"],                # any listed phase
+        "phase": ["PHASE2", "PHASE3"],                # any listed phase;
+                                                      # "PHASE1+PHASE2" = both
         "sex": ["FEMALE", "ALL"],
         "study_type": ["OBSERVATIONAL"],
         "age_range": [18, null]                       # [lo, hi) in years
@@ -179,7 +180,10 @@ def constraint_violations(
             phases = set() if _is_missing(actual) else {
                 part.strip() for part in str(actual).split(";") if part.strip()
             }
-            if not phases & set(_as_list(required)):
+            # Each required item is one phase ("PHASE2") or a combined phase
+            # ("PHASE1+PHASE2" = the trial must list both). Any item may match.
+            options = [set(item.split("+")) for item in _as_list(required)]
+            if not any(option <= phases for option in options):
                 violated(name, required, actual)
 
         elif name == "age_range":

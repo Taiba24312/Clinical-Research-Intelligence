@@ -238,6 +238,12 @@ class TestConstraints(unittest.TestCase):
         self.assertEqual(self.check({"phase": "NA"}, {"phase": ["PHASE3"]}), ["phase"])
         self.assertEqual(self.check({"phase": ""}, {"phase": ["PHASE3"]}), ["phase"])
 
+    def test_combined_phase_requires_all_listed_phases(self):
+        phase_1_2 = {"phase": ["PHASE1+PHASE2"]}
+        self.assertEqual(self.check({"phase": "PHASE1; PHASE2"}, phase_1_2), [])
+        self.assertEqual(self.check({"phase": "PHASE1"}, phase_1_2), ["phase"])
+        self.assertEqual(self.check({"phase": "PHASE2"}, phase_1_2), ["phase"])
+
     def test_age_range(self):
         adults, pediatric, older = [18, None], [0, 18], [65, None]
         self.assertEqual(self.check({"max_age": "17 Years"}, {"age_range": adults}), ["age_range"])
