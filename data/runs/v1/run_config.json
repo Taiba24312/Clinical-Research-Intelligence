@@ -1,0 +1,543 @@
+{
+  "created_utc": "2026-10-30T20:55:30.080101+00:00",
+  "script": "experiments/21_run_pooling_systems.py",
+  "git_commit_before_run": "34d6817175352c3379330377ba47faae80bf354c",
+  "corpus_parquet_sha256": "b005d0be58c9e2d8d000f179077edf9acfec5e4b7cd99c0e1fc6f54c55cbcf67",
+  "query_specs_sha256": "ecdc76e77513e0f08cb968a057bd5c3837abaf3793be5106305552533a1e8df8",
+  "device": "cuda:0",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "library_versions": {
+    "torch": "2.14.1",
+    "transformers": "5.19.0",
+    "sentence-transformers": "6.1.0",
+    "rank-bm25": "0.2.2",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6"
+  },
+  "document_representation": "src/preprocessing/trial_representation.py (TITLE, CONDITIONS, INTERVENTIONS, SUMMARY, ELIGIBILITY)",
+  "systems": {
+    "bm25_ws": {
+      "module": "src/retrieval/bm25.py BM25Retriever",
+      "tokenizer": "lower().split()",
+      "k1": 1.5,
+      "b": 0.75,
+      "query": "semantic_query",
+      "top_k": 100,
+      "idf": "corpus-wide; only eligible trials ranked"
+    },
+    "bm25_punct": {
+      "module": "rank_bm25.BM25Okapi (script-local)",
+      "tokenizer": "re.findall('[a-z0-9]+', lower())",
+      "k1": 1.5,
+      "b": 0.75,
+      "query": "semantic_query",
+      "top_k": 100,
+      "idf": "corpus-wide; only eligible trials ranked"
+    },
+    "dense": {
+      "module": "src/retrieval/embeddings.py DenseEmbedder",
+      "model": "BAAI/bge-small-en-v1.5",
+      "model_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+      "normalized": true,
+      "similarity": "inner product (exact, numpy; FAISS not used)",
+      "query": "semantic_query",
+      "top_k": 100
+    },
+    "rrf": {
+      "module": "src/retrieval/hybrid.py HybridRetriever",
+      "fusion_k": 60,
+      "inputs": [
+        "bm25_ws",
+        "dense"
+      ],
+      "top_k": 50
+    },
+    "rrf_ce_raw": {
+      "model": "BAAI/bge-reranker-base",
+      "model_revision": "2cfc18c9415c912f9d8155881c133215df768a70",
+      "max_length": 512,
+      "query": "raw query text",
+      "candidates": "rrf top-50",
+      "tie_break": "rrf rank"
+    },
+    "rrf_ce_semq": {
+      "model": "BAAI/bge-reranker-base",
+      "model_revision": "2cfc18c9415c912f9d8155881c133215df768a70",
+      "max_length": 512,
+      "query": "semantic_query",
+      "candidates": "rrf top-50",
+      "tie_break": "rrf rank"
+    }
+  },
+  "system_roles": {
+    "bm25_ws": "baseline",
+    "bm25_punct": "pooling_only",
+    "dense": "baseline",
+    "rrf": "baseline",
+    "rrf_ce_raw": "baseline",
+    "rrf_ce_semq": "pooling_only"
+  },
+  "filter_modes": {
+    "parser_filters": "QueryParser filters applied with MetadataFilter (real current system)",
+    "gold_filters": "query spec structured_constraints applied with src/evaluation/retrieval_metrics.constraint_violations (POOLING-ONLY)"
+  },
+  "real_baseline_runs": [
+    "bm25_ws.parser_filters",
+    "dense.parser_filters",
+    "rrf.parser_filters",
+    "rrf_ce_raw.parser_filters"
+  ],
+  "queries": {
+    "Q01": {
+      "text": "Recruiting NSCLC trials involving pembrolizumab",
+      "semantic_query": "nsclc involving pembrolizumab",
+      "parser_filters": {
+        "status": [
+          "RECRUITING"
+        ]
+      },
+      "gold_constraints": {
+        "status": [
+          "RECRUITING"
+        ]
+      },
+      "eligible": {
+        "parser_filters": 501,
+        "gold_filters": 501
+      }
+    },
+    "Q02": {
+      "text": "Phase 3 breast cancer trials",
+      "semantic_query": "breast cancer",
+      "parser_filters": {
+        "phase": [
+          "PHASE3"
+        ]
+      },
+      "gold_constraints": {
+        "phase": [
+          "PHASE3"
+        ]
+      },
+      "eligible": {
+        "parser_filters": 444,
+        "gold_filters": 444
+      }
+    },
+    "Q03": {
+      "text": "Recruiting trials for Alzheimer's disease",
+      "semantic_query": "for alzheimer's disease",
+      "parser_filters": {
+        "status": [
+          "RECRUITING"
+        ]
+      },
+      "gold_constraints": {
+        "status": [
+          "RECRUITING"
+        ]
+      },
+      "eligible": {
+        "parser_filters": 501,
+        "gold_filters": 501
+      }
+    },
+    "Q04": {
+      "text": "Diabetes trials for adults",
+      "semantic_query": "diabetes",
+      "parser_filters": {
+        "min_age": 18
+      },
+      "gold_constraints": {
+        "age_range": [
+          18,
+          null
+        ]
+      },
+      "eligible": {
+        "parser_filters": 4490,
+        "gold_filters": 4490
+      }
+    },
+    "Q05": {
+      "text": "Female patients with breast cancer",
+      "semantic_query": "with breast cancer",
+      "parser_filters": {
+        "sex": [
+          "FEMALE"
+        ]
+      },
+      "gold_constraints": {
+        "sex": [
+          "FEMALE",
+          "ALL"
+        ]
+      },
+      "eligible": {
+        "parser_filters": 390,
+        "gold_filters": 4519
+      }
+    },
+    "Q06": {
+      "text": "Phase 2 trials using immunotherapy for cancer",
+      "semantic_query": "using immunotherapy for cancer",
+      "parser_filters": {
+        "phase": [
+          "PHASE2"
+        ]
+      },
+      "gold_constraints": {
+        "phase": [
+          "PHASE2"
+        ]
+      },
+      "eligible": {
+        "parser_filters": 704,
+        "gold_filters": 704
+      }
+    },
+    "Q07": {
+      "text": "Observational studies for cardiovascular disease",
+      "semantic_query": "for cardiovascular disease",
+      "parser_filters": {
+        "study_type": [
+          "OBSERVATIONAL"
+        ]
+      },
+      "gold_constraints": {
+        "study_type": [
+          "OBSERVATIONAL"
+        ]
+      },
+      "eligible": {
+        "parser_filters": 1162,
+        "gold_filters": 1162
+      }
+    },
+    "Q08": {
+      "text": "Recruiting trials for metastatic cancer in adults",
+      "semantic_query": "for metastatic cancer",
+      "parser_filters": {
+        "status": [
+          "RECRUITING"
+        ],
+        "min_age": 18
+      },
+      "gold_constraints": {
+        "status": [
+          "RECRUITING"
+        ],
+        "age_range": [
+          18,
+          null
+        ]
+      },
+      "eligible": {
+        "parser_filters": 483,
+        "gold_filters": 483
+      }
+    },
+    "Q09": {
+      "text": "Phase 1 trials involving targeted therapy for solid tumors",
+      "semantic_query": "involving targeted therapy for solid tumors",
+      "parser_filters": {
+        "phase": [
+          "PHASE1"
+        ]
+      },
+      "gold_constraints": {
+        "phase": [
+          "PHASE1"
+        ]
+      },
+      "eligible": {
+        "parser_filters": 503,
+        "gold_filters": 503
+      }
+    },
+    "Q10": {
+      "text": "Recruiting infectious disease trials for adults",
+      "semantic_query": "infectious disease",
+      "parser_filters": {
+        "status": [
+          "RECRUITING"
+        ],
+        "min_age": 18
+      },
+      "gold_constraints": {
+        "status": [
+          "RECRUITING"
+        ],
+        "age_range": [
+          18,
+          null
+        ]
+      },
+      "eligible": {
+        "parser_filters": 483,
+        "gold_filters": 483
+      }
+    },
+    "Q11": {
+      "text": "Keytruda trials in lung cancer",
+      "semantic_query": "keytruda in lung cancer",
+      "parser_filters": {},
+      "gold_constraints": {},
+      "eligible": {
+        "parser_filters": 4695,
+        "gold_filters": 4695
+      }
+    },
+    "Q12": {
+      "text": "Ozempic studies for weight loss",
+      "semantic_query": "ozempic for weight loss",
+      "parser_filters": {},
+      "gold_constraints": {},
+      "eligible": {
+        "parser_filters": 4695,
+        "gold_filters": 4695
+      }
+    },
+    "Q13": {
+      "text": "Recruiting T2DM trials of SGLT2 inhibitors",
+      "semantic_query": "t2dm of sglt2 inhibitors",
+      "parser_filters": {
+        "status": [
+          "RECRUITING"
+        ]
+      },
+      "gold_constraints": {
+        "status": [
+          "RECRUITING"
+        ]
+      },
+      "eligible": {
+        "parser_filters": 501,
+        "gold_filters": 501
+      }
+    },
+    "Q14": {
+      "text": "Phase III trials in HFrEF",
+      "semantic_query": "phase iii in hfref",
+      "parser_filters": {},
+      "gold_constraints": {
+        "phase": [
+          "PHASE3"
+        ]
+      },
+      "eligible": {
+        "parser_filters": 4695,
+        "gold_filters": 444
+      }
+    },
+    "Q15": {
+      "text": "Anticoagulation trials in AFib patients over 65",
+      "semantic_query": "anticoagulation in afib patients over 65",
+      "parser_filters": {},
+      "gold_constraints": {
+        "age_range": [
+          65,
+          null
+        ]
+      },
+      "eligible": {
+        "parser_filters": 4695,
+        "gold_filters": 3832
+      }
+    },
+    "Q16": {
+      "text": "Phase II ALS trials",
+      "semantic_query": "phase ii als",
+      "parser_filters": {},
+      "gold_constraints": {
+        "phase": [
+          "PHASE2"
+        ]
+      },
+      "eligible": {
+        "parser_filters": 4695,
+        "gold_filters": 704
+      }
+    },
+    "Q17": {
+      "text": "Phase 1/2 melanoma trials",
+      "semantic_query": "/2 melanoma",
+      "parser_filters": {
+        "phase": [
+          "PHASE1"
+        ]
+      },
+      "gold_constraints": {
+        "phase": [
+          "PHASE1+PHASE2"
+        ]
+      },
+      "eligible": {
+        "parser_filters": 503,
+        "gold_filters": 142
+      }
+    },
+    "Q18": {
+      "text": "Pediatric epilepsy trials",
+      "semantic_query": "pediatric epilepsy",
+      "parser_filters": {},
+      "gold_constraints": {
+        "age_range": [
+          0,
+          18
+        ]
+      },
+      "eligible": {
+        "parser_filters": 4695,
+        "gold_filters": 777
+      }
+    },
+    "Q19": {
+      "text": "Interventional studies of HIV pre-exposure prophylaxis",
+      "semantic_query": "interventional of hiv pre-exposure prophylaxis",
+      "parser_filters": {},
+      "gold_constraints": {
+        "study_type": [
+          "INTERVENTIONAL"
+        ]
+      },
+      "eligible": {
+        "parser_filters": 4695,
+        "gold_filters": 3526
+      }
+    },
+    "Q20": {
+      "text": "Parkinson's disease trials that are not yet recruiting",
+      "semantic_query": "parkinson's disease that are not yet",
+      "parser_filters": {
+        "status": [
+          "RECRUITING"
+        ]
+      },
+      "gold_constraints": {
+        "status": [
+          "NOT_YET_RECRUITING"
+        ]
+      },
+      "eligible": {
+        "parser_filters": 501,
+        "gold_filters": 207
+      }
+    },
+    "Q21": {
+      "text": "Completed tuberculosis trials, excluding observational studies",
+      "semantic_query": "completed tuberculosis , excluding",
+      "parser_filters": {
+        "study_type": [
+          "OBSERVATIONAL"
+        ]
+      },
+      "gold_constraints": {
+        "status": [
+          "COMPLETED"
+        ],
+        "study_type": [
+          "INTERVENTIONAL",
+          "EXPANDED_ACCESS"
+        ]
+      },
+      "eligible": {
+        "parser_filters": 1162,
+        "gold_filters": 2006
+      }
+    },
+    "Q22": {
+      "text": "Which pembrolizumab studies for non-small cell lung cancer are currently enrolling patients?",
+      "semantic_query": "which pembrolizumab for non-small cell lung cancer are currently enrolling patients?",
+      "parser_filters": {},
+      "gold_constraints": {
+        "status": [
+          "RECRUITING"
+        ]
+      },
+      "eligible": {
+        "parser_filters": 4695,
+        "gold_filters": 501
+      }
+    },
+    "Q23": {
+      "text": "Non-interventional cardiovascular disease studies",
+      "semantic_query": "non-interventional cardiovascular disease",
+      "parser_filters": {},
+      "gold_constraints": {
+        "study_type": [
+          "OBSERVATIONAL"
+        ]
+      },
+      "eligible": {
+        "parser_filters": 4695,
+        "gold_filters": 1162
+      }
+    },
+    "Q24": {
+      "text": "Phase 3 trials of lecanemab for early Alzheimer's disease",
+      "semantic_query": "of lecanemab for early alzheimer's disease",
+      "parser_filters": {
+        "phase": [
+          "PHASE3"
+        ]
+      },
+      "gold_constraints": {
+        "phase": [
+          "PHASE3"
+        ]
+      },
+      "eligible": {
+        "parser_filters": 444,
+        "gold_filters": 444
+      }
+    },
+    "Q25": {
+      "text": "Recruiting mavacamten trials for obstructive hypertrophic cardiomyopathy",
+      "semantic_query": "mavacamten for obstructive hypertrophic cardiomyopathy",
+      "parser_filters": {
+        "status": [
+          "RECRUITING"
+        ]
+      },
+      "gold_constraints": {
+        "status": [
+          "RECRUITING"
+        ]
+      },
+      "eligible": {
+        "parser_filters": 501,
+        "gold_filters": 501
+      }
+    },
+    "Q26": {
+      "text": "Tirzepatide trials in adolescents",
+      "semantic_query": "tirzepatide in adolescents",
+      "parser_filters": {},
+      "gold_constraints": {
+        "age_range": [
+          12,
+          18
+        ]
+      },
+      "eligible": {
+        "parser_filters": 4695,
+        "gold_filters": 673
+      }
+    }
+  },
+  "run_files": [
+    "bm25_punct.gold_filters.csv",
+    "bm25_punct.parser_filters.csv",
+    "bm25_ws.gold_filters.csv",
+    "bm25_ws.parser_filters.csv",
+    "dense.gold_filters.csv",
+    "dense.parser_filters.csv",
+    "rrf.gold_filters.csv",
+    "rrf.parser_filters.csv",
+    "rrf_ce_raw.gold_filters.csv",
+    "rrf_ce_raw.parser_filters.csv",
+    "rrf_ce_semq.gold_filters.csv",
+    "rrf_ce_semq.parser_filters.csv"
+  ]
+}
