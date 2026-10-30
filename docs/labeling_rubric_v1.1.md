@@ -227,19 +227,19 @@ from the corpus).
 
 ## 8. Query-scope definitions
 
-All rows **Decided** by the labeler on 2026-10-30. Rows marked *(inferred)*
-follow from other decisions and were not stated separately; they stand
-unless the labeler objects.
+All rows **Decided** by the labeler on 2026-10-30. The two rows first
+proposed as inferences (trastuzumab-type antibodies; agents that are not
+targeted therapy) were explicitly confirmed by the labeler on 2026-10-30.
 
 | Query | Scope |
 |---|---|
 | Q04 diabetes | Type 1, type 2 and gestational diabetes = exact. Diabetic complications (retinopathy, nephropathy, foot ulcer) = exact. **Prediabetes = absent_or_different.** |
 | Q06 immunotherapy | Checkpoint inhibitors, CAR-T, cancer vaccines, bispecific T-cell engagers, oncolytic viruses, cytokines (e.g. IL-2, interferon), TIL therapy and NK cell therapy = exact. |
-| Q06 immunotherapy *(inferred)* | Tumor antigen-targeting monoclonal antibodies (e.g. trastuzumab) are targeted therapy (Q09), not immunotherapy. |
+| Q06 immunotherapy | Tumor antigen-targeting monoclonal antibodies (e.g. trastuzumab) are targeted therapy (Q09), not immunotherapy. |
 | Q07/Q23 cardiovascular disease | Heart disease, stroke, hypertension, peripheral artery disease and venous thromboembolism = exact. **Risk factors alone** (dyslipidemia, obesity, diabetes) = absent_or_different. |
 | Q08 metastatic cancer | "Advanced or metastatic" or metastatic populations = exact. **"Advanced" alone = broader** (may include locally advanced). Locally advanced only = absent_or_different. Early-stage only = absent_or_different. |
 | Q09 targeted therapy | Small-molecule kinase inhibitors, antigen-targeting monoclonal antibodies, antibody-drug conjugates, PARP inhibitors, KRAS inhibitors and radioligand therapies = exact. |
-| Q09 targeted therapy *(inferred)* | Checkpoint inhibitors (immunotherapy, Q06), cytotoxic chemotherapy and hormone therapy = absent_or_different. |
+| Q09 targeted therapy | Checkpoint inhibitors (immunotherapy, Q06), cytotoxic chemotherapy and hormone therapy = absent_or_different. |
 | Q10 infectious disease | Treatment and prevention/vaccine trials for any infection = exact. Long COVID = exact. |
 | Q12 weight loss | Obesity/overweight trials = exact. A diabetes trial whose **primary aim** is weight loss = exact. Weight only as a secondary outcome = absent_or_different. |
 | Q18 epilepsy | Epilepsy and epilepsy syndromes (e.g. Dravet syndrome, infantile spasms) = exact. A single febrile seizure or non-epileptic seizures = absent_or_different. |
