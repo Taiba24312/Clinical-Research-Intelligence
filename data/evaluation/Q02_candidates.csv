@@ -1,0 +1,1132 @@
+﻿query_id,query,nct_id,title,conditions,interventions,summary,eligibility,min_age,max_age,sex,phase,status,study_type,last_update,document,relevance,notes
+Q02,Phase 3 breast cancer trials,NCT02107703,A Study of Abemaciclib (LY2835219) Combined With Fulvestrant in Women With Hormone Receptor Positive HER2 Negative Breast Cancer,Breast Neoplasms,Abemaciclib; Fulvestrant; Placebo,"The main purpose of this study is to compare progression-free survival for women with hormone receptor positive (HR+), human epidermal growth factor receptor (HER2) negative advanced breast cancer receiving either abemaciclib + fulvestrant or fulvestrant alone. Participants will be randomized to abemaciclib or placebo in a 2:1 ratio. The study will last about 9 months for each participant.
+
+For the endocrine naïve cohort, all participants will received abemaciclib + fulvestrant.","Inclusion Criteria
+
+* Have a diagnosis of HR+, HER2- breast cancer
+* Have locally advanced disease not amenable to curative treatment by surgery or metastatic disease. In addition, participants must fulfill 1 of the following criteria:
+
+  * relapsed with radiologic evidence of progression while receiving neoadjuvant or adjuvant endocrine therapy, with no subsequent endocrine therapy received following progression
+  * relapsed with radiologic evidence of progression within 1 year from completion of adjuvant endocrine therapy, with no subsequent endocrine therapy received following progression
+  * relapsed with radiologic evidence of progression more than 1 year from completion of adjuvant endocrine therapy and then subsequently relapsed with radiologic evidence of progression after receiving treatment with either an antiestrogen or an aromatase inhibitor as first-line endocrine therapy for metastatic disease. Participants may not have received more than 1 line of endocrine therapy or any prior chemotherapy for metastatic disease
+  * presented de novo with metastatic disease and then relapsed with radiologic evidence of progression after receiving treatment with either an antiestrogen or an aromatase inhibitor as first line endocrine therapy for metastatic disease. Participants may not have received more than 1 line of endocrine therapy or any prior chemotherapy for metastatic disease
+  * for the endocrine naïve cohort: Must not have received prior endocrine therapy in current or prior disease setting
+* Have postmenopausal status due to either surgical/natural menopause or ovarian suppression (initiated at least 28 days prior to Day 1 of Cycle 1) with a gonadotropin-releasing hormone (GnRH) agonist such as goserelin
+* Have a negative serum pregnancy test at baseline (within 14 days prior to randomization) and agree to use medically approved precautions to prevent pregnancy during the study and for 12 weeks following the last dose of abemaciclib if postmenopausal status is due to ovarian suppression with a GnRH agonist
+* Have either measurable disease or nonmeasurable bone only disease
+* Have a performance status ≤1 on the Eastern Cooperative Oncology Group (ECOG) scale
+* Have discontinued previous therapies for cancer (including specifically, aromatase inhibitors, anti-estrogens, chemotherapy, radiotherapy, and immunotherapy) for at least 21 days for myelosuppressive agents or 14 days for nonmyelosuppressive agents prior to receiving study drug, and recovered from the acute effects of therapy (until the toxicity resolves to either baseline or at least Grade 1) except for residual alopecia or peripheral neuropathy
+
+Exclusion Criteria
+
+* Are currently receiving an investigational drug in a clinical trial or participating in any other type of medical research judged not to be scientifically or medically compatible with this study
+* Have visceral crisis, lymphangitic spread, or leptomeningeal carcinomatosis visceral crisis is not the mere presence of visceral metastases but implies severe organ dysfunction as assessed by symptoms and signs, laboratory studies, and rapid progression of the disease
+* Have clinical evidence or history of central nervous system metastasis
+* Have received prior treatment with chemotherapy (except for neoadjuvant/ adjuvant chemotherapy), fulvestrant, everolimus, or any CDK4/6 inhibitor. For the endocrine naïve cohort: In addition, have received treatment with any prior endocrine therapy
+* Have received treatment with a drug that has not received regulatory approval for any indication within 14 or 21 days prior to randomization of study drug for a nonmyelosuppressive or myelosuppressive agent, respectively
+* Have received recent (within 28 days prior to randomization) yellow fever vaccination
+* Have had major surgery within 14 days prior to randomization of study drug to allow for post-operative healing of the surgical wound and site(s)
+* Have a personal history within the last 12 months of any of the following conditions: syncope of cardiovascular etiology, ventricular tachycardia, ventricular fibrillation, or sudden cardiac arrest
+* Have inflammatory breast cancer or a history of any other cancer (except nonmelanoma skin cancer or carcinoma in-situ of the cervix), unless in complete remission with no therapy for a minimum of 3 years
+* Have received an autologous or allogeneic stem-cell transplant
+* Have active bacterial or fungal infection, or detectable viral infection
+* Have initiated bisphosphonates or approved Receptor activator of nuclear factor kappa-B (RANK) ligand targeted agents \<7 days prior to randomization",18 Years,,FEMALE,PHASE3,ACTIVE_NOT_RECRUITING,INTERVENTIONAL,2025-10-21,"TITLE: A Study of Abemaciclib (LY2835219) Combined With Fulvestrant in Women With Hormone Receptor Positive HER2 Negative Breast Cancer
+
+CONDITIONS: Breast Neoplasms
+
+INTERVENTIONS: Abemaciclib; Fulvestrant; Placebo
+
+SUMMARY: The main purpose of this study is to compare progression-free survival for women with hormone receptor positive (HR+), human epidermal growth factor receptor (HER2) negative advanced breast cancer receiving either abemaciclib + fulvestrant or fulvestrant alone. Participants will be randomized to abemaciclib or placebo in a 2:1 ratio. The study will last about 9 months for each participant.
+
+For the endocrine naïve cohort, all participants will received abemaciclib + fulvestrant.
+
+ELIGIBILITY: Inclusion Criteria
+
+* Have a diagnosis of HR+, HER2- breast cancer
+* Have locally advanced disease not amenable to curative treatment by surgery or metastatic disease. In addition, participants must fulfill 1 of the following criteria:
+
+  * relapsed with radiologic evidence of progression while receiving neoadjuvant or adjuvant endocrine therapy, with no subsequent endocrine therapy received following progression
+  * relapsed with radiologic evidence of progression within 1 year from completion of adjuvant endocrine therapy, with no subsequent endocrine therapy received following progression
+  * relapsed with radiologic evidence of progression more than 1 year from completion of adjuvant endocrine therapy and then subsequently relapsed with radiologic evidence of progression after receiving treatment with either an antiestrogen or an aromatase inhibitor as first-line endocrine therapy for metastatic disease. Participants may not have received more than 1 line of endocrine therapy or any prior chemotherapy for metastatic disease
+  * presented de novo with metastatic disease and then relapsed with radiologic evidence of progression after receiving treatment with either an antiestrogen or an aromatase inhibitor as first line endocrine therapy for metastatic disease. Participants may not have received more than 1 line of endocrine therapy or any prior chemotherapy for metastatic disease
+  * for the endocrine naïve cohort: Must not have received prior endocrine therapy in current or prior disease setting
+* Have postmenopausal status due to either surgical/natural menopause or ovarian suppression (initiated at least 28 days prior to Day 1 of Cycle 1) with a gonadotropin-releasing hormone (GnRH) agonist such as goserelin
+* Have a negative serum pregnancy test at baseline (within 14 days prior to randomization) and agree to use medically approved precautions to prevent pregnancy during the study and for 12 weeks following the last dose of abemaciclib if postmenopausal status is due to ovarian suppression with a GnRH agonist
+* Have either measurable disease or nonmeasurable bone only disease
+* Have a performance status ≤1 on the Eastern Cooperative Oncology Group (ECOG) scale
+* Have discontinued previous therapies for cancer (including specifically, aromatase inhibitors, anti-estrogens, chemotherapy, radiotherapy, and immunotherapy) for at least 21 days for myelosuppressive agents or 14 days for nonmyelosuppressive agents prior to receiving study drug, and recovered from the acute effects of therapy (until the toxicity resolves to either baseline or at least Grade 1) except for residual alopecia or peripheral neuropathy
+
+Exclusion Criteria
+
+* Are currently receiving an investigational drug in a clinical trial or participating in any other type of medical research judged not to be scientifically or medically compatible with this study
+* Have visceral crisis, lymphangitic spread, or leptomeningeal carcinomatosis visceral crisis is not the mere presence of visceral metastases but implies severe organ dysfunction as assessed by symptoms and signs, laboratory studies, and rapid progression of the disease
+* Have clinical evidence or history of central nervous system metastasis
+* Have received prior treatment with chemotherapy (except for neoadjuvant/ adjuvant chemotherapy), fulvestrant, everolimus, or any CDK4/6 inhibitor. For the endocrine naïve cohort: In addition, have received treatment with any prior endocrine therapy
+* Have received treatment with a drug that has not received regulatory approval for any indication within 14 or 21 days prior to randomization of study drug for a nonmyelosuppressive or myelosuppressive agent, respectively
+* Have received recent (within 28 days prior to randomization) yellow fever vaccination
+* Have had major surgery within 14 days prior to randomization of study drug to allow for post-operative healing of the surgical wound and site(s)
+* Have a personal history within the last 12 months of any of the following conditions: syncope of cardiovascular etiology, ventricular tachycardia, ventricular fibrillation, or sudden cardiac arrest
+* Have inflammatory breast cancer or a history of any other cancer (except nonmelanoma skin cancer or carcinoma in-situ of the cervix), unless in complete remission with no therapy for a minimum of 3 years
+* Have received an autologous or allogeneic stem-cell transplant
+* Have active bacterial or fungal infection, or detectable viral infection
+* Have initiated bisphosphonates or approved Receptor activator of nuclear factor kappa-B (RANK) ligand targeted agents \<7 days prior to randomization",,
+Q02,Phase 3 breast cancer trials,NCT00757302,Intraoperative Gamma Camera for Breast Cancer Surgery,Breast Cancer; Ductal Carcinoma in Situ,SLN procedure (CarolIReS camera),"Aim: This study aims at evaluating the performances of an intraoperative gamma camera (field of view 10X10 cm), named CarolIReS, to detect axillary drainage and to assess the removal of sentinel lymph nodes (SLN) in breast surgery. Patients and Methods: SLN biopsy will be performed on 110 patients and the CarolIReS camera will be used preoperatively to localize SLNs. During surgery, individual removal of SLNs will be performed using a gamma probe named CarolIReS and their activity will be measured with a gamma ray counter. At the end of surgery, the CarolIReS camera will be used again to check the quality of surgery which will be followed by a surgical excision in case of remaining SLNs. Objectives: The main objective of this study is to evaluate the performances of the CarolIReS camera in assessing the axillary drainage of breast tumors and the surgical removal of SLNs. In addition, the possible correlation between the activity, the size, and the metastatic involvement of the SLNs will also be studied.Study hypothesis: Intraoperative cameras could be used to improve the efficiency of the SLN procedure","Inclusion Criteria:
+
+* Patient major at the time of breast surgery.
+* Patient affiliated with a social security.
+* Consent dated and signed by the investigator and the subject.
+* Subject having been informed of the sentinel lymph node procedure during the visit prior to breast surgery.
+* Patient having a unifocal infiltrative breast cancer (less than 2 cm) diagnosed preoperatively by core biopsy or cytology.
+* Patient having a ductal carcinoma in situ (DCIS), diagnosed preoperatively by core biopsy or cytology.
+
+Exclusion Criteria:
+
+* Refusal of the patient to be included in the study.
+* Pregnant patient or during breastfeeding.
+* None of the patients will have undergone chemotherapy, locoregional radiotherapy or prevalent axillary lymph node.
+* Diagnosed safeguarding justice and trust.
+* Patient with a psychiatric disorder makes it impossible for the collection of informed consent-patient with tumors greater than 2 cm or multifocal.
+* Prevalent axillary lymph node.",18 Years,,FEMALE,PHASE3,COMPLETED,INTERVENTIONAL,2025-12-22,"TITLE: Intraoperative Gamma Camera for Breast Cancer Surgery
+
+CONDITIONS: Breast Cancer; Ductal Carcinoma in Situ
+
+INTERVENTIONS: SLN procedure (CarolIReS camera)
+
+SUMMARY: Aim: This study aims at evaluating the performances of an intraoperative gamma camera (field of view 10X10 cm), named CarolIReS, to detect axillary drainage and to assess the removal of sentinel lymph nodes (SLN) in breast surgery. Patients and Methods: SLN biopsy will be performed on 110 patients and the CarolIReS camera will be used preoperatively to localize SLNs. During surgery, individual removal of SLNs will be performed using a gamma probe named CarolIReS and their activity will be measured with a gamma ray counter. At the end of surgery, the CarolIReS camera will be used again to check the quality of surgery which will be followed by a surgical excision in case of remaining SLNs. Objectives: The main objective of this study is to evaluate the performances of the CarolIReS camera in assessing the axillary drainage of breast tumors and the surgical removal of SLNs. In addition, the possible correlation between the activity, the size, and the metastatic involvement of the SLNs will also be studied.Study hypothesis: Intraoperative cameras could be used to improve the efficiency of the SLN procedure
+
+ELIGIBILITY: Inclusion Criteria:
+
+* Patient major at the time of breast surgery.
+* Patient affiliated with a social security.
+* Consent dated and signed by the investigator and the subject.
+* Subject having been informed of the sentinel lymph node procedure during the visit prior to breast surgery.
+* Patient having a unifocal infiltrative breast cancer (less than 2 cm) diagnosed preoperatively by core biopsy or cytology.
+* Patient having a ductal carcinoma in situ (DCIS), diagnosed preoperatively by core biopsy or cytology.
+
+Exclusion Criteria:
+
+* Refusal of the patient to be included in the study.
+* Pregnant patient or during breastfeeding.
+* None of the patients will have undergone chemotherapy, locoregional radiotherapy or prevalent axillary lymph node.
+* Diagnosed safeguarding justice and trust.
+* Patient with a psychiatric disorder makes it impossible for the collection of informed consent-patient with tumors greater than 2 cm or multifocal.
+* Prevalent axillary lymph node.",,
+Q02,Phase 3 breast cancer trials,NCT00373256,A Study Of SU011248 Plus Paclitaxel Versus Bevacizumab Plus Paclitaxel In Patients With Advanced Breast Cancer,Breast Neoplasms,Sunitinib; paclitaxel; bevacizumab; paclitaxel,To compare treatment with SU011248 plus paclitaxel versus bevacizumab plus paclitaxel to determine which treatment works better against breast cancer,"Inclusion Criteria:
+
+* Diagnosis of advanced breast cancer.
+* Measurable disease as per RECIST (Response Evaluation Criterion) in Solid Tumors or bone-only disease.
+* ECOG (Eastern Cooperative Oncology Group) performance status 0 or 1.
+
+Exclusion Criteria:
+
+* No prior treatment with cytotoxics in the advanced disease setting.
+* HER2/neu positive disease unless trastuzumab was previously received or is contraindicated.
+* Treatment with a taxane in the adjuvant setting unless disease free interval \>12 months after end of treatment.",18 Years,,ALL,PHASE3,COMPLETED,INTERVENTIONAL,2012-09-10,"TITLE: A Study Of SU011248 Plus Paclitaxel Versus Bevacizumab Plus Paclitaxel In Patients With Advanced Breast Cancer
+
+CONDITIONS: Breast Neoplasms
+
+INTERVENTIONS: Sunitinib; paclitaxel; bevacizumab; paclitaxel
+
+SUMMARY: To compare treatment with SU011248 plus paclitaxel versus bevacizumab plus paclitaxel to determine which treatment works better against breast cancer
+
+ELIGIBILITY: Inclusion Criteria:
+
+* Diagnosis of advanced breast cancer.
+* Measurable disease as per RECIST (Response Evaluation Criterion) in Solid Tumors or bone-only disease.
+* ECOG (Eastern Cooperative Oncology Group) performance status 0 or 1.
+
+Exclusion Criteria:
+
+* No prior treatment with cytotoxics in the advanced disease setting.
+* HER2/neu positive disease unless trastuzumab was previously received or is contraindicated.
+* Treatment with a taxane in the adjuvant setting unless disease free interval \>12 months after end of treatment.",,
+Q02,Phase 3 breast cancer trials,NCT04193722,The Effect of Hyperbaric OxygeN Therapy on brEast Cancer Patients With Late Radiation toxicitY - UMBRELLA HONEY Trial,Breast Cancer; Radiation Toxicity,Hyperbaric oxygen therapy,"The ""Hyperbaric OxygeN therapy on brEast cancer patients with late radiation toxicity"" (HONEY) trial aims to evaluate the effectiveness of HBOT on late radiation toxicity in breast cancer patients using the trial within cohorts (TwiCs) design.","Inclusion Criteria:
+
+* Self reported pain grade 3-4 (on a scale of 1-4) as assessed by the late radiation toxicity questionnaire;
+* Participation \>12 months in the UMBRELLA cohort;
+* Previous treatment with radiotherapy for breast cancer;
+* Completed surgery and (neo)adjuvant systemic therapy except adjuvant endocrine therapy, for breast cancer.
+
+Exclusion Criteria:
+
+* Poor responder to questionnaires (i.e. return of ≤ 2 UMBRELLA questionnaires);
+* Previous HBOT;
+* Contra-indications for HBOT (e.g. (severe) chronic obstructive pulmonary disease (COPD) or asthma, pacemaker, morbid obesity, epilepsy in medical history, severe heart failure);
+* Current metastatic disease or recurrent breast cancer.
+
+Additional exclusions criteria based on screening visit:
+
+* Inability to follow schedule of all consecutive HBO treatments (e.g. due to scheduled holidays \> 2 days);
+* Not meeting criteria for HBOT (e.g. due to complaints similar to late radiation toxicity, not caused by radiotherapy).",18 Years,,FEMALE,PHASE3,COMPLETED,INTERVENTIONAL,2025-04-03,"TITLE: The Effect of Hyperbaric OxygeN Therapy on brEast Cancer Patients With Late Radiation toxicitY - UMBRELLA HONEY Trial
+
+CONDITIONS: Breast Cancer; Radiation Toxicity
+
+INTERVENTIONS: Hyperbaric oxygen therapy
+
+SUMMARY: The ""Hyperbaric OxygeN therapy on brEast cancer patients with late radiation toxicity"" (HONEY) trial aims to evaluate the effectiveness of HBOT on late radiation toxicity in breast cancer patients using the trial within cohorts (TwiCs) design.
+
+ELIGIBILITY: Inclusion Criteria:
+
+* Self reported pain grade 3-4 (on a scale of 1-4) as assessed by the late radiation toxicity questionnaire;
+* Participation \>12 months in the UMBRELLA cohort;
+* Previous treatment with radiotherapy for breast cancer;
+* Completed surgery and (neo)adjuvant systemic therapy except adjuvant endocrine therapy, for breast cancer.
+
+Exclusion Criteria:
+
+* Poor responder to questionnaires (i.e. return of ≤ 2 UMBRELLA questionnaires);
+* Previous HBOT;
+* Contra-indications for HBOT (e.g. (severe) chronic obstructive pulmonary disease (COPD) or asthma, pacemaker, morbid obesity, epilepsy in medical history, severe heart failure);
+* Current metastatic disease or recurrent breast cancer.
+
+Additional exclusions criteria based on screening visit:
+
+* Inability to follow schedule of all consecutive HBO treatments (e.g. due to scheduled holidays \> 2 days);
+* Not meeting criteria for HBOT (e.g. due to complaints similar to late radiation toxicity, not caused by radiotherapy).",,
+Q02,Phase 3 breast cancer trials,NCT05212246,Basal Cell Carcinoma Chemoprevention Trial,Basal Cell Carcinoma,5% Imiquimod cream; Placebo Vehicle Control Cream,"This is an intent-to-treat, parallel design, multicenter randomized trial and the primary intervention is a double-blind comparison of imiquimod (IMQ) vs. placebo cream for preventing basal cell carcinoma (BCC) of the skin on the face at one year and over 3 years after therapy. Participants will apply the IMQ or placebo cream to the face daily at bedtime for 12 weeks. This study will recruit 1630 Veterans at high risk of BCC from 17 VA medical centers.","Inclusion Criteria:
+
+* Veteran
+* 2 (or more) qualifying basal cell carcinoma (BCC) lesions in the prior 5 years, with at least one located on the face, neck, ears, or scalp. ""Qualifying lesions are those that meet the two inclusion criterion bullet points below, and none of the exclusion criteria listed in ""B.""
+* Qualifying lesions not in a field of prior radiation therapy
+* Qualifying lesions not a recurrence after treatment, but the original lesion can qualify whether it recurred or not
+
+Exclusion Criteria:
+
+* Actinic Keratosis (AK) or Keratinocyte Carcinoma (KC) field therapy on the face (5-FU cream, imiquimod (IMQ), diclofenac gel, chemical peel, or photodynamic therapy) for BCC treatment on the face in the last 2 months because it can cause inflammation that may interfere with the IMQ treatment. After 2 months, these patients can be included.
+* IMQ therapy on the face in the past year, although such therapy in the more distant past is not an exclusion
+* Suspicious skin lesions suggestive of any type of skin cancer present on the face at the initial exam conducted for the study must be removed and have another skin exam to confirm the facial skin cancer is cleared for 1 month prior to randomization so that the investigators can be confident that skin cancer lesions that arise during the trial are new
+* Currently receiving or received in the past two months: immune checkpoint inhibitor, hedgehog pathway inhibitor, or oral capecitabine
+* History of cutaneous T-cell lymphoma within the past year, but low-grade prostate cancer, patch stage CTCL, breast cancer, and history of solid hematologic cancer deemed to be in remission will be included
+* Genetic disorder associated with very high basal cell skin cancer risk (i.e., basal cell nevus syndrome, xeroderma pigmentosum) because prevention efforts with IMQ may have dramatically different efficacy in these patients compared to the general high-risk population
+* Solid organ or bone marrow transplant recipient such as renal, hepatic, or cardiac transplant because these patients are at increased risk of KC (much greater risk of squamous cell carcinoma (SCC) than basal cell carcinoma (BCC)) and the associated immunodeficiency may affect the effectiveness of IMQ
+* Radiation therapy to the face
+* Known allergy to IMQ or cream vehicle
+* Woman currently pregnant or breast feeding
+* Woman of childbearing potential unwilling to use birth control
+* Judged by investigator to have a very high mortality risk within a year due to co-morbid illness
+* Judged by investigator to be unlikely to comply with protocol requirements
+* Judged by investigator not to be competent to provide informed consent
+* Unable to communicate in English
+* Enrolled in another therapeutic interventional trial",18 Years,,ALL,PHASE3,NOT_YET_RECRUITING,INTERVENTIONAL,2026-09-29,"TITLE: Basal Cell Carcinoma Chemoprevention Trial
+
+CONDITIONS: Basal Cell Carcinoma
+
+INTERVENTIONS: 5% Imiquimod cream; Placebo Vehicle Control Cream
+
+SUMMARY: This is an intent-to-treat, parallel design, multicenter randomized trial and the primary intervention is a double-blind comparison of imiquimod (IMQ) vs. placebo cream for preventing basal cell carcinoma (BCC) of the skin on the face at one year and over 3 years after therapy. Participants will apply the IMQ or placebo cream to the face daily at bedtime for 12 weeks. This study will recruit 1630 Veterans at high risk of BCC from 17 VA medical centers.
+
+ELIGIBILITY: Inclusion Criteria:
+
+* Veteran
+* 2 (or more) qualifying basal cell carcinoma (BCC) lesions in the prior 5 years, with at least one located on the face, neck, ears, or scalp. ""Qualifying lesions are those that meet the two inclusion criterion bullet points below, and none of the exclusion criteria listed in ""B.""
+* Qualifying lesions not in a field of prior radiation therapy
+* Qualifying lesions not a recurrence after treatment, but the original lesion can qualify whether it recurred or not
+
+Exclusion Criteria:
+
+* Actinic Keratosis (AK) or Keratinocyte Carcinoma (KC) field therapy on the face (5-FU cream, imiquimod (IMQ), diclofenac gel, chemical peel, or photodynamic therapy) for BCC treatment on the face in the last 2 months because it can cause inflammation that may interfere with the IMQ treatment. After 2 months, these patients can be included.
+* IMQ therapy on the face in the past year, although such therapy in the more distant past is not an exclusion
+* Suspicious skin lesions suggestive of any type of skin cancer present on the face at the initial exam conducted for the study must be removed and have another skin exam to confirm the facial skin cancer is cleared for 1 month prior to randomization so that the investigators can be confident that skin cancer lesions that arise during the trial are new
+* Currently receiving or received in the past two months: immune checkpoint inhibitor, hedgehog pathway inhibitor, or oral capecitabine
+* History of cutaneous T-cell lymphoma within the past year, but low-grade prostate cancer, patch stage CTCL, breast cancer, and history of solid hematologic cancer deemed to be in remission will be included
+* Genetic disorder associated with very high basal cell skin cancer risk (i.e., basal cell nevus syndrome, xeroderma pigmentosum) because prevention efforts with IMQ may have dramatically different efficacy in these patients compared to the general high-risk population
+* Solid organ or bone marrow transplant recipient such as renal, hepatic, or cardiac transplant because these patients are at increased risk of KC (much greater risk of squamous cell carcinoma (SCC) than basal cell carcinoma (BCC)) and the associated immunodeficiency may affect the effectiveness of IMQ
+* Radiation therapy to the face
+* Known allergy to IMQ or cream vehicle
+* Woman currently pregnant or breast feeding
+* Woman of childbearing potential unwilling to use birth control
+* Judged by investigator to have a very high mortality risk within a year due to co-morbid illness
+* Judged by investigator to be unlikely to comply with protocol requirements
+* Judged by investigator not to be competent to provide informed consent
+* Unable to communicate in English
+* Enrolled in another therapeutic interventional trial",,
+Q02,Phase 3 breast cancer trials,NCT03493854,"A Study to Evaluate the Pharmacokinetics, Efficacy, and Safety of Subcutaneous Administration of the Fixed-Dose Combination of Pertuzumab and Trastuzumab in Combination With Chemotherapy in Participants With HER2-Positive Early Breast Cancer",Early Breast Cancer,Cyclophosphamide; Doxorubicin; Docetaxel; Paclitaxel; Pertuzumab IV; FDC of Pertuzumab and Trastuzumab SC; Trastuzumab IV; Trastuzumab SC; Surgery; Post-operative Radiotherapy; Hormone Therapy,"This is a global Phase III, two-arm, open-label, multicenter, randomized study to investigate the pharmacokinetics, efficacy, and safety of the fixed-dose combination (FDC) of pertuzumab and trastuzumab for subcutaneous (SC) administration in combination with chemotherapy in patients with human epidermal growth factor receptor 2 (HER2)-positive early breast cancer in the neoadjuvant/adjuvant setting.","Inclusion Criteria:
+
+* Ability to comply with the study protocol, in the investigator's judgment
+* Eastern Cooperative Oncology Group (ECOG) Performance Status ≤1
+* Female and male patients with Stage II - IIIC (T2-T4 plus any N, or any T plus N1-N3, M0), locally advanced, inflammatory, or early-stage, unilateral, and histologically confirmed invasive breast cancer
+* Primary tumor \>2 cm in diameter, or node-positive disease (clinically or on imaging, and node positivity confirmed with cytology and/or histopathology)
+* HER2-positive breast cancer confirmed by a central laboratory prior to study enrollment. HER2-positive status will be determined based on pretreatment breast biopsy material.
+* Hormone receptor status of the primary tumor, centrally confirmed
+* Patient agreement to undergo mastectomy or breast conserving surgery after neoadjuvant therapy
+* Availability of formalin-fixed, paraffin-embedded (FFPE) tumor tissue block for central confirmation of HER2 and hormone receptor status and additional biomarker research
+* Baseline left ventricular ejection fraction (LVEF) ≥55% measured by echocardiogram (ECHO) or multiple-gated acquisition scan (MUGA)
+* For women of childbearing potential (WOCBP) who are sexually active: agreement to remain abstinent or use one highly effective non-hormonal contraceptive method with a failure rate of \<1% per year, or two effective non-hormonal contraceptive methods during the treatment period and for 7 months after the last dose of HER2-targeted therapy, and agreement to refrain from donating eggs during this same period
+* For men: men must remain abstinent or use a condom with a spermicidal product during the treatment period and for 7 months after the last dose of HER2-targeted therapy to avoid exposing the embryo. Men must refrain from donating sperm during this same period.
+* A negative serum pregnancy test must be available prior to randomization for WOCBP, unless they have undergone surgical sterilization
+* No major surgical procedure unrelated to breast cancer within 28 days prior to randomization or anticipation of the need for major surgery during the course of study treatment
+
+Exclusion Criteria:
+
+* Stage IV (metastatic) breast cancer
+* Patients with a history of invasive breast cancer
+* Patients with a history of concurrent or previously treated non-breast malignancies except for appropriately treated 1) non-melanoma skin cancer and/or 2) in situ carcinomas, including cervix, colon, and skin
+* Patients who have received any previous systemic therapy for treatment or prevention of breast cancer, or radiation therapy for treatment of cancer
+* Patients who have a past history of ductal carcinoma in situ or lobular carcinoma in situ if they have received any systemic therapy for its treatment or radiation therapy to the ipsilateral breast
+* Patients with high-risk for breast cancer who have received chemo-preventative drugs in the past are not allowed to enter the study
+* Patients with multicentric breast cancer, unless all tumors are HER2-positive
+* Patients with bilateral breast cancer
+* Patients who have undergone an excisional biopsy of primary tumor and/or axillary lymph nodes
+* Axillary lymph node dissection prior to initiation of neoadjuvant therapy
+* Sentinel lymph node biopsy prior to neoadjuvant therapy
+* Treatment with any investigational drug within 28 days prior to randomization
+* Serious cardiac illness or medical conditions
+* Inadequate bone marrow function, renal function or impaired liver function
+* Current severe, uncontrolled systemic disease that may interfere with planned treatment
+* Pregnant or breastfeeding, or intending to become pregnant during the study or within 7 months after the last dose of HER2-targeted therapy
+* Any serious medical condition or abnormality in clinical laboratory tests that, in the investigator's judgment, precludes the patient's safe participation in and completion of the study
+* Known active liver disease, for example, active viral hepatitis infection, autoimmune hepatic disorders, or sclerosing cholangitis
+* Concurrent, serious, uncontrolled infections, or known infection with HIV
+* Known hypersensitivity to study drugs, excipients, and/or murine proteins
+* Current chronic daily treatment with corticosteroids
+* History of other malignancy within 5 years prior to screening, except for appropriately treated carcinoma in situ of the cervix, colon, skin, and/or non-melanoma skin carcinoma
+* History of ventricular dysrhythmias or risk factors for ventricular dysrhythmias, such as structural heart disease, coronary heart disease, clinically significant electrolyte abnormalities, or family history of sudden unexplained death or long QT syndrome",18 Years,,ALL,PHASE3,COMPLETED,INTERVENTIONAL,2024-06-26,"TITLE: A Study to Evaluate the Pharmacokinetics, Efficacy, and Safety of Subcutaneous Administration of the Fixed-Dose Combination of Pertuzumab and Trastuzumab in Combination With Chemotherapy in Participants With HER2-Positive Early Breast Cancer
+
+CONDITIONS: Early Breast Cancer
+
+INTERVENTIONS: Cyclophosphamide; Doxorubicin; Docetaxel; Paclitaxel; Pertuzumab IV; FDC of Pertuzumab and Trastuzumab SC; Trastuzumab IV; Trastuzumab SC; Surgery; Post-operative Radiotherapy; Hormone Therapy
+
+SUMMARY: This is a global Phase III, two-arm, open-label, multicenter, randomized study to investigate the pharmacokinetics, efficacy, and safety of the fixed-dose combination (FDC) of pertuzumab and trastuzumab for subcutaneous (SC) administration in combination with chemotherapy in patients with human epidermal growth factor receptor 2 (HER2)-positive early breast cancer in the neoadjuvant/adjuvant setting.
+
+ELIGIBILITY: Inclusion Criteria:
+
+* Ability to comply with the study protocol, in the investigator's judgment
+* Eastern Cooperative Oncology Group (ECOG) Performance Status ≤1
+* Female and male patients with Stage II - IIIC (T2-T4 plus any N, or any T plus N1-N3, M0), locally advanced, inflammatory, or early-stage, unilateral, and histologically confirmed invasive breast cancer
+* Primary tumor \>2 cm in diameter, or node-positive disease (clinically or on imaging, and node positivity confirmed with cytology and/or histopathology)
+* HER2-positive breast cancer confirmed by a central laboratory prior to study enrollment. HER2-positive status will be determined based on pretreatment breast biopsy material.
+* Hormone receptor status of the primary tumor, centrally confirmed
+* Patient agreement to undergo mastectomy or breast conserving surgery after neoadjuvant therapy
+* Availability of formalin-fixed, paraffin-embedded (FFPE) tumor tissue block for central confirmation of HER2 and hormone receptor status and additional biomarker research
+* Baseline left ventricular ejection fraction (LVEF) ≥55% measured by echocardiogram (ECHO) or multiple-gated acquisition scan (MUGA)
+* For women of childbearing potential (WOCBP) who are sexually active: agreement to remain abstinent or use one highly effective non-hormonal contraceptive method with a failure rate of \<1% per year, or two effective non-hormonal contraceptive methods during the treatment period and for 7 months after the last dose of HER2-targeted therapy, and agreement to refrain from donating eggs during this same period
+* For men: men must remain abstinent or use a condom with a spermicidal product during the treatment period and for 7 months after the last dose of HER2-targeted therapy to avoid exposing the embryo. Men must refrain from donating sperm during this same period.
+* A negative serum pregnancy test must be available prior to randomization for WOCBP, unless they have undergone surgical sterilization
+* No major surgical procedure unrelated to breast cancer within 28 days prior to randomization or anticipation of the need for major surgery during the course of study treatment
+
+Exclusion Criteria:
+
+* Stage IV (metastatic) breast cancer
+* Patients with a history of invasive breast cancer
+* Patients with a history of concurrent or previously treated non-breast malignancies except for appropriately treated 1) non-melanoma skin cancer and/or 2) in situ carcinomas, including cervix, colon, and skin
+* Patients who have received any previous systemic therapy for treatment or prevention of breast cancer, or radiation therapy for treatment of cancer
+* Patients who have a past history of ductal carcinoma in situ or lobular carcinoma in situ if they have received any systemic therapy for its treatment or radiation therapy to the ipsilateral breast
+* Patients with high-risk for breast cancer who have received chemo-preventative drugs in the past are not allowed to enter the study
+* Patients with multicentric breast cancer, unless all tumors are HER2-positive
+* Patients with bilateral breast cancer
+* Patients who have undergone an excisional biopsy of primary tumor and/or axillary lymph nodes
+* Axillary lymph node dissection prior to initiation of neoadjuvant therapy
+* Sentinel lymph node biopsy prior to neoadjuvant therapy
+* Treatment with any investigational drug within 28 days prior to randomization
+* Serious cardiac illness or medical conditions
+* Inadequate bone marrow function, renal function or impaired liver function
+* Current severe, uncontrolled systemic disease that may interfere with planned treatment
+* Pregnant or breastfeeding, or intending to become pregnant during the study or within 7 months after the last dose of HER2-targeted therapy
+* Any serious medical condition or abnormality in clinical laboratory tests that, in the investigator's judgment, precludes the patient's safe participation in and completion of the study
+* Known active liver disease, for example, active viral hepatitis infection, autoimmune hepatic disorders, or sclerosing cholangitis
+* Concurrent, serious, uncontrolled infections, or known infection with HIV
+* Known hypersensitivity to study drugs, excipients, and/or murine proteins
+* Current chronic daily treatment with corticosteroids
+* History of other malignancy within 5 years prior to screening, except for appropriately treated carcinoma in situ of the cervix, colon, skin, and/or non-melanoma skin carcinoma
+* History of ventricular dysrhythmias or risk factors for ventricular dysrhythmias, such as structural heart disease, coronary heart disease, clinically significant electrolyte abnormalities, or family history of sudden unexplained death or long QT syndrome",,
+Q02,Phase 3 breast cancer trials,NCT03500380,A Study of RC48-ADC Administered Intravenously to Patients With HER2-Positive Metastatic Breast Cancer With or Without Liver Metastases,Breast Neoplasms; Breast Diseases; Capecitabine; HER2-positive Breast Cancer; HER2 Positive Breast Carcinoma; HER2-positive Advanced Breast With Liver Metastases,RC48-ADC; Lapatinib; Capecitabine,"This is a randomized, open, parallel-controlled, multicenter, phase II/III, seamless design clinical trial to compare the efficacy and safety of RC48-ADC with capecitabine + lapatinib in locally advanced or metastatic human epidermal growth factor receptor 2 (HER2) positive breast cancer and HER2-positive advanced breast cancer with liver metastasis.","Inclusion criteria for the first phase randomized control period:
+
+* Voluntarily agree to participate in the study and sign the informed consent form.
+* Subjects aged 18 - 70 years (inclusive), and the subject who have not reached the age of 71 years old will be considered to be ≤ 70 years of age.
+* Expected survival ≥ 12 weeks.
+* ECOG PS score 0 or 1.
+* Female subjects should be surgically sterilized or in post-menopausal status, or agree to use at least one medically accepted contraceptive methods (such as intrauterine device, contraceptive drug or condom) during study treatment period and for up to 6 months after the study treatment is completed, and the blood pregnancy test must be negative within 7 days prior to study enrollment, and they must not be lactating. For male subjects: all the subjects should be surgically sterilized or agree to use one of the medically approved contraceptive methods during the study treatment period and for an additional of 6 months after the end of the study treatment period.
+* Able to understand study requirements, willing and able to comply with study protocol and follow-up procedures.
+
+With Adequate Organ Function
+
+* Bone marrow function:
+
+Hemoglobin ≥ 9 g/dL; Absolute neutrophil count ≥ 1.5×109/L; Platelets ≥ 100 × 109/L;
+
+* Liver function (based on the normal values specified by study site):
+
+Serum total bilirubin ≤ 1.5 × the upper limit of normal (ULN); Alanine aminotransferase (ALT), aspartate aminotransferase (AST) and alkaline phosphatase (ALP) ≤ 2.5 × ULN in the absence of liver metastases, while ALT, AST and ALP ≤ 5 × ULN in the presence of liver metastases;
+
+* Renal function (based on the normal values specified by study site):
+
+Serum creatinine ≤ 1.5 × ULN, or creatinine clearance (CrCl) ≥ 60 mL/min as calculated by Cockcroft-Gault formula, or 24-hour urine Crcl ≥ 60 mL/min;
+
+* Cardiac function:
+
+New York Heart Association (NYHA) classification \< Grade III; Left ventricular ejection fraction ≥ 50%; Tumor Related Criteria
+
+* Histologically and/or cytologically confirmed invasive locally advanced or metastatic breast cancer that is incurable and unresectable;
+* Positive HER2 expression (positive defined as: IHC 3+ or FISH+); previous test results of HER2 expression provided by the subjects (have to be confirmed by the investigator) and those obtained from the study site or the central laboratory were both acceptable; subject are able to provide samples from primary or metastatic tumor sites for HER2 test (either paraffin blocks, paraffin-embedded sections, or sections prepared using freshly excised tissues);
+* With prior taxane therapy (monotherapy or in combination with other drugs, treatment duration should be ≥ 2 cycles);
+* With prior adjuvant therapy, have received treatment with trastuzumab or its biosimilar for patients with locally advanced cancer or metastasis during relapse and metastasis (monotherapy or in combination with other drugs, such as for ≥ 3 months in the adjuvant therapy phase, and ≥ 6 weeks in the post-relapse and metastatic phase);
+* With evidence of tumor progression during or after the most recent treatment as confirmed by the investigator or with documented history;
+* No more than 2 lines of chemotherapy received after relapse/metastasis. The number of chemotherapy lines is restricted to chemotherapeutic drugs, and each chemotherapy regimen is counted as a number of chemotherapy line, excluding targeted drugs and/or endocrine drugs; the same maintenance treatment as the previous chemotherapy regimen will not be counted.
+* With at least one measurable lesion per RECIST v1.1.
+
+Exclusion Criteria for Randomized Controlled Period in Stage I:
+
+* Use of investigational drugs within 4 weeks prior to study treatment;
+* Have received major surgeries within 4 weeks prior to study treatment and have not recovered yet;
+* Have received a live vaccine inoculation within 4 weeks prior to the start of study drug administration or was scheduled to receive any vaccine during the study;
+* Have experienced arterial/venous thromboembolic events, such as cerebrovascular accident (including transient ischemic attack), deep vein thrombosis and pulmonary embolism within 1 year prior to the initiation of study treatment;
+* Suffering uncontrolled systemic diseases, including diabetes, hypertension, pulmonary fibrosis, acute lung disease, interstitial lung disease, cirrhosis, etc.;
+* Currently suffering from active infections requiring systemic treatment;
+* With history of active tuberculosis;
+* With positive HIV test result;
+* Patients with active hepatitis B or C (HBsAg positive and HBV DNA positive; HCVAb positive);
+* Presence of effusion in the third space (including massive hydrothorax or ascites) that cannot be controlled by drainage or other methods;
+* With known hypersensitivity or delayed-type hypersensitivity to certain components of RC48-ADC, capecitabine, lapatinib or similar drugs;
+* With pre-existing gastrointestinal disorders that may affect absorption, such as ileus, ulcerative colitis, chronic diarrhea, inability to swallow, and other conditions that may affect drug administration and absorption;
+* With known psychiatric disorders or drug abuse disorders that might have an impact on compliance with protocol requirements;
+* Have any other diseases, metabolic disorders, abnormal physical examination findings or abnormal laboratory test results, which, judged by the investigator, are reasonably to suspect a disease or condition as a contraindication of the study drug, or may interfere the interpretation of the study results in the future, or that put the patient at a high risk;
+* Women who are pregnant or during lactation period or women/men with childbearing plans;
+* Subjects who are estimated to have poor compliance with the clinical study or the investigator determines that there are other factors not appropriate to participate in the study;
+* Presence of brain metastases and/or carcinomatous meningitis.
+* Had any other malignancy within 5 years prior to signing of the informed consent (except for non-melanoma skin cancer, cervix carcinoma in situ or other tumor that have been effectively treated and considered to be cured);
+* Have received prior chemotherapy, radiotherapy, immunotherapy within 4 weeks prior to the first dose of the study drug;
+* Have received hormonal therapy for breast cancer within 2 weeks prior to the start of study treatment;
+* Patients who received palliative radiotherapy for bone metastases within 2 weeks before the start of study treatment;
+* Have received anti-tumor traditional Chinese medicine within 2 weeks prior to the start of study treatment;
+* Have received capecitabine within 6 months prior to the start of study treatment, or have failed to respond to prior treatment with capecitabine (including progression while on capecitabine treatment or maintenance of clinical efficacy for a period of less than 6 months after treatment), or with intolerance to capecitabine. Patients who have received capecitabine as adjuvant therapy and have discontinued this therapy for ≥ 6 months are eligible;
+* The toxicity of prior anti-tumor therapy had not recovered to CTCAE \[Version 4.03\] Grade 0-1, with the following exceptions: a). alopecia; b). pigmentation; c). long-term toxicity caused by radiotherapy, which are considered as irreversible by the investigator;
+* With prior systemic therapy with or participation in clinical studies with HER2 tyrosine kinase inhibitors (TKIs);
+* With prior treatment with T-DM1 or had participated in clinical studies with same class of drugs.
+* With known hypersensitivity to 5-fluorouracil or known dihydropyrimidine dehydrogenase deficiency.
+
+Inclusion Criteria for Stage 1 Cross-over Period：
+
+* Had previously participated in the study of randomized controlled period and received lapatinib plus capecitabine, and received no anti-tumor treatment after disease progression (RECIST v1.1 criteria);
+* The general situation part refers to the selection criteria of the first stage randomized control period.
+
+Exclusion Criteria for Cross-over Period in Stage I：
+
+* Have received major surgeries within 4 weeks prior to study treatment and have not recovered yet;
+* Have received a live vaccine inoculation within 4 weeks prior to the start of study drug administration or was scheduled to receive any vaccine during the study (except the COVID-19 vaccine);
+* Have experienced arterial/venous thromboembolic events, such as cerebrovascular accident (including transient ischemic attack), deep vein thrombosis and pulmonary embolism within 1 year prior to the initiation of study treatment;
+* Suffering uncontrolled systemic diseases, including diabetes, hypertension, pulmonary fibrosis, acute lung disease, interstitial lung disease, cirrhosis, etc.;
+* Currently suffering from active infections requiring systemic treatment;
+* With positive HIV test result;
+* Patients with active hepatitis B or C (HBsAg positive and HBV DNA positive; HCVAb positive);
+* Presence of effusiona in the third space (including massive hydrothorax or ascites) that cannot be controlled by drainage or other means;
+* With known hypersensitivity or delayed-type hypersensitivity to certain components of RC48-ADC or similar drugs;
+* With known psychiatric disorders or drug abuse disorders that might have an impact on compliance with protocol requirements;
+* Have any other diseases, metabolic disorders, abnormal physical examination findings or abnormal laboratory test results, which, judged by the investigator, are reasonably to suspect a disease or condition as a contraindication of the study drug, or may interfere the interpretation of the study results in the future, or that put the patient at a high risk;
+* Women who are pregnant or in lactation period or women/men with childbearing plans;
+* Subjects who are estimated to have poor compliance with the protocol of this cross-over period or the investigator determines that there are other factors not appropriate to participate in the study;
+* Presence of brain metastases and/or carcinomatous meningitis. Have received prior treatment for brain metastases may be considered for participating in this study, provided that the diseases were stable, had no disease progression as confirmed by imaging examinations within 4 weeks prior to the first dose of the investigational product (IP), and that all neurological symptoms have recovered to baseline level without any evidence of newly emerging or spread brain metastases; moreover, treatment with radiation, surgery or steroids was discontinued at least 14 days prior to the first dose of study drug. This exception did not include cancerous meningitis, which should be excluded regardless of the stability of its clinical status;
+* Patients who received palliative radiotherapy for bone metastases within 2 weeks before the start of study treatment;
+* Received treatment with lapatinib and/or capecitabine within 2 weeks prior to the first dose of the study drug;
+* The toxicity of prior anti-tumor therapy had not recovered to CTCAE \[Version 4.03\] Grade 0-1, with the following exceptions: a). alopecia; b). pigmentation; c). long-term toxicity caused by radiotherapy, which are considered as irreversible by the investigator;
+
+Inclusion Criteria for Randomized Controlled Period in Stage II：
+
+* The general situation part refers to the selection criteria of the first stage randomized control period.
+
+Exclusion Criteria for Randomized Controlled Period in Stage II：
+
+* The toxicity of prior anti-tumor therapy had not recovered to CTCAE \[Version 5.0\] Grade 0-1, with the following exceptions: a). alopecia; b). pigmentation; c). long-term toxicity caused by radiotherapy, which are considered as irreversible by the investigator;
+* The remaining parts refer to the exclusion criteria of the first stage randomized control period.
+
+Inclusion Criteria for Cross-over Period in Stage II：
+
+* Had previously participated in the study of randomized controlled period and received lapatinib plus capecitabine, and received no anti-tumor treatment after disease progression (RECIST v1.1 criteria);
+* Expected survival ≥ 12 weeks;
+* ECOG PS score 0 or 1;
+* Female subjects should be surgically sterilized or in post-menopausal status, or agree to use at least one medically accepted contraceptive methods (such as intrauterine device, contraceptive drug or condom) during study treatment period and for up to 6 months after the study treatment is completed, and the blood pregnancy test must be negative within 7 days prior to study enrollment, and they must not be lactating. For male subjects: all the subjects should be surgically sterilized or agree to use one of the medically approved contraceptive methods during the study treatment period and for an additional of 6 months after the end of the study treatment period.
+* Able to understand study requirements, willing and able to comply with study protocol and follow-up procedures.
+
+With Adequate Organ Function
+
+* Bone marrow function:
+
+Hemoglobin ≥ 9 g/dL; Absolute neutrophil count ≥ 1.5×109/L; Platelets ≥ 100 × 109/L;
+
+* Liver function (based on the normal values specified by study site):
+
+Serum total bilirubin ≤ 1.5 × the upper limit of normal (ULN); Alanine aminotransferase (ALT), aspartate aminotransferase (AST) and alkaline phosphatase (ALP) ≤ 2.5 × ULN in the absence of liver metastases, while ALT, AST and ALP ≤ 5 × ULN in the presence of liver metastases;
+
+* Renal function (based on the normal values specified by study site):
+
+Serum creatinine ≤ 1.5 × ULN, or creatinine clearance (CrCl) ≥ 60 mL/min as calculated by Cockcroft-Gault formula, or 24-hour urine Crcl ≥ 60 mL/min;
+
+* Cardiac function:
+
+New York Heart Association (NYHA) classification \< Grade III; Left ventricular ejection fraction ≥ 50%;
+
+Exclusion Criteria for Cross-over Period in Stage II：
+
+* The toxicity of prior anti-tumor therapy had not recovered to CTCAE \[Version 5.0\] Grade 0-1, with the following exceptions: a. alopecia; b. pigmentation; c. long-term toxicity caused by radiotherapy, which are considered as irreversible by the investigator;
+* The remaining parts refer to the exclusion criteria of the first phase of the crossover period.",18 Years,70 Years,ALL,PHASE2; PHASE3,UNKNOWN,INTERVENTIONAL,2024-02-20,"TITLE: A Study of RC48-ADC Administered Intravenously to Patients With HER2-Positive Metastatic Breast Cancer With or Without Liver Metastases
+
+CONDITIONS: Breast Neoplasms; Breast Diseases; Capecitabine; HER2-positive Breast Cancer; HER2 Positive Breast Carcinoma; HER2-positive Advanced Breast With Liver Metastases
+
+INTERVENTIONS: RC48-ADC; Lapatinib; Capecitabine
+
+SUMMARY: This is a randomized, open, parallel-controlled, multicenter, phase II/III, seamless design clinical trial to compare the efficacy and safety of RC48-ADC with capecitabine + lapatinib in locally advanced or metastatic human epidermal growth factor receptor 2 (HER2) positive breast cancer and HER2-positive advanced breast cancer with liver metastasis.
+
+ELIGIBILITY: Inclusion criteria for the first phase randomized control period:
+
+* Voluntarily agree to participate in the study and sign the informed consent form.
+* Subjects aged 18 - 70 years (inclusive), and the subject who have not reached the age of 71 years old will be considered to be ≤ 70 years of age.
+* Expected survival ≥ 12 weeks.
+* ECOG PS score 0 or 1.
+* Female subjects should be surgically sterilized or in post-menopausal status, or agree to use at least one medically accepted contraceptive methods (such as intrauterine device, contraceptive drug or condom) during study treatment period and for up to 6 months after the study treatment is completed, and the blood pregnancy test must be negative within 7 days prior to study enrollment, and they must not be lactating. For male subjects: all the subjects should be surgically sterilized or agree to use one of the medically approved contraceptive methods during the study treatment period and for an additional of 6 months after the end of the study treatment period.
+* Able to understand study requirements, willing and able to comply with study protocol and follow-up procedures.
+
+With Adequate Organ Function
+
+* Bone marrow function:
+
+Hemoglobin ≥ 9 g/dL; Absolute neutrophil count ≥ 1.5×109/L; Platelets ≥ 100 × 109/L;
+
+* Liver function (based on the normal values specified by study site):
+
+Serum total bilirubin ≤ 1.5 × the upper limit of normal (ULN); Alanine aminotransferase (ALT), aspartate aminotransferase (AST) and alkaline phosphatase (ALP) ≤ 2.5 × ULN in the absence of liver metastases, while ALT, AST and ALP ≤ 5 × ULN in the presence of liver metastases;
+
+* Renal function (based on the normal values specified by study site):
+
+Serum creatinine ≤ 1.5 × ULN, or creatinine clearance (CrCl) ≥ 60 mL/min as calculated by Cockcroft-Gault formula, or 24-hour urine Crcl ≥ 60 mL/min;
+
+* Cardiac function:
+
+New York Heart Association (NYHA) classification \< Grade III; Left ventricular ejection fraction ≥ 50%; Tumor Related Criteria
+
+* Histologically and/or cytologically confirmed invasive locally advanced or metastatic breast cancer that is incurable and unresectable;
+* Positive HER2 expression (positive defined as: IHC 3+ or FISH+); previous test results of HER2 expression provided by the subjects (have to be confirmed by the investigator) and those obtained from the study site or the central laboratory were both acceptable; subject are able to provide samples from primary or metastatic tumor sites for HER2 test (either paraffin blocks, paraffin-embedded sections, or sections prepared using freshly excised tissues);
+* With prior taxane therapy (monotherapy or in combination with other drugs, treatment duration should be ≥ 2 cycles);
+* With prior adjuvant therapy, have received treatment with trastuzumab or its biosimilar for patients with locally advanced cancer or metastasis during relapse and metastasis (monotherapy or in combination with other drugs, such as for ≥ 3 months in the adjuvant therapy phase, and ≥ 6 weeks in the post-relapse and metastatic phase);
+* With evidence of tumor progression during or after the most recent treatment as confirmed by the investigator or with documented history;
+* No more than 2 lines of chemotherapy received after relapse/metastasis. The number of chemotherapy lines is restricted to chemotherapeutic drugs, and each chemotherapy regimen is counted as a number of chemotherapy line, excluding targeted drugs and/or endocrine drugs; the same maintenance treatment as the previous chemotherapy regimen will not be counted.
+* With at least one measurable lesion per RECIST v1.1.
+
+Exclusion Criteria for Randomized Controlled Period in Stage I:
+
+* Use of investigational drugs within 4 weeks prior to study treatment;
+* Have received major surgeries within 4 weeks prior to study treatment and have not recovered yet;
+* Have received a live vaccine inoculation within 4 weeks prior to the start of study drug administration or was scheduled to receive any vaccine during the study;
+* Have experienced arterial/venous thromboembolic events, such as cerebrovascular accident (including transient ischemic attack), deep vein thrombosis and pulmonary embolism within 1 year prior to the initiation of study treatment;
+* Suffering uncontrolled systemic diseases, including diabetes, hypertension, pulmonary fibrosis, acute lung disease, interstitial lung disease, cirrhosis, etc.;
+* Currently suffering from active infections requiring systemic treatment;
+* With history of active tuberculosis;
+* With positive HIV test result;
+* Patients with active hepatitis B or C (HBsAg positive and HBV DNA positive; HCVAb positive);
+* Presence of effusion in the third space (including massive hydrothorax or ascites) that cannot be controlled by drainage or other methods;
+* With known hypersensitivity or delayed-type hypersensitivity to certain components of RC48-ADC, capecitabine, lapatinib or similar drugs;
+* With pre-existing gastrointestinal disorders that may affect absorption, such as ileus, ulcerative colitis, chronic diarrhea, inability to swallow, and other conditions that may affect drug administration and absorption;
+* With known psychiatric disorders or drug abuse disorders that might have an impact on compliance with protocol requirements;
+* Have any other diseases, metabolic disorders, abnormal physical examination findings or abnormal laboratory test results, which, judged by the investigator, are reasonably to suspect a disease or condition as a contraindication of the study drug, or may interfere the interpretation of the study results in the future, or that put the patient at a high risk;
+* Women who are pregnant or during lactation period or women/men with childbearing plans;
+* Subjects who are estimated to have poor compliance with the clinical study or the investigator determines that there are other factors not appropriate to participate in the study;
+* Presence of brain metastases and/or carcinomatous meningitis.
+* Had any other malignancy within 5 years prior to signing of the informed consent (except for non-melanoma skin cancer, cervix carcinoma in situ or other tumor that have been effectively treated and considered to be cured);
+* Have received prior chemotherapy, radiotherapy, immunotherapy within 4 weeks prior to the first dose of the study drug;
+* Have received hormonal therapy for breast cancer within 2 weeks prior to the start of study treatment;
+* Patients who received palliative radiotherapy for bone metastases within 2 weeks before the start of study treatment;
+* Have received anti-tumor traditional Chinese medicine within 2 weeks prior to the start of study treatment;
+* Have received capecitabine within 6 months prior to the start of study treatment, or have failed to respond to prior treatment with capecitabine (including progression while on capecitabine treatment or maintenance of clinical efficacy for a period of less than 6 months after treatment), or with intolerance to capecitabine. Patients who have received capecitabine as adjuvant therapy and have discontinued this therapy for ≥ 6 months are eligible;
+* The toxicity of prior anti-tumor therapy had not recovered to CTCAE \[Version 4.03\] Grade 0-1, with the following exceptions: a). alopecia; b). pigmentation; c). long-term toxicity caused by radiotherapy, which are considered as irreversible by the investigator;
+* With prior systemic therapy with or participation in clinical studies with HER2 tyrosine kinase inhibitors (TKIs);
+* With prior treatment with T-DM1 or had participated in clinical studies with same class of drugs.
+* With known hypersensitivity to 5-fluorouracil or known dihydropyrimidine dehydrogenase deficiency.
+
+Inclusion Criteria for Stage 1 Cross-over Period：
+
+* Had previously participated in the study of randomized controlled period and received lapatinib plus capecitabine, and received no anti-tumor treatment after disease progression (RECIST v1.1 criteria);
+* The general situation part refers to the selection criteria of the first stage randomized control period.
+
+Exclusion Criteria for Cross-over Period in Stage I：
+
+* Have received major surgeries within 4 weeks prior to study treatment and have not recovered yet;
+* Have received a live vaccine inoculation within 4 weeks prior to the start of study drug administration or was scheduled to receive any vaccine during the study (except the COVID-19 vaccine);
+* Have experienced arterial/venous thromboembolic events, such as cerebrovascular accident (including transient ischemic attack), deep vein thrombosis and pulmonary embolism within 1 year prior to the initiation of study treatment;
+* Suffering uncontrolled systemic diseases, including diabetes, hypertension, pulmonary fibrosis, acute lung disease, interstitial lung disease, cirrhosis, etc.;
+* Currently suffering from active infections requiring systemic treatment;
+* With positive HIV test result;
+* Patients with active hepatitis B or C (HBsAg positive and HBV DNA positive; HCVAb positive);
+* Presence of effusiona in the third space (including massive hydrothorax or ascites) that cannot be controlled by drainage or other means;
+* With known hypersensitivity or delayed-type hypersensitivity to certain components of RC48-ADC or similar drugs;
+* With known psychiatric disorders or drug abuse disorders that might have an impact on compliance with protocol requirements;
+* Have any other diseases, metabolic disorders, abnormal physical examination findings or abnormal laboratory test results, which, judged by the investigator, are reasonably to suspect a disease or condition as a contraindication of the study drug, or may interfere the interpretation of the study results in the future, or that put the patient at a high risk;
+* Women who are pregnant or in lactation period or women/men with childbearing plans;
+* Subjects who are estimated to have poor compliance with the protocol of this cross-over period or the investigator determines that there are other factors not appropriate to participate in the study;
+* Presence of brain metastases and/or carcinomatous meningitis. Have received prior treatment for brain metastases may be considered for participating in this study, provided that the diseases were stable, had no disease progression as confirmed by imaging examinations within 4 weeks prior to the first dose of the investigational product (IP), and that all neurological symptoms have recovered to baseline level without any evidence of newly emerging or spread brain metastases; moreover, treatment with radiation, surgery or steroids was discontinued at least 14 days prior to the first dose of study drug. This exception did not include cancerous meningitis, which should be excluded regardless of the stability of its clinical status;
+* Patients who received palliative radiotherapy for bone metastases within 2 weeks before the start of study treatment;
+* Received treatment with lapatinib and/or capecitabine within 2 weeks prior to the first dose of the study drug;
+* The toxicity of prior anti-tumor therapy had not recovered to CTCAE \[Version 4.03\] Grade 0-1, with the following exceptions: a). alopecia; b). pigmentation; c). long-term toxicity caused by radiotherapy, which are considered as irreversible by the investigator;
+
+Inclusion Criteria for Randomized Controlled Period in Stage II：
+
+* The general situation part refers to the selection criteria of the first stage randomized control period.
+
+Exclusion Criteria for Randomized Controlled Period in Stage II：
+
+* The toxicity of prior anti-tumor therapy had not recovered to CTCAE \[Version 5.0\] Grade 0-1, with the following exceptions: a). alopecia; b). pigmentation; c). long-term toxicity caused by radiotherapy, which are considered as irreversible by the investigator;
+* The remaining parts refer to the exclusion criteria of the first stage randomized control period.
+
+Inclusion Criteria for Cross-over Period in Stage II：
+
+* Had previously participated in the study of randomized controlled period and received lapatinib plus capecitabine, and received no anti-tumor treatment after disease progression (RECIST v1.1 criteria);
+* Expected survival ≥ 12 weeks;
+* ECOG PS score 0 or 1;
+* Female subjects should be surgically sterilized or in post-menopausal status, or agree to use at least one medically accepted contraceptive methods (such as intrauterine device, contraceptive drug or condom) during study treatment period and for up to 6 months after the study treatment is completed, and the blood pregnancy test must be negative within 7 days prior to study enrollment, and they must not be lactating. For male subjects: all the subjects should be surgically sterilized or agree to use one of the medically approved contraceptive methods during the study treatment period and for an additional of 6 months after the end of the study treatment period.
+* Able to understand study requirements, willing and able to comply with study protocol and follow-up procedures.
+
+With Adequate Organ Function
+
+* Bone marrow function:
+
+Hemoglobin ≥ 9 g/dL; Absolute neutrophil count ≥ 1.5×109/L; Platelets ≥ 100 × 109/L;
+
+* Liver function (based on the normal values specified by study site):
+
+Serum total bilirubin ≤ 1.5 × the upper limit of normal (ULN); Alanine aminotransferase (ALT), aspartate aminotransferase (AST) and alkaline phosphatase (ALP) ≤ 2.5 × ULN in the absence of liver metastases, while ALT, AST and ALP ≤ 5 × ULN in the presence of liver metastases;
+
+* Renal function (based on the normal values specified by study site):
+
+Serum creatinine ≤ 1.5 × ULN, or creatinine clearance (CrCl) ≥ 60 mL/min as calculated by Cockcroft-Gault formula, or 24-hour urine Crcl ≥ 60 mL/min;
+
+* Cardiac function:
+
+New York Heart Association (NYHA) classification \< Grade III; Left ventricular ejection fraction ≥ 50%;
+
+Exclusion Criteria for Cross-over Period in Stage II：
+
+* The toxicity of prior anti-tumor therapy had not recovered to CTCAE \[Version 5.0\] Grade 0-1, with the following exceptions: a. alopecia; b. pigmentation; c. long-term toxicity caused by radiotherapy, which are considered as irreversible by the investigator;
+* The remaining parts refer to the exclusion criteria of the first phase of the crossover period.",,
+Q02,Phase 3 breast cancer trials,NCT00002623,Chemotherapy Followed by Surgery or Radiation Therapy in Treating Patients With Stage III Non-small Cell Lung Cancer,Lung Cancer,carboplatin; cisplatin; conventional surgery; radiation therapy,"RATIONALE: Drugs used in chemotherapy use different ways to stop tumor cells from dividing so they stop growing or die. Giving a chemotherapy drug before surgery may shrink the tumor so that it can be removed during surgery. Radiation therapy uses high-energy x-rays to damage tumor cells. It is not yet known whether chemotherapy followed by surgery with or without radiation therapy is more effective than chemotherapy followed by radiation therapy alone in treating non-small cell lung cancer.
+
+PURPOSE: Randomized phase III trial to compare the effectiveness of chemotherapy followed by surgery with or without radiation therapy to that of chemotherapy followed by radiation therapy alone in treating patients who have stage III non-small cell lung cancer.","DISEASE CHARACTERISTICS:
+
+* Histologically or cytologically proven primary unresectable non-small cell lung cancer (NSCLC) by mediastinoscopy, mediastinotomy, thoracotomy, video-assisted thoracic surgery, or needle biopsy
+
+  * Stage IIIA (N2) disease by chest CT scan
+  * Any histologic subtype allowed
+* At least 1 unidimensionally or bidimensionally measurable target lesion on chest CT scan
+* No N3 or metastatic disease by physical exam, CT scan of thorax, bone scan, and CT scan or ultrasound of liver and adrenals
+* No pre-existing pleural or pericardial effusion
+* No symptomatic CNS involvement
+
+PATIENT CHARACTERISTICS:
+
+Age:
+
+* Over 18
+
+Performance status:
+
+* WHO 0-2
+
+Life expectancy:
+
+* Not specified
+
+Hematopoietic:
+
+* Not specified
+
+Hepatic:
+
+* Not specified
+
+Renal:
+
+* Not specified
+
+Cardiovascular:
+
+* No superior vena cava syndrome
+
+Pulmonary:
+
+* No diffuse interstitial pulmonary fibrosis
+
+Other:
+
+* No prior melanoma, breast cancer, or hypernephroma
+* No other primary malignancy within the past 5 years except adequately treated basal cell skin cancer or carcinoma in situ of the cervix
+* No grade 2 or greater pre-existing motor or sensory neurotoxicity
+* No active uncontrolled infection requiring IV antibiotics
+* Must be physically and mentally fit for study therapy
+* No psychological, familial, sociological, or geographical condition that would preclude study compliance
+* Not pregnant or nursing
+* Fertile patients must use effective contraception
+
+PRIOR CONCURRENT THERAPY:
+
+Biologic therapy:
+
+* Not specified
+
+Chemotherapy:
+
+* No prior chemotherapy for NSCLC
+
+Endocrine therapy:
+
+* Not specified
+
+Radiotherapy:
+
+* No prior radiotherapy for NSCLC
+
+Surgery:
+
+* No prior surgery for NSCLC
+
+Other:
+
+* No other prior therapy for NSCLC",18 Years,,ALL,PHASE3,COMPLETED,INTERVENTIONAL,2012-07-02,"TITLE: Chemotherapy Followed by Surgery or Radiation Therapy in Treating Patients With Stage III Non-small Cell Lung Cancer
+
+CONDITIONS: Lung Cancer
+
+INTERVENTIONS: carboplatin; cisplatin; conventional surgery; radiation therapy
+
+SUMMARY: RATIONALE: Drugs used in chemotherapy use different ways to stop tumor cells from dividing so they stop growing or die. Giving a chemotherapy drug before surgery may shrink the tumor so that it can be removed during surgery. Radiation therapy uses high-energy x-rays to damage tumor cells. It is not yet known whether chemotherapy followed by surgery with or without radiation therapy is more effective than chemotherapy followed by radiation therapy alone in treating non-small cell lung cancer.
+
+PURPOSE: Randomized phase III trial to compare the effectiveness of chemotherapy followed by surgery with or without radiation therapy to that of chemotherapy followed by radiation therapy alone in treating patients who have stage III non-small cell lung cancer.
+
+ELIGIBILITY: DISEASE CHARACTERISTICS:
+
+* Histologically or cytologically proven primary unresectable non-small cell lung cancer (NSCLC) by mediastinoscopy, mediastinotomy, thoracotomy, video-assisted thoracic surgery, or needle biopsy
+
+  * Stage IIIA (N2) disease by chest CT scan
+  * Any histologic subtype allowed
+* At least 1 unidimensionally or bidimensionally measurable target lesion on chest CT scan
+* No N3 or metastatic disease by physical exam, CT scan of thorax, bone scan, and CT scan or ultrasound of liver and adrenals
+* No pre-existing pleural or pericardial effusion
+* No symptomatic CNS involvement
+
+PATIENT CHARACTERISTICS:
+
+Age:
+
+* Over 18
+
+Performance status:
+
+* WHO 0-2
+
+Life expectancy:
+
+* Not specified
+
+Hematopoietic:
+
+* Not specified
+
+Hepatic:
+
+* Not specified
+
+Renal:
+
+* Not specified
+
+Cardiovascular:
+
+* No superior vena cava syndrome
+
+Pulmonary:
+
+* No diffuse interstitial pulmonary fibrosis
+
+Other:
+
+* No prior melanoma, breast cancer, or hypernephroma
+* No other primary malignancy within the past 5 years except adequately treated basal cell skin cancer or carcinoma in situ of the cervix
+* No grade 2 or greater pre-existing motor or sensory neurotoxicity
+* No active uncontrolled infection requiring IV antibiotics
+* Must be physically and mentally fit for study therapy
+* No psychological, familial, sociological, or geographical condition that would preclude study compliance
+* Not pregnant or nursing
+* Fertile patients must use effective contraception
+
+PRIOR CONCURRENT THERAPY:
+
+Biologic therapy:
+
+* Not specified
+
+Chemotherapy:
+
+* No prior chemotherapy for NSCLC
+
+Endocrine therapy:
+
+* Not specified
+
+Radiotherapy:
+
+* No prior radiotherapy for NSCLC
+
+Surgery:
+
+* No prior surgery for NSCLC
+
+Other:
+
+* No other prior therapy for NSCLC",,
+Q02,Phase 3 breast cancer trials,NCT01902823,Effect of Cancer Nurse Navigators on Patient Outcomes,Lung Cancer; Breast Cancer; Colorectal Cancer; Prostate Cancer,Services from a Nurse Navigator,"There is widespread anecdotal evidence that Cancer Nurse Navigators (CNNs) are highly valued by cancer patients, but no studies have evaluated the effects of CNNs on important patient-reported outcomes or indicators of quality of care. This study has two aims:
+
+1. To assess the feasibility of studying the impact of Aurora CNN Program.
+2. To pilot test the effects of CNN services on patient-reported outcomes and indicators of quality of care.","Inclusion Criteria:
+
+1. Adult (18 years of age or older)
+2. Treated at Aurora St. Luke's or West Allis Medical Center
+3. New or recurrent dx of lung, prostate, colorectal or breast cancer -
+
+Exclusion Criteria:
+
+1. Previously received CNN services at an Aurora treatment facility
+2. Unable to read/write in English
+3. Living in a nursing home/long term care facility
+4. Not capable of completing study questionnaires -",18 Years,,ALL,PHASE2; PHASE3,TERMINATED,INTERVENTIONAL,2019-12-13,"TITLE: Effect of Cancer Nurse Navigators on Patient Outcomes
+
+CONDITIONS: Lung Cancer; Breast Cancer; Colorectal Cancer; Prostate Cancer
+
+INTERVENTIONS: Services from a Nurse Navigator
+
+SUMMARY: There is widespread anecdotal evidence that Cancer Nurse Navigators (CNNs) are highly valued by cancer patients, but no studies have evaluated the effects of CNNs on important patient-reported outcomes or indicators of quality of care. This study has two aims:
+
+1. To assess the feasibility of studying the impact of Aurora CNN Program.
+2. To pilot test the effects of CNN services on patient-reported outcomes and indicators of quality of care.
+
+ELIGIBILITY: Inclusion Criteria:
+
+1. Adult (18 years of age or older)
+2. Treated at Aurora St. Luke's or West Allis Medical Center
+3. New or recurrent dx of lung, prostate, colorectal or breast cancer -
+
+Exclusion Criteria:
+
+1. Previously received CNN services at an Aurora treatment facility
+2. Unable to read/write in English
+3. Living in a nursing home/long term care facility
+4. Not capable of completing study questionnaires -",,
+Q02,Phase 3 breast cancer trials,NCT00075270,Paclitaxel With / Without GW572016 (Lapatinib) As First Line Therapy For Women With Advanced Or Metastatic Breast Cancer,"Neoplasms, Breast",Paclitaxel; GW572016 (Lapatinib),The purpose of this study is to determine the efficacy and safety of an oral dual tyrosine kinase inhibitor (GW572016) in combination with paclitaxel compared to paclitaxel alone in first line advanced or metastatic breast cancer.,"Inclusion criteria:
+
+* Signed Informed Consent
+* Able to swallow an oral medication
+* Cardiac ejection fraction within the institutional range of normal as measured by echocardiogram
+* Adequate kidney and liver function
+* Adequate bone marrow function
+* Tumor tissue available for testing
+* Prior adjuvant or neoadjuvant therapy is permitted with an anthracycline or anthracenedione-containing regimen however, subjects must have had cumulative doses of less than 360 mg/m2 of doxorubicin, 720 mg/m2 of epirubicin, or 72 mg/m2 of mitoxantrone
+* No Her2/neu overexpression in tumor tissue tested or status unknown if tissue has never been tested
+
+Exclusion criteria:
+
+* Prior treatment regimens for advanced or metastatic breast cancer.
+* Pregnant or lactating
+* Conditions that would effect the absorption of an oral drug
+* Active infection
+* Brain metastases
+* Treatment with EGFR (Endothelial Growth Factor Receptor) inhibitor.
+* Known hypersensitivity to Taxol or excipients of Taxol
+* Peripheral neuropathy of Grade 2 or greater is not permitted
+* Severe Cardiovascular disease or cardiac disease requiring a device.
+* Serious medical or psychiatric disorder that would interfere with the patient's safety or informed consent.",18 Years,,FEMALE,PHASE3,COMPLETED,INTERVENTIONAL,2015-05-06,"TITLE: Paclitaxel With / Without GW572016 (Lapatinib) As First Line Therapy For Women With Advanced Or Metastatic Breast Cancer
+
+CONDITIONS: Neoplasms, Breast
+
+INTERVENTIONS: Paclitaxel; GW572016 (Lapatinib)
+
+SUMMARY: The purpose of this study is to determine the efficacy and safety of an oral dual tyrosine kinase inhibitor (GW572016) in combination with paclitaxel compared to paclitaxel alone in first line advanced or metastatic breast cancer.
+
+ELIGIBILITY: Inclusion criteria:
+
+* Signed Informed Consent
+* Able to swallow an oral medication
+* Cardiac ejection fraction within the institutional range of normal as measured by echocardiogram
+* Adequate kidney and liver function
+* Adequate bone marrow function
+* Tumor tissue available for testing
+* Prior adjuvant or neoadjuvant therapy is permitted with an anthracycline or anthracenedione-containing regimen however, subjects must have had cumulative doses of less than 360 mg/m2 of doxorubicin, 720 mg/m2 of epirubicin, or 72 mg/m2 of mitoxantrone
+* No Her2/neu overexpression in tumor tissue tested or status unknown if tissue has never been tested
+
+Exclusion criteria:
+
+* Prior treatment regimens for advanced or metastatic breast cancer.
+* Pregnant or lactating
+* Conditions that would effect the absorption of an oral drug
+* Active infection
+* Brain metastases
+* Treatment with EGFR (Endothelial Growth Factor Receptor) inhibitor.
+* Known hypersensitivity to Taxol or excipients of Taxol
+* Peripheral neuropathy of Grade 2 or greater is not permitted
+* Severe Cardiovascular disease or cardiac disease requiring a device.
+* Serious medical or psychiatric disorder that would interfere with the patient's safety or informed consent.",,
+Q02,Phase 3 breast cancer trials,NCT00003418,Exemestane Compared With Tamoxifen in Treating Postmenopausal Women With Primary Breast Cancer,Breast Cancer,exemestane; tamoxifen citrate,"RATIONALE: Estrogen can stimulate the growth of breast cancer cells. Hormone therapy using exemestane or tamoxifen may fight breast cancer by blocking the uptake of estrogen. It is not yet known whether exemestane is more effective than tamoxifen in treating breast cancer.
+
+PURPOSE: Randomized phase III trial to compare the effectiveness of exemestane with that of tamoxifen in treating postmenopausal women with primary breast cancer who have already received 2-3 years of tamoxifen following surgery.","DISEASE CHARACTERISTICS: At diagnosis: Histologically confirmed unilateral adenocarcinoma of the breast that was considered operable Must have had adequate therapy for primary disease including chemotherapy/ovarian ablation if appropriate and local postoperative radiotherapy if the patient received conservative (breast preserving) surgery Must have remained disease-free after therapy for primary disease Must have been receiving tamoxifen for minimum of 2 years and maximum of 3 years 1 month with no more than 1 month break at any one time No inflammatory breast cancer, histologically positive supraclavicular nodes, or ulceration/infiltration or skin metastases No evidence of local relapse or distant metastasis (on chest x-ray, scintigraphic bone scanning and liver ultrasonography/CT scanning) at any time Hormone receptor status: Estrogen receptor positive or unknown
+
+PATIENT CHARACTERISTICS: Age: Postmenopausal as defined below Sex: Female Menopausal status: Postmenopausal as defined by: 55 years of age and over, and amenorrhea for greater than 2 years OR Radiation menopause (at least 3 months previously) or surgical oophorectomy OR Natural amenorrhea for at least 1 year at breast cancer diagnosis Performance status: Not specified Life expectancy: Not specified Hematopoietic: WBC at least 4,000/mm3 Hemoglobin normal Hepatic: SGOT no greater than 2.5 times upper limit of normal (ULN) Renal: Creatinine no greater than 1.5 times ULN Cardiovascular: No significant cardiac disorder Other: No significant skeletal or endocrine disorders No clinical evidence of severe osteoporosis and/or history of osteoporotic fracture No other prior malignancy except basal cell skin cancer or carcinoma in situ of the cervix No psychiatric or addictive disorders
+
+PRIOR CONCURRENT THERAPY: Biologic therapy: Not specified Chemotherapy: See Disease Characteristics Prior or concurrent bisphosphonates allowed Adjuvant or neoadjuvant chemotherapy for primary disease allowed Endocrine therapy: At least 4 weeks since prior hormone replacement therapy (oral, topical, or vaginal) Prior low-dose progestins for relief of menopausal symptoms (up to 6 months duration) allowed No concurrent progestins No concurrent systemic corticosteroids for a prolonged period (i.e., greater than 2 weeks) No concurrent selective estrogen receptor modulators Radiotherapy: See Disease Characteristics Surgery: See Disease Characteristics Other: Prior participation and completion of therapy on another clinical study of systemic therapy (e.g., comparison of chemotherapy schedules) allowed No concurrent warfarin Concurrent treatment for other diseases allowed only when clinically indicated",,,FEMALE,PHASE3,UNKNOWN,INTERVENTIONAL,2013-12-19,"TITLE: Exemestane Compared With Tamoxifen in Treating Postmenopausal Women With Primary Breast Cancer
+
+CONDITIONS: Breast Cancer
+
+INTERVENTIONS: exemestane; tamoxifen citrate
+
+SUMMARY: RATIONALE: Estrogen can stimulate the growth of breast cancer cells. Hormone therapy using exemestane or tamoxifen may fight breast cancer by blocking the uptake of estrogen. It is not yet known whether exemestane is more effective than tamoxifen in treating breast cancer.
+
+PURPOSE: Randomized phase III trial to compare the effectiveness of exemestane with that of tamoxifen in treating postmenopausal women with primary breast cancer who have already received 2-3 years of tamoxifen following surgery.
+
+ELIGIBILITY: DISEASE CHARACTERISTICS: At diagnosis: Histologically confirmed unilateral adenocarcinoma of the breast that was considered operable Must have had adequate therapy for primary disease including chemotherapy/ovarian ablation if appropriate and local postoperative radiotherapy if the patient received conservative (breast preserving) surgery Must have remained disease-free after therapy for primary disease Must have been receiving tamoxifen for minimum of 2 years and maximum of 3 years 1 month with no more than 1 month break at any one time No inflammatory breast cancer, histologically positive supraclavicular nodes, or ulceration/infiltration or skin metastases No evidence of local relapse or distant metastasis (on chest x-ray, scintigraphic bone scanning and liver ultrasonography/CT scanning) at any time Hormone receptor status: Estrogen receptor positive or unknown
+
+PATIENT CHARACTERISTICS: Age: Postmenopausal as defined below Sex: Female Menopausal status: Postmenopausal as defined by: 55 years of age and over, and amenorrhea for greater than 2 years OR Radiation menopause (at least 3 months previously) or surgical oophorectomy OR Natural amenorrhea for at least 1 year at breast cancer diagnosis Performance status: Not specified Life expectancy: Not specified Hematopoietic: WBC at least 4,000/mm3 Hemoglobin normal Hepatic: SGOT no greater than 2.5 times upper limit of normal (ULN) Renal: Creatinine no greater than 1.5 times ULN Cardiovascular: No significant cardiac disorder Other: No significant skeletal or endocrine disorders No clinical evidence of severe osteoporosis and/or history of osteoporotic fracture No other prior malignancy except basal cell skin cancer or carcinoma in situ of the cervix No psychiatric or addictive disorders
+
+PRIOR CONCURRENT THERAPY: Biologic therapy: Not specified Chemotherapy: See Disease Characteristics Prior or concurrent bisphosphonates allowed Adjuvant or neoadjuvant chemotherapy for primary disease allowed Endocrine therapy: At least 4 weeks since prior hormone replacement therapy (oral, topical, or vaginal) Prior low-dose progestins for relief of menopausal symptoms (up to 6 months duration) allowed No concurrent progestins No concurrent systemic corticosteroids for a prolonged period (i.e., greater than 2 weeks) No concurrent selective estrogen receptor modulators Radiotherapy: See Disease Characteristics Surgery: See Disease Characteristics Other: Prior participation and completion of therapy on another clinical study of systemic therapy (e.g., comparison of chemotherapy schedules) allowed No concurrent warfarin Concurrent treatment for other diseases allowed only when clinically indicated",,
+Q02,Phase 3 breast cancer trials,NCT02000622,Assessment of the Efficacy and Safety of Olaparib Monotherapy Versus Physicians Choice Chemotherapy in the Treatment of Metastatic Breast Cancer Patients With Germline BRCA1/2 Mutations.,Breast Cancer Metastatic; BRCA 1 Gene Mutation; BRCA 2 Gene Mutation,Olaparib; Physician's choice chemotherapy,"This open label, randomised, controlled, multi-centre phase III study will assess the efficacy and safety of single agent olaparib vs standard of care based on physician's choice of capecitabine, vinorelbine or eribulin in metastatic breast cancer patients with gBRCA 1/2 mutations.","Inclusion Criteria:
+
+* Germline mutation in BRCA1 or BRCA2 that is predicted to be deleterious or suspected deleterious.
+* Histologically or cytologically confirmed breast cancer with evidence of metastatic disease.
+* Prior therapy with an anthracycline and a taxane in either an adjuvant or metastatic setting.
+* Prior platinum allowed as long as no breast cancer progression occurred on treatment or if given in adjuvant/neoadjuvant setting at least 12 months from last dose to study entry elapsed.
+* ER/PR breast cancer positive patients must have received and progressed on at least one endocrine therapy (adjuvant or metastatic), or have disease that the treating physician believes to be inappropriate for endocrine therapy.
+* ECOG performance status 0-1.
+* Adequate bone marrow, kidney and liver function.
+
+Exclusion Criteria:
+
+* Prior treatment with PARP inhibitor.
+* Patients with HER2 positive disease.
+* More than 2 prior lines of chemotherapy for metastatic breast cancer.
+* Untreated and/or uncontrolled brain metastases.
+* Prior malignancy unless curatively treated and disease-free for \> 5 years prior to study entry. Prior adequately treated non-melanoma skin cancer, in situ cancer of the cervix, DCIS or stage I grade 1 endometrial cancer allowed.
+* Known HIV (Human Immunodeficiency Virus) infection.
+* Pregnant or breast-feeding women.",18 Years,99 Years,ALL,PHASE3,COMPLETED,INTERVENTIONAL,2026-02-13,"TITLE: Assessment of the Efficacy and Safety of Olaparib Monotherapy Versus Physicians Choice Chemotherapy in the Treatment of Metastatic Breast Cancer Patients With Germline BRCA1/2 Mutations.
+
+CONDITIONS: Breast Cancer Metastatic; BRCA 1 Gene Mutation; BRCA 2 Gene Mutation
+
+INTERVENTIONS: Olaparib; Physician's choice chemotherapy
+
+SUMMARY: This open label, randomised, controlled, multi-centre phase III study will assess the efficacy and safety of single agent olaparib vs standard of care based on physician's choice of capecitabine, vinorelbine or eribulin in metastatic breast cancer patients with gBRCA 1/2 mutations.
+
+ELIGIBILITY: Inclusion Criteria:
+
+* Germline mutation in BRCA1 or BRCA2 that is predicted to be deleterious or suspected deleterious.
+* Histologically or cytologically confirmed breast cancer with evidence of metastatic disease.
+* Prior therapy with an anthracycline and a taxane in either an adjuvant or metastatic setting.
+* Prior platinum allowed as long as no breast cancer progression occurred on treatment or if given in adjuvant/neoadjuvant setting at least 12 months from last dose to study entry elapsed.
+* ER/PR breast cancer positive patients must have received and progressed on at least one endocrine therapy (adjuvant or metastatic), or have disease that the treating physician believes to be inappropriate for endocrine therapy.
+* ECOG performance status 0-1.
+* Adequate bone marrow, kidney and liver function.
+
+Exclusion Criteria:
+
+* Prior treatment with PARP inhibitor.
+* Patients with HER2 positive disease.
+* More than 2 prior lines of chemotherapy for metastatic breast cancer.
+* Untreated and/or uncontrolled brain metastases.
+* Prior malignancy unless curatively treated and disease-free for \> 5 years prior to study entry. Prior adequately treated non-melanoma skin cancer, in situ cancer of the cervix, DCIS or stage I grade 1 endometrial cancer allowed.
+* Known HIV (Human Immunodeficiency Virus) infection.
+* Pregnant or breast-feeding women.",,
+Q02,Phase 3 breast cancer trials,NCT00301886,S0308 Zoledronate or Ibandronate in Preventing Bone Problems in Women With Stage IV Breast Cancer That Has Spread to the Bone,Breast Cancer; Hypercalcemia of Malignancy; Metastatic Cancer; Pain,ibandronate; zoledronate; quality-of-life assessment,"RATIONALE: Zoledronate and ibandronate may prevent or help relieve bone pain and other symptoms caused by bone metastases. It is not yet known whether zoledronate is more effective than ibandronate in preventing bone problems caused by bone metastases due to breast cancer.
+
+PURPOSE: This randomized phase III trial is studying zoledronate to see how well it works compared to ibandronate in preventing bone problems in women with stage IV breast cancer that has spread to the bone.","DISEASE CHARACTERISTICS:
+
+* Histologically confirmed stage IV breast cancer at primary diagnosis or at recurrence
+
+  * Any T, any N, M1
+* At least 1 dominant osteolytic or osteoblastic or mixed metastatic lesion outside any prior radiation field
+
+  * Lesion measures ≥ 1.0 cm by x-ray, CT scan, and/or MRI
+* Controlled asymptomatic brain metastases allowed
+* Controlled bone pain, defined as a physician/health care provider rating of ≤ grade 2 pain-SELECT (Bone) on the NCI CTC for Adverse Events Version 3.0 rating scale, required
+* Current evidence of vertebral or nonvertebral fractures or spinal compression due to cancer, as determined by the treating physician, allowed
+* No Paget's disease of the bone
+* Estrogen receptor (ER) or progesterone receptor (PR) status known
+
+PATIENT CHARACTERISTICS:
+
+* Female patient
+* Menopausal status not specified
+* Zubrod performance status 0-2
+* Creatinine normal
+* Creatinine clearance ≥ 60 mL/min
+* Serum calcium \< 12 mg/dL
+* Not pregnant or nursing
+* Fertile patients must use effective contraception
+* Must be able to receive IV medication and oral medication (i.e., must have physical integrity of the upper gastrointestinal tract)
+* No malabsorption syndrome
+* No primary hyperparathyroidism
+* No known history of aspirin-sensitive asthma
+* No other prior malignancy except for the following:
+
+  * Adequately treated basal cell or squamous cell skin cancer
+  * In situ cervical cancer
+  * Adequately treated stage I or II cancer currently in complete remission
+  * Any other cancer for which the patient has been disease-free for at least 5 years
+* No uncontrolled medical illness or infection, including, but not limited to, the following:
+
+  * Unstable angina
+  * Recent myocardial infarction
+  * Life-threatening cardiac arrhythmia
+
+PRIOR CONCURRENT THERAPY:
+
+* See Disease Characteristics
+* No prior bisphosphonates for metastatic bone disease
+* More than 28 days since prior aminoglycoside antibiotics
+* At least 28 days since prior oral bisphosphonates for osteoporosis
+* More than 6 months since prior bisphosphonates used for adjuvant therapy
+* Concurrent treatment, including chemotherapy, hormonal therapy, and/or biologic therapy for metastatic breast cancer allowed
+* No concurrent participation in another clinical treatment trial for this cancer unless the patient is no longer receiving the intervention and is in the follow-up phase of the other clinical trial",18 Years,,FEMALE,PHASE3,WITHDRAWN,INTERVENTIONAL,2013-11-13,"TITLE: S0308 Zoledronate or Ibandronate in Preventing Bone Problems in Women With Stage IV Breast Cancer That Has Spread to the Bone
+
+CONDITIONS: Breast Cancer; Hypercalcemia of Malignancy; Metastatic Cancer; Pain
+
+INTERVENTIONS: ibandronate; zoledronate; quality-of-life assessment
+
+SUMMARY: RATIONALE: Zoledronate and ibandronate may prevent or help relieve bone pain and other symptoms caused by bone metastases. It is not yet known whether zoledronate is more effective than ibandronate in preventing bone problems caused by bone metastases due to breast cancer.
+
+PURPOSE: This randomized phase III trial is studying zoledronate to see how well it works compared to ibandronate in preventing bone problems in women with stage IV breast cancer that has spread to the bone.
+
+ELIGIBILITY: DISEASE CHARACTERISTICS:
+
+* Histologically confirmed stage IV breast cancer at primary diagnosis or at recurrence
+
+  * Any T, any N, M1
+* At least 1 dominant osteolytic or osteoblastic or mixed metastatic lesion outside any prior radiation field
+
+  * Lesion measures ≥ 1.0 cm by x-ray, CT scan, and/or MRI
+* Controlled asymptomatic brain metastases allowed
+* Controlled bone pain, defined as a physician/health care provider rating of ≤ grade 2 pain-SELECT (Bone) on the NCI CTC for Adverse Events Version 3.0 rating scale, required
+* Current evidence of vertebral or nonvertebral fractures or spinal compression due to cancer, as determined by the treating physician, allowed
+* No Paget's disease of the bone
+* Estrogen receptor (ER) or progesterone receptor (PR) status known
+
+PATIENT CHARACTERISTICS:
+
+* Female patient
+* Menopausal status not specified
+* Zubrod performance status 0-2
+* Creatinine normal
+* Creatinine clearance ≥ 60 mL/min
+* Serum calcium \< 12 mg/dL
+* Not pregnant or nursing
+* Fertile patients must use effective contraception
+* Must be able to receive IV medication and oral medication (i.e., must have physical integrity of the upper gastrointestinal tract)
+* No malabsorption syndrome
+* No primary hyperparathyroidism
+* No known history of aspirin-sensitive asthma
+* No other prior malignancy except for the following:
+
+  * Adequately treated basal cell or squamous cell skin cancer
+  * In situ cervical cancer
+  * Adequately treated stage I or II cancer currently in complete remission
+  * Any other cancer for which the patient has been disease-free for at least 5 years
+* No uncontrolled medical illness or infection, including, but not limited to, the following:
+
+  * Unstable angina
+  * Recent myocardial infarction
+  * Life-threatening cardiac arrhythmia
+
+PRIOR CONCURRENT THERAPY:
+
+* See Disease Characteristics
+* No prior bisphosphonates for metastatic bone disease
+* More than 28 days since prior aminoglycoside antibiotics
+* At least 28 days since prior oral bisphosphonates for osteoporosis
+* More than 6 months since prior bisphosphonates used for adjuvant therapy
+* Concurrent treatment, including chemotherapy, hormonal therapy, and/or biologic therapy for metastatic breast cancer allowed
+* No concurrent participation in another clinical treatment trial for this cancer unless the patient is no longer receiving the intervention and is in the follow-up phase of the other clinical trial",,
+Q02,Phase 3 breast cancer trials,NCT07168161,BDB-001 Phase III Trial in ANCA-Associated Vasculitis,ANCA Associated Vasculitis (AAV),BDB-001 injection; Cyclophosphamide; Rituximab; Azathioprine; Prednisone,"The primary aim is to study the efficacy of treatment with BDB-001 Injection to induce remission in patients with active anti-neutrophil cytoplasmic antibody (ANCA)-associated vasculitis (AAV), when used in combination with cyclophosphamide followed by azathioprine, or in combination with rituximab","Inclusion Criteria:
+
+1. 18 years old≤Age≤75 years old, male or female;
+2. Diagnosis of granulomatosis with polyangiitis(GPA) or microscopic polyangiitis(MPA)；
+3. Newly diagnosed or relapsed GPA or MPA that requires treatment with a full starting dose of prednisone plus cyclophosphamide/azathioprine or rituximab；
+4. Positive test for anti-proteinase 3(PR3) or anti-myeloperoxidase (MPO)；
+5. Estimated glomerular filtration rate ≥15 mL/minute/1.73 m\^2；
+6. At least 1 major item, or at least 3 non-major items, or at least the 2 renal items on BVAS；
+
+Exclusion Criteria:
+
+1. Active tuberculosis infection;
+2. alveolar hemorrhage requiring pulmonary ventilation support；
+3. History of any malignancy of any organ system within 5 years prior to the first dose, except for basal cell carcinoma of the skin or carcinoma in situ (e.g., cervical or breast carcinoma in situ) that has been completely resected and shows no evidence of local recurrence or metastasis.
+4. Any other known multi-system autoimmune disease including eosinophilic granulomatosis with polyangiitis (Churg-Strauss), systemic lupus erythematosus, IgA vasculitis (Henoch-Schönlein), rheumatoid vasculitis,anti-glomerular basement membrane disease, or cryoglobulinemic vasculitis；
+5. HBsAg positive,or HBcAb positive and HBV-DNA positive；
+6. Received CYC within 3 months before the first administration or Received rituximab(RTX) or other B-cell antibody within 12 months before the first administration；
+7. Received glucocorticoid shock therapy within 4 weeks before the first administration；
+8. Received an oral daily dose of a GC of \> 10 mg prednisone-equivalent for more than 6 weeks continuously before the first administration；
+9. Received a anti-tumor necrosis factor and other biological agents treatment within 12 weeks before the first administration；
+10. Received Continuous dialysis treatment for 12 weeks or more before the first administration; Received Dialysis within 1 week before the first administration;
+11. Received intravenous immunoglobulin (Ig) or plasma exchange within 4 weeks before the first administration;
+12. Pregnant or lactating.",18 Years,75 Years,ALL,PHASE3,RECRUITING,INTERVENTIONAL,2026-08-13,"TITLE: BDB-001 Phase III Trial in ANCA-Associated Vasculitis
+
+CONDITIONS: ANCA Associated Vasculitis (AAV)
+
+INTERVENTIONS: BDB-001 injection; Cyclophosphamide; Rituximab; Azathioprine; Prednisone
+
+SUMMARY: The primary aim is to study the efficacy of treatment with BDB-001 Injection to induce remission in patients with active anti-neutrophil cytoplasmic antibody (ANCA)-associated vasculitis (AAV), when used in combination with cyclophosphamide followed by azathioprine, or in combination with rituximab
+
+ELIGIBILITY: Inclusion Criteria:
+
+1. 18 years old≤Age≤75 years old, male or female;
+2. Diagnosis of granulomatosis with polyangiitis(GPA) or microscopic polyangiitis(MPA)；
+3. Newly diagnosed or relapsed GPA or MPA that requires treatment with a full starting dose of prednisone plus cyclophosphamide/azathioprine or rituximab；
+4. Positive test for anti-proteinase 3(PR3) or anti-myeloperoxidase (MPO)；
+5. Estimated glomerular filtration rate ≥15 mL/minute/1.73 m\^2；
+6. At least 1 major item, or at least 3 non-major items, or at least the 2 renal items on BVAS；
+
+Exclusion Criteria:
+
+1. Active tuberculosis infection;
+2. alveolar hemorrhage requiring pulmonary ventilation support；
+3. History of any malignancy of any organ system within 5 years prior to the first dose, except for basal cell carcinoma of the skin or carcinoma in situ (e.g., cervical or breast carcinoma in situ) that has been completely resected and shows no evidence of local recurrence or metastasis.
+4. Any other known multi-system autoimmune disease including eosinophilic granulomatosis with polyangiitis (Churg-Strauss), systemic lupus erythematosus, IgA vasculitis (Henoch-Schönlein), rheumatoid vasculitis,anti-glomerular basement membrane disease, or cryoglobulinemic vasculitis；
+5. HBsAg positive,or HBcAb positive and HBV-DNA positive；
+6. Received CYC within 3 months before the first administration or Received rituximab(RTX) or other B-cell antibody within 12 months before the first administration；
+7. Received glucocorticoid shock therapy within 4 weeks before the first administration；
+8. Received an oral daily dose of a GC of \> 10 mg prednisone-equivalent for more than 6 weeks continuously before the first administration；
+9. Received a anti-tumor necrosis factor and other biological agents treatment within 12 weeks before the first administration；
+10. Received Continuous dialysis treatment for 12 weeks or more before the first administration; Received Dialysis within 1 week before the first administration;
+11. Received intravenous immunoglobulin (Ig) or plasma exchange within 4 weeks before the first administration;
+12. Pregnant or lactating.",,
+Q02,Phase 3 breast cancer trials,NCT00286962,Study to Compare Intraperitoneal Insulin to Subcutaneous Insulin Administration in Type 1 Diabetes Mellitus,"Diabetes Mellitus, Type 1",MIP 2007C implantable insulin pump; continuous subcutaneous insulin infusion (CSII) or MDI,"The purpose of this study is to compare intraperitoneal (IP) therapy to subcutaneous administration of insulin regarding safety, glycemic control and number of episodes of hypoglycemia in patients with type 1 diabetes mellitus.","Inclusion Criteria:
+
+* Type 1 diabetes mellitus
+* Intermediate or poor glycemic control, defined as HbA1c ≥ 7,5% AND/OR ≥ 5 incidents of hypoglycemia a week.
+
+Exclusion Criteria:
+
+* renal function impairment: creatinin ≥ 150 micromol/L or a creatinin clearance \< 50 ml/min
+* Cardiac problems: decompensated heart failure (NYHA III and IV); diagnosis of unstable angina pectoris; myocardial infarction within the last 12 months
+* Known or suspected allergy against insulin or any component of the composition
+* Mental retardation or psychiatric treatment for schizophrenia, organic mental disorder or bipolar disorder currently or in the past.
+* Severe untreated proliferative retinopathy.
+* Insufficient knowledge of the Dutch language to understand the requirements of the study.
+* Current use of systemic corticosteroids or suffering from a condition which caused systemic corticosteroid use more than once in the last year.
+* Substance abuse, other than nicotine
+* A history of cancer, excluding well differentiated thyroid carcinoma, breast carcinoma without lymph node metastases and skin carcinoma
+* Participation in other trials, involving investigational products within 30 days prior to trial entry.
+* Plans to engage in activities which require them to go below 25 feet below sea level.
+* Any condition that the Investigator and/or Coordinating Investigator feels would interfere with trial participation or evaluation of results.",18 Years,70 Years,ALL,PHASE3,COMPLETED,INTERVENTIONAL,2008-04-11,"TITLE: Study to Compare Intraperitoneal Insulin to Subcutaneous Insulin Administration in Type 1 Diabetes Mellitus
+
+CONDITIONS: Diabetes Mellitus, Type 1
+
+INTERVENTIONS: MIP 2007C implantable insulin pump; continuous subcutaneous insulin infusion (CSII) or MDI
+
+SUMMARY: The purpose of this study is to compare intraperitoneal (IP) therapy to subcutaneous administration of insulin regarding safety, glycemic control and number of episodes of hypoglycemia in patients with type 1 diabetes mellitus.
+
+ELIGIBILITY: Inclusion Criteria:
+
+* Type 1 diabetes mellitus
+* Intermediate or poor glycemic control, defined as HbA1c ≥ 7,5% AND/OR ≥ 5 incidents of hypoglycemia a week.
+
+Exclusion Criteria:
+
+* renal function impairment: creatinin ≥ 150 micromol/L or a creatinin clearance \< 50 ml/min
+* Cardiac problems: decompensated heart failure (NYHA III and IV); diagnosis of unstable angina pectoris; myocardial infarction within the last 12 months
+* Known or suspected allergy against insulin or any component of the composition
+* Mental retardation or psychiatric treatment for schizophrenia, organic mental disorder or bipolar disorder currently or in the past.
+* Severe untreated proliferative retinopathy.
+* Insufficient knowledge of the Dutch language to understand the requirements of the study.
+* Current use of systemic corticosteroids or suffering from a condition which caused systemic corticosteroid use more than once in the last year.
+* Substance abuse, other than nicotine
+* A history of cancer, excluding well differentiated thyroid carcinoma, breast carcinoma without lymph node metastases and skin carcinoma
+* Participation in other trials, involving investigational products within 30 days prior to trial entry.
+* Plans to engage in activities which require them to go below 25 feet below sea level.
+* Any condition that the Investigator and/or Coordinating Investigator feels would interfere with trial participation or evaluation of results.",,

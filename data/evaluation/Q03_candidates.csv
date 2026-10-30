@@ -1,0 +1,209 @@
+﻿query_id,query,nct_id,title,conditions,interventions,summary,eligibility,min_age,max_age,sex,phase,status,study_type,last_update,document,relevance,notes
+Q03,Recruiting trials for Alzheimer's disease,NCT07220512,"The Better, Harder, Faster, Stronger Study",Frailty at Older Adults; Ovarian Cancer; Endometrial Cancer; Cognitive Dysfunction; Neoadjuvant Chemotherapy,data collection,The purpose of this study is to evaluate changes in the electronic Frailty Index (eFI) score following 3-4 cycles of neoadjuvant chemotherapy (NACT) in participants with advanced ovarian and endometrial cancer.,"Inclusion Criteria:
+
+* Ability to understand and willingness to sign an IRB-approved informed consent.
+* Age \> 55 years at the time of enrollment.
+* Newly diagnosed suspected ovarian/primary peritoneal/fallopian tube carcinoma of any histological subtype, FIGO Stage II-IV, per enrolling investigator, or newly diagnosed suspected endometrial carcinoma of any histologic subtype, FIGO Stage II-IV, per enrolling investigator.
+* Planned for 3 or 4 cycles of NACT, with interval cytoreductive surgery planned thereafter.
+* Ability to read, understand, and write the English language.
+* As determined by the enrolling investigator, ability of the participant to understand and comply with study procedures for the entire length of the study.
+
+Exclusion Criteria:
+
+* History of brain metastases.
+* History of poorly controlled psychiatric conditions, defined as hospitalization within the prior 3 months for psychiatric disorders, traumatic brain injury, cerebrovascular event, or dementia, per the enrolling investigator.
+* Use of anti-amyloid agents, cholinesterase inhibitors, or Memantine for Alzheimers/cognitive impairment, at the time of enrollment.
+* Vision impairment that would impede completion of study assessments, per enrolling investigator.",55 Years,,FEMALE,,RECRUITING,OBSERVATIONAL,2026-07-15,"TITLE: The Better, Harder, Faster, Stronger Study
+
+CONDITIONS: Frailty at Older Adults; Ovarian Cancer; Endometrial Cancer; Cognitive Dysfunction; Neoadjuvant Chemotherapy
+
+INTERVENTIONS: data collection
+
+SUMMARY: The purpose of this study is to evaluate changes in the electronic Frailty Index (eFI) score following 3-4 cycles of neoadjuvant chemotherapy (NACT) in participants with advanced ovarian and endometrial cancer.
+
+ELIGIBILITY: Inclusion Criteria:
+
+* Ability to understand and willingness to sign an IRB-approved informed consent.
+* Age \> 55 years at the time of enrollment.
+* Newly diagnosed suspected ovarian/primary peritoneal/fallopian tube carcinoma of any histological subtype, FIGO Stage II-IV, per enrolling investigator, or newly diagnosed suspected endometrial carcinoma of any histologic subtype, FIGO Stage II-IV, per enrolling investigator.
+* Planned for 3 or 4 cycles of NACT, with interval cytoreductive surgery planned thereafter.
+* Ability to read, understand, and write the English language.
+* As determined by the enrolling investigator, ability of the participant to understand and comply with study procedures for the entire length of the study.
+
+Exclusion Criteria:
+
+* History of brain metastases.
+* History of poorly controlled psychiatric conditions, defined as hospitalization within the prior 3 months for psychiatric disorders, traumatic brain injury, cerebrovascular event, or dementia, per the enrolling investigator.
+* Use of anti-amyloid agents, cholinesterase inhibitors, or Memantine for Alzheimers/cognitive impairment, at the time of enrollment.
+* Vision impairment that would impede completion of study assessments, per enrolling investigator.",,
+Q03,Recruiting trials for Alzheimer's disease,NCT06914284,Apathy-related Neurobehavioral Markers of Cognitive Decline in Old-age Bipolar Disorders: Proof-of-concept,Apathy; Bipolar Disorder,Actigraphy and MRI,"The goal of this clinical trial is to identify reliable markers of apathy in elderly subjects with bipolar disorder, age between 70 and 85 years, in order to accurately identify subjects at high risk of progressing to dementia by measuring motor activity (actimetrics), recorded language and analysing brain changes (MRI).
+
+Actimetry is the measurement and recording of body movements using an actimeter. This device is worn on the wrist and contains sensors capable of measuring and recording all movements, including those of very low intensity. An automated speech analysis using artificial intelligence is used to detect low-intensity anomalies, and we want to test whether individual differences correspond to individual differences in brain anatomy and function.
+
+Researchers will compare elderly subjects with bipolar disorder and healthy volunteer, age between 70 and 85 years.
+
+Participants will be asked to:
+
+* Perform an MRI
+* Complete 3 cognitive tests: verbal memory, verbal fluency and an emotional storytelling task, in which you will be asked to describe a memory orally using positive, negative and neutral emotions.
+* wear an actimeter on your wrist for 4 days.","Inclusion Criteria:
+
+1. Population: Age between 70 and 85 years-old, living at home (Participants living in nursing homes are not included).
+2. Condition: OABD type 1, type 2 and type 3 assessed by the DSM5 criteria
+3. Stable: no MDE or hypomanic state within the last 6 months
+4. Ambulatory setting only
+5. General condition: Successful Gait speed test from the Short Physical Performance Battery (SPPB): beingable to walk 4 meters in 4 seconds (SPPB NIH Toolbox)44
+6. Person affiliated to a social security regime
+7. Patients who have given their free, informed and written consent to take part in the study
+
+Exclusion Criteria:
+
+1. Psychiatric conditions and or co-morbidities
+
+   1. Unipolar depression
+   2. Recurrent unipolar depression
+   3. Substance use disorder according to DSM5 criteria. Benzodiaepine and/or z-drugs dependence are accepted.
+2. Neurological and cerebral co-morbidities
+
+   1. Major Cognitive Disorder: significant cognitive decline characterized by extensive cognitive tests or at least a standardized clinical evaluation AND at least loss of autonomy in complex instrumental daily living function, not related to delirium (DSM5 criteria)
+   2. Medical history of known degenerative disorders: Alzheimer's disease, Lobar Degenerative Fronto-temporal disorders, Lewy Body disease, corticobasal degenerative disorder, Supranuclear Palsy, epilepsy.
+   3. Medical history of known Parkinson's disease (according to the Movement Disorder Society (MDS)45 criteria)
+   4. Medical history of known stroke
+   5. Severe Parkinsonism (defined by MDS-Unified Parkinson's Disease Rating Scale46 \> 20)
+3. MRI contra-indications: metallic implants, severe claustrophobia
+4. Adults under legal protection (safeguard of justice, curatorship, guardianship), persons deprived of their liberty.
+5. Hospitalized at inclusion",70 Years,85 Years,ALL,,RECRUITING,OBSERVATIONAL,2025-04-06,"TITLE: Apathy-related Neurobehavioral Markers of Cognitive Decline in Old-age Bipolar Disorders: Proof-of-concept
+
+CONDITIONS: Apathy; Bipolar Disorder
+
+INTERVENTIONS: Actigraphy and MRI
+
+SUMMARY: The goal of this clinical trial is to identify reliable markers of apathy in elderly subjects with bipolar disorder, age between 70 and 85 years, in order to accurately identify subjects at high risk of progressing to dementia by measuring motor activity (actimetrics), recorded language and analysing brain changes (MRI).
+
+Actimetry is the measurement and recording of body movements using an actimeter. This device is worn on the wrist and contains sensors capable of measuring and recording all movements, including those of very low intensity. An automated speech analysis using artificial intelligence is used to detect low-intensity anomalies, and we want to test whether individual differences correspond to individual differences in brain anatomy and function.
+
+Researchers will compare elderly subjects with bipolar disorder and healthy volunteer, age between 70 and 85 years.
+
+Participants will be asked to:
+
+* Perform an MRI
+* Complete 3 cognitive tests: verbal memory, verbal fluency and an emotional storytelling task, in which you will be asked to describe a memory orally using positive, negative and neutral emotions.
+* wear an actimeter on your wrist for 4 days.
+
+ELIGIBILITY: Inclusion Criteria:
+
+1. Population: Age between 70 and 85 years-old, living at home (Participants living in nursing homes are not included).
+2. Condition: OABD type 1, type 2 and type 3 assessed by the DSM5 criteria
+3. Stable: no MDE or hypomanic state within the last 6 months
+4. Ambulatory setting only
+5. General condition: Successful Gait speed test from the Short Physical Performance Battery (SPPB): beingable to walk 4 meters in 4 seconds (SPPB NIH Toolbox)44
+6. Person affiliated to a social security regime
+7. Patients who have given their free, informed and written consent to take part in the study
+
+Exclusion Criteria:
+
+1. Psychiatric conditions and or co-morbidities
+
+   1. Unipolar depression
+   2. Recurrent unipolar depression
+   3. Substance use disorder according to DSM5 criteria. Benzodiaepine and/or z-drugs dependence are accepted.
+2. Neurological and cerebral co-morbidities
+
+   1. Major Cognitive Disorder: significant cognitive decline characterized by extensive cognitive tests or at least a standardized clinical evaluation AND at least loss of autonomy in complex instrumental daily living function, not related to delirium (DSM5 criteria)
+   2. Medical history of known degenerative disorders: Alzheimer's disease, Lobar Degenerative Fronto-temporal disorders, Lewy Body disease, corticobasal degenerative disorder, Supranuclear Palsy, epilepsy.
+   3. Medical history of known Parkinson's disease (according to the Movement Disorder Society (MDS)45 criteria)
+   4. Medical history of known stroke
+   5. Severe Parkinsonism (defined by MDS-Unified Parkinson's Disease Rating Scale46 \> 20)
+3. MRI contra-indications: metallic implants, severe claustrophobia
+4. Adults under legal protection (safeguard of justice, curatorship, guardianship), persons deprived of their liberty.
+5. Hospitalized at inclusion",,
+Q03,Recruiting trials for Alzheimer's disease,NCT06236022,The Effects of Sirolimus in Patients With Dilated Cardiomyopathy Infected With Kaposi Sarcoma-associated Virus,Dilated Cardiomyopathy; Kaposi's Sarcoma-Associated Herpesvirus Infection,Sirolimus,Evaluating the efficacy of sirolimus (compared to standard therapy alone) in the treatment of dilated cardiomyopathy infected with Kaposi Sarcoma-associated virus -- a multicenter randomized controlled study.,"Inclusion Criteria:
+
+* 18 to 70 years of age;
+* Diagnosed as dilated cardiomyopathy. Specifically, (i) left ventricular ejection fraction \<45% (\>2 SD) and/or fractional shortening \<25% (\>2 SD), as ascertained by echocardiography, radionuclide scanning, or cardiac magnetic resonance imaging; (ii) left ventricular end-diastolic diameter \>117% of the predicted value corrected for age and body surface area (Henry's formula), which corresponds to 2 SD of the predicted normal limit +5%; and (iii) In the absence of severe coronary artery disease or valvular disease.
+* KSHV DNA seropositivity;
+* Patients are voluntary and signed informed consent.
+
+Exclusion Criteria:
+
+* Allergic to rapamycin or its derivatives；
+* The proportion of neutrophils less than 0.5\*10\^9/L or platelet less than 2.5\*10\^10/L;
+* Pregnant women or plan to;
+* Participate in any drug clinical trials within 3 months;
+* Serious neurological disease (Alzheimer's disease, Parkinson syndrome, progressive lower limbs or deaf patients);
+* Previous history of cancer or tumor, or pathological examination confirmed precancerous lesions;
+* Patients were not optimally managed.",18 Years,70 Years,ALL,PHASE4,RECRUITING,INTERVENTIONAL,2024-02-01,"TITLE: The Effects of Sirolimus in Patients With Dilated Cardiomyopathy Infected With Kaposi Sarcoma-associated Virus
+
+CONDITIONS: Dilated Cardiomyopathy; Kaposi's Sarcoma-Associated Herpesvirus Infection
+
+INTERVENTIONS: Sirolimus
+
+SUMMARY: Evaluating the efficacy of sirolimus (compared to standard therapy alone) in the treatment of dilated cardiomyopathy infected with Kaposi Sarcoma-associated virus -- a multicenter randomized controlled study.
+
+ELIGIBILITY: Inclusion Criteria:
+
+* 18 to 70 years of age;
+* Diagnosed as dilated cardiomyopathy. Specifically, (i) left ventricular ejection fraction \<45% (\>2 SD) and/or fractional shortening \<25% (\>2 SD), as ascertained by echocardiography, radionuclide scanning, or cardiac magnetic resonance imaging; (ii) left ventricular end-diastolic diameter \>117% of the predicted value corrected for age and body surface area (Henry's formula), which corresponds to 2 SD of the predicted normal limit +5%; and (iii) In the absence of severe coronary artery disease or valvular disease.
+* KSHV DNA seropositivity;
+* Patients are voluntary and signed informed consent.
+
+Exclusion Criteria:
+
+* Allergic to rapamycin or its derivatives；
+* The proportion of neutrophils less than 0.5\*10\^9/L or platelet less than 2.5\*10\^10/L;
+* Pregnant women or plan to;
+* Participate in any drug clinical trials within 3 months;
+* Serious neurological disease (Alzheimer's disease, Parkinson syndrome, progressive lower limbs or deaf patients);
+* Previous history of cancer or tumor, or pathological examination confirmed precancerous lesions;
+* Patients were not optimally managed.",,
+Q03,Recruiting trials for Alzheimer's disease,NCT06989697,Cilostazol-Ginkgo for Cognitive Function in Elderly Diabetes,"Type 2 Diabets Mellitus; Cognitive Ability, General",Cilostazol / Ginko Leaf Dried Ext.; Placebo,"This exploratory pilot study aims to evaluate the cognitive improvement effects of combination therapy with cilostazol (200 mg) and ginkgo biloba extract (160 mg) in elderly patients with type 2 diabetes mellitus. Both agents have demonstrated potential cognitive benefits through mechanisms such as enhanced cerebral blood flow, anti-inflammatory activity, and neuroprotection. Given the increased risk of cognitive decline and dementia in patients with type 2 diabetes, and the need for preventive strategies, this study will investigate whether the combination therapy can prevent or mitigate cognitive deterioration. Findings from this study may provide foundational data for the future development of therapeutic interventions targeting cognitive impairment in patients with diabetes.","Inclusion Criteria:
+
+* Patients diagnosed with type 2 diabetes mellitus
+* Adults aged 60 years or older
+* Patients with a Mini-Mental State Examination (MMSE) score between 24 and 28 within the past 3 months
+
+Exclusion Criteria:
+
+* Patients with type 1 diabetes mellitus, diabetic ketoacidosis, or diabetic coma or precoma
+* Patients with poorly controlled blood glucose (HbA1c \> 10.0%)
+* Patients with an MMSE score below 24
+* Patients diagnosed with dementia (e.g., Alzheimer's disease)
+* Patients with suspected cognitive impairment due to other causes
+* Patients requiring antiplatelet or anticoagulant therapy other than the investigational product
+* Patients with thyroid dysfunction requiring treatment (i.e., abnormal TSH levels)
+* Patients with severe depression
+* Patients with severe infections, recent surgery (perioperative status), or major trauma
+* Patients with pituitary or adrenal insufficiency
+* Patients with other medical conditions requiring hospitalization
+* Patients with a history of alcohol or drug abuse within 1 year prior to screening
+* Patients with a history of taking medications that may affect cognitive function within 3 months prior to screening
+* Patients deemed by the investigator to be otherwise unsuitable for study participation",60 Years,,ALL,PHASE3,RECRUITING,INTERVENTIONAL,2025-05-25,"TITLE: Cilostazol-Ginkgo for Cognitive Function in Elderly Diabetes
+
+CONDITIONS: Type 2 Diabets Mellitus; Cognitive Ability, General
+
+INTERVENTIONS: Cilostazol / Ginko Leaf Dried Ext.; Placebo
+
+SUMMARY: This exploratory pilot study aims to evaluate the cognitive improvement effects of combination therapy with cilostazol (200 mg) and ginkgo biloba extract (160 mg) in elderly patients with type 2 diabetes mellitus. Both agents have demonstrated potential cognitive benefits through mechanisms such as enhanced cerebral blood flow, anti-inflammatory activity, and neuroprotection. Given the increased risk of cognitive decline and dementia in patients with type 2 diabetes, and the need for preventive strategies, this study will investigate whether the combination therapy can prevent or mitigate cognitive deterioration. Findings from this study may provide foundational data for the future development of therapeutic interventions targeting cognitive impairment in patients with diabetes.
+
+ELIGIBILITY: Inclusion Criteria:
+
+* Patients diagnosed with type 2 diabetes mellitus
+* Adults aged 60 years or older
+* Patients with a Mini-Mental State Examination (MMSE) score between 24 and 28 within the past 3 months
+
+Exclusion Criteria:
+
+* Patients with type 1 diabetes mellitus, diabetic ketoacidosis, or diabetic coma or precoma
+* Patients with poorly controlled blood glucose (HbA1c \> 10.0%)
+* Patients with an MMSE score below 24
+* Patients diagnosed with dementia (e.g., Alzheimer's disease)
+* Patients with suspected cognitive impairment due to other causes
+* Patients requiring antiplatelet or anticoagulant therapy other than the investigational product
+* Patients with thyroid dysfunction requiring treatment (i.e., abnormal TSH levels)
+* Patients with severe depression
+* Patients with severe infections, recent surgery (perioperative status), or major trauma
+* Patients with pituitary or adrenal insufficiency
+* Patients with other medical conditions requiring hospitalization
+* Patients with a history of alcohol or drug abuse within 1 year prior to screening
+* Patients with a history of taking medications that may affect cognitive function within 3 months prior to screening
+* Patients deemed by the investigator to be otherwise unsuitable for study participation",,

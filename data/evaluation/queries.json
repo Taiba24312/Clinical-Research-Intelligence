@@ -1,0 +1,84 @@
+[
+  {
+    "query_id": "Q01",
+    "query": "Recruiting NSCLC trials involving pembrolizumab",
+    "semantic_query": "NSCLC trials involving pembrolizumab",
+    "filters": {
+      "status": ["RECRUITING"]
+    }
+  },
+  {
+    "query_id": "Q02",
+    "query": "Phase 3 breast cancer trials",
+    "semantic_query": "breast cancer trials",
+    "filters": {
+      "phase": ["PHASE3"]
+    }
+  },
+  {
+    "query_id": "Q03",
+    "query": "Recruiting trials for Alzheimer's disease",
+    "semantic_query": "Alzheimer's disease trials",
+    "filters": {
+      "status": ["RECRUITING"]
+    }
+  },
+  {
+    "query_id": "Q04",
+    "query": "Diabetes trials for adults",
+    "semantic_query": "diabetes trials",
+    "filters": {
+      "min_age": 18
+    }
+  },
+  {
+    "query_id": "Q05",
+    "query": "Female patients with breast cancer",
+    "semantic_query": "breast cancer trials",
+    "filters": {
+      "sex": ["FEMALE"]
+    }
+  },
+  {
+    "query_id": "Q06",
+    "query": "Phase 2 trials using immunotherapy for cancer",
+    "semantic_query": "cancer trials using immunotherapy",
+    "filters": {
+      "phase": ["PHASE2"]
+    }
+  },
+  {
+    "query_id": "Q07",
+    "query": "Observational studies for cardiovascular disease",
+    "semantic_query": "cardiovascular disease studies",
+    "filters": {
+      "study_type": ["OBSERVATIONAL"]
+    }
+  },
+  {
+    "query_id": "Q08",
+    "query": "Recruiting trials for metastatic cancer in adults",
+    "semantic_query": "metastatic cancer trials",
+    "filters": {
+      "status": ["RECRUITING"],
+      "min_age": 18
+    }
+  },
+  {
+    "query_id": "Q09",
+    "query": "Phase 1 trials involving targeted therapy for solid tumors",
+    "semantic_query": "targeted therapy trials for solid tumors",
+    "filters": {
+      "phase": ["PHASE1"]
+    }
+  },
+  {
+    "query_id": "Q10",
+    "query": "Recruiting infectious disease trials for adults",
+    "semantic_query": "infectious disease trials",
+    "filters": {
+      "status": ["RECRUITING"],
+      "min_age": 18
+    }
+  }
+]

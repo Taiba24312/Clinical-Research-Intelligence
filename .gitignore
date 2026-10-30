@@ -1,0 +1,21 @@
+# Raw ClinicalTrials.gov download (152 MB). Corpus v1 identity is recorded
+# via hashes in the corpus manifest, not by committing the file.
+data/raw/
+
+# Model / Hugging Face caches (if ever created inside the project)
+.cache/
+hf_cache/
+models/
+
+# Python bytecode and tooling caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Windows-only artifacts kept on disk but not tracked
+.clinical_RAG/
+.candidate_dependencies/
+
+# Local secrets / environment
+.env

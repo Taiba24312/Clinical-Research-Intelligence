@@ -1,0 +1,4 @@
+query_id,config,lexical_weight,dense_weight,bm25_ms,dense_ms,recall_at_5,precision_at_5,recall_at_10,precision_at_10,mrr
+Q01,rrf_baseline_50_50,0.5,0.5,20.95571393147111,228.00304903648794,1.0,0.4,1.0,0.2,1.0
+Q01,lexical_heavy_75_25,0.75,0.25,20.95571393147111,228.00304903648794,0.5,0.2,1.0,0.2,1.0
+Q01,dense_heavy_25_75,0.25,0.75,20.95571393147111,228.00304903648794,1.0,0.4,1.0,0.2,1.0

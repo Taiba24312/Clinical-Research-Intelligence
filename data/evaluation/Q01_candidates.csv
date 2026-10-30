@@ -1,0 +1,79 @@
+﻿"query_id","query","nct_id","title","conditions","interventions","summary","eligibility","min_age","max_age","sex","phase","status","study_type","last_update","document","relevance","notes"
+"Q01","Recruiting NSCLC trials involving pembrolizumab","NCT07061379","Patient Reported Outcome Measurements (PROMs) Impact on Clinical Outcome in firsT Line settIng Non- Small-Cell Lung Cancer (NSCLC) According to Chemo- Immunotherapy reGimen","PROMs","Carboplatin/Cisplatin+Pemetrexed+Pembrolizumab/Cemiplimab for 4 cycles and then maintenance with Pemetrexed+Pembrolizumab/Cemiplimab up to 2 years or disease progression or unacceptable toxicity; Carboplatin/Cisplatin+Pemetrexed+Nivolumab+Ipilimumab for 2 cycles and then maintenance with Nivolumab q21 and Ipilimumab q42 up to 2 years or disease progression or unacceptable toxicity","A multicenter, national pharmacological observational study that has as its overall goal to implement a set of validated and agreed upon European-wide questionnaires (PROMs - patient's reported outcomes) to assess patients' perceptions of aspects of their lives based on the treatment they are receiving.
+
+Specifically, with the research we present here, we aim to obtain data on patients' health and condition, including quality of life, symptom status, physical function, mental health (anxiety and depression), sleep quality, and sexuality as useful indicators not only of patient well-being but also of the effectiveness of the treatment itself.
+
+The study involves the following: patients will be asked to complete online questionnaires at the following timepoints: before the start of treatment, after 4 and 8 treatment cycles, and at disease progression.
+
+Data will also be collected regarding the patient's oncological medical history, treatment performed, response to treatment at CT/PET reevaluations, any toxicities that arose during treatment.","Inclusion Criteria:
+
+* Age \> 18 years
+* Diagnosis of Stage IV NSCLC with PD-L1 \<50%, without actionable genomic alterations
+* Signed Informed Consent Form (ICF) to the study
+* Patients eligible to receive first line treatment with combo chemo-immuno treatments as standard of care
+
+Exclusion Criteria:
+
+\- Patients unable to fill the questionnaires due to neurological comorbidities","18 Years","","ALL","","RECRUITING","OBSERVATIONAL","2025-09-03","TITLE: Patient Reported Outcome Measurements (PROMs) Impact on Clinical Outcome in firsT Line settIng Non- Small-Cell Lung Cancer (NSCLC) According to Chemo- Immunotherapy reGimen
+
+CONDITIONS: PROMs
+
+INTERVENTIONS: Carboplatin/Cisplatin+Pemetrexed+Pembrolizumab/Cemiplimab for 4 cycles and then maintenance with Pemetrexed+Pembrolizumab/Cemiplimab up to 2 years or disease progression or unacceptable toxicity; Carboplatin/Cisplatin+Pemetrexed+Nivolumab+Ipilimumab for 2 cycles and then maintenance with Nivolumab q21 and Ipilimumab q42 up to 2 years or disease progression or unacceptable toxicity
+
+SUMMARY: A multicenter, national pharmacological observational study that has as its overall goal to implement a set of validated and agreed upon European-wide questionnaires (PROMs - patient's reported outcomes) to assess patients' perceptions of aspects of their lives based on the treatment they are receiving.
+
+Specifically, with the research we present here, we aim to obtain data on patients' health and condition, including quality of life, symptom status, physical function, mental health (anxiety and depression), sleep quality, and sexuality as useful indicators not only of patient well-being but also of the effectiveness of the treatment itself.
+
+The study involves the following: patients will be asked to complete online questionnaires at the following timepoints: before the start of treatment, after 4 and 8 treatment cycles, and at disease progression.
+
+Data will also be collected regarding the patient's oncological medical history, treatment performed, response to treatment at CT/PET reevaluations, any toxicities that arose during treatment.
+
+ELIGIBILITY: Inclusion Criteria:
+
+* Age \> 18 years
+* Diagnosis of Stage IV NSCLC with PD-L1 \<50%, without actionable genomic alterations
+* Signed Informed Consent Form (ICF) to the study
+* Patients eligible to receive first line treatment with combo chemo-immuno treatments as standard of care
+
+Exclusion Criteria:
+
+\- Patients unable to fill the questionnaires due to neurological comorbidities","1","Relevant: recruiting observational study involving Stage IV NSCLC patients receiving chemo-immunotherapy regimens containing pembrolizumab."
+"Q01","Recruiting NSCLC trials involving pembrolizumab","NCT06195527","PEMBRO-K : Evaluation of Pembrolizumab Therapeutic Pharmacological Monitoring Benefit in NSCLC","Non Small Cell Lung Cancer","","Solid cancers and their therapeutic management remain a major public health problem due to their increasing prevalence and associated mortality. Among solid cancers, lung cancer ranks 4th among incident cancers. The prognosis remains poor, 33,117 deaths were recorded in France in 2018. Two histological forms of bronchopulmonary cancer are distinguished: non-small cell lung cancers (NSCLC), which represent 85% of bronchopulmonary cancer, and small cell lung cancers. The most common forms of NSCLC are adenocarcinoma, squamous cell carcinoma and large cell carcinoma.
+
+The emergence of new so-called targeted therapies has considerably modified the management and prognosis of oncology patients and in particular of patients with NSCLC. These new molecules were developed following the molecular characterization of tumors on the one hand and on the other hand the characterization of the role of immunity in anti-tumor defense, particularly the Programmed Death receptor pathway 1 (PD-1). Blocking this pathway restores the anti-tumor potential of these lymphocytes. Pembrolizumab is a humanized monoclonal antibody that binds to the PD-1 receptor and blocks its interaction with the Programmed Death Ligand-1 (PDL1) and Programmed Death Ligand-2 (PDL2), expressed by tumor cells but also by cells in the microenvironment. tumor and by antigen-presenting cells. Pembrolizumab thus potentiates T cell responses, including anti-tumor responses, by blocking the binding of PD-1 with PDL1 and PDL2.
+
+Pembrolizumab currently has marketing authorization (MA) for the treatment of NSCLC. Despite therapeutic progress due, among other things, to the emergence of anti-PD-1 antibodies including pembrolizumab, the prognosis of NSCLC remains poor and the use of pembrolizumab is sometimes limited by the occurrence of adverse effects.
+
+The pharmacokinetics of pembrolizumab was studied pre-marketing in patients with melanoma, NSCLC or metastatic or unresectable carcinomas. However, there are no data relating to the pharmacokinetic (PK) / clinical response (pharmacodynamic / PD) relationship of pembrolizumab, in real life. No prospective pharmacological study has in fact been published to date, especially in patients treated as part of the management of NSCLC. The absence of such studies - in real life - constitutes a pitfall given the existence of a possible association between PK data and the clinical response and/or toxicity of pembrolizumab.","Inclusion Criteria:
+
+* 18 years or more
+* patient with NSCLC
+* pembrolizumab treatment (monotherapy or not) with a placed line (peripheral catheter, PICC or implantable port)
+
+Exclusion Criteria:
+
+* objection to participate in the study
+* patient under judicial protection","18 Years","","ALL","","RECRUITING","OBSERVATIONAL","2026-09-08","TITLE: PEMBRO-K : Evaluation of Pembrolizumab Therapeutic Pharmacological Monitoring Benefit in NSCLC
+
+CONDITIONS: Non Small Cell Lung Cancer
+
+INTERVENTIONS: 
+
+SUMMARY: Solid cancers and their therapeutic management remain a major public health problem due to their increasing prevalence and associated mortality. Among solid cancers, lung cancer ranks 4th among incident cancers. The prognosis remains poor, 33,117 deaths were recorded in France in 2018. Two histological forms of bronchopulmonary cancer are distinguished: non-small cell lung cancers (NSCLC), which represent 85% of bronchopulmonary cancer, and small cell lung cancers. The most common forms of NSCLC are adenocarcinoma, squamous cell carcinoma and large cell carcinoma.
+
+The emergence of new so-called targeted therapies has considerably modified the management and prognosis of oncology patients and in particular of patients with NSCLC. These new molecules were developed following the molecular characterization of tumors on the one hand and on the other hand the characterization of the role of immunity in anti-tumor defense, particularly the Programmed Death receptor pathway 1 (PD-1). Blocking this pathway restores the anti-tumor potential of these lymphocytes. Pembrolizumab is a humanized monoclonal antibody that binds to the PD-1 receptor and blocks its interaction with the Programmed Death Ligand-1 (PDL1) and Programmed Death Ligand-2 (PDL2), expressed by tumor cells but also by cells in the microenvironment. tumor and by antigen-presenting cells. Pembrolizumab thus potentiates T cell responses, including anti-tumor responses, by blocking the binding of PD-1 with PDL1 and PDL2.
+
+Pembrolizumab currently has marketing authorization (MA) for the treatment of NSCLC. Despite therapeutic progress due, among other things, to the emergence of anti-PD-1 antibodies including pembrolizumab, the prognosis of NSCLC remains poor and the use of pembrolizumab is sometimes limited by the occurrence of adverse effects.
+
+The pharmacokinetics of pembrolizumab was studied pre-marketing in patients with melanoma, NSCLC or metastatic or unresectable carcinomas. However, there are no data relating to the pharmacokinetic (PK) / clinical response (pharmacodynamic / PD) relationship of pembrolizumab, in real life. No prospective pharmacological study has in fact been published to date, especially in patients treated as part of the management of NSCLC. The absence of such studies - in real life - constitutes a pitfall given the existence of a possible association between PK data and the clinical response and/or toxicity of pembrolizumab.
+
+ELIGIBILITY: Inclusion Criteria:
+
+* 18 years or more
+* patient with NSCLC
+* pembrolizumab treatment (monotherapy or not) with a placed line (peripheral catheter, PICC or implantable port)
+
+Exclusion Criteria:
+
+* objection to participate in the study
+* patient under judicial protection","1","Relevant: recruiting observational NSCLC study; eligibility explicitly requires pembrolizumab treatment."
