@@ -170,9 +170,10 @@ def prepare_qrels(
     """
     Validate qrels against the query specs and add a derived 'grade' column.
 
-    Rows where both disease_match and intervention_match are blank are
-    pending (pooled but not yet judged): they are dropped and counted in
-    the returned frame's attrs["pending_rows"].
+    Rows where disease_match or intervention_match is blank are pending
+    (pooled but not yet fully judged; templates pre-fill "not_applicable"
+    for a concept the query lacks): they are dropped and counted in the
+    returned frame's attrs["pending_rows"].
     """
 
     missing = set(QRELS_COLUMNS) - set(qrels.columns)
@@ -183,7 +184,7 @@ def prepare_qrels(
     for column in QRELS_COLUMNS:
         qrels[column] = qrels[column].fillna("").astype(str).str.strip()
 
-    pending = (qrels["disease_match"] == "") & (qrels["intervention_match"] == "")
+    pending = (qrels["disease_match"] == "") | (qrels["intervention_match"] == "")
     judged = qrels.loc[~pending].copy()
 
     if judged.duplicated(["query_id", "nct_id"]).any():

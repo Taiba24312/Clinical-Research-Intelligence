@@ -165,6 +165,17 @@ class TestValidation(unittest.TestCase):
         self.assertEqual(prepared["nct_id"].tolist(), ["d1"])
         self.assertEqual(prepared.attrs["pending_rows"], 1)
 
+    def test_template_row_with_prefilled_not_applicable_is_pending(self):
+        specs = parse_query_specs([spec(intervention=False)])
+        frame = pd.DataFrame([{
+            "query_id": "QA", "nct_id": "d1", "disease_match": "",
+            "intervention_match": "not_applicable", "mention_role": "",
+            "notes": "", "labeler": "", "label_date": "",
+        }])
+        prepared = prepare_qrels(frame, specs)
+        self.assertEqual(len(prepared), 0)
+        self.assertEqual(prepared.attrs["pending_rows"], 1)
+
     def test_not_applicable_must_match_spec(self):
         no_drug = parse_query_specs([spec(intervention=False)])
         with self.assertRaises(ValueError):   # spec has no drug, label says exact
