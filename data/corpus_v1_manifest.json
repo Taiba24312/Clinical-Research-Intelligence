@@ -1,0 +1,171 @@
+{
+  "corpus_version": "v1",
+  "created_utc": "2026-10-30T15:10:11.746541+00:00",
+  "created_by": "experiments/19_corpus_freeze_and_q01_ceiling.py",
+  "files": {
+    "raw_json": {
+      "path": "data/raw/clinical_trials_raw.json",
+      "sha256": "d742dc085d3d58653ae2ba51638109cdb846d3cbbf24bdd8a20b79c4603076db",
+      "size_bytes": 158907580,
+      "record_count": 4695,
+      "tracked_in_git": false
+    },
+    "processed_parquet": {
+      "path": "data/processed/trials.parquet",
+      "sha256": "b005d0be58c9e2d8d000f179077edf9acfec5e4b7cd99c0e1fc6f54c55cbcf67",
+      "size_bytes": 5817292,
+      "row_count": 4695,
+      "columns": [
+        "nct_id",
+        "title",
+        "conditions",
+        "interventions",
+        "summary",
+        "eligibility",
+        "min_age",
+        "max_age",
+        "sex",
+        "phase",
+        "status",
+        "study_type",
+        "last_update"
+      ],
+      "unique_nct_ids": 4695,
+      "row_order_matches_raw": true,
+      "reproducible_from_raw_with_current_processor": true,
+      "tracked_in_git": true
+    }
+  },
+  "backup": {
+    "path": "/mnt/drive/home/melange/clinical_rag/backups/clinical-research-intelligence/corpus_v1/clinical_trials_raw.json",
+    "sha256": "d742dc085d3d58653ae2ba51638109cdb846d3cbbf24bdd8a20b79c4603076db",
+    "matches_raw": true,
+    "permissions": "file 0444, directory 0555",
+    "note": "Same physical disk (/mnt/drive) as the project: protects against accidental deletion/overwrite, not disk failure."
+  },
+  "fetch_parameters": {
+    "source": "experiments/02_build_corpus.py (read via ast/regex)",
+    "api_endpoint": "https://clinicaltrials.gov/api/v2/studies",
+    "query_parameter": "query.cond",
+    "domain_queries": {
+      "oncology": "cancer",
+      "neurology": "neurological",
+      "cardiovascular": "cardiovascular",
+      "infectious_disease": "infectious disease",
+      "metabolic_endocrine": "diabetes"
+    },
+    "max_studies_per_domain": 1000,
+    "page_size": 100,
+    "timeout_seconds": 30,
+    "max_retries": 3,
+    "sort": "not specified (API default ordering)",
+    "fields": "not specified (full study records)",
+    "other_filters": "none",
+    "deduplication": "by NCT ID, first domain in fetch order wins",
+    "caveat": "Parameters are read from the current script. There is no record proving this exact script version performed the fetch; its mtime precedes the raw file mtime by ~3 minutes.",
+    "script_sha256": {
+      "experiments/02_build_corpus.py": "2b292271d235a4153a30dacfa2ac707606a3f75eb3076f0af3e795e3a076e2a0",
+      "src/ingestion/clinicaltrials_api.py": "217a24a76bd70761235fc8c51ce9fa054307a45d1d13594da8938b655c52a284",
+      "src/preprocessing/processor.py": "6f77055d185893166404adcdc24e9ccccd0646bad1df7fa9f1caef2865b7c180"
+    }
+  },
+  "fetch_date": {
+    "recorded": false,
+    "statement": "The fetch date was not recorded anywhere in the project (no logs, no timestamp in the JSON). Evidence below.",
+    "evidence": {
+      "ctgov_data_version_holder": {
+        "2026-10-07": 4695
+      },
+      "raw_json_mtime_utc": "2026-10-08T07:20:06+00:00",
+      "build_script_mtime_utc": "2026-10-08T07:17:28+00:00",
+      "processed_parquet_mtime_utc": "2026-10-08T08:37:46+00:00",
+      "max_last_update_post_date": "2026-10-07",
+      "server_file_birth_note": "Files were created on this server on 2026-10-12 with preserved mtimes, i.e. copied from another machine. Original timezone of the mtime is unknown."
+    },
+    "best_estimate": "On or after 2026-10-07 (ClinicalTrials.gov data version) and most likely 2026-10-08 (raw file mtime). Not verified."
+  },
+  "statistics": {
+    "per_domain_fetch": {
+      "oncology": {
+        "returned_by_query": 1000,
+        "new_unique": 1000,
+        "duplicates": 0,
+        "only_this_domain": 908
+      },
+      "neurology": {
+        "returned_by_query": 1000,
+        "new_unique": 967,
+        "duplicates": 33,
+        "only_this_domain": 862
+      },
+      "cardiovascular": {
+        "returned_by_query": 1000,
+        "new_unique": 884,
+        "duplicates": 116,
+        "only_this_domain": 800
+      },
+      "infectious_disease": {
+        "returned_by_query": 1000,
+        "new_unique": 947,
+        "duplicates": 53,
+        "only_this_domain": 940
+      },
+      "metabolic_endocrine": {
+        "returned_by_query": 1000,
+        "new_unique": 897,
+        "duplicates": 103,
+        "only_this_domain": 897
+      }
+    },
+    "fetched_total": 5000,
+    "duplicates_removed": 305,
+    "domain_combinations": {
+      "infectious_disease": 940,
+      "oncology": 908,
+      "metabolic_endocrine": 897,
+      "neurology": 862,
+      "cardiovascular": 800,
+      "cardiovascular+metabolic_endocrine": 68,
+      "cardiovascular+neurology": 65,
+      "cardiovascular+oncology": 39,
+      "neurology+oncology": 31,
+      "infectious_disease+neurology": 18,
+      "metabolic_endocrine+neurology": 15,
+      "infectious_disease+oncology": 13,
+      "cardiovascular+infectious_disease": 13,
+      "infectious_disease+metabolic_endocrine": 7,
+      "cardiovascular+metabolic_endocrine+neurology": 5,
+      "metabolic_endocrine+oncology": 3,
+      "cardiovascular+infectious_disease+metabolic_endocrine": 3,
+      "cardiovascular+infectious_disease+oncology": 2,
+      "cardiovascular+infectious_disease+neurology": 2,
+      "cardiovascular+neurology+oncology": 1,
+      "cardiovascular+infectious_disease+metabolic_endocrine+oncology": 1,
+      "cardiovascular+metabolic_endocrine+oncology": 1,
+      "infectious_disease+neurology+oncology": 1
+    },
+    "status": {
+      "COMPLETED": 2578,
+      "UNKNOWN": 750,
+      "RECRUITING": 501,
+      "TERMINATED": 286,
+      "NOT_YET_RECRUITING": 207,
+      "ACTIVE_NOT_RECRUITING": 159,
+      "WITHDRAWN": 149,
+      "ENROLLING_BY_INVITATION": 36,
+      "SUSPENDED": 22,
+      "AVAILABLE": 3,
+      "NO_LONGER_AVAILABLE": 2,
+      "APPROVED_FOR_MARKETING": 2
+    },
+    "study_type": {
+      "INTERVENTIONAL": 3526,
+      "OBSERVATIONAL": 1162,
+      "EXPANDED_ACCESS": 7
+    }
+  },
+  "known_issues": [
+    "torch 2.14.1 is a CUDA 13.0 build while faiss-gpu 1.12.0 is a CUDA 12.8 build. FAISS is not in the current pipeline; re-test GPU FAISS if it is used again.",
+    "Corpus is a sample: at most 1000 trials per domain query, API default order. Do not expand v1; expansion is a later, separately versioned step."
+  ]
+}

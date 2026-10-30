@@ -1,0 +1,169 @@
+{
+  "corpus_version": "v1",
+  "corpus_parquet_sha256": "b005d0be58c9e2d8d000f179077edf9acfec5e4b7cd99c0e1fc6f54c55cbcf67",
+  "query": "Recruiting NSCLC trials involving pembrolizumab",
+  "method": {
+    "text_normalization": "NFKC; Unicode dashes -> '-'; NBSP -> space",
+    "matching": "case-insensitive regex search (no word-boundary requirement except for 'pembro'), so attached punctuation such as '(NSCLC),' or 'KEYTRUDA®' matches",
+    "patterns": {
+      "disease_explicit": [
+        [
+          "NSCLC",
+          "nsclc"
+        ],
+        [
+          "non-small cell",
+          "non[\\s\\-]*small[\\s\\-]*cell"
+        ]
+      ],
+      "disease_subtype": [
+        [
+          "lung adenocarcinoma",
+          "(?:lung|pulmonary)\\s+adenocarcinoma|adenocarcinoma\\s+of\\s+(?:the\\s+)?lung"
+        ],
+        [
+          "lung squamous cell carcinoma",
+          "squamous[\\s\\-]*cell\\s+(?:carcinoma|cancer)\\s+of\\s+(?:the\\s+)?lung|(?:lung|pulmonary)\\s+squamous|squamous(?:[\\s\\-]*cell)?\\s+lung"
+        ],
+        [
+          "large cell lung carcinoma",
+          "large[\\s\\-]*cell\\s+(?:lung\\s+)?(?:carcinoma|cancer)"
+        ]
+      ],
+      "disease_broader": [
+        [
+          "lung cancer (unspecified)",
+          "lung\\s+(?:cancer|carcinoma|neoplasm|tumou?r|malignan)"
+        ],
+        [
+          "solid tumor",
+          "solid\\s+(?:tumou?r|malignan|neoplasm|cancer)"
+        ]
+      ],
+      "drug_explicit": [
+        [
+          "pembrolizumab",
+          "pembrolizumab"
+        ],
+        [
+          "lambrolizumab (former name)",
+          "lambrolizumab"
+        ],
+        [
+          "Keytruda",
+          "keytruda"
+        ],
+        [
+          "MK-3475",
+          "mk[\\s\\-]*3475"
+        ],
+        [
+          "SCH 900475",
+          "sch[\\s\\-]*900475"
+        ],
+        [
+          "pembro (abbreviation)",
+          "\\bpembro\\b"
+        ]
+      ],
+      "drug_class": [
+        [
+          "anti-PD-(L)1",
+          "anti[\\s\\-]*pd[\\s\\-]*l?[\\s\\-]*1"
+        ],
+        [
+          "PD-(L)1 inhibitor/blockade",
+          "pd[\\s\\-]*l?[\\s\\-]*1\\s+(?:inhibit|blockade|block|antibod|therap)"
+        ],
+        [
+          "immune checkpoint",
+          "(?:immune[\\s\\-]*)?checkpoint\\s+inhibit"
+        ],
+        [
+          "immunotherapy",
+          "immuno[\\s\\-]*therap"
+        ]
+      ]
+    },
+    "fields_searched": [
+      "acronym",
+      "arm_descriptions",
+      "arm_labels",
+      "brief_summary",
+      "brief_title",
+      "condition_mesh",
+      "condition_mesh_ancestors",
+      "conditions",
+      "detailed_description",
+      "eligibility_exclusion",
+      "eligibility_inclusion",
+      "eligibility_unsectioned",
+      "intervention_descriptions",
+      "intervention_mesh",
+      "intervention_names",
+      "intervention_other_names",
+      "keywords",
+      "official_title"
+    ],
+    "fields_in_processed_document": [
+      "brief_summary",
+      "brief_title",
+      "conditions",
+      "eligibility_exclusion",
+      "eligibility_inclusion",
+      "eligibility_unsectioned",
+      "intervention_names"
+    ],
+    "eligibility_split": "text before the first 'Exclusion Criteria' header = inclusion, from it onward = exclusion",
+    "context_flags": {
+      "negation_cues": "\\b(?:no|not|without|exclud\\w*|ineligible|prohibit\\w*|disallow\\w*|except|other\\s+than)\\b",
+      "prior_therapy_cues": "\\b(?:prior|previous(?:ly)?|history\\s+of|pre-?treated|received|refractory|resistant|progress\\w*|fail\\w*|after)\\b",
+      "scope": "the bullet/sentence containing the match",
+      "caveat": "heuristic flags for human review, not labels"
+    }
+  },
+  "counts": {
+    "RECRUITING": {
+      "trials": 501,
+      "disease_explicit": 10,
+      "disease_explicit_or_subtype": 10,
+      "drug_explicit": 10,
+      "both_explicit_disease": 2,
+      "both_including_subtype": 2,
+      "both_with_clean_evidence_for_each": 2,
+      "drug_and_broader_disease_only": 6,
+      "disease_and_drug_class_only": 4
+    },
+    "NOT_YET_RECRUITING": {
+      "trials": 207,
+      "disease_explicit": 7,
+      "disease_explicit_or_subtype": 7,
+      "drug_explicit": 3,
+      "both_explicit_disease": 1,
+      "both_including_subtype": 1,
+      "both_with_clean_evidence_for_each": 1,
+      "drug_and_broader_disease_only": 1,
+      "disease_and_drug_class_only": 5
+    },
+    "ALL_STATUSES": {
+      "trials": 4695,
+      "disease_explicit": 85,
+      "disease_explicit_or_subtype": 89,
+      "drug_explicit": 28,
+      "both_explicit_disease": 8,
+      "both_including_subtype": 9,
+      "both_with_clean_evidence_for_each": 8,
+      "drug_and_broader_disease_only": 11,
+      "disease_and_drug_class_only": 29
+    }
+  },
+  "legacy_audit_counts_recruiting": {
+    "disease": 10,
+    "drug": 10,
+    "both": 2
+  },
+  "outputs": [
+    "data/evaluation/q01_ceiling_v1_trials.csv",
+    "data/evaluation/q01_ceiling_v1_evidence.csv"
+  ]
+}
