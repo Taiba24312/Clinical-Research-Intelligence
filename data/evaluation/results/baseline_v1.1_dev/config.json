@@ -1,0 +1,50 @@
+{
+  "created_utc": "2026-11-02T08:39:38.530975+00:00",
+  "git_commit_before_run": "1b7821d96253e7afcb1987f0944ceeab155e51fd",
+  "split": "dev",
+  "query_ids": [
+    "Q01",
+    "Q02",
+    "Q03",
+    "Q04",
+    "Q05",
+    "Q06",
+    "Q07",
+    "Q08",
+    "Q09",
+    "Q10",
+    "Q11",
+    "Q18",
+    "Q20",
+    "Q22",
+    "Q23",
+    "Q24"
+  ],
+  "systems": {
+    "bm25_ws": "data/runs/v1/bm25_ws.parser_filters.csv",
+    "dense": "data/runs/v1/dense.parser_filters.csv",
+    "rrf": "data/runs/v1/rrf.parser_filters.csv",
+    "rrf_ce_raw": "data/runs/v1/rrf_ce_raw.parser_filters.csv"
+  },
+  "ks": [
+    5,
+    10,
+    20
+  ],
+  "bootstrap": {
+    "n_boot": 10000,
+    "seed": 20261030
+  },
+  "gain": "2**grade - 1",
+  "qrels": {
+    "file": "data/evaluation/qrels_v1.1.csv",
+    "sha256": "3796299c11b35976d774db09e9b7934928c561dfe0227163ca5b95538bc31530",
+    "judged_rows_dev_after_sharing": 353,
+    "shared": {
+      "Q22": "Q01",
+      "Q23": "Q07"
+    }
+  },
+  "query_specs_sha256": "666f47372753754111da9f7ab778e44cb2953ac323b90f8a6f8b15934c85e651",
+  "corpus_parquet_sha256": "b005d0be58c9e2d8d000f179077edf9acfec5e4b7cd99c0e1fc6f54c55cbcf67"
+}
