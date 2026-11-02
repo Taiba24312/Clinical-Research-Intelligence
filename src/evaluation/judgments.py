@@ -60,6 +60,7 @@ class QuerySpec:
     category: tuple[str, ...]
     split: str
     has_answer: bool
+    judgments_shared_with: str | None = None
 
     @property
     def has_disease(self) -> bool:
@@ -113,9 +114,53 @@ def parse_query_specs(items: list[dict]) -> dict[str, QuerySpec]:
             category=tuple(category),
             split=split,
             has_answer=bool(item["has_answer"]),
+            judgments_shared_with=item.get("judgments_shared_with"),
         )
 
+    # A paraphrase may reuse another query's judgments only if both ask for
+    # exactly the same concepts and constraints.
+    for spec in specs.values():
+        source_id = spec.judgments_shared_with
+        if source_id is None:
+            continue
+        source = specs.get(source_id)
+        if source is None:
+            raise ValueError(f"{spec.query_id}: judgments_shared_with={source_id!r} not found")
+        if source.judgments_shared_with is not None:
+            raise ValueError(f"{spec.query_id}: {source_id} itself reuses judgments")
+        if (spec.core_concepts != source.core_concepts
+                or spec.structured_constraints != source.structured_constraints):
+            raise ValueError(
+                f"{spec.query_id}: cannot reuse {source_id}'s judgments, because the "
+                "core concepts or structured constraints differ.")
+
     return specs
+
+
+def expand_shared_judgments(qrels: pd.DataFrame, specs: dict[str, QuerySpec]) -> pd.DataFrame:
+    """
+    Copy judgments to queries that reuse another query's judgments
+    (judgments_shared_with), for trials not already judged under the
+    reusing query. Copied rows are marked in notes. Works on raw or
+    prepared qrels (an existing 'grade' column is copied too).
+    """
+
+    added = []
+    for spec in specs.values():
+        source_id = spec.judgments_shared_with
+        if source_id is None:
+            continue
+        own = set(qrels.loc[qrels["query_id"] == spec.query_id, "nct_id"])
+        copied = qrels[(qrels["query_id"] == source_id) & ~qrels["nct_id"].isin(own)].copy()
+        copied["query_id"] = spec.query_id
+        copied["notes"] = (f"[copied from {source_id}] " + copied["notes"].fillna("").astype(str)).str.strip()
+        added.append(copied)
+
+    if not added:
+        return qrels.copy()
+    expanded = pd.concat([qrels, *added], ignore_index=True)
+    expanded.attrs = dict(qrels.attrs)
+    return expanded
 
 
 def load_query_specs(path: str | Path) -> dict[str, QuerySpec]:

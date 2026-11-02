@@ -14,6 +14,7 @@ import pandas as pd
 
 from src.evaluation.judgments import (
     derive_grade,
+    expand_shared_judgments,
     parse_query_specs,
     prepare_qrels,
     prepare_run,
@@ -185,6 +186,24 @@ class TestValidation(unittest.TestCase):
         frame.loc[0, "intervention_match"] = "not_applicable"
         with self.assertRaises(ValueError):   # spec has a drug, label says n/a
             prepare_qrels(frame, with_drug)
+
+    def test_shared_judgments_are_copied_to_paraphrase(self):
+        paraphrase = spec("QP")
+        paraphrase["judgments_shared_with"] = "QA"
+        specs = parse_query_specs([spec(), paraphrase])
+        own = qrels([("QA", "d1", 2), ("QA", "d2", 0), ("QP", "d2", 1), ("QP", "d3", 0)])
+        expanded = expand_shared_judgments(prepare_qrels(own, specs), specs)
+        qp = expanded[expanded["query_id"] == "QP"].set_index("nct_id")
+        self.assertEqual(sorted(qp.index), ["d1", "d2", "d3"])
+        self.assertEqual(qp.loc["d1", "grade"], 2)          # copied from QA
+        self.assertEqual(qp.loc["d2", "grade"], 1)          # own judgment wins
+        self.assertTrue(qp.loc["d1", "notes"].startswith("[copied from QA]"))
+
+    def test_shared_judgments_require_identical_spec(self):
+        paraphrase = spec("QP", constraints={"status": ["COMPLETED"]})
+        paraphrase["judgments_shared_with"] = "QA"
+        with self.assertRaises(ValueError):
+            parse_query_specs([spec(), paraphrase])
 
     def test_duplicate_judgments_rejected(self):
         specs = parse_query_specs([spec()])
