@@ -8,7 +8,7 @@ paraphrase queries (Q22 <- Q01, Q23 <- Q07). Test queries are not evaluated.
 
 Outputs (never overwritten), in data/evaluation/results/baseline_v1.1_dev/:
     per_query.csv, summary.csv (all metrics, bootstrap CIs), summary_main.csv,
-    paired.csv, violations.csv, zero_answer.csv, config.json
+    paired.csv, paired_condensed.csv, violations.csv, zero_answer.csv, config.json
 
 Run from the project root:
     PYTHONPATH=$PWD python experiments/27_baseline_dev_evaluation.py
@@ -16,6 +16,7 @@ Run from the project root:
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import subprocess
@@ -50,6 +51,7 @@ MAIN_METRICS = ["ndcg@10", "cond_ndcg@10", "p_strict@10", "p_lenient@10",
                 "judged@10", "violation_rate@10"]
 PAIRS = [("rrf", "bm25_ws"), ("rrf", "dense"), ("rrf_ce_raw", "rrf")]
 PAIR_METRICS = ["ndcg@10", "mrr_lenient", "p_lenient@10"]
+CONDENSED_PAIR_METRICS = ["cond_ndcg@10", "cond_p_lenient@10"]
 
 
 def sha256(path: Path) -> str:
@@ -57,14 +59,21 @@ def sha256(path: Path) -> str:
 
 
 def main() -> None:
-    if OUT_DIR.exists() and any(OUT_DIR.iterdir()):
-        raise FileExistsError(f"Refusing to overwrite {OUT_DIR}")
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--qrels", type=Path, default=QRELS)
+    parser.add_argument("--out-dir", type=Path, default=OUT_DIR)
+    args = parser.parse_args()
+    qrels_path = args.qrels if args.qrels.is_absolute() else PROJECT_ROOT / args.qrels
+    out_dir = args.out_dir if args.out_dir.is_absolute() else PROJECT_ROOT / args.out_dir
+
+    if out_dir.exists() and any(out_dir.iterdir()):
+        raise FileExistsError(f"Refusing to overwrite {out_dir}")
+    out_dir.mkdir(parents=True, exist_ok=True)
 
     specs = load_query_specs(SPECS)
     dev_ids = sorted(q for q, s in specs.items() if s.split == SPLIT)
 
-    qrels = load_qrels(QRELS, specs)
+    qrels = load_qrels(qrels_path, specs)
     qrels = expand_shared_judgments(qrels, specs)
     qrels = qrels[qrels["query_id"].isin(dev_ids)]
 
@@ -83,13 +92,16 @@ def main() -> None:
                   .sort_values(["order", "system"]).drop(columns="order"))
     paired = pd.DataFrame([paired_comparison(result.per_query, a, b, m)
                            for a, b in PAIRS for m in PAIR_METRICS])
+    paired_condensed = pd.DataFrame([paired_comparison(result.per_query, a, b, m)
+                                     for a, b in PAIRS for m in CONDENSED_PAIR_METRICS])
 
-    result.per_query.to_csv(OUT_DIR / "per_query.csv", index=False)
-    summary.to_csv(OUT_DIR / "summary.csv", index=False)
-    main_table.to_csv(OUT_DIR / "summary_main.csv", index=False)
-    paired.to_csv(OUT_DIR / "paired.csv", index=False)
-    result.violations.to_csv(OUT_DIR / "violations.csv", index=False)
-    result.zero_answer.to_csv(OUT_DIR / "zero_answer.csv", index=False)
+    result.per_query.to_csv(out_dir / "per_query.csv", index=False)
+    summary.to_csv(out_dir / "summary.csv", index=False)
+    main_table.to_csv(out_dir / "summary_main.csv", index=False)
+    paired.to_csv(out_dir / "paired.csv", index=False)
+    paired_condensed.to_csv(out_dir / "paired_condensed.csv", index=False)
+    result.violations.to_csv(out_dir / "violations.csv", index=False)
+    result.zero_answer.to_csv(out_dir / "zero_answer.csv", index=False)
 
     commit = subprocess.run(["git", "rev-parse", "HEAD"], cwd=PROJECT_ROOT,
                             capture_output=True, text=True).stdout.strip()
@@ -100,14 +112,14 @@ def main() -> None:
         "systems": {s: f"data/runs/v1/{s}.{MODE}.csv" for s in SYSTEMS},
         "ks": KS, "bootstrap": {"n_boot": DEFAULT_N_BOOT, "seed": DEFAULT_SEED},
         "gain": "2**grade - 1",
-        "qrels": {"file": str(QRELS.relative_to(PROJECT_ROOT)), "sha256": sha256(QRELS),
+        "qrels": {"file": str(qrels_path.relative_to(PROJECT_ROOT)), "sha256": sha256(qrels_path),
                   "judged_rows_dev_after_sharing": len(qrels),
                   "shared": {q: s.judgments_shared_with for q, s in specs.items()
                              if s.judgments_shared_with}},
         "query_specs_sha256": sha256(SPECS),
         "corpus_parquet_sha256": sha256(PARQUET),
     }
-    (OUT_DIR / "config.json").write_text(json.dumps(config, indent=2) + "\n")
+    (out_dir / "config.json").write_text(json.dumps(config, indent=2) + "\n")
 
     pd.set_option("display.width", 200)
     print(main_table.to_string(index=False, float_format=lambda x: f"{x:.3f}"))
@@ -115,7 +127,10 @@ def main() -> None:
     print(paired[["metric", "system_a", "system_b", "n_queries", "mean_diff", "ci_low",
                   "ci_high", "p_value", "wins_a", "ties", "wins_b"]]
           .to_string(index=False, float_format=lambda x: f"{x:.3f}"))
-    print(f"\nSaved results to {OUT_DIR}")
+    print("\nPaired comparisons, condensed lists (unjudged removed):")
+    print(paired_condensed[["metric", "system_a", "system_b", "n_queries", "mean_diff", "ci_low",
+                            "ci_high", "p_value"]].to_string(index=False, float_format=lambda x: f"{x:.3f}"))
+    print(f"\nSaved results to {out_dir}")
 
 
 if __name__ == "__main__":

@@ -43,7 +43,10 @@ def main() -> int:
     parser.add_argument("--labeler", required=True)
     parser.add_argument("--date", default=date.today().isoformat())
     parser.add_argument("--check-only", action="store_true")
+    parser.add_argument("--out", type=Path, default=QRELS_OUT,
+                        help="qrels file to write (never overwritten)")
     args = parser.parse_args()
+    qrels_out = args.out if args.out.is_absolute() else PROJECT_ROOT / args.out
 
     date.fromisoformat(args.date)
     specs = load_query_specs(SPECS)
@@ -79,13 +82,13 @@ def main() -> int:
         return 1
     if args.check_only:
         return 0
-    if QRELS_OUT.exists():
-        print(f"\n{QRELS_OUT} already exists; not overwriting. Remove or rename it deliberately.")
+    if qrels_out.exists():
+        print(f"\n{qrels_out} already exists; not overwriting. Use --out with a new version.")
         return 1
 
-    qrels.to_csv(QRELS_OUT, index=False)
-    reloaded = load_qrels(QRELS_OUT, specs)          # final check with the Step 2 loader
-    print(f"\nSaved {QRELS_OUT} ({len(reloaded)} judged rows accepted by the loader).")
+    qrels.to_csv(qrels_out, index=False)
+    reloaded = load_qrels(qrels_out, specs)          # final check with the Step 2 loader
+    print(f"\nSaved {qrels_out} ({len(reloaded)} judged rows accepted by the loader).")
     return 0
 
 

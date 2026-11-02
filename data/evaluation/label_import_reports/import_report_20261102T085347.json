@@ -1,0 +1,171 @@
+{
+  "sheet": "data/evaluation/labeling_sheet_v1.2_labeled.xlsx",
+  "labeler": "AJ",
+  "label_date": "2026-11-02",
+  "rows_in_template": 474,
+  "rows_judged": 474,
+  "ok": true,
+  "n_errors": 0,
+  "errors": [],
+  "partial_rows": [],
+  "uncertain_rows": [],
+  "warnings": [
+    "Q22 is marked has_answer=true but no pooled trial was judged grade >= 1; check the labels or the has_answer flag."
+  ],
+  "per_query": {
+    "Q01": {
+      "rows": 12,
+      "judged": 12,
+      "grade_2": 2,
+      "grade_1": 2,
+      "grade_0": 8
+    },
+    "Q02": {
+      "rows": 13,
+      "judged": 13,
+      "grade_2": 10,
+      "grade_1": 1,
+      "grade_0": 2
+    },
+    "Q03": {
+      "rows": 27,
+      "judged": 27,
+      "grade_2": 0,
+      "grade_1": 1,
+      "grade_0": 26
+    },
+    "Q04": {
+      "rows": 29,
+      "judged": 29,
+      "grade_2": 27,
+      "grade_1": 2,
+      "grade_0": 0
+    },
+    "Q05": {
+      "rows": 27,
+      "judged": 27,
+      "grade_2": 26,
+      "grade_1": 1,
+      "grade_0": 0
+    },
+    "Q06": {
+      "rows": 24,
+      "judged": 24,
+      "grade_2": 22,
+      "grade_1": 0,
+      "grade_0": 2
+    },
+    "Q07": {
+      "rows": 23,
+      "judged": 23,
+      "grade_2": 22,
+      "grade_1": 1,
+      "grade_0": 0
+    },
+    "Q08": {
+      "rows": 22,
+      "judged": 22,
+      "grade_2": 20,
+      "grade_1": 0,
+      "grade_0": 2
+    },
+    "Q09": {
+      "rows": 25,
+      "judged": 25,
+      "grade_2": 15,
+      "grade_1": 1,
+      "grade_0": 9
+    },
+    "Q10": {
+      "rows": 24,
+      "judged": 24,
+      "grade_2": 19,
+      "grade_1": 0,
+      "grade_0": 5
+    },
+    "Q11": {
+      "rows": 29,
+      "judged": 29,
+      "grade_2": 4,
+      "grade_1": 0,
+      "grade_0": 25
+    },
+    "Q12": {
+      "rows": 24,
+      "judged": 24,
+      "grade_2": 3,
+      "grade_1": 0,
+      "grade_0": 21
+    },
+    "Q13": {
+      "rows": 19,
+      "judged": 19,
+      "grade_2": 5,
+      "grade_1": 0,
+      "grade_0": 14
+    },
+    "Q14": {
+      "rows": 22,
+      "judged": 22,
+      "grade_2": 1,
+      "grade_1": 0,
+      "grade_0": 21
+    },
+    "Q15": {
+      "rows": 24,
+      "judged": 24,
+      "grade_2": 8,
+      "grade_1": 0,
+      "grade_0": 16
+    },
+    "Q17": {
+      "rows": 18,
+      "judged": 18,
+      "grade_2": 4,
+      "grade_1": 0,
+      "grade_0": 14
+    },
+    "Q18": {
+      "rows": 25,
+      "judged": 25,
+      "grade_2": 9,
+      "grade_1": 2,
+      "grade_0": 14
+    },
+    "Q19": {
+      "rows": 17,
+      "judged": 17,
+      "grade_2": 9,
+      "grade_1": 0,
+      "grade_0": 8
+    },
+    "Q20": {
+      "rows": 23,
+      "judged": 23,
+      "grade_2": 1,
+      "grade_1": 0,
+      "grade_0": 22
+    },
+    "Q21": {
+      "rows": 28,
+      "judged": 28,
+      "grade_2": 5,
+      "grade_1": 0,
+      "grade_0": 23
+    },
+    "Q22": {
+      "rows": 3,
+      "judged": 3,
+      "grade_2": 0,
+      "grade_1": 0,
+      "grade_0": 3
+    },
+    "Q23": {
+      "rows": 16,
+      "judged": 16,
+      "grade_2": 3,
+      "grade_1": 0,
+      "grade_0": 13
+    }
+  }
+}

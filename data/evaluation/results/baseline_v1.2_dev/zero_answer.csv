@@ -1,0 +1,5 @@
+system,query_id,n_returned,best_score,top1_nct_id,grade0_share@5,unjudged_share@5,grade0_share@10,unjudged_share@10,grade0_share@20,unjudged_share@20
+bm25_ws,Q24,100,16.0725665045962,NCT03108846,0.0,1.0,0.0,1.0,0.0,1.0
+dense,Q24,100,0.7568492889404297,NCT02207634,0.0,1.0,0.0,1.0,0.0,1.0
+rrf,Q24,50,0.032258064516129,NCT06989697,0.0,1.0,0.0,1.0,0.0,1.0
+rrf_ce_raw,Q24,50,0.8204007744789124,NCT00128102,0.0,1.0,0.0,1.0,0.0,1.0

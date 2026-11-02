@@ -145,6 +145,25 @@ class TestImportLabels(unittest.TestCase):
         self.assertTrue(any(w.startswith("QB") for w in report.warnings))
         self.assertFalse(any(w.startswith("QA") for w in report.warnings))   # QA incomplete
 
+    def test_no_warning_for_query_reusing_judgments(self):
+        items = [
+            {"query_id": "QB", "text": "disease only", "split": "dev", "has_answer": True,
+             "core_concepts": {"disease": {"concept": "d"}, "intervention": None},
+             "structured_constraints": {}},
+            {"query_id": "QC", "text": "paraphrase", "split": "dev", "has_answer": True,
+             "core_concepts": {"disease": {"concept": "d"}, "intervention": None},
+             "structured_constraints": {}, "judgments_shared_with": "QB"},
+        ]
+        specs = parse_query_specs(items)
+        tmpl = pd.DataFrame([{"row_id": "QC-001", "query_id": "QC", "nct_id": "N5",
+                              "disease_match": "", "intervention_match": "not_applicable",
+                              "mention_role": "", "notes": "", "labeler": "", "label_date": ""}])
+        write_sheet(self.path, [{"row_id": "QC-001", "query_id": "QC", "NCT ID": "N5",
+                                 "disease_match": "absent_or_different",
+                                 "intervention_match": "not_applicable"}])
+        _, report = import_labels(read_label_sheet(self.path), tmpl, specs, "AJ", "2026-11-02")
+        self.assertEqual(report.warnings, [])
+
 
 SHEET_V11 = PROJECT_ROOT / "data/evaluation/labeling_sheet_v1.1.xlsx"
 TEMPLATE_V11 = PROJECT_ROOT / "data/evaluation/qrels_v1.1_template.csv"

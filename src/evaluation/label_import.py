@@ -202,7 +202,11 @@ def import_labels(
             "grade_0": int(grades.get(0, 0)),
         }
         complete = len(judged) == len(group)
-        if complete and specs[query_id].has_answer and grades.get(2, 0) + grades.get(1, 0) == 0:
+        # Paraphrases reuse another query's judgments, so their own rows
+        # alone cannot show whether the query has an answer.
+        reuses = specs[query_id].judgments_shared_with is not None
+        if (complete and not reuses and specs[query_id].has_answer
+                and grades.get(2, 0) + grades.get(1, 0) == 0):
             report.warnings.append(
                 f"{query_id} is marked has_answer=true but no pooled trial was judged "
                 "grade >= 1; check the labels or the has_answer flag.")
