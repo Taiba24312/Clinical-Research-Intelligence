@@ -1,0 +1,625 @@
+{
+ "description": "Outputs of the OLD parser (src/query_understanding/parser.py, parse_query) recorded 2026-11-03 before M2 Task 1, on all phrasings and all evaluation query texts. Must never change.",
+ "outputs": {
+  "Currently recruiting asthma studies": {
+   "semantic_query": "currently asthma",
+   "filters": {
+    "status": [
+     "RECRUITING"
+    ]
+   }
+  },
+  "Psoriasis trials enrolling now": {
+   "semantic_query": "psoriasis enrolling now",
+   "filters": {}
+  },
+  "Which migraine trials are accepting participants?": {
+   "semantic_query": "which migraine are accepting participants?",
+   "filters": {}
+  },
+  "Gout studies open to enrollment": {
+   "semantic_query": "gout open to enrollment",
+   "filters": {}
+  },
+  "Open lupus trials": {
+   "semantic_query": "open lupus",
+   "filters": {}
+  },
+  "Upcoming sickle cell disease studies": {
+   "semantic_query": "upcoming sickle cell disease",
+   "filters": {}
+  },
+  "COPD research not yet open for enrollment": {
+   "semantic_query": "copd research not yet open for enrollment",
+   "filters": {}
+  },
+  "Cystic fibrosis studies that have not started enrolling": {
+   "semantic_query": "cystic fibrosis that have not started enrolling",
+   "filters": {}
+  },
+  "Rheumatoid arthritis research, not-yet-recruiting": {
+   "semantic_query": "rheumatoid arthritis research, not-yet",
+   "filters": {
+    "status": [
+     "RECRUITING"
+    ]
+   }
+  },
+  "Finished glaucoma studies": {
+   "semantic_query": "finished glaucoma",
+   "filters": {}
+  },
+  "Osteoporosis research that has been completed": {
+   "semantic_query": "osteoporosis research that has been completed",
+   "filters": {}
+  },
+  "Terminated hepatitis C studies": {
+   "semantic_query": "terminated hepatitis c",
+   "filters": {}
+  },
+  "Withdrawn insomnia research": {
+   "semantic_query": "withdrawn insomnia research",
+   "filters": {}
+  },
+  "Eczema studies that are active, not recruiting": {
+   "semantic_query": "eczema that are active, not",
+   "filters": {
+    "status": [
+     "RECRUITING"
+    ]
+   }
+  },
+  "Depression research enrolling by invitation": {
+   "semantic_query": "depression research enrolling by invitation",
+   "filters": {}
+  },
+  "Schizophrenia studies not recruiting": {
+   "semantic_query": "schizophrenia not",
+   "filters": {
+    "status": [
+     "RECRUITING"
+    ]
+   }
+  },
+  "Ongoing anemia studies": {
+   "semantic_query": "ongoing anemia",
+   "filters": {}
+  },
+  "Active endometriosis research": {
+   "semantic_query": "active endometriosis research",
+   "filters": {}
+  },
+  "Kidney stone studies, recruiting or not yet recruiting": {
+   "semantic_query": "kidney stone , or not yet",
+   "filters": {
+    "status": [
+     "RECRUITING"
+    ]
+   }
+  },
+  "Only actively recruiting celiac disease studies": {
+   "semantic_query": "only actively celiac disease",
+   "filters": {
+    "status": [
+     "RECRUITING"
+    ]
+   }
+  },
+  "Hypothyroidism research excluding completed ones": {
+   "semantic_query": "hypothyroidism research excluding completed ones",
+   "filters": {}
+  },
+  "Gout research no longer recruiting": {
+   "semantic_query": "gout research no longer",
+   "filters": {
+    "status": [
+     "RECRUITING"
+    ]
+   }
+  },
+  "Phase two psoriasis studies": {
+   "semantic_query": "phase two psoriasis",
+   "filters": {}
+  },
+  "Phase IV asthma drug studies": {
+   "semantic_query": "phase iv asthma drug",
+   "filters": {}
+  },
+  "Phase 4 post-marketing research on statins": {
+   "semantic_query": "phase 4 post-marketing research on statins",
+   "filters": {}
+  },
+  "Phase III osteoarthritis research": {
+   "semantic_query": "phase iii osteoarthritis research",
+   "filters": {}
+  },
+  "Phase I/II studies in sickle cell anemia": {
+   "semantic_query": "phase i/ii in sickle cell anemia",
+   "filters": {}
+  },
+  "Phase 2/3 lupus nephritis research": {
+   "semantic_query": "/3 lupus nephritis research",
+   "filters": {
+    "phase": [
+     "PHASE2"
+    ]
+   }
+  },
+  "Phase 1-2 gene therapy for hemophilia": {
+   "semantic_query": "2 gene therapy for hemophilia",
+   "filters": {
+    "phase": [
+     "PHASE1"
+    ]
+   }
+  },
+  "Phase 1b migraine studies": {
+   "semantic_query": "phase 1b migraine",
+   "filters": {}
+  },
+  "Phase IIa research for gout": {
+   "semantic_query": "phase iia research for gout",
+   "filters": {}
+  },
+  "Phase 0 studies in glioma": {
+   "semantic_query": "phase 0 in glioma",
+   "filters": {}
+  },
+  "Early phase 1 cystic fibrosis studies": {
+   "semantic_query": "early cystic fibrosis",
+   "filters": {
+    "phase": [
+     "PHASE1"
+    ]
+   }
+  },
+  "Phase 2 or phase 3 COPD research": {
+   "semantic_query": "or copd research",
+   "filters": {
+    "phase": [
+     "PHASE2"
+    ]
+   }
+  },
+  "Late-phase rheumatoid arthritis studies": {
+   "semantic_query": "late-phase rheumatoid arthritis",
+   "filters": {}
+  },
+  "Hepatitis B studies excluding phase 1": {
+   "semantic_query": "hepatitis b excluding",
+   "filters": {
+    "phase": [
+     "PHASE1"
+    ]
+   }
+  },
+  "Phase 2 and 3 studies of anemia": {
+   "semantic_query": "and 3 of anemia",
+   "filters": {
+    "phase": [
+     "PHASE2"
+    ]
+   }
+  },
+  "Lupus studies in women": {
+   "semantic_query": "lupus in women",
+   "filters": {
+    "sex": [
+     "FEMALE"
+    ]
+   }
+  },
+  "Women-only osteoporosis studies": {
+   "semantic_query": "women-only osteoporosis",
+   "filters": {
+    "sex": [
+     "FEMALE"
+    ]
+   }
+  },
+  "Gout research in men": {
+   "semantic_query": "gout research in men",
+   "filters": {
+    "sex": [
+     "MALE"
+    ]
+   }
+  },
+  "Male-only studies of hair loss": {
+   "semantic_query": "male-only of hair loss",
+   "filters": {
+    "sex": [
+     "MALE"
+    ]
+   }
+  },
+  "Migraine studies that enroll both men and women": {
+   "semantic_query": "migraine that enroll both men and women",
+   "filters": {
+    "sex": [
+     "FEMALE"
+    ]
+   }
+  },
+  "Psoriasis research for pregnant women": {
+   "semantic_query": "psoriasis research for pregnant women",
+   "filters": {
+    "sex": [
+     "FEMALE"
+    ]
+   }
+  },
+  "Mental health app studies": {
+   "semantic_query": "mental health app",
+   "filters": {}
+  },
+  "Dosing regimen research for asthma": {
+   "semantic_query": "dosing regimen research for asthma",
+   "filters": {}
+  },
+  "Endometriosis research in female volunteers": {
+   "semantic_query": "endometriosis research in female volunteers",
+   "filters": {
+    "sex": [
+     "FEMALE"
+    ]
+   }
+  },
+  "Paediatric asthma research": {
+   "semantic_query": "paediatric asthma research",
+   "filters": {}
+  },
+  "Studies of migraine in kids": {
+   "semantic_query": "of migraine in kids",
+   "filters": {}
+  },
+  "Children with sickle cell disease": {
+   "semantic_query": "children with sickle cell disease",
+   "filters": {}
+  },
+  "Teenagers with depression": {
+   "semantic_query": "teenagers with depression",
+   "filters": {}
+  },
+  "Adolescent scoliosis research": {
+   "semantic_query": "adolescent scoliosis research",
+   "filters": {}
+  },
+  "Infants with RSV infection": {
+   "semantic_query": "infants with rsv infection",
+   "filters": {}
+  },
+  "Elderly patients with insomnia": {
+   "semantic_query": "elderly patients with insomnia",
+   "filters": {}
+  },
+  "Geriatric depression studies": {
+   "semantic_query": "geriatric depression",
+   "filters": {}
+  },
+  "Osteoporosis research for people aged 65 and above": {
+   "semantic_query": "osteoporosis research for people aged 65 and above",
+   "filters": {}
+  },
+  "COPD studies in patients 70 years or older": {
+   "semantic_query": "copd in patients 70 years or older",
+   "filters": {}
+  },
+  "Asthma research for patients under 12": {
+   "semantic_query": "asthma research for patients under 12",
+   "filters": {}
+  },
+  "Psoriasis studies for ages 18 to 50": {
+   "semantic_query": "psoriasis for ages 18 to 50",
+   "filters": {}
+  },
+  "Gout studies in adult patients": {
+   "semantic_query": "gout patients",
+   "filters": {
+    "min_age": 18
+   }
+  },
+  "Young adults with migraine": {
+   "semantic_query": "young with migraine",
+   "filters": {
+    "min_age": 18
+   }
+  },
+  "Middle-aged women with lupus": {
+   "semantic_query": "middle-aged women with lupus",
+   "filters": {
+    "sex": [
+     "FEMALE"
+    ]
+   }
+  },
+  "Asthma studies including both children and adults": {
+   "semantic_query": "asthma including both children and",
+   "filters": {
+    "min_age": 18
+   }
+  },
+  "Seniors with glaucoma": {
+   "semantic_query": "seniors with glaucoma",
+   "filters": {}
+  },
+  "Observational research on gout": {
+   "semantic_query": "research on gout",
+   "filters": {
+    "study_type": [
+     "OBSERVATIONAL"
+    ]
+   }
+  },
+  "Asthma registries": {
+   "semantic_query": "asthma registries",
+   "filters": {}
+  },
+  "Prospective cohort of lupus patients": {
+   "semantic_query": "prospective cohort of lupus patients",
+   "filters": {}
+  },
+  "Randomized controlled trials in psoriasis": {
+   "semantic_query": "randomized controlled in psoriasis",
+   "filters": {}
+  },
+  "Which insomnia trials are interventional?": {
+   "semantic_query": "which insomnia are interventional?",
+   "filters": {}
+  },
+  "Expanded access programs for Duchenne muscular dystrophy": {
+   "semantic_query": "expanded access programs for duchenne muscular dystrophy",
+   "filters": {}
+  },
+  "Non-observational migraine studies": {
+   "semantic_query": "non- migraine",
+   "filters": {
+    "study_type": [
+     "OBSERVATIONAL"
+    ]
+   }
+  },
+  "COPD studies, but not observational ones": {
+   "semantic_query": "copd , but not ones",
+   "filters": {
+    "study_type": [
+     "OBSERVATIONAL"
+    ]
+   }
+  },
+  "Noninterventional research of anemia": {
+   "semantic_query": "noninterventional research of anemia",
+   "filters": {}
+  },
+  "Hepatitis C research, excluding interventional studies": {
+   "semantic_query": "hepatitis c research, excluding interventional",
+   "filters": {}
+  },
+  "Observational randomized research in gout": {
+   "semantic_query": "randomized research in gout",
+   "filters": {
+    "study_type": [
+     "OBSERVATIONAL"
+    ]
+   }
+  },
+  "Recruiting phase III research for adults with psoriasis": {
+   "semantic_query": "phase iii research with psoriasis",
+   "filters": {
+    "status": [
+     "RECRUITING"
+    ],
+    "min_age": 18
+   }
+  },
+  "Completed observational studies of elderly women with osteoporosis": {
+   "semantic_query": "completed of elderly women with osteoporosis",
+   "filters": {
+    "study_type": [
+     "OBSERVATIONAL"
+    ],
+    "sex": [
+     "FEMALE"
+    ]
+   }
+  },
+  "Not yet recruiting phase 1/2 studies in children with leukemia": {
+   "semantic_query": "not yet /2 in children with leukemia",
+   "filters": {
+    "status": [
+     "RECRUITING"
+    ],
+    "phase": [
+     "PHASE1"
+    ]
+   }
+  },
+  "Phase 2 interventional research for men with gout, currently enrolling": {
+   "semantic_query": "interventional research for men with gout, currently enrolling",
+   "filters": {
+    "phase": [
+     "PHASE2"
+    ],
+    "sex": [
+     "MALE"
+    ]
+   }
+  },
+  "Treatment options for chronic kidney disease": {
+   "semantic_query": "treatment options for chronic kidney disease",
+   "filters": {}
+  },
+  "Asthma inhaler studies": {
+   "semantic_query": "asthma inhaler",
+   "filters": {}
+  },
+  "Recruiting NSCLC trials involving pembrolizumab": {
+   "semantic_query": "nsclc involving pembrolizumab",
+   "filters": {
+    "status": [
+     "RECRUITING"
+    ]
+   }
+  },
+  "Phase 3 breast cancer trials": {
+   "semantic_query": "breast cancer",
+   "filters": {
+    "phase": [
+     "PHASE3"
+    ]
+   }
+  },
+  "Recruiting trials for Alzheimer's disease": {
+   "semantic_query": "for alzheimer's disease",
+   "filters": {
+    "status": [
+     "RECRUITING"
+    ]
+   }
+  },
+  "Diabetes trials for adults": {
+   "semantic_query": "diabetes",
+   "filters": {
+    "min_age": 18
+   }
+  },
+  "Female patients with breast cancer": {
+   "semantic_query": "with breast cancer",
+   "filters": {
+    "sex": [
+     "FEMALE"
+    ]
+   }
+  },
+  "Phase 2 trials using immunotherapy for cancer": {
+   "semantic_query": "using immunotherapy for cancer",
+   "filters": {
+    "phase": [
+     "PHASE2"
+    ]
+   }
+  },
+  "Observational studies for cardiovascular disease": {
+   "semantic_query": "for cardiovascular disease",
+   "filters": {
+    "study_type": [
+     "OBSERVATIONAL"
+    ]
+   }
+  },
+  "Recruiting trials for metastatic cancer in adults": {
+   "semantic_query": "for metastatic cancer",
+   "filters": {
+    "status": [
+     "RECRUITING"
+    ],
+    "min_age": 18
+   }
+  },
+  "Phase 1 trials involving targeted therapy for solid tumors": {
+   "semantic_query": "involving targeted therapy for solid tumors",
+   "filters": {
+    "phase": [
+     "PHASE1"
+    ]
+   }
+  },
+  "Recruiting infectious disease trials for adults": {
+   "semantic_query": "infectious disease",
+   "filters": {
+    "status": [
+     "RECRUITING"
+    ],
+    "min_age": 18
+   }
+  },
+  "Keytruda trials in lung cancer": {
+   "semantic_query": "keytruda in lung cancer",
+   "filters": {}
+  },
+  "Ozempic studies for weight loss": {
+   "semantic_query": "ozempic for weight loss",
+   "filters": {}
+  },
+  "Recruiting T2DM trials of SGLT2 inhibitors": {
+   "semantic_query": "t2dm of sglt2 inhibitors",
+   "filters": {
+    "status": [
+     "RECRUITING"
+    ]
+   }
+  },
+  "Phase III trials in HFrEF": {
+   "semantic_query": "phase iii in hfref",
+   "filters": {}
+  },
+  "Anticoagulation trials in AFib patients over 65": {
+   "semantic_query": "anticoagulation in afib patients over 65",
+   "filters": {}
+  },
+  "Phase II ALS trials": {
+   "semantic_query": "phase ii als",
+   "filters": {}
+  },
+  "Phase 1/2 melanoma trials": {
+   "semantic_query": "/2 melanoma",
+   "filters": {
+    "phase": [
+     "PHASE1"
+    ]
+   }
+  },
+  "Pediatric epilepsy trials": {
+   "semantic_query": "pediatric epilepsy",
+   "filters": {}
+  },
+  "Interventional studies of HIV pre-exposure prophylaxis": {
+   "semantic_query": "interventional of hiv pre-exposure prophylaxis",
+   "filters": {}
+  },
+  "Parkinson's disease trials that are not yet recruiting": {
+   "semantic_query": "parkinson's disease that are not yet",
+   "filters": {
+    "status": [
+     "RECRUITING"
+    ]
+   }
+  },
+  "Completed tuberculosis trials, excluding observational studies": {
+   "semantic_query": "completed tuberculosis , excluding",
+   "filters": {
+    "study_type": [
+     "OBSERVATIONAL"
+    ]
+   }
+  },
+  "Which pembrolizumab studies for non-small cell lung cancer are currently enrolling patients?": {
+   "semantic_query": "which pembrolizumab for non-small cell lung cancer are currently enrolling patients?",
+   "filters": {}
+  },
+  "Non-interventional cardiovascular disease studies": {
+   "semantic_query": "non-interventional cardiovascular disease",
+   "filters": {}
+  },
+  "Phase 3 trials of lecanemab for early Alzheimer's disease": {
+   "semantic_query": "of lecanemab for early alzheimer's disease",
+   "filters": {
+    "phase": [
+     "PHASE3"
+    ]
+   }
+  },
+  "Recruiting mavacamten trials for obstructive hypertrophic cardiomyopathy": {
+   "semantic_query": "mavacamten for obstructive hypertrophic cardiomyopathy",
+   "filters": {
+    "status": [
+     "RECRUITING"
+    ]
+   }
+  },
+  "Tirzepatide trials in adolescents": {
+   "semantic_query": "tirzepatide in adolescents",
+   "filters": {}
+  }
+ }
+}
