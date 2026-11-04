@@ -1,0 +1,12 @@
+row_id,query_id,nct_id,disease_match,intervention_match,mention_role,notes,labeler,label_date
+TQ12-01,Q12,NCT00031200,,,,,,
+TQ12-02,Q12,NCT02970838,,,,,,
+TQ13-01,Q13,NCT07275788,,,,,,
+TQ14-01,Q14,NCT05891769,,not_applicable,,,,
+TQ14-02,Q14,NCT00128102,,not_applicable,,,,
+TQ14-03,Q14,NCT01787383,,not_applicable,,,,
+TQ14-04,Q14,NCT00190762,,not_applicable,,,,
+TQ14-05,Q14,NCT06774131,,not_applicable,,,,
+TQ14-06,Q14,NCT02280083,,not_applicable,,,,
+TQ15-01,Q15,NCT04958928,,,,,,
+TQ19-01,Q19,NCT00753324,,,,,,
