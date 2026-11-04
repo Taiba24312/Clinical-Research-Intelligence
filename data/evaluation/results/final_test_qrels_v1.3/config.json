@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-11-04T09:54:26.452544+00:00",
+  "sheet": "data/evaluation/test_labels_v1/labeling_sheet_test_v1_labeled.xlsx",
+  "labeler": "AJ",
+  "label_date": "2026-11-04",
+  "qrels_v1.3": "/mnt/drive/home/melange/clinical_rag/clinical-research-intelligence/data/evaluation/qrels_v1.3.csv",
+  "qrels_v1.3_sha256": "9b887fe19eafffbe09d9b07e7ed9863a18f304f4239b31a4abc9cdc380a82b67",
+  "rows_added": 11,
+  "runs_rescored": "data/runs/final_test (Experiment 35, not re-run)",
+  "frozen_hashes_verified": true,
+  "v1.2_rescoring_reproduces_original": true
+}

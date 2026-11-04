@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "n_errors": 0,
+  "errors": [],
+  "partial_rows": [],
+  "uncertain_rows": [],
+  "warnings": [
+    "Q12 is marked has_answer=true but no pooled trial was judged grade >= 1; check the labels or the has_answer flag.",
+    "Q13 is marked has_answer=true but no pooled trial was judged grade >= 1; check the labels or the has_answer flag.",
+    "Q14 is marked has_answer=true but no pooled trial was judged grade >= 1; check the labels or the has_answer flag.",
+    "Q15 is marked has_answer=true but no pooled trial was judged grade >= 1; check the labels or the has_answer flag.",
+    "Q19 is marked has_answer=true but no pooled trial was judged grade >= 1; check the labels or the has_answer flag."
+  ],
+  "per_query": {
+    "Q12": {
+      "rows": 2,
+      "judged": 2,
+      "grade_2": 0,
+      "grade_1": 0,
+      "grade_0": 2
+    },
+    "Q13": {
+      "rows": 1,
+      "judged": 1,
+      "grade_2": 0,
+      "grade_1": 0,
+      "grade_0": 1
+    },
+    "Q14": {
+      "rows": 6,
+      "judged": 6,
+      "grade_2": 0,
+      "grade_1": 0,
+      "grade_0": 6
+    },
+    "Q15": {
+      "rows": 1,
+      "judged": 1,
+      "grade_2": 0,
+      "grade_1": 0,
+      "grade_0": 1
+    },
+    "Q19": {
+      "rows": 1,
+      "judged": 1,
+      "grade_2": 0,
+      "grade_1": 0,
+      "grade_0": 1
+    }
+  }
+}

@@ -154,13 +154,24 @@ significant on 15 queries.
 | P@10 (grade ≥ 1) | 0.214 | 0.286 | +0.071, p = 0.75 |
 | MRR (grade ≥ 1) | 0.481 | 0.721 | +0.239, p = 0.125 |
 | Violation rate@10 (10 queries) | 0.250 | 0.070 | −0.180, p = 0.062 |
-| Judged@10 (10 queries) | 0.75 | 0.59 | 11 unjudged top-10 trials (final) |
+| Judged@10 (10 queries) | 0.75 | 0.59 → 0.70 after labeling | answerable queries now fully judged (1.00 for both) |
 
 Brackets: bootstrap 95% CIs over queries. Strict and lenient P@10 / MRR are
 identical on test. Five of seven answerable test queries improved, one tied
 and one got worse (Q17, "Phase 1/2", which the parser does not handle). With
 seven queries the paired test is not significant at 0.05 even though the
 bootstrap CI of the nDCG difference excludes zero.
+
+**Follow-up labeling (qrels v1.3).** The 11 test top-10 trials of the final
+pipeline that were unjudged at test time were afterwards labeled from the
+reserve budget (`data/evaluation/test_labels_v1/`); all 11 are grade 0.
+Re-scoring the saved test runs (retrieval not re-run, frozen configuration
+unchanged) gives **identical** nDCG@10, P@10, MRR and violation numbers for
+both pipelines; only Judged@10 rises, and the top-10 of every answerable test
+query is now fully judged for both pipelines, so the comparison above no
+longer depends on unjudged documents
+(`data/evaluation/results/final_test_qrels_v1.3/`). Judged@10 below 1 comes
+only from the verified zero-answer queries, which have no judgment pool.
 
 ### RAG answers (16 dev queries, prompt unchanged)
 
@@ -209,8 +220,8 @@ state (e.g. "pembrolizumab as the primary intervention").
 - **Answer generation:** the prompt should only require what the question
   asks (false "no match" on Q11, Q20, Q22); systematic faithfulness evaluation.
 - **Evaluation coverage:** 39 unjudged dev trials from the configuration
-  comparison (`data/evaluation/ablation_labels_v1/`) and 11 unjudged test
-  top-10 trials; a 46-pair consistency re-label; more queries for power.
+  comparison (`data/evaluation/ablation_labels_v1/`); a 46-pair consistency
+  re-label; more queries for statistical power.
 - **Reranker input:** rerank on the parsed query text rather than the raw
   question.
 - **Engineering:** FastAPI backend, incremental freshness updates from the
