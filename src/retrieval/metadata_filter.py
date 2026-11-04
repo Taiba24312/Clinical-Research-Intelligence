@@ -197,7 +197,7 @@ class MetadataFilter:
         # Extract unit.
         units = (
             values.str.extract(
-                r"[\d.]+\s*(Years?|Months?|Weeks?|Days?)",
+                r"[\d.]+\s*(Years?|Months?|Weeks?|Days?|Hours?|Minutes?)",
                 expand=False,
             )
             .str.lower()
@@ -233,6 +233,26 @@ class MetadataFilter:
 
         result.loc[day_mask] = (
             result.loc[day_mask] / 365.0
+        )
+
+        # Hours / minutes -> years (previously left unconverted, so
+        # "6 Hours" was read as 6 years).
+        hour_mask = units.str.startswith(
+            "hour",
+            na=False,
+        )
+
+        result.loc[hour_mask] = (
+            result.loc[hour_mask] / 8766.0
+        )
+
+        minute_mask = units.str.startswith(
+            "minute",
+            na=False,
+        )
+
+        result.loc[minute_mask] = (
+            result.loc[minute_mask] / 525960.0
         )
 
         return result
