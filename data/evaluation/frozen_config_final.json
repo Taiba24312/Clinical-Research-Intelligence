@@ -1,0 +1,52 @@
+{
+  "frozen_utc": "2026-11-04T08:53:29.483428+00:00",
+  "git_commit_at_freeze": "87a91c404689511edeb4b6dc332d118e341d099e",
+  "statement": "Chosen on dev only (experiments 28, 31, 33, 34). Frozen before the single test evaluation (experiment 35). Nothing may change after the test results.",
+  "baseline_pipeline": {
+    "parser_version": "v1",
+    "doc_version": "v1",
+    "tokenizer": "v1"
+  },
+  "final_pipeline": {
+    "parser_version": "v1.2",
+    "doc_version": "v1",
+    "tokenizer": "v2"
+  },
+  "final_generation": {
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "decoding": "greedy, max_new_tokens=350",
+    "context_trials": 5
+  },
+  "retrieval": {
+    "dense_model": "BAAI/bge-small-en-v1.5",
+    "fusion": "RRF k=60, top-100 per retriever, top-50 fused",
+    "reranker": "not used"
+  },
+  "data_sha256": {
+    "data/processed/trials.parquet": "b005d0be58c9e2d8d000f179077edf9acfec5e4b7cd99c0e1fc6f54c55cbcf67",
+    "data/evaluation/query_specs_v1.1.json": "666f47372753754111da9f7ab778e44cb2953ac323b90f8a6f8b15934c85e651",
+    "data/evaluation/qrels_v1.2.csv": "2c5c5d3ca465752956ec7f67e30dd5b2898aa8f6fa33308d4844d4202e678a2b"
+  },
+  "code_sha256": {
+    "src/config.py": "e5b7a0d5011b85ab3137088dc6ac9eb380d91b43e3a5959d3cd280d6719a127f",
+    "src/query_understanding/parser.py": "0e1ab1e3bb7b55fad62a790fa955efcdd8b8a3c8761a2af521a8e25bdd875da5",
+    "src/query_understanding/parser_v1_1.py": "97460aa7b647ad26a0974e3ff9e67477286132c0c2f0b8676368b565786e2d98",
+    "src/query_understanding/parser_v1_2.py": "77e802500e2df9ecc85111f841adbc14b8508fddda783cedbf3a134314d34665",
+    "src/retrieval/bm25.py": "a0db1b3005a7f530ad8088c49408b964ef68f725d3aab22c6db3b607235ea3fc",
+    "src/retrieval/embeddings.py": "b7f5eb7ccd3bf14117017a859fac56205e995ac087ea41993eba0f417b08603f",
+    "src/retrieval/hybrid.py": "9e9761a541a3eb5f9593114569c995b878d9a6555b488784aa3a5fa4b481728a",
+    "src/retrieval/metadata_filter.py": "f1bc6de0f5debd8be01390e03064d76c18238244c63b25d98826185f0c1a4710",
+    "src/retrieval/pipeline.py": "2fc784d3928b69c9f549550859f986a634a7450dd5df4540a5b9022fe2cf026b",
+    "src/preprocessing/trial_representation.py": "b08f4d934be4c042a1b736dc3017080fb1ce6c42b1bec963e1fb7afbe288a9d7",
+    "src/generation/context_builder.py": "4d02cd957d3f83143ac9315ca41cf4594d32d86fa42cb9d8694ec14b2ddabdbc",
+    "src/generation/llm.py": "7eef321fdf5aba8b8dc2dfff4935ad5d712c4623c2205a1c4457c66d4b9ffe10",
+    "src/evaluation/judgments.py": "ec8625b55d400a26ebc695495123aeaef9f84deda9f657e5f8e4c604c35cc719",
+    "src/evaluation/retrieval_metrics.py": "5cd0e7132259a28a5c30651d6a95d05b8e2f119b1eaa901c57cdbe9affc4cff3"
+  },
+  "dev_evidence": {
+    "parser_fix_v1.1": "data/evaluation/results/parser_fix_v1.1_dev",
+    "doc_tokenizer_ablation": "data/evaluation/results/doc_tokenizer_ablation_dev",
+    "parser_v1.2": "data/evaluation/results/parser_v1_2_dev",
+    "rag": "data/evaluation/results/rag_eval_v1_dev"
+  }
+}
