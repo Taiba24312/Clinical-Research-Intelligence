@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-11-04T08:46:03.639700+00:00",
+  "git_commit_before_run": "5eaee63f632a50330c2ad7ae53bd3951ddaf95bf",
+  "split": "dev",
+  "queries": [
+    "Q01",
+    "Q02",
+    "Q03",
+    "Q04",
+    "Q05",
+    "Q06",
+    "Q07",
+    "Q08",
+    "Q09",
+    "Q10",
+    "Q11",
+    "Q18",
+    "Q20",
+    "Q22",
+    "Q23",
+    "Q24"
+  ],
+  "configs": {
+    "A": {
+      "doc_version": "v1",
+      "tokenizer": "v1"
+    },
+    "B": {
+      "doc_version": "v2",
+      "tokenizer": "v1"
+    },
+    "C": {
+      "doc_version": "v1",
+      "tokenizer": "v2"
+    },
+    "D": {
+      "doc_version": "v2",
+      "tokenizer": "v2"
+    }
+  },
+  "parser": "v1.1",
+  "qrels_sha256": "2c5c5d3ca465752956ec7f67e30dd5b2898aa8f6fa33308d4844d4202e678a2b"
+}

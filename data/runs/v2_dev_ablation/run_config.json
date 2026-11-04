@@ -1,0 +1,64 @@
+{
+  "created_utc": "2026-11-04T08:46:03.099710+00:00",
+  "split": "dev",
+  "configs": {
+    "A": {
+      "doc_version": "v1",
+      "tokenizer": "v1"
+    },
+    "B": {
+      "doc_version": "v2",
+      "tokenizer": "v1"
+    },
+    "C": {
+      "doc_version": "v1",
+      "tokenizer": "v2"
+    },
+    "D": {
+      "doc_version": "v2",
+      "tokenizer": "v2"
+    }
+  },
+  "engines": {
+    "A": {
+      "parser_version": "v1.1",
+      "doc_version": "v1",
+      "bm25_tokenizer": "v1",
+      "dense_model": "BAAI/bge-small-en-v1.5",
+      "fusion": "RRF k=60, top-100 per retriever",
+      "corpus_sha256": "b005d0be58c9e2d8d000f179077edf9acfec5e4b7cd99c0e1fc6f54c55cbcf67",
+      "documents_sha256": "321ef94545f1dc89914b14856971f36aa33e1bb979b80a01aaa82eab451981cf",
+      "device": "cuda:1"
+    },
+    "B": {
+      "parser_version": "v1.1",
+      "doc_version": "v2",
+      "bm25_tokenizer": "v1",
+      "dense_model": "BAAI/bge-small-en-v1.5",
+      "fusion": "RRF k=60, top-100 per retriever",
+      "corpus_sha256": "3173aa53bb48556eb7c8a8c2594d2705692f28d9d4b77d1f2515a02594de4746",
+      "documents_sha256": "bc0a7c0759869d990d08344ee176074231bc58d0e03fc69a85e3f66722dde524",
+      "device": "cuda:1"
+    },
+    "C": {
+      "parser_version": "v1.1",
+      "doc_version": "v1",
+      "bm25_tokenizer": "v2",
+      "dense_model": "BAAI/bge-small-en-v1.5",
+      "fusion": "RRF k=60, top-100 per retriever",
+      "corpus_sha256": "b005d0be58c9e2d8d000f179077edf9acfec5e4b7cd99c0e1fc6f54c55cbcf67",
+      "documents_sha256": "321ef94545f1dc89914b14856971f36aa33e1bb979b80a01aaa82eab451981cf",
+      "device": "cuda:1"
+    },
+    "D": {
+      "parser_version": "v1.1",
+      "doc_version": "v2",
+      "bm25_tokenizer": "v2",
+      "dense_model": "BAAI/bge-small-en-v1.5",
+      "fusion": "RRF k=60, top-100 per retriever",
+      "corpus_sha256": "3173aa53bb48556eb7c8a8c2594d2705692f28d9d4b77d1f2515a02594de4746",
+      "documents_sha256": "bc0a7c0759869d990d08344ee176074231bc58d0e03fc69a85e3f66722dde524",
+      "device": "cuda:1"
+    }
+  }
+}
