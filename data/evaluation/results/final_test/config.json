@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-11-04T08:54:31.284448+00:00",
+  "git_commit": "820961bea76984004666e3b473bc72638440e579",
+  "frozen_config": "data/evaluation/frozen_config_final.json",
+  "frozen_hashes_verified": true,
+  "split": "test",
+  "queries": [
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q19",
+    "Q21",
+    "Q25",
+    "Q26"
+  ],
+  "engines": {
+    "baseline": {
+      "parser_version": "v1",
+      "doc_version": "v1",
+      "bm25_tokenizer": "v1",
+      "dense_model": "BAAI/bge-small-en-v1.5",
+      "fusion": "RRF k=60, top-100 per retriever",
+      "corpus_sha256": "b005d0be58c9e2d8d000f179077edf9acfec5e4b7cd99c0e1fc6f54c55cbcf67",
+      "documents_sha256": "321ef94545f1dc89914b14856971f36aa33e1bb979b80a01aaa82eab451981cf",
+      "device": "cuda:1"
+    },
+    "final": {
+      "parser_version": "v1.2",
+      "doc_version": "v1",
+      "bm25_tokenizer": "v2",
+      "dense_model": "BAAI/bge-small-en-v1.5",
+      "fusion": "RRF k=60, top-100 per retriever",
+      "corpus_sha256": "b005d0be58c9e2d8d000f179077edf9acfec5e4b7cd99c0e1fc6f54c55cbcf67",
+      "documents_sha256": "321ef94545f1dc89914b14856971f36aa33e1bb979b80a01aaa82eab451981cf",
+      "device": "cuda:1"
+    }
+  },
+  "baseline_reproduces_saved_v1_run": true
+}
