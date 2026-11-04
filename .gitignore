@@ -19,3 +19,6 @@ __pycache__/
 
 # Local secrets / environment
 .env
+
+# Cached embedding indexes (rebuilt automatically)
+data/indexes/

@@ -1,0 +1,4 @@
+system,description,ndcg@10,n_ndcg@10,cond_ndcg@10,n_cond_ndcg@10,judged@10,n_judged@10,violation_rate@10,n_violation_rate@10
+rrf.parser_v1,old pipeline,0.6360077747159031,15,0.6360077747159031,15,0.9375,16,0.18125,16
+rrf.parser_v1_1,fixed parser,0.7366178850239031,15,0.7385056602268779,15,0.925,16,0.03125,16
+rrf.gold_filters,gold-filter ceiling (pooling-only),0.7383036004710075,15,0.7383036004710075,15,0.9375,16,0.0,16

@@ -1,0 +1,216 @@
+{
+  "created_utc": "2026-11-04T08:28:59.150260+00:00",
+  "pipeline": "src/retrieval/pipeline.py TrialSearchEngine (parser v1.1, RRF top-50, no reranker)",
+  "device": "cuda:1",
+  "split": "dev",
+  "queries": {
+    "Q01": {
+      "semantic_query": "nsclc involving pembrolizumab",
+      "filters": {
+        "status": [
+          "RECRUITING"
+        ]
+      },
+      "gold_constraints": {
+        "status": [
+          "RECRUITING"
+        ]
+      }
+    },
+    "Q02": {
+      "semantic_query": "breast cancer",
+      "filters": {
+        "phase": [
+          "PHASE3"
+        ]
+      },
+      "gold_constraints": {
+        "phase": [
+          "PHASE3"
+        ]
+      }
+    },
+    "Q03": {
+      "semantic_query": "for alzheimer's disease",
+      "filters": {
+        "status": [
+          "RECRUITING"
+        ]
+      },
+      "gold_constraints": {
+        "status": [
+          "RECRUITING"
+        ]
+      }
+    },
+    "Q04": {
+      "semantic_query": "diabetes",
+      "filters": {
+        "min_age": 18
+      },
+      "gold_constraints": {
+        "age_range": [
+          18,
+          null
+        ]
+      }
+    },
+    "Q05": {
+      "semantic_query": "with breast cancer",
+      "filters": {
+        "sex": [
+          "FEMALE"
+        ]
+      },
+      "gold_constraints": {
+        "sex": [
+          "FEMALE",
+          "ALL"
+        ]
+      }
+    },
+    "Q06": {
+      "semantic_query": "using immunotherapy for cancer",
+      "filters": {
+        "phase": [
+          "PHASE2"
+        ]
+      },
+      "gold_constraints": {
+        "phase": [
+          "PHASE2"
+        ]
+      }
+    },
+    "Q07": {
+      "semantic_query": "for cardiovascular disease",
+      "filters": {
+        "study_type": [
+          "OBSERVATIONAL"
+        ]
+      },
+      "gold_constraints": {
+        "study_type": [
+          "OBSERVATIONAL"
+        ]
+      }
+    },
+    "Q08": {
+      "semantic_query": "for metastatic cancer",
+      "filters": {
+        "status": [
+          "RECRUITING"
+        ],
+        "min_age": 18
+      },
+      "gold_constraints": {
+        "status": [
+          "RECRUITING"
+        ],
+        "age_range": [
+          18,
+          null
+        ]
+      }
+    },
+    "Q09": {
+      "semantic_query": "involving targeted therapy for solid tumors",
+      "filters": {
+        "phase": [
+          "PHASE1"
+        ]
+      },
+      "gold_constraints": {
+        "phase": [
+          "PHASE1"
+        ]
+      }
+    },
+    "Q10": {
+      "semantic_query": "infectious disease",
+      "filters": {
+        "status": [
+          "RECRUITING"
+        ],
+        "min_age": 18
+      },
+      "gold_constraints": {
+        "status": [
+          "RECRUITING"
+        ],
+        "age_range": [
+          18,
+          null
+        ]
+      }
+    },
+    "Q11": {
+      "semantic_query": "keytruda in lung cancer",
+      "filters": {},
+      "gold_constraints": {}
+    },
+    "Q18": {
+      "semantic_query": "pediatric epilepsy",
+      "filters": {},
+      "gold_constraints": {
+        "age_range": [
+          0,
+          18
+        ]
+      }
+    },
+    "Q20": {
+      "semantic_query": "parkinson's disease that are",
+      "filters": {
+        "status": [
+          "NOT_YET_RECRUITING"
+        ]
+      },
+      "gold_constraints": {
+        "status": [
+          "NOT_YET_RECRUITING"
+        ]
+      }
+    },
+    "Q22": {
+      "semantic_query": "which pembrolizumab for non-small cell lung cancer are patients",
+      "filters": {
+        "status": [
+          "RECRUITING"
+        ]
+      },
+      "gold_constraints": {
+        "status": [
+          "RECRUITING"
+        ]
+      }
+    },
+    "Q23": {
+      "semantic_query": "cardiovascular disease",
+      "filters": {
+        "study_type": [
+          "OBSERVATIONAL"
+        ]
+      },
+      "gold_constraints": {
+        "study_type": [
+          "OBSERVATIONAL"
+        ]
+      }
+    },
+    "Q24": {
+      "semantic_query": "of lecanemab for early alzheimer's disease",
+      "filters": {
+        "phase": [
+          "PHASE3"
+        ]
+      },
+      "gold_constraints": {
+        "phase": [
+          "PHASE3"
+        ]
+      }
+    }
+  },
+  "corpus_parquet_sha256": "b005d0be58c9e2d8d000f179077edf9acfec5e4b7cd99c0e1fc6f54c55cbcf67"
+}

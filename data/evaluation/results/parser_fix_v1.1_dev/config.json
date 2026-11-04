@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-11-04T08:28:59.613652+00:00",
+  "git_commit_before_run": "3375d83ec6b3ea67f4adc1b23ac76ceabf328837",
+  "split": "dev",
+  "queries": [
+    "Q01",
+    "Q02",
+    "Q03",
+    "Q04",
+    "Q05",
+    "Q06",
+    "Q07",
+    "Q08",
+    "Q09",
+    "Q10",
+    "Q11",
+    "Q18",
+    "Q20",
+    "Q22",
+    "Q23",
+    "Q24"
+  ],
+  "systems": {
+    "rrf.parser_v1": "old pipeline",
+    "rrf.parser_v1_1": "fixed parser",
+    "rrf.gold_filters": "gold-filter ceiling (pooling-only)"
+  },
+  "qrels_sha256": "2c5c5d3ca465752956ec7f67e30dd5b2898aa8f6fa33308d4844d4202e678a2b",
+  "query_specs_sha256": "666f47372753754111da9f7ab778e44cb2953ac323b90f8a6f8b15934c85e651"
+}
