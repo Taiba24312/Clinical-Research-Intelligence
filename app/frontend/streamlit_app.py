@@ -17,6 +17,7 @@ if str(ROOT) not in sys.path:
 
 import streamlit as st  # noqa: E402
 
+from src.config import FINAL_PIPELINE  # noqa: E402
 from src.generation.context_builder import TOP_K_CONTEXT  # noqa: E402
 from src.generation.llm import DEFAULT_MODEL, LocalLLM, answer_query  # noqa: E402
 from src.retrieval.pipeline import TrialSearchEngine  # noqa: E402
@@ -28,6 +29,7 @@ EXAMPLES = [
     "Phase 3 breast cancer trials",
     "Parkinson's disease trials that are not yet recruiting",
     "Observational studies for cardiovascular disease",
+    "Pediatric asthma trials",
 ]
 
 st.set_page_config(page_title="Clinical Trial Search", page_icon="🔎", layout="wide")
@@ -35,7 +37,7 @@ st.set_page_config(page_title="Clinical Trial Search", page_icon="🔎", layout=
 
 @st.cache_resource(show_spinner="Loading search indexes (first run only)...")
 def get_engine() -> TrialSearchEngine:
-    return TrialSearchEngine(parser_version="v1.1")
+    return TrialSearchEngine(**FINAL_PIPELINE)
 
 
 @st.cache_resource(show_spinner="Loading the local language model (first run only)...")
@@ -58,8 +60,10 @@ st.caption("Searches a frozen snapshot of 4,695 ClinicalTrials.gov records (data
 with st.sidebar:
     st.header("Options")
     generate = st.checkbox("Generate an answer with the local LLM", value=True)
-    st.markdown(f"**Model:** `{DEFAULT_MODEL}`  \n**Retrieval:** BM25 + bge-small, RRF  \n"
-                f"**Parser:** v1.1 (rule-based)")
+    st.markdown(f"**Model:** `{DEFAULT_MODEL}`  \n**Retrieval:** BM25 (tokenizer "
+                f"{FINAL_PIPELINE['tokenizer']}) + bge-small, RRF  \n"
+                f"**Parser:** {FINAL_PIPELINE['parser_version']} (rule-based)  \n"
+                f"Configuration frozen in `src/config.py`.")
     st.markdown("**Example queries**")
     for example in EXAMPLES:
         st.code(example, language=None)
