@@ -1,0 +1,321 @@
+{
+  "created_utc": "2026-11-04T08:31:05.068323+00:00",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "decoding": "greedy, max_new_tokens=350",
+  "retrieval": "parser v1.1 + RRF, top-5",
+  "system_prompt": "You are a clinical trial search assistant. You receive a user question and a numbered list of clinical trials retrieved from ClinicalTrials.gov.\n\nRules:\n1. Use ONLY the information in the listed trials. Do not use outside knowledge, and do not invent trials, results or details.\n2. A trial is a match only if it fits every part of the question: the condition, the intervention, and any stated recruitment status, phase or population.\n3. For each matching trial, write one short line saying what it studies, followed by its citation in the form [NCT ID](https://clinicaltrials.gov/study/NCT ID).\n4. A trial that matches only partly (for example a broader population, or a different drug of the same kind) may be listed under \"Partial matches:\" with a few words on what does not match.\n5. If none of the trials match, write exactly: \"None of the retrieved trials match this query.\" followed by one sentence explaining why.\n6. Never cite an NCT ID that is not in the list. Keep the answer under 150 words.",
+  "outputs": [
+    {
+      "query_id": "Q01",
+      "query": "Recruiting NSCLC trials involving pembrolizumab",
+      "parsed_filters": {
+        "status": [
+          "RECRUITING"
+        ]
+      },
+      "semantic_query": "nsclc involving pembrolizumab",
+      "context": [
+        {
+          "nct_id": "NCT06195527",
+          "title": "PEMBRO-K : Evaluation of Pembrolizumab Therapeutic Pharmacological Monitoring Benefit in NSCLC",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": "2"
+        },
+        {
+          "nct_id": "NCT06709859",
+          "title": "Afatinib Combined With Chemotherapy as Conversion Therapy in Unresectable EGFR Sensitive Mutation-positive Stage III NSCLC",
+          "status": "RECRUITING",
+          "phase": "PHASE2",
+          "grade_for_checking": "0"
+        },
+        {
+          "nct_id": "NCT05761223",
+          "title": "A Phase I/II, Open-label Study to Investigate the Safety, Tolerability, PK, and Preliminary Efficacy of FB849",
+          "status": "RECRUITING",
+          "phase": "PHASE1; PHASE2",
+          "grade_for_checking": "1"
+        },
+        {
+          "nct_id": "NCT03829254",
+          "title": "A Safety, Pharmacokinetic and Clinical Activity Study of NUC-7738 in Patients With Advanced Solid Tumours and Lymphoma",
+          "status": "RECRUITING",
+          "phase": "PHASE1; PHASE2",
+          "grade_for_checking": "0"
+        },
+        {
+          "nct_id": "NCT07061379",
+          "title": "Patient Reported Outcome Measurements (PROMs) Impact on Clinical Outcome in firsT Line settIng Non- Small-Cell Lung Cancer (NSCLC) According to Chemo- Immunotherapy reGimen",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": "2"
+        }
+      ],
+      "answer": "[3] NCT05761223: A Phase I/II study investigating the safety and efficacy of FB849 in combination with pembrolizumab in advanced solid tumors, including NSCLC. [NCT05761223](https://clinicaltrials.gov/study/NCT05761223)  \n[5] NCT07061379: A study evaluating patient-reported outcomes in first-line NSCLC treated with chemotherapy plus pembrolizumab. [NCT07061379](https://clinicaltrials.gov/study/NCT07061379)  \n\nPartial matches:  \n[1] NCT06195527 does not list pembrolizumab as an intervention.  \n[2] Uses afatinib, not pembrolizumab.  \n[4] Includes pembrolizumab but in a broader solid tumor population, not specifically NSCLC.",
+      "latency_s": 7.97,
+      "context_nct_ids": [
+        "NCT06195527",
+        "NCT06709859",
+        "NCT05761223",
+        "NCT03829254",
+        "NCT07061379"
+      ],
+      "cited": [
+        "NCT05761223",
+        "NCT07061379",
+        "NCT06195527"
+      ],
+      "invalid_citations": [],
+      "says_no_match": false,
+      "cited_grades": {
+        "NCT05761223": "1",
+        "NCT07061379": "2",
+        "NCT06195527": "2"
+      }
+    },
+    {
+      "query_id": "Q11",
+      "query": "Keytruda trials in lung cancer",
+      "parsed_filters": {},
+      "semantic_query": "keytruda in lung cancer",
+      "context": [
+        {
+          "nct_id": "NCT07188480",
+          "title": "The Role of DNA and RNA in NGS Analyses for Advaced Stage NSCLC Patients",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": "0"
+        },
+        {
+          "nct_id": "NCT03419286",
+          "title": "Transformation Into Small Cell Lung Cancer : a Mode of Resistance to Treatment",
+          "status": "COMPLETED",
+          "phase": "NA",
+          "grade_for_checking": "0"
+        },
+        {
+          "nct_id": "NCT07315672",
+          "title": "Acupressure for Cough in Lung Cancer Survivors",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": "0"
+        },
+        {
+          "nct_id": "NCT03658083",
+          "title": "Exploring Robotic-assisted Thoracic Surgery for Lung Cancer",
+          "status": "COMPLETED",
+          "phase": "NA",
+          "grade_for_checking": "0"
+        },
+        {
+          "nct_id": "NCT02607605",
+          "title": "A Prospective, Observational Trial on the Diagnostic and Prognostic of LM",
+          "status": "UNKNOWN",
+          "phase": "NA",
+          "grade_for_checking": "0"
+        }
+      ],
+      "answer": "None of the retrieved trials match this query. The listed trials do not include any studies of Keytruda (pembrolizumab) in lung cancer. While some trials address non-small cell lung cancer (NSCLC) or lung cancer in general, they do not involve Keytruda as an intervention.",
+      "latency_s": 2.21,
+      "context_nct_ids": [
+        "NCT07188480",
+        "NCT03419286",
+        "NCT07315672",
+        "NCT03658083",
+        "NCT02607605"
+      ],
+      "cited": [],
+      "invalid_citations": [],
+      "says_no_match": true,
+      "cited_grades": {}
+    },
+    {
+      "query_id": "Q24",
+      "query": "Phase 3 trials of lecanemab for early Alzheimer's disease",
+      "parsed_filters": {
+        "phase": [
+          "PHASE3"
+        ]
+      },
+      "semantic_query": "of lecanemab for early alzheimer's disease",
+      "context": [
+        {
+          "nct_id": "NCT06989697",
+          "title": "Cilostazol-Ginkgo for Cognitive Function in Elderly Diabetes",
+          "status": "RECRUITING",
+          "phase": "PHASE3",
+          "grade_for_checking": "0 (verified zero-answer query)"
+        },
+        {
+          "nct_id": "NCT03493854",
+          "title": "A Study to Evaluate the Pharmacokinetics, Efficacy, and Safety of Subcutaneous Administration of the Fixed-Dose Combination of Pertuzumab and Trastuzumab in Combination With Chemotherapy in Participants With HER2-Positive Early Breast Cancer",
+          "status": "COMPLETED",
+          "phase": "PHASE3",
+          "grade_for_checking": "0 (verified zero-answer query)"
+        },
+        {
+          "nct_id": "NCT03108846",
+          "title": "Escitalopram for Agitation in Alzheimer's Disease",
+          "status": "ACTIVE_NOT_RECRUITING",
+          "phase": "PHASE3",
+          "grade_for_checking": "0 (verified zero-answer query)"
+        },
+        {
+          "nct_id": "NCT02107703",
+          "title": "A Study of Abemaciclib (LY2835219) Combined With Fulvestrant in Women With Hormone Receptor Positive HER2 Negative Breast Cancer",
+          "status": "ACTIVE_NOT_RECRUITING",
+          "phase": "PHASE3",
+          "grade_for_checking": "0 (verified zero-answer query)"
+        },
+        {
+          "nct_id": "NCT02683746",
+          "title": "Safety and Efficacy Study of Albiglutide Liquid Drug Product in Type 2 Diabetes Mellitus",
+          "status": "COMPLETED",
+          "phase": "PHASE3",
+          "grade_for_checking": "0 (verified zero-answer query)"
+        }
+      ],
+      "answer": "None of the retrieved trials match this query. The trials listed do not involve lecanemab, and none are focused on early Alzheimer's disease in a Phase 3 trial. The closest match is NCT03108846, which studies escitalopram for agitation in dementia, not lecanemab for early Alzheimer's disease.",
+      "latency_s": 2.52,
+      "context_nct_ids": [
+        "NCT06989697",
+        "NCT03493854",
+        "NCT03108846",
+        "NCT02107703",
+        "NCT02683746"
+      ],
+      "cited": [
+        "NCT03108846"
+      ],
+      "invalid_citations": [],
+      "says_no_match": true,
+      "cited_grades": {
+        "NCT03108846": "0 (verified zero-answer query)"
+      }
+    },
+    {
+      "query_id": "Q03",
+      "query": "Recruiting trials for Alzheimer's disease",
+      "parsed_filters": {
+        "status": [
+          "RECRUITING"
+        ]
+      },
+      "semantic_query": "for alzheimer's disease",
+      "context": [
+        {
+          "nct_id": "NCT06989697",
+          "title": "Cilostazol-Ginkgo for Cognitive Function in Elderly Diabetes",
+          "status": "RECRUITING",
+          "phase": "PHASE3",
+          "grade_for_checking": "0"
+        },
+        {
+          "nct_id": "NCT06914284",
+          "title": "Apathy-related Neurobehavioral Markers of Cognitive Decline in Old-age Bipolar Disorders: Proof-of-concept",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": "0"
+        },
+        {
+          "nct_id": "NCT07580183",
+          "title": "Spatial Scene Recognition Memory in Epilepsy Surgery",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": "0"
+        },
+        {
+          "nct_id": "NCT06818682",
+          "title": "Reduced Length of ADT and ARTA With XRT in High-Risk Prostate Cancer (RELAX): A Randomised Trial",
+          "status": "RECRUITING",
+          "phase": "PHASE2",
+          "grade_for_checking": "0"
+        },
+        {
+          "nct_id": "NCT05901493",
+          "title": "Category Learning Retention in Adults With and Without Developmental Language Disorder",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": "0"
+        }
+      ],
+      "answer": "None of the retrieved trials match this query. None of the trials listed have Alzheimer's disease as a condition. The closest related conditions are cognitive ability, memory disorders, and cognitive decline, but none specifically target Alzheimer's disease.",
+      "latency_s": 1.59,
+      "context_nct_ids": [
+        "NCT06989697",
+        "NCT06914284",
+        "NCT07580183",
+        "NCT06818682",
+        "NCT05901493"
+      ],
+      "cited": [],
+      "invalid_citations": [],
+      "says_no_match": true,
+      "cited_grades": {}
+    },
+    {
+      "query_id": "Q20",
+      "query": "Parkinson's disease trials that are not yet recruiting",
+      "parsed_filters": {
+        "status": [
+          "NOT_YET_RECRUITING"
+        ]
+      },
+      "semantic_query": "parkinson's disease that are",
+      "context": [
+        {
+          "nct_id": "NCT06809556",
+          "title": "Association of EEG Parameters with Postoperative Delirium in Patient's with Parkinson's Disease",
+          "status": "NOT_YET_RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": "2"
+        },
+        {
+          "nct_id": "NCT07396922",
+          "title": "Assessment of Safety and Effectiveness of Spatial StimelMD (SSMD) in Subjects With Upper Limb Neuromotor Impairments",
+          "status": "NOT_YET_RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": "0"
+        },
+        {
+          "nct_id": "NCT06859229",
+          "title": "New Technological Pathway for Gait Rehabilitation",
+          "status": "NOT_YET_RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": "0"
+        },
+        {
+          "nct_id": "NCT07720479",
+          "title": "Intranasal Insulin for Postoperative Delirium in Older Patients With T2DM",
+          "status": "NOT_YET_RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": "0"
+        },
+        {
+          "nct_id": "NCT06230705",
+          "title": "Community Intervention to Improve CVD Risk Factor Control in Young American Indians",
+          "status": "NOT_YET_RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": "0"
+        }
+      ],
+      "answer": "None of the retrieved trials match this query. While several trials involve Parkinson's disease, only one (NCT06809556) includes Parkinson's disease as a condition, but it focuses on postoperative delirium and EEG monitoring, not a direct Parkinson's disease intervention. The other trials do not study Parkinson's disease or are not focused on Parkinson's-specific treatments or interventions. Therefore, no trial that is specifically for Parkinson's disease and not yet recruiting fits the query.",
+      "latency_s": 3.42,
+      "context_nct_ids": [
+        "NCT06809556",
+        "NCT07396922",
+        "NCT06859229",
+        "NCT07720479",
+        "NCT06230705"
+      ],
+      "cited": [
+        "NCT06809556"
+      ],
+      "invalid_citations": [],
+      "says_no_match": true,
+      "cited_grades": {
+        "NCT06809556": "2"
+      }
+    }
+  ]
+}
