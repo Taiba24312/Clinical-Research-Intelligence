@@ -1,11 +1,13 @@
 # Pinned lock of the clinical_rag_clean conda environment (Python 3.12.15).
-# Generated 2026-10-30 with: python -m pip list --format=freeze (regenerated after adding openpyxl)
+# Generated 2026-11-04 with: python -m pip list --format=freeze (regenerated after adding streamlit)
 # NOTE: use 'python -m pip', not bare 'pip' (bare pip resolves to ~/.local/bin/pip on this server).
 # NOTE: torch is the CUDA 13.0 build (2.14.1+cu130); install it from the matching PyTorch CUDA index.
 # NOTE: faiss (GPU, CUDA 12.8 build) and mkl-* come from conda, not PyPI - see environment-lock.yml.
 # The original requirements.txt is intentionally left unchanged.
+altair==6.3.0
 annotated-doc==0.0.5
 anyio==4.15.1
+attrs==26.1.0
 certifi==2026.7.22
 charset-normalizer==3.5.2
 click==8.5.0
@@ -23,8 +25,11 @@ httpcore==1.0.9
 httpx==0.28.1
 huggingface_hub==1.33.0
 idna==3.20
+itsdangerous==2.2.0
 Jinja2==3.1.6
 joblib==1.6.0
+jsonschema==4.26.0
+jsonschema-specifications==2025.9.1
 markdown-it-py==4.2.0
 MarkupSafe==3.0.4
 mdurl==0.1.2
@@ -53,15 +58,21 @@ nvidia-nvtx==13.0.85
 openpyxl==3.1.5
 packaging==26.3
 pandas==3.0.6
+pillow==13.0.0
 pip==26.2.1
+protobuf==7.36.2
 pyarrow==25.0.1
+pydeck==0.9.3
 Pygments==2.21.0
 python-dateutil==2.9.0.post0
+python-multipart==0.0.33
 PyYAML==6.0.3
 rank-bm25==0.2.2
+referencing==0.37.0
 regex==2026.9.29
 requests==2.34.2
 rich==15.0.0
+rpds-py==2026.9.1
 safetensors==0.8.0
 scikit-learn==1.9.1
 scipy==1.18.1
@@ -69,6 +80,8 @@ sentence-transformers==6.1.0
 setuptools==84.0.0
 shellingham==1.5.4
 six==1.17.0
+starlette==1.10.0
+streamlit==1.66.1
 sympy==1.14.0
 threadpoolctl==3.7.0
 tokenizers==0.23.3
@@ -79,4 +92,7 @@ triton==3.8.0
 typer==0.27.3
 typing_extensions==4.16.0
 urllib3==2.8.0
+uvicorn==0.54.0
+watchdog==6.0.0
+websockets==17.4
 wheel==0.47.0
