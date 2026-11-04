@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-11-04T08:43:18.230574+00:00",
+  "corpus": "corpus v1 (data/corpus_v1_manifest.json), same trials and order",
+  "raw_json_sha256": "d742dc085d3d58653ae2ba51638109cdb846d3cbbf24bdd8a20b79c4603076db",
+  "file": "data/processed/trials_v2.parquet",
+  "sha256": "3173aa53bb48556eb7c8a8c2594d2705692f28d9d4b77d1f2515a02594de4746",
+  "rows": 4695,
+  "columns": [
+    "nct_id",
+    "title",
+    "conditions",
+    "interventions",
+    "summary",
+    "eligibility",
+    "min_age",
+    "max_age",
+    "sex",
+    "phase",
+    "status",
+    "study_type",
+    "last_update",
+    "official_title",
+    "intervention_other_names",
+    "condition_mesh",
+    "intervention_mesh",
+    "keywords"
+  ],
+  "v1_columns_identical_to": {
+    "file": "data/processed/trials.parquet",
+    "sha256": "b005d0be58c9e2d8d000f179077edf9acfec5e4b7cd99c0e1fc6f54c55cbcf67"
+  },
+  "new_columns_nonempty_rows": {
+    "official_title": 4625,
+    "intervention_other_names": 1254,
+    "condition_mesh": 4521,
+    "intervention_mesh": 2217,
+    "keywords": 3205
+  },
+  "document_v2_mean_chars": 2699.9,
+  "document_v1_mean_chars": 2370.0
+}

@@ -142,6 +142,56 @@ def build_processed_dataset(
     return df
 
 
+# =============================================================
+# Processed v2: the v1 columns unchanged + fields that carry brand names,
+# synonyms and normalized terms (official title, intervention otherNames,
+# condition/intervention MeSH terms, keywords).
+# =============================================================
+
+V2_EXTRA_COLUMNS = [
+    "official_title",
+    "intervention_other_names",
+    "condition_mesh",
+    "intervention_mesh",
+    "keywords",
+]
+
+
+def extract_trial_v2(trial: dict) -> dict:
+    """extract_trial() plus the v2 fields."""
+
+    record = extract_trial(trial)
+    study = trial.get("study", {})
+    protocol = study.get("protocolSection", {})
+    derived = study.get("derivedSection", {})
+    interventions = protocol.get("armsInterventionsModule", {}).get("interventions", [])
+
+    def mesh(module: str) -> str:
+        return "; ".join(m["term"] for m in derived.get(module, {}).get("meshes", []))
+
+    record.update({
+        "official_title": protocol.get("identificationModule", {}).get("officialTitle", ""),
+        "intervention_other_names": "; ".join(
+            dict.fromkeys(name.strip() for item in interventions
+                          for name in item.get("otherNames", []) if name.strip())),
+        "condition_mesh": mesh("conditionBrowseModule"),
+        "intervention_mesh": mesh("interventionBrowseModule"),
+        "keywords": "; ".join(protocol.get("conditionsModule", {}).get("keywords", [])),
+    })
+    return record
+
+
+def build_processed_dataset_v2(raw_file: Path, output_file: Path) -> pd.DataFrame:
+    """Write processed v2; refuses to overwrite an existing file."""
+
+    if output_file.exists():
+        raise FileExistsError(f"Refusing to overwrite {output_file}")
+    df = pd.DataFrame([extract_trial_v2(trial) for trial in load_raw_trials(raw_file)])
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    df.to_parquet(output_file, index=False)
+    return df
+
+
 if __name__ == "__main__":
 
     logging.basicConfig(

@@ -33,6 +33,8 @@ from src.retrieval.metadata_filter import MetadataFilter
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_CORPUS = PROJECT_ROOT / "data/processed/trials.parquet"
+CORPUS_V2 = PROJECT_ROOT / "data/processed/trials_v2.parquet"
+CORPORA = {"v1": DEFAULT_CORPUS, "v2": CORPUS_V2}
 INDEX_DIR = PROJECT_ROOT / "data/indexes"
 
 DENSE_MODEL = "BAAI/bge-small-en-v1.5"
@@ -68,27 +70,42 @@ class SearchResult:
 
 class TrialSearchEngine:
 
-    def __init__(self, corpus_path: Path = DEFAULT_CORPUS, device: str | None = None,
-                 parser_version: str = "v1.1") -> None:
+    def __init__(self, corpus_path: Path | None = None, device: str | None = None,
+                 parser_version: str = "v1.1", doc_version: str = "v1",
+                 tokenizer: str = "v1") -> None:
         if parser_version not in PARSERS:
             raise ValueError(f"parser_version must be one of {sorted(PARSERS)}")
         self.parser_version = parser_version
+        self.doc_version = doc_version
+        self.tokenizer = tokenizer
         self.device = device or pick_device()
 
-        corpus_bytes = Path(corpus_path).read_bytes()
-        self.corpus_sha256 = hashlib.sha256(corpus_bytes).hexdigest()
-        self.trials = add_trial_documents(pd.read_parquet(corpus_path)).reset_index(drop=True)
+        corpus_path = Path(corpus_path or CORPORA[doc_version])
+        self.corpus_sha256 = hashlib.sha256(corpus_path.read_bytes()).hexdigest()
+        self.trials = add_trial_documents(pd.read_parquet(corpus_path),
+                                          version=doc_version).reset_index(drop=True)
         documents = self.trials["document"].tolist()
+        self.documents_sha256 = hashlib.sha256("\x00".join(documents).encode()).hexdigest()
 
-        self.bm25 = BM25Retriever(documents)
+        self.bm25 = BM25Retriever(documents, tokenizer=tokenizer)
         self.embedder = DenseEmbedder(model_name=DENSE_MODEL, device=self.device)
         self.embeddings = self._load_or_build_embeddings(documents)
         self.metadata_filter = MetadataFilter(self.trials)
         self.hybrid = HybridRetriever(fusion_k=FUSION_K)
         self._reranker = None
 
+    def describe(self) -> dict[str, Any]:
+        """Configuration of this engine, for run configs and the demo."""
+        return {
+            "parser_version": self.parser_version, "doc_version": self.doc_version,
+            "bm25_tokenizer": self.tokenizer, "dense_model": DENSE_MODEL,
+            "fusion": f"RRF k={FUSION_K}, top-{RETRIEVAL_TOP_K} per retriever",
+            "corpus_sha256": self.corpus_sha256, "documents_sha256": self.documents_sha256,
+            "device": self.device,
+        }
+
     def _load_or_build_embeddings(self, documents: list[str]) -> np.ndarray:
-        cache = INDEX_DIR / f"bge_small_{self.corpus_sha256[:12]}.npy"
+        cache = INDEX_DIR / f"bge_small_docs_{self.documents_sha256[:12]}.npy"
         if cache.exists():
             embeddings = np.load(cache)
             if embeddings.shape == (len(documents), self.embedder.dimension):
