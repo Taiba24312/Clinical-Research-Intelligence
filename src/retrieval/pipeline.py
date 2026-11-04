@@ -25,6 +25,7 @@ import torch
 from src.preprocessing.trial_representation import add_trial_documents
 from src.query_understanding.parser import parse_query
 from src.query_understanding.parser_v1_1 import parse_query_v1_1
+from src.query_understanding.parser_v1_2 import parse_query_v1_2
 from src.retrieval.bm25 import BM25Retriever
 from src.retrieval.embeddings import DenseEmbedder
 from src.retrieval.hybrid import HybridRetriever
@@ -43,7 +44,7 @@ RETRIEVAL_TOP_K = 100
 FUSION_TOP_K = 50
 FUSION_K = 60
 
-PARSERS = {"v1": parse_query, "v1.1": parse_query_v1_1}
+PARSERS = {"v1": parse_query, "v1.1": parse_query_v1_1, "v1.2": parse_query_v1_2}
 
 
 def pick_device() -> str:

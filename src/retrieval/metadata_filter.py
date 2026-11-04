@@ -140,6 +140,24 @@ class MetadataFilter:
                 | (max_age_years >= requested_min_age)
             )
 
+        # =========================================================
+        # MAXIMUM AGE (exclusive upper bound of the requested group,
+        # e.g. 18 for children). Added for parser v1.2.
+        # =========================================================
+        if "max_age" in filters:
+            requested_max_age = float(filters["max_age"])
+
+            min_age_years = self._age_to_years(
+                self.dataframe["min_age"]
+            )
+
+            # Keep trials that admit someone younger than the bound:
+            # min_age < requested bound, OR min_age is unknown.
+            mask &= (
+                min_age_years.isna()
+                | (min_age_years < requested_max_age)
+            )
+
         return self.dataframe.index[mask].tolist()
 
     # =============================================================
