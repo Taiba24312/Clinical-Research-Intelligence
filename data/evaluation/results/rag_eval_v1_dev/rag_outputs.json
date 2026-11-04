@@ -1,0 +1,1298 @@
+{
+  "system_prompt": "You are a clinical trial search assistant. You receive a user question and a numbered list of clinical trials retrieved from ClinicalTrials.gov.\n\nRules:\n1. Use ONLY the information in the listed trials. Do not use outside knowledge, and do not invent trials, results or details.\n2. A trial is a match only if it fits every part of the question: the condition, the intervention, and any stated recruitment status, phase or population.\n3. For each matching trial, write one short line saying what it studies, followed by its citation in the form [NCT ID](https://clinicaltrials.gov/study/NCT ID).\n4. A trial that matches only partly (for example a broader population, or a different drug of the same kind) may be listed under \"Partial matches:\" with a few words on what does not match.\n5. If none of the trials match, write exactly: \"None of the retrieved trials match this query.\" followed by one sentence explaining why.\n6. Never cite an NCT ID that is not in the list. Keep the answer under 150 words.",
+  "outputs": [
+    {
+      "query_id": "Q01",
+      "query": "Recruiting NSCLC trials involving pembrolizumab",
+      "filters": {
+        "status": [
+          "RECRUITING"
+        ]
+      },
+      "context": [
+        {
+          "nct_id": "NCT06195527",
+          "title": "PEMBRO-K : Evaluation of Pembrolizumab Therapeutic Pharmacological Monitoring Benefit in NSCLC",
+          "conditions": "Non Small Cell Lung Cancer",
+          "interventions": "(none listed)",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT07061379",
+          "title": "Patient Reported Outcome Measurements (PROMs) Impact on Clinical Outcome in firsT Line settIng Non- Small-Cell Lung Cancer (NSCLC) According to Chemo- Immunotherapy reGimen",
+          "conditions": "PROMs",
+          "interventions": "Carboplatin/Cisplatin+Pemetrexed+Pembrolizumab/Cemiplimab for 4 cycles and then maintenance with Pemetrexed+Pembrolizumab/Cemiplimab up to 2 years or disease progression or unacceptable toxicity; Carboplatin/Cisplatin+Pemetrexed+Nivolumab+Ipilimumab for 2 cycles and then maintenance with Nivolumab q21 and Ipilimumab q42 up to 2 years or disease progression or unacceptable toxicity",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT06709859",
+          "title": "Afatinib Combined With Chemotherapy as Conversion Therapy in Unresectable EGFR Sensitive Mutation-positive Stage III NSCLC",
+          "conditions": "Carcinoma, Non-Small-Cell Lung",
+          "interventions": "Afatinib plus chemotherapy as conversion treatment",
+          "status": "RECRUITING",
+          "phase": "PHASE2",
+          "grade_for_checking": 0
+        },
+        {
+          "nct_id": "NCT05761223",
+          "title": "A Phase I/II, Open-label Study to Investigate the Safety, Tolerability, PK, and Preliminary Efficacy of FB849",
+          "conditions": "Advanced Solid Tumor",
+          "interventions": "Phase Ia dose-escalation part of FB849 Monotherapy; Phase Ib dose-expansion of FB849 monotherapy; Phase IIb dose-escalation part of FB849 in Combination with Pembrolizumab; Phase IIb dose-expansion part of FB849 in Combination with Pembrolizumab (Type A cancer); Phase IIb dose-expansion part of FB849 in Combination with Pembrolizumab (Type B cancer); Phase IIb dose-expansion part of FB849 in Combination with Pembrolizumab (Type C cancer)",
+          "status": "RECRUITING",
+          "phase": "PHASE1; PHASE2",
+          "grade_for_checking": 1
+        },
+        {
+          "nct_id": "NCT03829254",
+          "title": "A Safety, Pharmacokinetic and Clinical Activity Study of NUC-7738 in Patients With Advanced Solid Tumours and Lymphoma",
+          "conditions": "Advanced Cancer; Lymphoma; Solid Tumor; Melanoma",
+          "interventions": "NUC-7738; Pembrolizumab",
+          "status": "RECRUITING",
+          "phase": "PHASE1; PHASE2",
+          "grade_for_checking": 0
+        }
+      ],
+      "answer": "Partial matches:\n\n- [NCT07061379](https://clinicaltrials.gov/study/NCT07061379): Includes pembrolizumab in first-line NSCLC treatment with chemotherapy, but focuses on patient-reported outcomes, not specifically on pembrolizumab as the primary intervention.  \n- [NCT05761223](https://clinicaltrials.gov/study/NCT05761223): Investigates pembrolizumab in combination with FB849, but in advanced solid tumors, not specifically NSCLC.  \n- [NCT03829254](https://clinicaltrials.gov/study/NCT03829254): Includes pembrolizumab in combination with NUC-7738, but in advanced solid tumors and lymphoma, not NSCLC.\n\nNone of the retrieved trials specifically study pembrolizumab as a standalone or primary intervention in NSCLC.",
+      "cited_as_match": [],
+      "cited_as_partial": [
+        "NCT07061379",
+        "NCT05761223",
+        "NCT03829254"
+      ],
+      "mentioned_in_no_match": [],
+      "has_answer": true,
+      "n_cited": 3,
+      "invalid_citations": 0,
+      "match_cited": 0,
+      "match_cited_relevant": 0,
+      "match_cited_unjudged": 0,
+      "partial_cited": 3,
+      "partial_cited_relevant": 2,
+      "says_no_match": false,
+      "relevant_in_context": 3,
+      "unjudged_in_context": 0,
+      "grade2_not_cited": [
+        "NCT06195527"
+      ],
+      "latency_s": 7.82,
+      "no_match_correct": false,
+      "no_match_false": false,
+      "claims_match_without_relevant": false
+    },
+    {
+      "query_id": "Q02",
+      "query": "Phase 3 breast cancer trials",
+      "filters": {
+        "phase": [
+          "PHASE3"
+        ]
+      },
+      "context": [
+        {
+          "nct_id": "NCT04193722",
+          "title": "The Effect of Hyperbaric OxygeN Therapy on brEast Cancer Patients With Late Radiation toxicitY - UMBRELLA HONEY Trial",
+          "conditions": "Breast Cancer; Radiation Toxicity",
+          "interventions": "Hyperbaric oxygen therapy",
+          "status": "COMPLETED",
+          "phase": "PHASE3",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT00003418",
+          "title": "Exemestane Compared With Tamoxifen in Treating Postmenopausal Women With Primary Breast Cancer",
+          "conditions": "Breast Cancer",
+          "interventions": "exemestane; tamoxifen citrate",
+          "status": "UNKNOWN",
+          "phase": "PHASE3",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT02000622",
+          "title": "Assessment of the Efficacy and Safety of Olaparib Monotherapy Versus Physicians Choice Chemotherapy in the Treatment of Metastatic Breast Cancer Patients With Germline BRCA1/2 Mutations.",
+          "conditions": "Breast Cancer Metastatic; BRCA 1 Gene Mutation; BRCA 2 Gene Mutation",
+          "interventions": "Olaparib; Physician's choice chemotherapy",
+          "status": "COMPLETED",
+          "phase": "PHASE3",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT03493854",
+          "title": "A Study to Evaluate the Pharmacokinetics, Efficacy, and Safety of Subcutaneous Administration of the Fixed-Dose Combination of Pertuzumab and Trastuzumab in Combination With Chemotherapy in Participants With HER2-Positive Early Breast Cancer",
+          "conditions": "Early Breast Cancer",
+          "interventions": "Cyclophosphamide; Doxorubicin; Docetaxel; Paclitaxel; Pertuzumab IV; FDC of Pertuzumab and Trastuzumab SC; Trastuzumab IV; Trastuzumab SC; Surgery; Post-operative Radiotherapy; Hormone Therapy",
+          "status": "COMPLETED",
+          "phase": "PHASE3",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT02107703",
+          "title": "A Study of Abemaciclib (LY2835219) Combined With Fulvestrant in Women With Hormone Receptor Positive HER2 Negative Breast Cancer",
+          "conditions": "Breast Neoplasms",
+          "interventions": "Abemaciclib; Fulvestrant; Placebo",
+          "status": "ACTIVE_NOT_RECRUITING",
+          "phase": "PHASE3",
+          "grade_for_checking": 2
+        }
+      ],
+      "answer": "Phase 3 trials for breast cancer:\n\n- The Effect of Hyperbaric Oxygen Therapy on Breast Cancer Patients With Late Radiation Toxicity - UMBRELLA HONEY Trial evaluates hyperbaric oxygen therapy in breast cancer patients with radiation toxicity [NCT04193722].  \n- Exemestane compared with tamoxifen in postmenopausal women with primary breast cancer [NCT00003418].  \n- Olaparib monotherapy versus chemotherapy in metastatic breast cancer with germline BRCA1/2 mutations [NCT02000622].  \n- A study evaluating subcutaneous pertuzumab and trastuzumab with chemotherapy in HER2-positive early breast cancer [NCT03493854].  \n\nPartial matches: NCT02107703 includes hormone receptor-positive HER2-negative breast cancer but is not recruiting.",
+      "cited_as_match": [
+        "NCT04193722",
+        "NCT00003418",
+        "NCT02000622",
+        "NCT03493854"
+      ],
+      "cited_as_partial": [
+        "NCT02107703"
+      ],
+      "mentioned_in_no_match": [],
+      "has_answer": true,
+      "n_cited": 5,
+      "invalid_citations": 0,
+      "match_cited": 4,
+      "match_cited_relevant": 4,
+      "match_cited_unjudged": 0,
+      "partial_cited": 1,
+      "partial_cited_relevant": 1,
+      "says_no_match": false,
+      "relevant_in_context": 5,
+      "unjudged_in_context": 0,
+      "grade2_not_cited": [],
+      "latency_s": 6.52,
+      "no_match_correct": false,
+      "no_match_false": false,
+      "claims_match_without_relevant": false
+    },
+    {
+      "query_id": "Q03",
+      "query": "Recruiting trials for Alzheimer's disease",
+      "filters": {
+        "status": [
+          "RECRUITING"
+        ]
+      },
+      "context": [
+        {
+          "nct_id": "NCT06914284",
+          "title": "Apathy-related Neurobehavioral Markers of Cognitive Decline in Old-age Bipolar Disorders: Proof-of-concept",
+          "conditions": "Apathy; Bipolar Disorder",
+          "interventions": "Actigraphy and MRI",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": 0
+        },
+        {
+          "nct_id": "NCT06989697",
+          "title": "Cilostazol-Ginkgo for Cognitive Function in Elderly Diabetes",
+          "conditions": "Type 2 Diabets Mellitus; Cognitive Ability, General",
+          "interventions": "Cilostazol / Ginko Leaf Dried Ext.; Placebo",
+          "status": "RECRUITING",
+          "phase": "PHASE3",
+          "grade_for_checking": 0
+        },
+        {
+          "nct_id": "NCT07856472",
+          "title": "AI-Powered Electrocardiography for Diagnosis and Prognostic Prediction in Cardiovascular Disease (AI-CVD): Multicenter Retrospective Study",
+          "conditions": "Cardiovascular Diseases; Coronary Artery Disease; Heart Failure; Atrial Fibrillation (AF); Ventricular Hypertrophy",
+          "interventions": "Retrospective ECG Data Analysis",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": null
+        },
+        {
+          "nct_id": "NCT06906276",
+          "title": "Brain Activity During Complex Walking in People With Atypical Parkinsonian Syndromes",
+          "conditions": "Gait Disorders, Neurologic; Atypical Parkinson Disease; fNIRS; Aging",
+          "interventions": "Assessment of brain activity with fNIRS and behavioural assessments (motor, motor-cognitive and cognitive) during three complex walking conditions.",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": null
+        },
+        {
+          "nct_id": "NCT04923542",
+          "title": "SRS & Abemaciclib w/wo Imlunestrant in the Management of HR+/HER2- Breast CA Brain Metastases",
+          "conditions": "Brain Metastases; HR+ Metastatic Breast Cancer",
+          "interventions": "Stereotactic Radiosurgery (SRS); Abemaciclib; Endocrine therapy",
+          "status": "RECRUITING",
+          "phase": "PHASE1; PHASE2",
+          "grade_for_checking": 0
+        }
+      ],
+      "answer": "None of the retrieved trials match this query. The listed trials do not focus on Alzheimer's disease, even though some involve cognitive function or aging. The conditions and interventions in the trials relate to bipolar disorder, diabetes, cardiovascular disease, Parkinsonian syndromes, and breast cancer brain metastases, not Alzheimer's disease.",
+      "cited_as_match": [],
+      "cited_as_partial": [],
+      "mentioned_in_no_match": [],
+      "has_answer": true,
+      "n_cited": 0,
+      "invalid_citations": 0,
+      "match_cited": 0,
+      "match_cited_relevant": 0,
+      "match_cited_unjudged": 0,
+      "partial_cited": 0,
+      "partial_cited_relevant": 0,
+      "says_no_match": true,
+      "relevant_in_context": 0,
+      "unjudged_in_context": 2,
+      "grade2_not_cited": [],
+      "latency_s": 2.17,
+      "no_match_correct": true,
+      "no_match_false": false,
+      "claims_match_without_relevant": false
+    },
+    {
+      "query_id": "Q04",
+      "query": "Diabetes trials for adults",
+      "filters": {
+        "min_age": 18
+      },
+      "context": [
+        {
+          "nct_id": "NCT00629434",
+          "title": "A Comparison of Diabetes Group Education as Administered Through Telemedicine Versus as Administered in Person",
+          "conditions": "Diabetes Mellitus",
+          "interventions": "diabetes education via telemedicine; diabetes education in-person",
+          "status": "TERMINATED",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT03426423",
+          "title": "Diabetes and Smoking Cessation: a Gender-Oriented Study",
+          "conditions": "Smoking Cessation; Diabetes Type 2",
+          "interventions": "Behavioral smoking cessation intervention; Control",
+          "status": "TERMINATED",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT01910805",
+          "title": "Recent GDM Lifestyle Intervention",
+          "conditions": "Diabetes Mellitus; Diabetes, Gestational",
+          "interventions": "Lifestyle and Risk Assessment class",
+          "status": "COMPLETED",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT06148259",
+          "title": "SGLT Inhibitors Versus DDP4 Inhibitors and Prostate in Patient With Diabetes",
+          "conditions": "Diabetes Mellitus; Prostatic Hyperplasia",
+          "interventions": "International prostate symptom score; Assessment of prostate volume; Pittsburgh sleep quality Index; Glycated hemoglobin",
+          "status": "COMPLETED",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT06727123",
+          "title": "The Effect of Motivational Interviewing on Diabetes Self-Management in Diabetic Patients",
+          "conditions": "Diabetes Mellitus",
+          "interventions": "motivational interviewing; Control",
+          "status": "NOT_YET_RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": 2
+        }
+      ],
+      "answer": "A trial studying the effect of motivational interviewing on diabetes self-management in diabetic patients [NCT06727123](https://clinicaltrials.gov/study/NCT06727123).  \n\nPartial matches:  \n- NCT00629434 compares telemedicine vs in-person diabetes education but is terminated.  \n- NCT03426423 focuses on smoking cessation in type 2 diabetes, not general diabetes management.  \n- NCT01910805 targets gestational diabetes, not adult type 1 or type 2.  \n- NCT06148259 includes diabetes but also prostatic hyperplasia and is not focused on diabetes treatment.  \n\nNone of the retrieved trials match this query exactly for adults with diabetes receiving a diabetes-specific intervention in active recruitment or ongoing phase.",
+      "cited_as_match": [
+        "NCT06727123"
+      ],
+      "cited_as_partial": [
+        "NCT00629434",
+        "NCT03426423",
+        "NCT01910805",
+        "NCT06148259"
+      ],
+      "mentioned_in_no_match": [],
+      "has_answer": true,
+      "n_cited": 5,
+      "invalid_citations": 0,
+      "match_cited": 1,
+      "match_cited_relevant": 1,
+      "match_cited_unjudged": 0,
+      "partial_cited": 4,
+      "partial_cited_relevant": 4,
+      "says_no_match": false,
+      "relevant_in_context": 5,
+      "unjudged_in_context": 0,
+      "grade2_not_cited": [],
+      "latency_s": 6.05,
+      "no_match_correct": false,
+      "no_match_false": false,
+      "claims_match_without_relevant": false
+    },
+    {
+      "query_id": "Q05",
+      "query": "Female patients with breast cancer",
+      "filters": {
+        "sex": [
+          "FEMALE"
+        ]
+      },
+      "context": [
+        {
+          "nct_id": "NCT02189278",
+          "title": "Improving Adherence to Recommended Surveillance in Breast Cancer Survivors",
+          "conditions": "Breast Cancer",
+          "interventions": "Psychosocial Intervention",
+          "status": "COMPLETED",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT00582803",
+          "title": "Adherence to Intensive Surveillance for Hereditary Breast Cancer",
+          "conditions": "Breast Cancer",
+          "interventions": "(none listed)",
+          "status": "COMPLETED",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT05921279",
+          "title": "Understanding CARdiac Events in Breast Cancer",
+          "conditions": "Breast Cancer; Cardiotoxicity; Cardiomyopathies; Chemotherapeutic Toxicity; Heart Failure; Oncology",
+          "interventions": "(none listed)",
+          "status": "UNKNOWN",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT05263362",
+          "title": "An Integrated Optimization of Surgery and Radiotherapy Techniques to Improve Cosmetic Outcome and Quality of Life in Breast Conserving Therapy for Breast Cancer Patients (STARLINGS Study)",
+          "conditions": "Breast Fibrosis; Breast Cancer; Breast Cancer Female; Breast Neoplasms; Breast Carcinoma in Situ; Breast Carcinoma",
+          "interventions": "no intervention",
+          "status": "COMPLETED",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT05374161",
+          "title": "An Intervention for Female Breast CANcer: Acceptance and Commitment Therapy (I-CAN-ACT) for Depression and Physical Pain",
+          "conditions": "Female Breast Cancer; Depression; Pain",
+          "interventions": "Acceptance and Commitment Therapy; Waitlist Control Group",
+          "status": "UNKNOWN",
+          "phase": "NA",
+          "grade_for_checking": 2
+        }
+      ],
+      "answer": "Female patients with breast cancer are studied in the following trials:\n\n- Improving Adherence to Recommended Surveillance in Breast Cancer Survivors: This trial focuses on psychosocial intervention for breast cancer survivors, specifically targeting adherence to surveillance. [NCT02189278](https://clinicaltrials.gov/study/NCT02189278)  \n- An Intervention for Female Breast Cancer: Acceptance and Commitment Therapy (I-CAN-ACT) for Depression and Physical Pain: This trial targets female breast cancer patients with depression and pain using Acceptance and Commitment Therapy. [NCT05374161](https://clinicaltrials.gov/study/NCT05374161)  \n\nPartial matches:  \n- NCT00582803 and NCT05921279 include breast cancer but do not specify female patients as the primary population.  \n- NCT05263362 includes \"Breast Cancer Female\" but has no active intervention.  \n\nNone of the retrieved trials match this query exactly in terms of intervention and recruitment status.",
+      "cited_as_match": [
+        "NCT02189278",
+        "NCT05374161"
+      ],
+      "cited_as_partial": [
+        "NCT00582803",
+        "NCT05921279",
+        "NCT05263362"
+      ],
+      "mentioned_in_no_match": [],
+      "has_answer": true,
+      "n_cited": 5,
+      "invalid_citations": 0,
+      "match_cited": 2,
+      "match_cited_relevant": 2,
+      "match_cited_unjudged": 0,
+      "partial_cited": 3,
+      "partial_cited_relevant": 3,
+      "says_no_match": false,
+      "relevant_in_context": 5,
+      "unjudged_in_context": 0,
+      "grade2_not_cited": [],
+      "latency_s": 7.8,
+      "no_match_correct": false,
+      "no_match_false": false,
+      "claims_match_without_relevant": false
+    },
+    {
+      "query_id": "Q06",
+      "query": "Phase 2 trials using immunotherapy for cancer",
+      "filters": {
+        "phase": [
+          "PHASE2"
+        ]
+      },
+      "context": [
+        {
+          "nct_id": "NCT05904080",
+          "title": "Testing Nivolumab and Ipilimumab Immunotherapy With or Without the Targeted Drug Cabozantinib in Recurrent, Metastatic, or Incurable Nasopharyngeal Cancer",
+          "conditions": "Metastatic Nasopharyngeal Carcinoma; Recurrent Nasopharyngeal Carcinoma; Stage IV Nasopharyngeal Carcinoma AJCC v8",
+          "interventions": "Biospecimen Collection; Cabozantinib S-malate; Computed Tomography; Ipilimumab; Magnetic Resonance Imaging; Nivolumab",
+          "status": "SUSPENDED",
+          "phase": "PHASE2",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT07324473",
+          "title": "Ivarmacitinib Combined With Camrelizumab and Apatinib for Unresectable Advanced Hepatocellular Carcinoma With Acquired Resistance to Immune Checkpoint Therapy: A Single-Arm Exploratory Clinical Study",
+          "conditions": "Hepatocellular Carcinomas; Resistance to Immunotherapy; Immunomodulation; Drug Repurposing",
+          "interventions": "The triple-therapy strategy of Ivarmacitinib, Apatinib, and Camrelizumab",
+          "status": "NOT_YET_RECRUITING",
+          "phase": "PHASE2",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT07625527",
+          "title": "Is Prolonged Systemic Immunotherapy Necessary After Achieving Tumor-free Status in Patients With Extensive Transurethrally Unresectable Very-high-risk NMIBC?",
+          "conditions": "Bladder (Urothelial, Transitional Cell) Cancer; Non Muscle Invasive Bladder Cancer",
+          "interventions": "Active Surveillance; PD-1/PD-L1 Inhibitor-Based Systemic Immunotherapy",
+          "status": "NOT_YET_RECRUITING",
+          "phase": "PHASE2",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT02688686",
+          "title": "Safety and Efficacy of DC-CIK in Patients With Advanced Non-Small-Cell Lung Cancer With Bone Metastases",
+          "conditions": "Non-Small-Cell Lung Cancer With Bone Metastases",
+          "interventions": "genetically modified dendritic cells + cytokine-induced killer",
+          "status": "UNKNOWN",
+          "phase": "PHASE1; PHASE2",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT07092696",
+          "title": "Induction Immunotherapy Combined With Chemotherapy Followed by Concurrent Chemoradiotherap and Immunotherapy for Cervical Cancer",
+          "conditions": "Cervical Cancer",
+          "interventions": "Toripalimab; Pelvic External-Beam Radiotherapy (EBRT)",
+          "status": "RECRUITING",
+          "phase": "PHASE2",
+          "grade_for_checking": 2
+        }
+      ],
+      "answer": "Phase 2 trial testing nivolumab and ipilimumab with or without cabozantinib in metastatic or recurrent nasopharyngeal cancer [NCT05904080](https://clinicaltrials.gov/study/NCT05904080).  \nPhase 2 trial evaluating ivarmacitinib, camrelizumab, and apatinib in advanced hepatocellular carcinoma with immune resistance [NCT07324473](https://clinicaltrials.gov/study/NCT07324473).  \nPhase 2 trial assessing prolonged PD-1/PD-L1 inhibitor-based immunotherapy after tumor-free status in high-risk non-muscle invasive bladder cancer [NCT07625527](https://clinicaltrials.gov/study/NCT07625527).  \nPhase 2 trial combining toripalimab with chemotherapy and concurrent chemoradiotherapy for cervical cancer [NCT07092696](https://clinicaltrials.gov/study/NCT07092696).  \n\n*Note: Trial [NCT02688686] includes phase 1/2 but uses dendritic cell therapy, not standard immunotherapy.*",
+      "cited_as_match": [
+        "NCT05904080",
+        "NCT07324473",
+        "NCT07625527",
+        "NCT07092696",
+        "NCT02688686"
+      ],
+      "cited_as_partial": [],
+      "mentioned_in_no_match": [],
+      "has_answer": true,
+      "n_cited": 5,
+      "invalid_citations": 0,
+      "match_cited": 5,
+      "match_cited_relevant": 5,
+      "match_cited_unjudged": 0,
+      "partial_cited": 0,
+      "partial_cited_relevant": 0,
+      "says_no_match": false,
+      "relevant_in_context": 5,
+      "unjudged_in_context": 0,
+      "grade2_not_cited": [],
+      "latency_s": 9.1,
+      "no_match_correct": false,
+      "no_match_false": false,
+      "claims_match_without_relevant": false
+    },
+    {
+      "query_id": "Q07",
+      "query": "Observational studies for cardiovascular disease",
+      "filters": {
+        "study_type": [
+          "OBSERVATIONAL"
+        ]
+      },
+      "context": [
+        {
+          "nct_id": "NCT00005420",
+          "title": "Prediction of Quality of Life in Cardiovascular Disease",
+          "conditions": "Cardiovascular Diseases; Cerebrovascular Accident; Hypertension; Depression; Heart Diseases",
+          "interventions": "(none listed)",
+          "status": "COMPLETED",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT00101530",
+          "title": "Improving Prevention of Heart Disease in Latinos",
+          "conditions": "Cardiovascular Diseases; Heart Diseases; Hypertension; Diabetes Mellitus",
+          "interventions": "(none listed)",
+          "status": "COMPLETED",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT07856472",
+          "title": "AI-Powered Electrocardiography for Diagnosis and Prognostic Prediction in Cardiovascular Disease (AI-CVD): Multicenter Retrospective Study",
+          "conditions": "Cardiovascular Diseases; Coronary Artery Disease; Heart Failure; Atrial Fibrillation (AF); Ventricular Hypertrophy",
+          "interventions": "Retrospective ECG Data Analysis",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT05626413",
+          "title": "Cardiovascular Disease in Patients With Diabetes: The Silesia Diabetes-Heart Project",
+          "conditions": "Diabetes Mellitus",
+          "interventions": "(none listed)",
+          "status": "UNKNOWN",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT00374595",
+          "title": "Vascular Risk After Kidney Transplantation",
+          "conditions": "Cardiovascular Disease; Chronic Kidney Disease; Diabetes; Vitamin D Deficiency; Hyperparathyroidism",
+          "interventions": "(none listed)",
+          "status": "COMPLETED",
+          "phase": "NA",
+          "grade_for_checking": 2
+        }
+      ],
+      "answer": "Observational studies for cardiovascular disease:  \n[1] NCT00005420 predicts quality of life in cardiovascular disease patients.  \n[2] NCT00101530 conducts an observational study on heart disease prevention in Latinos.  \n[3] NCT07856472 uses retrospective ECG data analysis to study cardiovascular disease diagnosis and prognosis.  \n[5] NCT00374595 examines vascular risk in patients with cardiovascular disease and chronic kidney disease.  \n\nPartial matches:  \n[4] NCT05626413 focuses on diabetes and cardiovascular disease but does not specify an observational design.",
+      "cited_as_match": [
+        "NCT00005420",
+        "NCT00101530",
+        "NCT07856472",
+        "NCT00374595"
+      ],
+      "cited_as_partial": [
+        "NCT05626413"
+      ],
+      "mentioned_in_no_match": [],
+      "has_answer": true,
+      "n_cited": 5,
+      "invalid_citations": 0,
+      "match_cited": 4,
+      "match_cited_relevant": 4,
+      "match_cited_unjudged": 0,
+      "partial_cited": 1,
+      "partial_cited_relevant": 1,
+      "says_no_match": false,
+      "relevant_in_context": 5,
+      "unjudged_in_context": 0,
+      "grade2_not_cited": [],
+      "latency_s": 4.7,
+      "no_match_correct": false,
+      "no_match_false": false,
+      "claims_match_without_relevant": false
+    },
+    {
+      "query_id": "Q08",
+      "query": "Recruiting trials for metastatic cancer in adults",
+      "filters": {
+        "status": [
+          "RECRUITING"
+        ],
+        "min_age": 18
+      },
+      "context": [
+        {
+          "nct_id": "NCT06621173",
+          "title": "A Clinical Trial Evaluating the Safety and Efficacy of Intravenous HNF4α SrRNA in Treating Metastatic CRC Patients",
+          "conditions": "Metastatic Colorectal Cancer (mCRC)",
+          "interventions": "HNF4α srRNA",
+          "status": "RECRUITING",
+          "phase": "EARLY_PHASE1",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT07728942",
+          "title": "SLR-108 PET Imaging in Subjects With Metastatic Solid Tumors",
+          "conditions": "Metastatic Solid Tumors",
+          "interventions": "SLR-108; SLX-1411",
+          "status": "RECRUITING",
+          "phase": "PHASE1",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT07232420",
+          "title": "A Study of BL-M24D1 in Patients With Locally Advanced or Metastatic Non-Small Cell Lung Cancer and Other Solid Tumors",
+          "conditions": "Non Small Cell Lung Cancer; Solid Tumor",
+          "interventions": "BL-M24D1",
+          "status": "RECRUITING",
+          "phase": "PHASE1",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT06943820",
+          "title": "AK129 Combination Therapy for Advanced Solid Tumors",
+          "conditions": "Non-small Cell Lung Cancer Stage IIIB/IV; Head and Neck Squamous Cell Carcinoma (HNSCC); Colorectal Adenocarcinoma; Advanced Solid Tumors",
+          "interventions": "AK129(dose 1); Pemetrexed; Paclitaxel; Carboplatin; AK129(dose 2); Docetaxel; Cis-platinum; 5-FU (5-fluorouracil); Cetuximab; Paclitaxel; Docetaxel; Chemotherapy; AK129(RP2D); Penpulimab",
+          "status": "RECRUITING",
+          "phase": "PHASE1; PHASE2",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT07238283",
+          "title": "Irinotecan Hydrochloride Liposome Injection (II)in Combination With Oxaliplatin, 5-FU/LV Versus AG for First-line Treatment of Metastatic Pancreatic Cancer",
+          "conditions": "First-line Treatment of Metastatic Pancreatic Cancer",
+          "interventions": "Irinotecan Hydrochloride Liposome Injection (II); Oxaliplatin; 5Fluorouracil; Calcium folinate; nab-paclitaxel; gemcitabine",
+          "status": "RECRUITING",
+          "phase": "PHASE3",
+          "grade_for_checking": 2
+        }
+      ],
+      "answer": "Recruiting trials for metastatic cancer in adults:\n\n- A Clinical Trial Evaluating the Safety and Efficacy of Intravenous HNF4α srRNA in Treating Metastatic CRC Patients [NCT06621173](https://clinicaltrials.gov/study/NCT06621173)  \n- SLR-108 PET Imaging in Subjects With Metastatic Solid Tumors [NCT07728942](https://clinicaltrials.gov/study/NCT07728942)  \n- A Study of BL-M24D1 in Patients With Locally Advanced or Metastatic Non-Small Cell Lung Cancer and Other Solid Tumors [NCT07232420](https://clinicaltrials.gov/study/NCT07232420)  \n- AK129 Combination Therapy for Advanced Solid Tumors [NCT06943820](https://clinicaltrials.gov/study/NCT06943820)  \n\nPartial matches:  \n- NCT07238283 focuses on first-line treatment of metastatic pancreatic cancer, not broad metastatic cancer.",
+      "cited_as_match": [
+        "NCT06621173",
+        "NCT07728942",
+        "NCT07232420",
+        "NCT06943820"
+      ],
+      "cited_as_partial": [
+        "NCT07238283"
+      ],
+      "mentioned_in_no_match": [],
+      "has_answer": true,
+      "n_cited": 5,
+      "invalid_citations": 0,
+      "match_cited": 4,
+      "match_cited_relevant": 4,
+      "match_cited_unjudged": 0,
+      "partial_cited": 1,
+      "partial_cited_relevant": 1,
+      "says_no_match": false,
+      "relevant_in_context": 5,
+      "unjudged_in_context": 0,
+      "grade2_not_cited": [],
+      "latency_s": 8.74,
+      "no_match_correct": false,
+      "no_match_false": false,
+      "claims_match_without_relevant": false
+    },
+    {
+      "query_id": "Q09",
+      "query": "Phase 1 trials involving targeted therapy for solid tumors",
+      "filters": {
+        "phase": [
+          "PHASE1"
+        ]
+      },
+      "context": [
+        {
+          "nct_id": "NCT06943820",
+          "title": "AK129 Combination Therapy for Advanced Solid Tumors",
+          "conditions": "Non-small Cell Lung Cancer Stage IIIB/IV; Head and Neck Squamous Cell Carcinoma (HNSCC); Colorectal Adenocarcinoma; Advanced Solid Tumors",
+          "interventions": "AK129(dose 1); Pemetrexed; Paclitaxel; Carboplatin; AK129(dose 2); Docetaxel; Cis-platinum; 5-FU (5-fluorouracil); Cetuximab; Paclitaxel; Docetaxel; Chemotherapy; AK129(RP2D); Penpulimab",
+          "status": "RECRUITING",
+          "phase": "PHASE1; PHASE2",
+          "grade_for_checking": 0
+        },
+        {
+          "nct_id": "NCT06001580",
+          "title": "A Study of BR101 Injection Alone in Subjects With Advanced Solid Tumors",
+          "conditions": "Advanced Solid Tumor",
+          "interventions": "BR101",
+          "status": "COMPLETED",
+          "phase": "PHASE1",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT03053466",
+          "title": "APL-501 Study for Select Advanced or Relapsed/Recurrent Solid Tumors",
+          "conditions": "Solid Tumor; Microsatellite Instability; Mismatch Repair Deficiency; Cancer of Unknown Primary Site",
+          "interventions": "APL-501",
+          "status": "COMPLETED",
+          "phase": "PHASE1",
+          "grade_for_checking": 0
+        },
+        {
+          "nct_id": "NCT04597541",
+          "title": "A Study of AK112 for Advanced Solid Tumors",
+          "conditions": "Solid Tumor, Adult",
+          "interventions": "AK112",
+          "status": "COMPLETED",
+          "phase": "PHASE1; PHASE2",
+          "grade_for_checking": null
+        },
+        {
+          "nct_id": "NCT04586270",
+          "title": "A Study of TAS0612 in Participants With Advanced or Metastatic Solid Tumor Cancer",
+          "conditions": "Advanced or Metastatic Solid Tumors",
+          "interventions": "TAS0612",
+          "status": "TERMINATED",
+          "phase": "PHASE1",
+          "grade_for_checking": 2
+        }
+      ],
+      "answer": "A Phase 1 trial studying AK129 combination therapy in advanced solid tumors, including non-small cell lung cancer, HNSCC, and colorectal adenocarcinoma [NCT06943820](https://clinicaltrials.gov/study/NCT06943820).  \n\nPartial matches:  \n- NCT06001580: Phase 1 trial of BR101 in advanced solid tumors, but completed.  \n- NCT03053466: Phase 1 trial of APL-501 in select solid tumors with MSI/dMMR, completed.  \n- NCT04597541: Phase 1/2 trial of AK112 in solid tumors, completed.  \n- NCT04586270: Phase 1 trial of TAS0612 in advanced solid tumors, terminated.  \n\nNone of the trials are currently recruiting and only one (NCT06943820) involves a targeted therapy (AK129) in a broad solid tumor population with active recruitment.",
+      "cited_as_match": [
+        "NCT06943820"
+      ],
+      "cited_as_partial": [
+        "NCT06001580",
+        "NCT03053466",
+        "NCT04597541",
+        "NCT04586270"
+      ],
+      "mentioned_in_no_match": [],
+      "has_answer": true,
+      "n_cited": 5,
+      "invalid_citations": 0,
+      "match_cited": 1,
+      "match_cited_relevant": 0,
+      "match_cited_unjudged": 0,
+      "partial_cited": 4,
+      "partial_cited_relevant": 2,
+      "says_no_match": false,
+      "relevant_in_context": 2,
+      "unjudged_in_context": 1,
+      "grade2_not_cited": [],
+      "latency_s": 7.94,
+      "no_match_correct": false,
+      "no_match_false": false,
+      "claims_match_without_relevant": false
+    },
+    {
+      "query_id": "Q10",
+      "query": "Recruiting infectious disease trials for adults",
+      "filters": {
+        "status": [
+          "RECRUITING"
+        ],
+        "min_age": 18
+      },
+      "context": [
+        {
+          "nct_id": "NCT05336851",
+          "title": "Emergency PWAS in Respiratory Infectious Disease",
+          "conditions": "Viral Infections; Bacterial Infections; Fungal Infections; Mixed Infection; Mycobacterium Infection; Infection of Uncertain Aetiology; Pneumonia; Sepsis",
+          "interventions": "Biomarker blood draw and saliva collection",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT07112235",
+          "title": "Using Multiomics to Define Mechanisms of Rhinovirus-induced Chronic Obstructive Pulmonary Disease Exacerbations to Develop Novel Therapies and Therapeutic Targets",
+          "conditions": "COPD (Chronic Obstructive Pulmonary Disease); Rhinovirus Infection; Exacerbation of COPD",
+          "interventions": "Rhinovirus-A16",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": null
+        },
+        {
+          "nct_id": "NCT07103980",
+          "title": "Inhaled Mesenchymal Stem Cell-Derived Exosomes in the Treatment of Post-Infectious Cough: A Single-Center Randomized Controlled Clinical Trial",
+          "conditions": "Post-Infectious Cough",
+          "interventions": "Mesenchymal stem cell derived exosome nebulization combined with compound methoxyphenamine capsule; Normal saline nebulization combined with the compound methoxyphenamine capsule",
+          "status": "RECRUITING",
+          "phase": "PHASE1; PHASE2",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT06966908",
+          "title": "Hospital-Based Management of Patients With Chronic Hepatitis B Virus Infection",
+          "conditions": "Chronic Hepatitis B",
+          "interventions": "Facilitate the referral of in-hospital chronic hepatitis B patients and provide treatment and follow-up in the infectious disease department.; Assessment of patient-reported outcomes (PROs) in patients with chronic hepatitis B.",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT05977179",
+          "title": "Dietary Intervention to Mitigate Post-Acute COVID-19 Syndrome",
+          "conditions": "Post-Acute COVID-19 Syndrome; Fatigue",
+          "interventions": "Dietary intervention to mitigate Post-Acute COVID-19 Syndrome; Attention Control",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": 2
+        }
+      ],
+      "answer": "Recruiting infectious disease trials for adults:\n\n- Studies biomarker collection in viral, bacterial, fungal, and mixed infections including pneumonia and sepsis [NCT05336851](https://clinicaltrials.gov/study/NCT05336851).  \n- Investigates rhinovirus-induced COPD exacerbations to develop novel therapies [NCT07112235](https://clinicaltrials.gov/study/NCT07112235).  \n- Evaluates inhaled mesenchymal stem cell-derived exosomes for post-infectious cough in adults [NCT07103980](https://clinicaltrials.gov/study/NCT07103980).  \n- Focuses on hospital-based management of chronic hepatitis B virus infection in adults [NCT06966908](https://clinicaltrials.gov/study/NCT06966908).  \n- Assesses dietary intervention for post-acute COVID-19 syndrome and fatigue in adults [NCT05977179](https://clinicaltrials.gov/study/NCT05977179).  \n\nAll trials are recruiting and involve adult populations with infectious disease conditions.",
+      "cited_as_match": [
+        "NCT05336851",
+        "NCT07112235",
+        "NCT07103980",
+        "NCT06966908",
+        "NCT05977179"
+      ],
+      "cited_as_partial": [],
+      "mentioned_in_no_match": [],
+      "has_answer": true,
+      "n_cited": 5,
+      "invalid_citations": 0,
+      "match_cited": 5,
+      "match_cited_relevant": 4,
+      "match_cited_unjudged": 1,
+      "partial_cited": 0,
+      "partial_cited_relevant": 0,
+      "says_no_match": false,
+      "relevant_in_context": 4,
+      "unjudged_in_context": 1,
+      "grade2_not_cited": [],
+      "latency_s": 8.97,
+      "no_match_correct": false,
+      "no_match_false": false,
+      "claims_match_without_relevant": false
+    },
+    {
+      "query_id": "Q11",
+      "query": "Keytruda trials in lung cancer",
+      "filters": {},
+      "context": [
+        {
+          "nct_id": "NCT06726265",
+          "title": "Study of Eftilagimod Alfa (Efti) in Combination With Pembrolizumab and Chemotherapy Versus Placebo in Combination With Pembrolizumab and Chemotherapy in Participants With Metastatic Non-Small Cell Lung Cancer (NSCLC) (TACTI-004)",
+          "conditions": "Advanced/Metastatic Non-Small Cell Lung Cancer (NSCLC)",
+          "interventions": "eftilagimod alfa; carboplatin plus paclitaxel; cisplatin or carboplatin + pemetrexed; pembrolizumab (KEYTRUDA®); Placebo",
+          "status": "ACTIVE_NOT_RECRUITING",
+          "phase": "PHASE3",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT03419286",
+          "title": "Transformation Into Small Cell Lung Cancer : a Mode of Resistance to Treatment",
+          "conditions": "Small Cell Lung Cancer",
+          "interventions": "(none listed)",
+          "status": "COMPLETED",
+          "phase": "NA",
+          "grade_for_checking": 0
+        },
+        {
+          "nct_id": "NCT07188480",
+          "title": "The Role of DNA and RNA in NGS Analyses for Advaced Stage NSCLC Patients",
+          "conditions": "Non Small Cell Lung Cancer NSCLC",
+          "interventions": "bronchial lavage for NGS analysis",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": 0
+        },
+        {
+          "nct_id": "NCT03658083",
+          "title": "Exploring Robotic-assisted Thoracic Surgery for Lung Cancer",
+          "conditions": "Lung Cancer; Thoracic Cancer; Surgery",
+          "interventions": "Thoracotomy; Robotic-assisted thoracic surgery",
+          "status": "COMPLETED",
+          "phase": "NA",
+          "grade_for_checking": 0
+        },
+        {
+          "nct_id": "NCT02607605",
+          "title": "A Prospective, Observational Trial on the Diagnostic and Prognostic of LM",
+          "conditions": "Lung Neoplasms; Meningeal Carcinomatosis",
+          "interventions": "(none listed)",
+          "status": "UNKNOWN",
+          "phase": "NA",
+          "grade_for_checking": 0
+        }
+      ],
+      "answer": "None of the retrieved trials match this query. While some trials involve KEYTRUDA® (pembrolizumab) in lung cancer, none specifically study Keytruda as the primary intervention in lung cancer. Trial [1] includes pembrolizumab (KEYTRUDA®) in combination with chemotherapy for metastatic NSCLC, but it does not focus on Keytruda as the sole or primary treatment. The other trials do not involve Keytruda or are not relevant to lung cancer treatment with Keytruda.",
+      "cited_as_match": [],
+      "cited_as_partial": [],
+      "mentioned_in_no_match": [],
+      "has_answer": true,
+      "n_cited": 0,
+      "invalid_citations": 0,
+      "match_cited": 0,
+      "match_cited_relevant": 0,
+      "match_cited_unjudged": 0,
+      "partial_cited": 0,
+      "partial_cited_relevant": 0,
+      "says_no_match": true,
+      "relevant_in_context": 1,
+      "unjudged_in_context": 0,
+      "grade2_not_cited": [
+        "NCT06726265"
+      ],
+      "latency_s": 3.6,
+      "no_match_correct": false,
+      "no_match_false": true,
+      "claims_match_without_relevant": false
+    },
+    {
+      "query_id": "Q18",
+      "query": "Pediatric epilepsy trials",
+      "filters": {
+        "max_age": 18
+      },
+      "context": [
+        {
+          "nct_id": "NCT01450423",
+          "title": "Physical Exercise in Subjects With Juvenile Myoclonic Epilepsy",
+          "conditions": "Epilepsy; Epilepsia; Epileptic Seizures; Seizure Disorder",
+          "interventions": "Physical activity",
+          "status": "UNKNOWN",
+          "phase": "PHASE2",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT00044278",
+          "title": "Pediatric Epilepsy Study in Subjects 1-24 Months",
+          "conditions": "Epilepsy",
+          "interventions": "lamotrigine",
+          "status": "COMPLETED",
+          "phase": "PHASE2",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT03836924",
+          "title": "A Study to Assess Safety and Efficacy of Perampanel in Indian Participants as an Adjunctive Treatment in Partial Onset Seizures With or Without Secondary Generalized Seizures in Participants With Epilepsy Aged 12 Years or Older",
+          "conditions": "Partial Onset Seizures; Epilepsy",
+          "interventions": "Perampanel",
+          "status": "COMPLETED",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT05864846",
+          "title": "A Study to Investigate Behavioral and Other Co-Occurring Outcomes With Epidiolex as Add-On Therapy in Participants Aged 1 to 65 Years of Age With Tuberous Sclerosis Complex",
+          "conditions": "Tuberous Sclerosis Complex Associated Neuropsychiatric Disease",
+          "interventions": "Cannabidiol Oral Solution [Epidiolex]",
+          "status": "COMPLETED",
+          "phase": "PHASE4",
+          "grade_for_checking": 0
+        },
+        {
+          "nct_id": "NCT03406702",
+          "title": "CX-8998 for Absence Seizures",
+          "conditions": "Epilepsy",
+          "interventions": "CX-8998",
+          "status": "COMPLETED",
+          "phase": "PHASE2",
+          "grade_for_checking": 2
+        }
+      ],
+      "answer": "[2] NCT00044278 studies lamotrigine in pediatric patients with epilepsy aged 1–24 months.  \n[3] NCT03836924 assesses perampanel as adjunctive treatment for partial onset seizures in participants aged 12 years or older with epilepsy.  \n\nPartial matches:  \n[1] NCT01450423 involves juvenile myoclonic epilepsy and physical activity, not a standard pediatric epilepsy trial.  \n[5] NCT03406702 targets absence seizures in epilepsy but lacks specific pediatric focus.  \n[4] NCT05864846 focuses on tuberous sclerosis complex, not general pediatric epilepsy.  \n\nNone of the retrieved trials match this query exactly in terms of broad pediatric epilepsy population and intervention.",
+      "cited_as_match": [
+        "NCT00044278",
+        "NCT03836924"
+      ],
+      "cited_as_partial": [
+        "NCT01450423",
+        "NCT03406702",
+        "NCT05864846"
+      ],
+      "mentioned_in_no_match": [],
+      "has_answer": true,
+      "n_cited": 5,
+      "invalid_citations": 0,
+      "match_cited": 2,
+      "match_cited_relevant": 2,
+      "match_cited_unjudged": 0,
+      "partial_cited": 3,
+      "partial_cited_relevant": 2,
+      "says_no_match": false,
+      "relevant_in_context": 4,
+      "unjudged_in_context": 0,
+      "grade2_not_cited": [],
+      "latency_s": 5.86,
+      "no_match_correct": false,
+      "no_match_false": false,
+      "claims_match_without_relevant": false
+    },
+    {
+      "query_id": "Q20",
+      "query": "Parkinson's disease trials that are not yet recruiting",
+      "filters": {
+        "status": [
+          "NOT_YET_RECRUITING"
+        ]
+      },
+      "context": [
+        {
+          "nct_id": "NCT06809556",
+          "title": "Association of EEG Parameters with Postoperative Delirium in Patient's with Parkinson's Disease",
+          "conditions": "Post Operative Delirium; Parkinson Disease",
+          "interventions": "EEG (electroencephalogram) monitoring of Parkinson's patients undergoing deep brain stimulation",
+          "status": "NOT_YET_RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT07361627",
+          "title": "Upper Limb Rehabilitation Using Non-invasive Spinal Cord Stimulation",
+          "conditions": "Spinal Cord Injury Cervical; Spinal Cord Injury, Acute; Spinal Cord Injury (Quadraplegia)",
+          "interventions": "Protocol 1: Combination of activity-based therapy and sham spinal cord stimulation; Protocol 2: Combination of activity-based therapy and facilitatory transcutaneous spinal cord stimulation",
+          "status": "NOT_YET_RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": 0
+        },
+        {
+          "nct_id": "NCT07720479",
+          "title": "Intranasal Insulin for Postoperative Delirium in Older Patients With T2DM",
+          "conditions": "Postoperative Delirium (POD)",
+          "interventions": "Insulin, human; Intranasal Normal Saline (Placebo)",
+          "status": "NOT_YET_RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": 0
+        },
+        {
+          "nct_id": "NCT04158024",
+          "title": "Erector Spinae Plane Block in Congenital Heart Disease Patients",
+          "conditions": "Congenital Heart Disease in Children; Neurologic Complication",
+          "interventions": "Erector Spinae Plane Block",
+          "status": "NOT_YET_RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": null
+        },
+        {
+          "nct_id": "NCT06558422",
+          "title": "Human Models of Selective Insulin Resistance: Pancreatic Clamp",
+          "conditions": "Insulin Resistance; Hyperinsulinemia; Metabolic Dysfunction Associated Steatotic Liver Disease; Non-Alcoholic Fatty Liver Disease; Prediabetic State; Obesity",
+          "interventions": "Insulin human; Octreotide Acetate; Glucagon; Growth Hormone, Human; 20% D-glucose (aq); [6,6-2H2] D-glucose; [1-13C1] sodium acetate; Nestle BOOST Plus; KIND Bar; Harvard Apparatus PHD ULTRA CP syringe pump; Yellow Springs Instruments (YSI) 2500 Biochemistry Glucose/Lactate Analyzer",
+          "status": "NOT_YET_RECRUITING",
+          "phase": "PHASE1",
+          "grade_for_checking": 0
+        }
+      ],
+      "answer": "None of the retrieved trials match this query. While several trials list Parkinson's disease as a condition, none specifically study Parkinson's disease and are not yet recruiting with a relevant intervention for Parkinson's disease. The trials either focus on postoperative delirium, spinal cord injury, or metabolic conditions, and do not target Parkinson's disease with interventions relevant to its treatment.",
+      "cited_as_match": [],
+      "cited_as_partial": [],
+      "mentioned_in_no_match": [],
+      "has_answer": true,
+      "n_cited": 0,
+      "invalid_citations": 0,
+      "match_cited": 0,
+      "match_cited_relevant": 0,
+      "match_cited_unjudged": 0,
+      "partial_cited": 0,
+      "partial_cited_relevant": 0,
+      "says_no_match": true,
+      "relevant_in_context": 1,
+      "unjudged_in_context": 1,
+      "grade2_not_cited": [
+        "NCT06809556"
+      ],
+      "latency_s": 2.47,
+      "no_match_correct": false,
+      "no_match_false": true,
+      "claims_match_without_relevant": false
+    },
+    {
+      "query_id": "Q22",
+      "query": "Which pembrolizumab studies for non-small cell lung cancer are currently enrolling patients?",
+      "filters": {
+        "status": [
+          "RECRUITING"
+        ]
+      },
+      "context": [
+        {
+          "nct_id": "NCT06195527",
+          "title": "PEMBRO-K : Evaluation of Pembrolizumab Therapeutic Pharmacological Monitoring Benefit in NSCLC",
+          "conditions": "Non Small Cell Lung Cancer",
+          "interventions": "(none listed)",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT07061379",
+          "title": "Patient Reported Outcome Measurements (PROMs) Impact on Clinical Outcome in firsT Line settIng Non- Small-Cell Lung Cancer (NSCLC) According to Chemo- Immunotherapy reGimen",
+          "conditions": "PROMs",
+          "interventions": "Carboplatin/Cisplatin+Pemetrexed+Pembrolizumab/Cemiplimab for 4 cycles and then maintenance with Pemetrexed+Pembrolizumab/Cemiplimab up to 2 years or disease progression or unacceptable toxicity; Carboplatin/Cisplatin+Pemetrexed+Nivolumab+Ipilimumab for 2 cycles and then maintenance with Nivolumab q21 and Ipilimumab q42 up to 2 years or disease progression or unacceptable toxicity",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT07229729",
+          "title": "A Study of SHR-A2102 in Combination With Other Anti-tumor Therapies for Resectable Non-small Cell Lung Cancer",
+          "conditions": "Non-small Cell Lung Cancer",
+          "interventions": "SHR-A2102; Adebrelimab; Paclitaxel; Carboplatin; Alomnertinib Mesilate; Furmonertini Mesilate; Osimertinib Mesylate",
+          "status": "RECRUITING",
+          "phase": "PHASE2",
+          "grade_for_checking": 0
+        },
+        {
+          "nct_id": "NCT03829254",
+          "title": "A Safety, Pharmacokinetic and Clinical Activity Study of NUC-7738 in Patients With Advanced Solid Tumours and Lymphoma",
+          "conditions": "Advanced Cancer; Lymphoma; Solid Tumor; Melanoma",
+          "interventions": "NUC-7738; Pembrolizumab",
+          "status": "RECRUITING",
+          "phase": "PHASE1; PHASE2",
+          "grade_for_checking": 0
+        },
+        {
+          "nct_id": "NCT07232420",
+          "title": "A Study of BL-M24D1 in Patients With Locally Advanced or Metastatic Non-Small Cell Lung Cancer and Other Solid Tumors",
+          "conditions": "Non Small Cell Lung Cancer; Solid Tumor",
+          "interventions": "BL-M24D1",
+          "status": "RECRUITING",
+          "phase": "PHASE1",
+          "grade_for_checking": 0
+        }
+      ],
+      "answer": "None of the retrieved trials match this query. While several trials involve pembrolizumab and non-small cell lung cancer (NSCLC), none specifically study pembrolizumab as the sole or primary intervention for NSCLC and are currently enrolling patients. Trial [2] includes pembrolizumab but focuses on patient-reported outcomes and combines it with chemotherapy, not as a standalone pembrolizumab study. The other trials either use different drugs or do not focus on pembrolizumab as the primary intervention.",
+      "cited_as_match": [],
+      "cited_as_partial": [],
+      "mentioned_in_no_match": [],
+      "has_answer": true,
+      "n_cited": 0,
+      "invalid_citations": 0,
+      "match_cited": 0,
+      "match_cited_relevant": 0,
+      "match_cited_unjudged": 0,
+      "partial_cited": 0,
+      "partial_cited_relevant": 0,
+      "says_no_match": true,
+      "relevant_in_context": 2,
+      "unjudged_in_context": 0,
+      "grade2_not_cited": [
+        "NCT06195527",
+        "NCT07061379"
+      ],
+      "latency_s": 3.64,
+      "no_match_correct": false,
+      "no_match_false": true,
+      "claims_match_without_relevant": false
+    },
+    {
+      "query_id": "Q23",
+      "query": "Non-interventional cardiovascular disease studies",
+      "filters": {
+        "study_type": [
+          "OBSERVATIONAL"
+        ]
+      },
+      "context": [
+        {
+          "nct_id": "NCT07856472",
+          "title": "AI-Powered Electrocardiography for Diagnosis and Prognostic Prediction in Cardiovascular Disease (AI-CVD): Multicenter Retrospective Study",
+          "conditions": "Cardiovascular Diseases; Coronary Artery Disease; Heart Failure; Atrial Fibrillation (AF); Ventricular Hypertrophy",
+          "interventions": "Retrospective ECG Data Analysis",
+          "status": "RECRUITING",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT00005420",
+          "title": "Prediction of Quality of Life in Cardiovascular Disease",
+          "conditions": "Cardiovascular Diseases; Cerebrovascular Accident; Hypertension; Depression; Heart Diseases",
+          "interventions": "(none listed)",
+          "status": "COMPLETED",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT00101530",
+          "title": "Improving Prevention of Heart Disease in Latinos",
+          "conditions": "Cardiovascular Diseases; Heart Diseases; Hypertension; Diabetes Mellitus",
+          "interventions": "(none listed)",
+          "status": "COMPLETED",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT00374595",
+          "title": "Vascular Risk After Kidney Transplantation",
+          "conditions": "Cardiovascular Disease; Chronic Kidney Disease; Diabetes; Vitamin D Deficiency; Hyperparathyroidism",
+          "interventions": "(none listed)",
+          "status": "COMPLETED",
+          "phase": "NA",
+          "grade_for_checking": 2
+        },
+        {
+          "nct_id": "NCT01303900",
+          "title": "Cardiovascular Disease (CVD) in Haemophilia",
+          "conditions": "Haemophilia; Cardiovascular Disease",
+          "interventions": "(none listed)",
+          "status": "UNKNOWN",
+          "phase": "NA",
+          "grade_for_checking": 2
+        }
+      ],
+      "answer": "[1] NCT07856472 studies the use of AI-powered electrocardiography for diagnosis and prognostic prediction in cardiovascular disease using retrospective ECG data. [NCT07856472](https://clinicaltrials.gov/study/NCT07856472)\n\nPartial matches:  \n[2] NCT00005420, [3] NCT00101530, [4] NCT00374595, and [5] NCT01303900 involve cardiovascular disease but lack interventions and are non-interventional in design; however, they do not specifically focus on cardiovascular disease studies as a primary non-interventional investigation.  \n\nNone of the retrieved trials match this query exactly as they either lack a defined intervention or are not explicitly non-interventional cardiovascular disease studies.",
+      "cited_as_match": [
+        "NCT07856472"
+      ],
+      "cited_as_partial": [
+        "NCT00005420",
+        "NCT00101530",
+        "NCT00374595",
+        "NCT01303900"
+      ],
+      "mentioned_in_no_match": [],
+      "has_answer": true,
+      "n_cited": 5,
+      "invalid_citations": 0,
+      "match_cited": 1,
+      "match_cited_relevant": 1,
+      "match_cited_unjudged": 0,
+      "partial_cited": 4,
+      "partial_cited_relevant": 4,
+      "says_no_match": false,
+      "relevant_in_context": 5,
+      "unjudged_in_context": 0,
+      "grade2_not_cited": [],
+      "latency_s": 6.39,
+      "no_match_correct": false,
+      "no_match_false": false,
+      "claims_match_without_relevant": false
+    },
+    {
+      "query_id": "Q24",
+      "query": "Phase 3 trials of lecanemab for early Alzheimer's disease",
+      "filters": {
+        "phase": [
+          "PHASE3"
+        ]
+      },
+      "context": [
+        {
+          "nct_id": "NCT06989697",
+          "title": "Cilostazol-Ginkgo for Cognitive Function in Elderly Diabetes",
+          "conditions": "Type 2 Diabets Mellitus; Cognitive Ability, General",
+          "interventions": "Cilostazol / Ginko Leaf Dried Ext.; Placebo",
+          "status": "RECRUITING",
+          "phase": "PHASE3",
+          "grade_for_checking": 0
+        },
+        {
+          "nct_id": "NCT03493854",
+          "title": "A Study to Evaluate the Pharmacokinetics, Efficacy, and Safety of Subcutaneous Administration of the Fixed-Dose Combination of Pertuzumab and Trastuzumab in Combination With Chemotherapy in Participants With HER2-Positive Early Breast Cancer",
+          "conditions": "Early Breast Cancer",
+          "interventions": "Cyclophosphamide; Doxorubicin; Docetaxel; Paclitaxel; Pertuzumab IV; FDC of Pertuzumab and Trastuzumab SC; Trastuzumab IV; Trastuzumab SC; Surgery; Post-operative Radiotherapy; Hormone Therapy",
+          "status": "COMPLETED",
+          "phase": "PHASE3",
+          "grade_for_checking": 0
+        },
+        {
+          "nct_id": "NCT03108846",
+          "title": "Escitalopram for Agitation in Alzheimer's Disease",
+          "conditions": "Dementia",
+          "interventions": "Escitalopram; Placebo",
+          "status": "ACTIVE_NOT_RECRUITING",
+          "phase": "PHASE3",
+          "grade_for_checking": 0
+        },
+        {
+          "nct_id": "NCT00004645",
+          "title": "Phase III Randomized, Double-Blind, Sham-Controlled Study of Plasma Exchange for Acute Severe Attacks of Inflammatory Demyelinating Disease Refractory to Intravenous Methylprednisolone",
+          "conditions": "Acute Disseminated Encephalomyelitis; Devic's Syndrome; Marburg's Variant of Multiple Sclerosis; Balo's Concentric Sclerosis; Acute Transverse Myelitis",
+          "interventions": "Plasma exchange",
+          "status": "UNKNOWN",
+          "phase": "PHASE3",
+          "grade_for_checking": 0
+        },
+        {
+          "nct_id": "NCT02107703",
+          "title": "A Study of Abemaciclib (LY2835219) Combined With Fulvestrant in Women With Hormone Receptor Positive HER2 Negative Breast Cancer",
+          "conditions": "Breast Neoplasms",
+          "interventions": "Abemaciclib; Fulvestrant; Placebo",
+          "status": "ACTIVE_NOT_RECRUITING",
+          "phase": "PHASE3",
+          "grade_for_checking": 0
+        }
+      ],
+      "answer": "None of the retrieved trials match this query. The query specifically asks for Phase 3 trials of lecanemab for early Alzheimer's disease, but none of the listed trials involve lecanemab or focus on early Alzheimer's disease. The closest trial (NCT03108846) studies escitalopram for agitation in dementia, not lecanemab, and does not target early Alzheimer's disease.",
+      "cited_as_match": [],
+      "cited_as_partial": [],
+      "mentioned_in_no_match": [
+        "NCT03108846"
+      ],
+      "has_answer": false,
+      "n_cited": 1,
+      "invalid_citations": 0,
+      "match_cited": 0,
+      "match_cited_relevant": 0,
+      "match_cited_unjudged": 0,
+      "partial_cited": 0,
+      "partial_cited_relevant": 0,
+      "says_no_match": true,
+      "relevant_in_context": 0,
+      "unjudged_in_context": 0,
+      "grade2_not_cited": [],
+      "latency_s": 2.95,
+      "no_match_correct": true,
+      "no_match_false": false,
+      "claims_match_without_relevant": false
+    }
+  ]
+}

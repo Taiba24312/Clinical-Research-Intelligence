@@ -1,0 +1,17 @@
+query_id,has_answer,n_cited,invalid_citations,match_cited,match_cited_relevant,match_cited_unjudged,partial_cited,partial_cited_relevant,says_no_match,relevant_in_context,unjudged_in_context,grade2_not_cited,latency_s,no_match_correct,no_match_false,claims_match_without_relevant
+Q01,True,3,0,0,0,0,3,2,False,3,0,['NCT06195527'],7.82,False,False,False
+Q02,True,5,0,4,4,0,1,1,False,5,0,[],6.52,False,False,False
+Q03,True,0,0,0,0,0,0,0,True,0,2,[],2.17,True,False,False
+Q04,True,5,0,1,1,0,4,4,False,5,0,[],6.05,False,False,False
+Q05,True,5,0,2,2,0,3,3,False,5,0,[],7.8,False,False,False
+Q06,True,5,0,5,5,0,0,0,False,5,0,[],9.1,False,False,False
+Q07,True,5,0,4,4,0,1,1,False,5,0,[],4.7,False,False,False
+Q08,True,5,0,4,4,0,1,1,False,5,0,[],8.74,False,False,False
+Q09,True,5,0,1,0,0,4,2,False,2,1,[],7.94,False,False,False
+Q10,True,5,0,5,4,1,0,0,False,4,1,[],8.97,False,False,False
+Q11,True,0,0,0,0,0,0,0,True,1,0,['NCT06726265'],3.6,False,True,False
+Q18,True,5,0,2,2,0,3,2,False,4,0,[],5.86,False,False,False
+Q20,True,0,0,0,0,0,0,0,True,1,1,['NCT06809556'],2.47,False,True,False
+Q22,True,0,0,0,0,0,0,0,True,2,0,"['NCT06195527', 'NCT07061379']",3.64,False,True,False
+Q23,True,5,0,1,1,0,4,4,False,5,0,[],6.39,False,False,False
+Q24,False,1,0,0,0,0,0,0,True,0,0,[],2.95,True,False,False

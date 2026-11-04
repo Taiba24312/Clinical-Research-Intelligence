@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-11-04T08:52:13.529974+00:00",
+  "pipeline": {
+    "parser_version": "v1.2",
+    "doc_version": "v1",
+    "tokenizer": "v2"
+  },
+  "generation": {
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "decoding": "greedy, max_new_tokens=350",
+    "context_trials": 5
+  },
+  "queries": 16,
+  "citations_total": 54,
+  "citation_validity": 1.0,
+  "cited_as_match_total": 29,
+  "cited_as_match_relevant_share": 0.9310344827586207,
+  "cited_as_match_unjudged": 1,
+  "cited_as_partial_total": 24,
+  "cited_as_partial_relevant": 20,
+  "no_match_answers": 5,
+  "no_match_correct": 2,
+  "no_match_false": 3,
+  "queries_without_relevant_in_context": 2,
+  "claims_match_without_relevant": 0,
+  "grade2_in_context_not_cited": 5,
+  "median_latency_s": 6.22
+}
