@@ -7,9 +7,11 @@ ClinicalTrials.gov snapshot with hybrid lexical + dense search, and writes a
 short answer that cites NCT IDs, using only the retrieved trials.
 
 **Status:** working baseline (research prototype). All design choices were
-made on a development query set; a frozen configuration was then evaluated
-**once** on a held-out test set. The numbers below are what was measured,
-including where the system fails.
+made on a development query set; frozen configurations were then evaluated
+**once** on a held-out test set — retrieval once (tag `frozen-final`) and the
+answer step once (tag `frozen-rag-v2`). Because the retrieval test set has
+been used, failures seen there (Q12, Q17) were **not** fixed; they are listed
+as future work. The numbers below are what was measured, including failures.
 
 ## Problem
 
@@ -38,8 +40,10 @@ flowchart LR
     R1 --> H[Reciprocal Rank Fusion]
     R2 --> H
     H --> T[Top-10 trials]
-    T -->|top-5 as context| L[Local LLM: Qwen3-4B-Instruct]
+    T -->|top-5| V[RAG v2: per-trial verification<br/>with evidence-quote check]
+    V -->|verified trials only| L[Local LLM: Qwen3-4B-Instruct]
     T --> UI[Streamlit demo]
+    V -->|match badges + evidence| UI
     L -->|answer with NCT citations| UI
 ```
 
@@ -57,10 +61,12 @@ streamlit run app/frontend/streamlit_app.py
 Open the URL Streamlit prints (default http://localhost:8501). The first query
 builds the embedding cache (`data/indexes/`, ~15 s) and loads the LLM
 (`Qwen/Qwen3-4B-Instruct-2507`, from the Hugging Face cache); afterwards
-retrieval takes tens of milliseconds and an answer a few seconds (median
-6.2 s on the dev RAG run). The demo shows the parsed filters, the text used
-for ranking, the top-10 trials as cards with ClinicalTrials.gov links, and
-the generated answer. It uses the frozen configuration in `src/config.py`.
+retrieval takes tens of milliseconds and verification plus answer a few
+seconds (median 8.5 s on dev, 6.9 s on test with RAG v2). The demo shows the
+parsed filters, the text used for ranking, the top-10 trials as cards with
+ClinicalTrials.gov links, a MATCH / PARTIAL / NO MATCH badge with the
+verified evidence quote for each of the top-5, and the generated answer
+(RAG v1 is available as an option). It uses the frozen configurations.
 
 ## Data — corpus v1
 
@@ -86,7 +92,8 @@ the generated answer. It uses the frozen configuration in `src/config.py`.
 | BM25 | `rank_bm25` Okapi BM25, corpus-wide IDF; **tokenizer v2** splits on punctuation and symbols ("KEYTRUDA®", "(NSCLC),") and drops a short list of generic filler words. |
 | Dense | `BAAI/bge-small-en-v1.5`, normalized embeddings, exact inner product. |
 | Hybrid | Reciprocal Rank Fusion of the top-100 BM25 and dense lists (k = 60). |
-| Generation | `Qwen/Qwen3-4B-Instruct-2507`, local, greedy decoding. Context = top-5 trials (title, conditions, interventions, status, phase). The prompt restricts the answer to these trials, requires `[NCT ID](https://clinicaltrials.gov/study/NCT ID)` citations, and requires an explicit "None of the retrieved trials match this query." when nothing fits. |
+| Answer step: RAG v2 (`src/generation/rag_v2.py`, prompt v2.2) | Same local model, `Qwen/Qwen3-4B-Instruct-2507`, greedy. (1) The LLM extracts the question's disease and intervention concepts. (2) For each top-5 trial it returns `disease_match` / `intervention_match` labels from a compact version of the labeling rubric plus an evidence quote; structured constraints are not re-judged. (3) Code checks that each quote appears verbatim in the trial text and drops verifications whose quote is not found. (4) If no trial is verified, a fixed "No matching trials" message is returned; otherwise the answer is written only from verified trials, with partial (broader / class-level) matches listed separately and `[NCT ID](https://clinicaltrials.gov/study/NCT ID)` citations. |
+| RAG v1 (kept for comparison) | One prompt over the top-5 trials (title, conditions, interventions, status, phase) that must cite NCT IDs and say "None of the retrieved trials match this query." when nothing fits. |
 
 Evaluated but **not** adopted: the `bge-reranker-base` cross-encoder (no gain
 on dev once unjudged documents are accounted for) and the extended trial
@@ -173,15 +180,43 @@ longer depends on unjudged documents
 (`data/evaluation/results/final_test_qrels_v1.3/`). Judged@10 below 1 comes
 only from the verified zero-answer queries, which have no judgment pool.
 
-### RAG answers (16 dev queries, prompt unchanged)
+### Answer step: RAG v1 vs RAG v2
 
-`data/evaluation/results/rag_eval_v1_dev/`: all 54 cited NCT IDs were in the
-answer's context; 27 of 29 trials presented as matches are relevant (1 more
-unjudged); the model correctly answered "no match" for the 2 queries whose
-top-5 contained no relevant trial, but also said "no match" on 3 queries
-where relevant trials were present. `manual_check_cases.md` lists 12 flagged
-claims; most come from the model adding requirements the question did not
-state (e.g. "pembrolizumab as the primary intervention").
+RAG v1 on dev made 3 false "no match" answers (relevant trials were in its
+context) and often added requirements the question did not state
+(`data/evaluation/results/rag_eval_v1_dev/manual_check_cases.md`). RAG v2
+verifies each trial separately. Its prompt was iterated three times on dev
+only (`docs/rag_v2_prompt_log.md`, every version kept), frozen (v2.2), and then
+run once on test together with v1. Same frozen retrieval, top-5 context,
+qrels v1.3.
+
+| Answer step | Dev v1 | Dev v2 | Test v1 | Test v2 |
+|---|---:|---:|---:|---:|
+| Queries (answerable + zero-answer) | 15 + 1 | 15 + 1 | 7 + 3 | 7 + 3 |
+| Citations inside the context | 54/54 | 57/57 | 22/22 | 18/18 |
+| Trials presented as matches that are relevant (grade ≥ 1) | 27/29 | 44/47 | 11/13 | 14/17 |
+| Correct "no match" (no relevant trial in the top-5) | 2 | 1 | 3 | 4 |
+| False "no match" (relevant trial was in the top-5) | 3 | **0** | 0 | 0 |
+| Match claimed although no relevant trial in the top-5 | 0 | 0 | 1 | 0 |
+| Grade-2 context trials not cited | 5 | 3 | 3 | 2 |
+| Median latency per query (s) | 6.2 | 8.5 | 5.4 | 6.9 |
+
+RAG v2 per-trial verification vs the human labels:
+
+| Agreement | Dev (n) | Test (n) |
+|---|---:|---:|
+| Derived grade 0/1/2, after the quote check | 0.827, κ 0.65 (75) | 0.900, κ 0.79 (50) |
+| Disease label | 0.857 (70) | 0.844 (32) |
+| Intervention label | 0.833 (24) | 0.850 (20) |
+| Evidence quotes not found in the trial text | 3/80 | 3/50 |
+
+Sources: `data/evaluation/results/rag_v2_dev/v2.2/`, `data/evaluation/results/rag_test/`.
+On test, v1 made no false "no match" either, so the dev improvement on that
+measure could not be confirmed there; v2's gains on test are one extra
+correct "no match" (Q12, where v1 presented a non-relevant trial as a match)
+and one fewer missed grade-2 trial, at ~1.5 s extra latency. The main
+remaining v2 error is calling grade-0 trials "broader" or "class-level"
+partial matches (cost the correct "no match" on dev Q03).
 
 ## Key findings
 
@@ -202,23 +237,33 @@ state (e.g. "pembrolizumab as the primary intervention").
    relevant trials say "semaglutide" — fixing it needs brand-to-generic
    synonym knowledge, not better tokenization.
 4. **No retriever abstains.** For zero-answer queries every system returns a
-   full list; only the LLM step can say that nothing matches, and it also
-   says so wrongly when it over-reads the question.
+   full list; only the answer step can say that nothing matches. A single
+   prompt (RAG v1) also said so wrongly when it over-read the question (3
+   false "no match" on dev); per-trial verification with a rubric and quote
+   check (RAG v2) removed these on dev (3 → 0), with 0 false "no match" on
+   test for both versions.
 5. **Small evaluation sets limit claims.** With 15 dev and 7 test queries,
    most differences are not statistically significant; directions are
    consistent (5 of 7 test queries improved) but the effect size is uncertain.
 
 ## Limitations and future work
 
-- **Synonym / concept normalization** (Keytruda → pembrolizumab, Ozempic →
-  semaglutide, dementia ⊃ Alzheimer's disease) and indexing intervention other
-  names without hurting other queries (document v2 was mixed on dev).
-- **Parser:** combined phases ("Phase 1/2", Q17), the female/ALL sex rule and
-  ambiguous phrases; a fuller design and 80-phrasing test set exist in
+- **Known test failures, deliberately not fixed** (the retrieval test set has
+  been used once; fixing them would need a new held-out set to measure):
+  - Q12 "Ozempic studies for weight loss" (nDCG@10 0.00): "Ozempic" occurs in
+    no trial document; needs brand-to-generic synonym knowledge.
+  - Q17 "Phase 1/2 melanoma trials" (got worse, 0.63 → 0.57): the parser reads
+    "Phase 1/2" as Phase 1; combined phases are not handled.
+- **Synonym / concept normalization** (Keytruda → pembrolizumab, dementia ⊃
+  Alzheimer's disease) and indexing intervention other names without hurting
+  other queries (document v2 was mixed on dev).
+- **Parser:** combined phases, the female/ALL sex rule and ambiguous phrases;
+  a fuller design and 80-phrasing test set exist in
   `docs/m2_task1_parser_design.md` and `tests/test_parser_v2.py`.
 - **Abstention:** a calibrated "no matching trial" signal at retrieval time.
-- **Answer generation:** the prompt should only require what the question
-  asks (false "no match" on Q11, Q20, Q22); systematic faithfulness evaluation.
+- **Answer generation:** RAG v2 still labels some non-relevant trials as
+  partial matches and adds ~1.5–2 s per query; claim-level faithfulness of
+  the final answer text is not yet measured automatically.
 - **Evaluation coverage:** 39 unjudged dev trials from the configuration
   comparison (`data/evaluation/ablation_labels_v1/`); a 46-pair consistency
   re-label; more queries for statistical power.
@@ -235,11 +280,12 @@ src/config.py                   frozen baseline and final configurations
 src/query_understanding/        parser.py (v1), parser_v1_1.py, parser_v1_2.py
 src/retrieval/                  bm25, embeddings, metadata_filter, hybrid, pipeline
 src/preprocessing/              processor (v1, v2), trial document builders
-src/generation/                 context_builder.py, llm.py
-src/evaluation/                 judgments.py, retrieval_metrics.py, label_import.py
-experiments/                    numbered, reproducible experiment scripts (01–35)
+src/generation/                 context_builder.py + llm.py (RAG v1), rag_v2.py
+src/evaluation/                 judgments, retrieval_metrics, rag_metrics, label_import
+experiments/                    numbered, reproducible experiment scripts (01–39)
 data/evaluation/                query specs, qrels, labeling sheets, runs, results
-docs/                           labeling rubric and guide, pooling plan, parser design
+docs/                           labeling rubric and guide, pooling plan, parser design,
+                                RAG v2 prompt log
 tests/                          unit tests (python -m unittest discover -s tests)
 ```
 
@@ -247,15 +293,17 @@ tests/                          unit tests (python -m unittest discover -s tests
 
 ```bash
 conda activate clinical_rag_clean
-python -m unittest discover -s tests                                     # 64 tests
+python -m unittest discover -s tests                                     # 69 tests
 PYTHONPATH=$PWD python experiments/31_doc_tokenizer_ablation_dev.py      # dev ablation
 PYTHONPATH=$PWD python experiments/33_parser_v1_2_dev_eval.py            # parser v1.2 (dev)
-PYTHONPATH=$PWD python experiments/34_rag_dev_evaluation.py              # RAG (dev)
+PYTHONPATH=$PWD python experiments/38_rag_v2_dev.py --prompt-version v2.2  # RAG v1 vs v2 (dev)
 ```
 
 Result scripts refuse to overwrite existing outputs; move the output folder
-to re-run. The test evaluation (`experiments/35_final_test_evaluation.py`)
-was run once and refuses to run again. Every step is a separate git commit.
+to re-run. The test evaluations (`experiments/35_final_test_evaluation.py`
+for retrieval, `experiments/39_rag_test_once.py` for the answer step) were run
+once each after freezing and refuse to run again. Every step is a separate
+git commit.
 
 *Research prototype for information retrieval; not a medical device and not
 medical advice.*
