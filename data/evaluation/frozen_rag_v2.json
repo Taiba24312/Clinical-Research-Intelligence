@@ -1,0 +1,42 @@
+{
+  "frozen_utc": "2026-11-04T10:17:17.376086+00:00",
+  "git_commit_at_freeze": "281429a97021950f1798a8b7cc5bf55a03a34b89",
+  "statement": "RAG v2 chosen on dev only (experiments/38, docs/rag_v2_prompt_log.md). Frozen before the single test evaluation of RAG v1 vs v2 (experiments/39). Retrieval remains frozen-final.",
+  "rag_v1": {
+    "prompt": "src/generation/context_builder.py SYSTEM_PROMPT",
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "decoding": "greedy, max_new_tokens=350",
+    "context_trials": 5
+  },
+  "rag_v2": {
+    "prompt_version": "v2.2",
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "decoding": "greedy",
+    "context_trials": 5,
+    "verification_fields": "processed v2 (title, official title, conditions, interventions, other names, summary <=1200 chars, eligibility <=1500 chars)"
+  },
+  "retrieval": {
+    "parser_version": "v1.2",
+    "doc_version": "v1",
+    "tokenizer": "v2"
+  },
+  "device": "cuda:1",
+  "sha256": {
+    "src/generation/rag_v2.py": "0030d194adee5d0b84cdc60eea4d6e5644dce287813e59abda73cb053be9ab51",
+    "src/generation/llm.py": "7eef321fdf5aba8b8dc2dfff4935ad5d712c4623c2205a1c4457c66d4b9ffe10",
+    "src/generation/context_builder.py": "4d02cd957d3f83143ac9315ca41cf4594d32d86fa42cb9d8694ec14b2ddabdbc",
+    "src/evaluation/rag_metrics.py": "9b4baa8e252bb97e9fb8209099ff6826b65a26ea14ee6d5d0eb09813754d6b84",
+    "src/evaluation/judgments.py": "ec8625b55d400a26ebc695495123aeaef9f84deda9f657e5f8e4c604c35cc719",
+    "src/evaluation/retrieval_metrics.py": "5cd0e7132259a28a5c30651d6a95d05b8e2f119b1eaa901c57cdbe9affc4cff3",
+    "src/retrieval/pipeline.py": "2fc784d3928b69c9f549550859f986a634a7450dd5df4540a5b9022fe2cf026b",
+    "src/retrieval/bm25.py": "a0db1b3005a7f530ad8088c49408b964ef68f725d3aab22c6db3b607235ea3fc",
+    "src/retrieval/metadata_filter.py": "f1bc6de0f5debd8be01390e03064d76c18238244c63b25d98826185f0c1a4710",
+    "src/query_understanding/parser_v1_2.py": "77e802500e2df9ecc85111f841adbc14b8508fddda783cedbf3a134314d34665",
+    "src/query_understanding/parser_v1_1.py": "97460aa7b647ad26a0974e3ff9e67477286132c0c2f0b8676368b565786e2d98",
+    "src/config.py": "e5b7a0d5011b85ab3137088dc6ac9eb380d91b43e3a5959d3cd280d6719a127f",
+    "data/processed/trials.parquet": "b005d0be58c9e2d8d000f179077edf9acfec5e4b7cd99c0e1fc6f54c55cbcf67",
+    "data/processed/trials_v2.parquet": "3173aa53bb48556eb7c8a8c2594d2705692f28d9d4b77d1f2515a02594de4746",
+    "data/evaluation/query_specs_v1.1.json": "666f47372753754111da9f7ab778e44cb2953ac323b90f8a6f8b15934c85e651",
+    "data/evaluation/qrels_v1.3.csv": "9b887fe19eafffbe09d9b07e7ed9863a18f304f4239b31a4abc9cdc380a82b67"
+  }
+}
