@@ -1,0 +1,1116 @@
+[
+  {
+    "query_id": "Q12",
+    "query": "Ozempic studies for weight loss",
+    "has_answer": true,
+    "context": [
+      {
+        "nct_id": "NCT03395262",
+        "title": "An Examination of a Weight Loss Formula on Health",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT03491930",
+        "title": "Weight Loss Using a Feedback Device in Obese People With the Metabolic Syndrome",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT07364175",
+        "title": "A Trial Within Cohort Feasibility Study Design Comparing Standard of Care Versus Weight Loss (Achieved Through Tirzepatide) for Obesity-related Hypertension in Young Adults",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT00277277",
+        "title": "In-Home Weight Loss Program for Adults With Type 2 Diabetes Delivered by Interactive Cable Television Technology",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT00194259",
+        "title": "Sleep Apnea in Look AHEAD (Action for Health in Diabetes)",
+        "grade_for_checking": 0
+      }
+    ],
+    "rag_v1": {
+      "answer": "Ozempic (tirzepatide) is studied for weight loss in a trial comparing standard of care versus weight loss achieved through tirzepatide for obesity-related hypertension in young adults. [NCT07364175](https://clinicaltrials.gov/study/NCT07364175)\n\nPartial matches:  \n- NCT03395262 studies weight loss but with caffeine, placebo, and no mention of Ozempic or tirzepatide.  \n- Other trials focus on diabetes, hypertension, or behavioral interventions, not specifically on Ozempic for weight loss.",
+      "cited": [
+        "NCT07364175",
+        "NCT03395262"
+      ],
+      "says_no_match": false,
+      "latency_s": 4.93
+    },
+    "rag_v2": {
+      "concepts": {
+        "disease": "weight loss",
+        "intervention": "Ozempic (semaglutide)"
+      },
+      "answer": "No matching trials were found among the retrieved trials.",
+      "cited": [],
+      "cited_unverified": [],
+      "says_no_match": true,
+      "latency_s": 3.69,
+      "verifications": [
+        {
+          "nct_id": "NCT03395262",
+          "disease_match": "exact",
+          "intervention_match": "absent",
+          "evidence": "Interventions: Active with caffeine; Active without caffeine; Placebo",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT03491930",
+          "disease_match": "broader",
+          "intervention_match": "absent",
+          "evidence": "currently on weight loss medication",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT07364175",
+          "disease_match": "broader",
+          "intervention_match": "absent",
+          "evidence": "Weight loss interventions could play a crucial role in",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT00277277",
+          "disease_match": "broader",
+          "intervention_match": "absent",
+          "evidence": "Clinical Diagnosis of TYpe 2 Diabetes",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT00194259",
+          "disease_match": "broader",
+          "intervention_match": "absent",
+          "evidence": "This study will assess the effects of weight loss on sleep-disordered breathing (SDB) in 120 obese, type 2 diabetics with obstructive sleep apnea (OSA)",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        }
+      ]
+    }
+  },
+  {
+    "query_id": "Q13",
+    "query": "Recruiting T2DM trials of SGLT2 inhibitors",
+    "has_answer": true,
+    "context": [
+      {
+        "nct_id": "NCT05390892",
+        "title": "PREvention of CardIovascular and DiabEtic kidNey Disease in Type 2 Diabetes",
+        "grade_for_checking": 2
+      },
+      {
+        "nct_id": "NCT07570992",
+        "title": "A Research Study to Evaluate the Safety of NNC1679-0001 When Given to Healthy Participants and Participants With T2DM",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT06888050",
+        "title": "Efficacy and Safety of Henagliflozin Proline and Metformin Hydrochloride Extended-release Tablets (Ⅰ) Versus Metformin Tablets in Patients With New-onset Type 2 Diabetes: a Multicenter, Randomized Controlled Study",
+        "grade_for_checking": 2
+      },
+      {
+        "nct_id": "NCT07275788",
+        "title": "A Study of REGEND003 on Patients With Type 2 Diabetes Mellitus (T2DM) and Chronic Kidney Disease (CKD)",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT07128186",
+        "title": "The Application of an AI-driven Multimodal Predictive Model for Cognitive Impairment in Patients With Type 2 Diabetes Mellitus",
+        "grade_for_checking": 0
+      }
+    ],
+    "rag_v1": {
+      "answer": "Recruiting T2DM trials of SGLT2 inhibitors:\n\n- PREvention of CardIovascular and DiabEtic kidNey Disease in Type 2 Diabetes studies SGLT2 inhibitor and GLP-1 receptor agonist in patients with Type 2 Diabetes and ASCVD; RECRUITING, Phase 4 [NCT05390892].\n\nPartial matches:\n- NCT07275788 studies REGEND003 (an SGLT2 inhibitor) in T2DM with CKD, but not exclusively SGLT2 inhibitors; RECRUITING, Phase 1.\n\nNone of the other trials involve SGLT2 inhibitors as the primary intervention in T2DM.",
+      "cited": [
+        "NCT05390892",
+        "NCT07275788"
+      ],
+      "says_no_match": false,
+      "latency_s": 5.13
+    },
+    "rag_v2": {
+      "concepts": {
+        "disease": "T2DM (type 2 diabetes mellitus)",
+        "intervention": "SGLT2 inhibitors"
+      },
+      "answer": "MATCH: NCT05390892 studies prevention of cardiovascular and diabetic kidney disease in T2D patients using SGLT2 inhibitors.  \nMATCH: NCT07570992 studies the safety of NNC1679-0001 in healthy volunteers and T2DM participants.  \nMATCH: NCT06888050 studies the efficacy and safety of henagliflozin proline and metformin in new-onset T2DM versus metformin alone.",
+      "cited": [
+        "NCT05390892",
+        "NCT07570992",
+        "NCT06888050"
+      ],
+      "cited_unverified": [],
+      "says_no_match": false,
+      "latency_s": 8.27,
+      "verifications": [
+        {
+          "nct_id": "NCT05390892",
+          "disease_match": "exact",
+          "intervention_match": "exact",
+          "evidence": "randomly assign 6,000 patients with established T2D and ASCVD or high-risk for ASCVD in a 1:1 allocation to sodium-glucose cotransporter-2 inhibitor (SGLT2i) or glucagon-like peptide-1 receptor agonists (GLP-1RA)",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 2,
+          "verified_grade": 2,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT07570992",
+          "disease_match": "exact",
+          "intervention_match": "exact",
+          "evidence": "NNC1679-0001 is a new experimental medicine that doctors cannot prescribe yet.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 2,
+          "verified_grade": 2,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT06888050",
+          "disease_match": "exact",
+          "intervention_match": "exact",
+          "evidence": "This multicenter, randomized controlled trial aims to evaluate the efficacy and safety of Henagliflozin-Metformin Sustained-Release Tablets (I) versus Metformin Tablets in newly diagnosed type 2 diabetes mellitus (T2DM).",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 2,
+          "verified_grade": 2,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT07275788",
+          "disease_match": "exact",
+          "intervention_match": "absent",
+          "evidence": "REGEND003, which consists of human kidney progenitor cells, demonstrates promising potential in repairing kidney injury.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT07128186",
+          "disease_match": "exact",
+          "intervention_match": "absent",
+          "evidence": "The objective of this observational study is to evaluate the accuracy and feasibility of an artificial intelligence-based multimodal cognitive screening system in early identification of diabetes-related mild cognitive impairment (MCI) among type 2 diabetes mellitus (T2DM) patients through a 3-5 year follow-up.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        }
+      ]
+    }
+  },
+  {
+    "query_id": "Q14",
+    "query": "Phase III trials in HFrEF",
+    "has_answer": true,
+    "context": [
+      {
+        "nct_id": "NCT03102827",
+        "title": "High-Flow-Therapy for the Treatment of Cheyne-Stokes-Respiration in Chronic Heart Failure",
+        "grade_for_checking": 2
+      },
+      {
+        "nct_id": "NCT06774131",
+        "title": "A Phase 3 Single-arm Study of UGN-104 for the Treatment of Low-grade Upper Tract Urothelial Cancer",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT00128102",
+        "title": "Suberoylanilide Hydroxamic Acid (Vorinostat, MK-0683) Versus Placebo in Advanced Malignant Pleural Mesothelioma (MK-0683-014)",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT05891769",
+        "title": "99mTc Sestamibi SPECT/CT vs 18F Fluorocholine PET/CT",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT02000622",
+        "title": "Assessment of the Efficacy and Safety of Olaparib Monotherapy Versus Physicians Choice Chemotherapy in the Treatment of Metastatic Breast Cancer Patients With Germline BRCA1/2 Mutations.",
+        "grade_for_checking": 0
+      }
+    ],
+    "rag_v1": {
+      "answer": "[1] NCT03102827 studies the use of high-flow therapy for Cheyne-Stokes respiration in chronic heart failure, including heart failure patients, and is a Phase III trial that was terminated. [NCT03102827](https://clinicaltrials.gov/study/NCT03102827)\n\nPartial matches:  \n[4] NCT05891769 includes Phase 3 but for parathyroid adenoma, not HFrEF.  \nNo other trials match the condition of HFrEF (heart failure with reduced ejection fraction) specifically.\n\nNone of the retrieved trials match this query exactly because no trial specifically targets HFrEF (heart failure with reduced ejection fraction) in a Phase III setting. The only relevant trial (NCT03102827) is for a different manifestation of heart failure (Cheyne-Stokes respiration) and is terminated.",
+      "cited": [
+        "NCT03102827",
+        "NCT05891769"
+      ],
+      "says_no_match": false,
+      "latency_s": 6.62
+    },
+    "rag_v2": {
+      "concepts": {
+        "disease": "HFrEF",
+        "intervention": null
+      },
+      "answer": "No trial fully matches the question.  \n\nPartial matches:  \nNCT03102827: Studies nocturnal ventilation with oxygen (HFT) for Cheyne-Stokes respiration in patients with HFrEF compared to placebo [NCT03102827](https://clinicaltrials.gov/study/NCT03102827).",
+      "cited": [
+        "NCT03102827"
+      ],
+      "cited_unverified": [],
+      "says_no_match": false,
+      "latency_s": 7.23,
+      "verifications": [
+        {
+          "nct_id": "NCT03102827",
+          "disease_match": "broader",
+          "intervention_match": "not_applicable",
+          "evidence": "To demonstrate the effectiveness and safety of nocturnal ventilation with oxygen (HFT - high-flow-therapy) for the treatment of CSA in patients with HFrEF compared to placebo",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 1,
+          "verified_grade": 1,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT06774131",
+          "disease_match": "absent",
+          "intervention_match": "not_applicable",
+          "evidence": "This study will evaluate the efficacy and safety of UGN-104, a new formulation of UGN-101 (approved in the United States and Israel as JELMYTO [mitomycin] for pyelocalyceal solution), instilled in the upper urinary tract (UUT) of patients with low-grade upper tract urothelial cancer (LG-UTUC).",
+          "quote_found": false,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT00128102",
+          "disease_match": "absent",
+          "intervention_match": "not_applicable",
+          "evidence": "The goal of this study is to assess the efficacy and safety of an oral investigational drug suberoylanilide hydroxamic acid (vorinostat, MK-0683) compared to placebo, in the treatment of participants with advanced malignant pleural mesothelioma who have failed at least one prior chemotherapy regimen.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT05891769",
+          "disease_match": "absent",
+          "intervention_match": "not_applicable",
+          "evidence": "This study proposes the use of a well-established PET isotope, Fluorine-18 (18F), bound to Choline, for a prospective single-center, single-arm study for participants with suspected parathyroid adenoma and negative or equivocal standard of care 99mTc Sestamibi SPECT/CT",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT02000622",
+          "disease_match": "absent",
+          "intervention_match": "not_applicable",
+          "evidence": "This open label, randomised, controlled, multi-centre phase III study will assess the efficacy and safety of single agent olaparib vs standard of care based on physician's choice of capecitabine, vinorelbine or eribulin in metastatic breast cancer patients with gBRCA 1/2 mutations.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        }
+      ]
+    }
+  },
+  {
+    "query_id": "Q15",
+    "query": "Anticoagulation trials in AFib patients over 65",
+    "has_answer": true,
+    "context": [
+      {
+        "nct_id": "NCT06912009",
+        "title": "Duration of Therapeutic Anticoagulation in Patients With Pulmonary Embolism",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT01607359",
+        "title": "Dabigatran Versus Warfarin Anticoagulation Before and After Catheter Ablation for the Treatment of Atrial Fibrillation",
+        "grade_for_checking": 2
+      },
+      {
+        "nct_id": "NCT06869083",
+        "title": "Application-Delivered Patient Education in Enhancing the Usage of Apixaban in Patients With Atrial Fibrillation",
+        "grade_for_checking": 2
+      },
+      {
+        "nct_id": "NCT01653405",
+        "title": "Improving Anticoagulation Control in VISN 1",
+        "grade_for_checking": 2
+      },
+      {
+        "nct_id": "NCT06494007",
+        "title": "Role of IV Calcium to Prevent Diltiazem-related Hypotension",
+        "grade_for_checking": 0
+      }
+    ],
+    "rag_v1": {
+      "answer": "Partial matches:  \n- NCT06869083 studies apixaban use in AFib patients, including those over 65, with a focus on education and adherence, though population age is not specified. [NCT06869083](https://clinicaltrials.gov/study/NCT06869083)  \n- NCT01653405 involves anticoagulation in AFib patients and includes a multifaceted intervention, but does not specify age over 65. [NCT01653405](https://clinicaltrials.gov/study/NCT01653405)  \n\nNone of the trials specifically target AFib patients over 65 with anticoagulation trials as the primary focus.",
+      "cited": [
+        "NCT06869083",
+        "NCT01653405"
+      ],
+      "says_no_match": false,
+      "latency_s": 5.7
+    },
+    "rag_v2": {
+      "concepts": {
+        "disease": "AFib",
+        "intervention": "anticoagulation"
+      },
+      "answer": "MATCH: NCT01607359 studies dabigatran versus warfarin anticoagulation in AFib patients before and after catheter ablation.  \nMATCH: NCT06869083 studies the impact of patient education on apixaban usage in AFib patients on apixaban treatment.",
+      "cited": [
+        "NCT01607359",
+        "NCT06869083"
+      ],
+      "cited_unverified": [],
+      "says_no_match": false,
+      "latency_s": 6.55,
+      "verifications": [
+        {
+          "nct_id": "NCT06912009",
+          "disease_match": "absent",
+          "intervention_match": "absent",
+          "evidence": "Current management of intermediate- and high-risk pulmonary embolism is primarily based on curative subcutaneous or intravenous anticoagulation",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT01607359",
+          "disease_match": "exact",
+          "intervention_match": "exact",
+          "evidence": "Both warfarin and dabigatran have been used for stroke prophylaxis at the time of catheter ablation of atrial fibrillation.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 2,
+          "verified_grade": 2,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT06869083",
+          "disease_match": "exact",
+          "intervention_match": "exact",
+          "evidence": "Receiving Elxaban as anticoagulation therapy.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 2,
+          "verified_grade": 2,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT01653405",
+          "disease_match": "exact",
+          "intervention_match": "absent",
+          "evidence": "All patients receiving long-term oral anticoagulation with warfarin within the VA New England Region",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT06494007",
+          "disease_match": "exact",
+          "intervention_match": "absent",
+          "evidence": "The objective of this study is to examine the efficacy and safety of IV calcium pretreatment at varying doses prior to weight-adjusted IV Diltiazem on the incidence of Diltiazem-related hypotension in adult patients presenting to the Emergency Department due to Atrial Fibrillation with Rapid Ventricular Response.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        }
+      ]
+    }
+  },
+  {
+    "query_id": "Q16",
+    "query": "Phase II ALS trials",
+    "has_answer": false,
+    "context": [
+      {
+        "nct_id": "NCT00004688",
+        "title": "Phase II Study of Carmustine, Streptozocin, and Mercaptopurine for Refractory or Recurrent Brain Neoplasms",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT00003353",
+        "title": "High-Dose Melphalan Plus Peripheral Stem Cell Transplantation in Treating Patients With Primary Systemic Amyloidosis",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT00588822",
+        "title": "Rituximab in Treating Patients With Peripheral Neuropathy Caused by Monoclonal Gammopathy of Undetermined Significance",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT00194753",
+        "title": "Adjuvant Therapy for High-Risk Breast Cancer With Wkly Adriamycin & Oral Cytoxan With G-CSF for 12 Wks; Wkly Taxol x 12",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT02906605",
+        "title": "A Study of the Clinical Activity and Safety of JNJ-64041809, a Live Attenuated Listeria Monocytogenes Immunotherapy, in Combination With Apalutamide Versus Apalutamide in Subjects With Metastatic Castration-resistant Prostate Cancer",
+        "grade_for_checking": 0
+      }
+    ],
+    "rag_v1": {
+      "answer": "None of the retrieved trials match this query. None of the listed Phase II trials address amyotrophic lateral sclerosis (ALS). The trials listed involve conditions such as brain tumors, multiple myeloma, breast cancer, and prostate cancer, and none target ALS or its treatment.",
+      "cited": [],
+      "says_no_match": true,
+      "latency_s": 1.88
+    },
+    "rag_v2": {
+      "concepts": {
+        "disease": "ALS",
+        "intervention": null
+      },
+      "answer": "No matching trials were found among the retrieved trials.",
+      "cited": [],
+      "cited_unverified": [],
+      "says_no_match": true,
+      "latency_s": 3.65,
+      "verifications": [
+        {
+          "nct_id": "NCT00004688",
+          "disease_match": "absent",
+          "intervention_match": "not_applicable",
+          "evidence": "Assess the clinical response of patients with refractory or recurrent brain neoplasms treated with carmustine, streptozocin, and mercaptopurine.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT00003353",
+          "disease_match": "absent",
+          "intervention_match": "not_applicable",
+          "evidence": "RATIONALE: High-dose chemotherapy may destroy the amyloid-producing cells in bone marrow.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT00588822",
+          "disease_match": "absent",
+          "intervention_match": "not_applicable",
+          "evidence": "This study was done to find out if the investigational medication, rituximab, could help relieve the symptoms of peripheral neuropathy",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT00194753",
+          "disease_match": "absent",
+          "intervention_match": "not_applicable",
+          "evidence": "The primary objectives of the study are to evaluate the feasibility and toxicity of treatment with 12 weeks of Adriamycin with daily oral Cytoxan with G-CSF support followed by 12 weeks of Taxol.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT02906605",
+          "disease_match": "absent",
+          "intervention_match": "not_applicable",
+          "evidence": "The purpose of this study is to evaluate if the anti-tumor activity of JNJ-809 combined with apalutamide is improved compared with apalutamide alone for subjects with metastatic castration-resistant prostate cancer (mCRPC).",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        }
+      ]
+    }
+  },
+  {
+    "query_id": "Q17",
+    "query": "Phase 1/2 melanoma trials",
+    "has_answer": true,
+    "context": [
+      {
+        "nct_id": "NCT01176461",
+        "title": "Multiple Class I Peptides & Montanide ISA 51 VG w Escalating Doses of Anti-PD-1 ab BMS936558",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT00609011",
+        "title": "Phase 1 Study of MPC-6827 and Temozolomide in Metastatic Melanoma",
+        "grade_for_checking": 2
+      },
+      {
+        "nct_id": "NCT00111696",
+        "title": "Study of the Tumor Saturation and Biological Activity of MEDI-522 (Abergrin) in Patients With Advanced Malignant Melanoma",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT02413827",
+        "title": "A Study of Varlilumab (Anti-CD27) and Ipilimumab and CDX-1401 in Patients With Unresectable Stage III or IV Melanoma",
+        "grade_for_checking": 2
+      },
+      {
+        "nct_id": "NCT03829254",
+        "title": "A Safety, Pharmacokinetic and Clinical Activity Study of NUC-7738 in Patients With Advanced Solid Tumours and Lymphoma",
+        "grade_for_checking": 2
+      }
+    ],
+    "rag_v1": {
+      "answer": "Phase 1/2 trial studying varlilumab, ipilimumab, and CDX-1401 in unresectable Stage III or IV melanoma [NCT02413827](https://clinicaltrials.gov/study/NCT02413827).  \nPhase 1/2 trial evaluating NUC-7738 in advanced solid tumors including melanoma [NCT03829254](https://clinicaltrials.gov/study/NCT03829254).  \n\nPartial matches:  \n- NCT01176461 is only Phase 1.  \n- NCT00609011 and NCT00111696 are completed and only Phase 1.",
+      "cited": [
+        "NCT02413827",
+        "NCT03829254",
+        "NCT01176461",
+        "NCT00609011",
+        "NCT00111696"
+      ],
+      "says_no_match": false,
+      "latency_s": 5.71
+    },
+    "rag_v2": {
+      "concepts": {
+        "disease": "melanoma",
+        "intervention": null
+      },
+      "answer": "MATCH trials:  \n- NCT01176461: Studies BMS-936558 with peptide vaccine in melanoma.  \n- NCT00609011: Studies MPC-6827 and temozolomide in metastatic melanoma.  \n- NCT00111696: Studies MEDI-522 in advanced malignant melanoma.  \n- NCT02413827: Studies varlilumab, ipilimumab, and CDX-1401 in unresectable stage III/IV melanoma.  \n- NCT03829254: Studies NUC-7738 alone or with pembrolizumab in advanced melanoma.",
+      "cited": [
+        "NCT01176461",
+        "NCT00609011",
+        "NCT00111696",
+        "NCT02413827",
+        "NCT03829254"
+      ],
+      "cited_unverified": [],
+      "says_no_match": false,
+      "latency_s": 9.47,
+      "verifications": [
+        {
+          "nct_id": "NCT01176461",
+          "disease_match": "exact",
+          "intervention_match": "not_applicable",
+          "evidence": "This is a pilot phase 1, open-label, single center, multi-dose, dose-escalation study of BMS-936558 in combination with or without a peptide vaccine.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 2,
+          "verified_grade": 2,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT00609011",
+          "disease_match": "exact",
+          "intervention_match": "not_applicable",
+          "evidence": "This is an open-label, dose finding, multiple-dose study in subjects with metastatic melanoma.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 2,
+          "verified_grade": 2,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT00111696",
+          "disease_match": "exact",
+          "intervention_match": "not_applicable",
+          "evidence": "Conditions: Malignant Melanoma",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 2,
+          "verified_grade": 2,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT02413827",
+          "disease_match": "exact",
+          "intervention_match": "not_applicable",
+          "evidence": "This is a study to determine the clinical benefit (how well the drug works), safety and tolerability of combining a) varlilumab and ipilimumab and b) varlilumab, ipilimumab, CDX-1401 and poly-ICLC.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 2,
+          "verified_grade": 2,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT03829254",
+          "disease_match": "exact",
+          "intervention_match": "not_applicable",
+          "evidence": "This is a Phase I/II, dose-escalation and expansion study of NUC-7738 administered by intravenous infusion as a monotherapy and in combination with pembrolizumab.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 2,
+          "verified_grade": 2,
+          "dropped": false
+        }
+      ]
+    }
+  },
+  {
+    "query_id": "Q19",
+    "query": "Interventional studies of HIV pre-exposure prophylaxis",
+    "has_answer": true,
+    "context": [
+      {
+        "nct_id": "NCT04393935",
+        "title": "Pharmacy-based Pre-exposure Prophylaxis",
+        "grade_for_checking": 2
+      },
+      {
+        "nct_id": "NCT01473472",
+        "title": "On Demand Antiretroviral Pre-exposure Prophylaxis for HIV Infection in Men Who Have Sex With Men",
+        "grade_for_checking": 2
+      },
+      {
+        "nct_id": "NCT01769456",
+        "title": "An Open Label Demonstration Project and Phase II Safety Study of Pre-Exposure Prophylaxis Use Among 15 to 17 Year Old Young Men Who Have Sex With Men (YMSM)",
+        "grade_for_checking": 2
+      },
+      {
+        "nct_id": "NCT05700734",
+        "title": "MK-8510 Monotherapy for the Treatment of Anti-retroviral naïve Human Immunodeficiency Virus Type 1 (HIV-1) Infected Participants (MK-8510-002)",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT04521920",
+        "title": "Providing Suboxone and PrEP Using Telemedicine",
+        "grade_for_checking": 2
+      }
+    ],
+    "rag_v1": {
+      "answer": "Interventional studies of HIV pre-exposure prophylaxis (PrEP):\n\n- NCT01473472: Evaluates on-demand Truvada vs. placebo for HIV prevention in men who have sex with men; completed, phase 3. [NCT01473472](https://clinicaltrials.gov/study/NCT01473472)  \n- NCT01769456: Assesses safety and use of FTC/TDF (Truvada) among young men who have sex with men; completed, phase 2. [NCT01769456](https://clinicaltrials.gov/study/NCT01769456)  \n- NCT05700734: Investigates MK-8510 monotherapy for HIV-1; withdrawn, phase 1. [NCT05700734](https://clinicaltrials.gov/study/NCT05700734)  \n\nPartial match: NCT04521920 includes PrEP but focuses on opioid use and telemedicine, not solely on PrEP as an interventional HIV prevention strategy.  \n\nNone of the retrieved trials are exclusively interventional PrEP studies in a general population.",
+      "cited": [
+        "NCT01473472",
+        "NCT01769456",
+        "NCT05700734",
+        "NCT04521920"
+      ],
+      "says_no_match": false,
+      "latency_s": 9.21
+    },
+    "rag_v2": {
+      "concepts": {
+        "disease": "HIV",
+        "intervention": "pre-exposure prophylaxis"
+      },
+      "answer": "MATCH: NCT043935 develops a culturally appropriate pharmacy-based PrEP delivery model.  \nMATCH: NCT01473472 evaluates \"on demand\" Truvada versus placebo for HIV prevention in men who have sex with men.  \nMATCH: NCT01769456 assesses open-label PrEP use with PCC among young men who have sex with men.  \nMATCH: NCT04521920 uses telemedicine to provide Suboxone and PrEP for HIV prevention in persons who inject opioids.",
+      "cited": [
+        "NCT01473472",
+        "NCT01769456",
+        "NCT04521920"
+      ],
+      "cited_unverified": [],
+      "says_no_match": false,
+      "latency_s": 9.3,
+      "verifications": [
+        {
+          "nct_id": "NCT04393935",
+          "disease_match": "exact",
+          "intervention_match": "exact",
+          "evidence": "The proposed research will develop a culturally appropriate pharmacy pre-exposure prophylaxis (PrEP) delivery model",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 2,
+          "verified_grade": 2,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT01473472",
+          "disease_match": "exact",
+          "intervention_match": "exact",
+          "evidence": "This phase III, multi-centre, comparative, double-blind, randomized trial on 2 parallel groups is designed to evaluate a strategy for the prevention of HIV infection including \"on demand\" antiretroviral pre-exposure with Truvada versus placebo",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 2,
+          "verified_grade": 2,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT01769456",
+          "disease_match": "exact",
+          "intervention_match": "exact",
+          "evidence": "Subjects will complete the behavioral intervention selected by all participating sites, Personalized Cognitive Counseling (PCC), and will then be provided with open label emtricitabine (FTC)/tenofovir (TDF) (Truvada®) as pre-exposure prophylaxis (PrEP).",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 2,
+          "verified_grade": 2,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT05700734",
+          "disease_match": "exact",
+          "intervention_match": "absent",
+          "evidence": "Is anti-retroviral therapy (ART)-naïve, which is defined as: 1. Having never received any anti-retroviral agent; or 2. ART-experienced but has not received any ART for HIV-1 infection within 60 days; or 3. Has received pre-exposure prophylaxis (PrEP) treatment prior to diagnosis of HIV-infection but has not received any PrEP within 30 days.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT04521920",
+          "disease_match": "exact",
+          "intervention_match": "exact",
+          "evidence": "The purpose of this study is to provide medication for opioid use disorder (MOUD) with buprenorphine and naloxone, or bup/nx, and pre-exposure prophylaxis (PrEP) for HIV prevention for persons who inject opioids accessing syringe services programs (SSPs), as part of a comprehensive harm reduction program, and assess the acceptability and feasibility of using telemedicine to implement the program.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 2,
+          "verified_grade": 2,
+          "dropped": false
+        }
+      ]
+    }
+  },
+  {
+    "query_id": "Q21",
+    "query": "Completed tuberculosis trials, excluding observational studies",
+    "has_answer": true,
+    "context": [
+      {
+        "nct_id": "NCT00233168",
+        "title": "Effectiveness of Public Health Model of Latent Tuberculosis Infection Control for High-Risk Adolescents",
+        "grade_for_checking": 2
+      },
+      {
+        "nct_id": "NCT05376189",
+        "title": "Oral Vitamin D and Toll Like Receptor in Spondylitis Tuberculosis",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT03598842",
+        "title": "Tuberculosis - Learning the Impact of Nutrition",
+        "grade_for_checking": 2
+      },
+      {
+        "nct_id": "NCT00108862",
+        "title": "Immediate Versus Deferred Start of Anti-HIV Therapy in HIV-Infected Adults Being Treated for Tuberculosis",
+        "grade_for_checking": 2
+      },
+      {
+        "nct_id": "NCT03851588",
+        "title": "Standard Versus Double Dose Dolutegravir in Patients With HIV-associated Tuberculosis",
+        "grade_for_checking": 2
+      }
+    ],
+    "rag_v1": {
+      "answer": "Completed tuberculosis trials excluding observational studies:\n\n- Evaluated effectiveness of public health model for latent TB infection control in high-risk adolescents: [NCT00233168](https://clinicaltrials.gov/study/NCT00233168)  \n- Assessed impact of nutritional supplementation in tuberculosis patients: [NCT03598842](https://clinicaltrials.gov/study/NCT03598842)  \n- Compared immediate versus deferred initiation of antiretroviral therapy in HIV-infected adults with tuberculosis: [NCT00108862](https://clinicaltrials.gov/study/NCT00108862)  \n- Studied double-dose dolutegravir versus standard in HIV-associated tuberculosis: [NCT03851588](https://clinicaltrials.gov/study/NCT03851588)  \n\nAll are completed, intervention-based, and focused on tuberculosis, excluding observational designs.",
+      "cited": [
+        "NCT00233168",
+        "NCT03598842",
+        "NCT00108862",
+        "NCT03851588"
+      ],
+      "says_no_match": false,
+      "latency_s": 7.19
+    },
+    "rag_v2": {
+      "concepts": {
+        "disease": "tuberculosis",
+        "intervention": null
+      },
+      "answer": "MATCH: NCT00233168 studies the effectiveness of a public health model for latent tuberculosis infection control in high-risk adolescents.  \nMATCH: NCT03598842 studies the impact of nutrition on tuberculosis progression and immune response markers.  \nMATCH: NCT00108862 evaluates the timing of anti-HIV therapy initiation in HIV-infected adults with tuberculosis.  \nMATCH: NCT03851588 compares standard versus double dose dolutegravir in HIV-associated tuberculosis patients.",
+      "cited": [
+        "NCT00233168",
+        "NCT03598842",
+        "NCT00108862",
+        "NCT03851588"
+      ],
+      "cited_unverified": [],
+      "says_no_match": false,
+      "latency_s": 8.8,
+      "verifications": [
+        {
+          "nct_id": "NCT00233168",
+          "disease_match": "exact",
+          "intervention_match": "not_applicable",
+          "evidence": "Eligible for INH treatment",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 2,
+          "verified_grade": 2,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT05376189",
+          "disease_match": "broader",
+          "intervention_match": "not_applicable",
+          "evidence": "The effect of oral vitamin D supplementation on Toll-Like Receptor (TLR) 2, 4, and clinical outcomes of Spondylitis Tuberculosis",
+          "quote_found": false,
+          "valid_labels": true,
+          "model_grade": 1,
+          "verified_grade": 0,
+          "dropped": true
+        },
+        {
+          "nct_id": "NCT03598842",
+          "disease_match": "exact",
+          "intervention_match": "not_applicable",
+          "evidence": "The study aims to identify factors that drive progression to disease and study signals (markers of the immune response) that detect who will progress to active TB and why this happens.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 2,
+          "verified_grade": 2,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT00108862",
+          "disease_match": "exact",
+          "intervention_match": "not_applicable",
+          "evidence": "The purpose of this study is to determine the best time to begin anti-HIV treatment in individuals who have HIV and tuberculosis (TB).",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 2,
+          "verified_grade": 2,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT03851588",
+          "disease_match": "exact",
+          "intervention_match": "not_applicable",
+          "evidence": "The investigators propose to conduct a phase 2 randomised (1:1) double-blind placebo-controlled trial of the dolutegravir-lamivudine-tenofovir fixed dose combination tablet daily with an additional 50 mg dose of dolutegravir/matching placebo taken 12 hours later in ART-naïve or fisrt-line interrupted HIV-infected patients on rifampicin-based anti-tuberculosis therapy.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 2,
+          "verified_grade": 2,
+          "dropped": false
+        }
+      ]
+    }
+  },
+  {
+    "query_id": "Q25",
+    "query": "Recruiting mavacamten trials for obstructive hypertrophic cardiomyopathy",
+    "has_answer": false,
+    "context": [
+      {
+        "nct_id": "NCT06368518",
+        "title": "Austrian Hypertrophic Cardiomyopathy Registry",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT06236022",
+        "title": "The Effects of Sirolimus in Patients With Dilated Cardiomyopathy Infected With Kaposi Sarcoma-associated Virus",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT06143566",
+        "title": "Polypill for Prevention of Cardiomyopathy",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT05670132",
+        "title": "Neuro-cardiac Rehabilitation in Youth With Congenital Heart Disease (QUALINEUROREHAB)",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT05655910",
+        "title": "Enhanced Nutritional Optimization in LVAD Trial",
+        "grade_for_checking": 0
+      }
+    ],
+    "rag_v1": {
+      "answer": "None of the retrieved trials match this query. The trials listed do not involve mavacamten or obstructive hypertrophic cardiomyopathy specifically. While one trial (NCT06368518) includes hypertrophic cardiomyopathy, it does not involve mavacamten or focus on obstructive forms, and has no interventions listed. All other trials address different conditions, interventions, or populations.",
+      "cited": [
+        "NCT06368518"
+      ],
+      "says_no_match": true,
+      "latency_s": 2.75
+    },
+    "rag_v2": {
+      "concepts": {
+        "disease": "obstructive hypertrophic cardiomyopathy",
+        "intervention": "mavacamten"
+      },
+      "answer": "No matching trials were found among the retrieved trials.",
+      "cited": [],
+      "cited_unverified": [],
+      "says_no_match": true,
+      "latency_s": 3.4,
+      "verifications": [
+        {
+          "nct_id": "NCT06368518",
+          "disease_match": "exact",
+          "intervention_match": "absent",
+          "evidence": "Patients will undergo a structured examination process including assessment for symptoms of HCM, past medical history, concomitant medication, family history and the presence of HCM-specific red flags.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT06236022",
+          "disease_match": "absent",
+          "intervention_match": "absent",
+          "evidence": "Evaluating the efficacy of sirolimus (compared to standard therapy alone) in the treatment of dilated cardiomyopathy infected with Kaposi Sarcoma-associated virus",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT06143566",
+          "disease_match": "absent",
+          "intervention_match": "absent",
+          "evidence": "Patients with Type 2 DM",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT05670132",
+          "disease_match": "absent",
+          "intervention_match": "absent",
+          "evidence": "Interventions: Neurocardiac rehabilitation program; Standard of care",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT05655910",
+          "disease_match": "broader",
+          "intervention_match": "absent",
+          "evidence": "pre-surgical supplementation with Ensure Surgery Immunonutrition shake",
+          "quote_found": false,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        }
+      ]
+    }
+  },
+  {
+    "query_id": "Q26",
+    "query": "Tirzepatide trials in adolescents",
+    "has_answer": false,
+    "context": [
+      {
+        "nct_id": "NCT07529002",
+        "title": "Clinical Application of 89Zr-s-C1 PET/CT Imaging in Solid Tumors",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT05388370",
+        "title": "PASS of Paediatric Patients Initiating Selumetinib",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT05059327",
+        "title": "Basimglurant (NOE-101) in Children, Adolescents, and Young Adults With TSC",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT07382505",
+        "title": "Prospective Cohort Study of Minimal Residual Disease(MRD) Testing for Early Recurrence Detection in Endometrial and Cervical Cancer",
+        "grade_for_checking": 0
+      },
+      {
+        "nct_id": "NCT04050423",
+        "title": "Investigation of Ultrasound Imaging and Spectroscopy for Characterizing Breast Masses",
+        "grade_for_checking": 0
+      }
+    ],
+    "rag_v1": {
+      "answer": "None of the retrieved trials match this query. The listed trials do not include any studies of tirzepatide in adolescents. All trials involve different conditions, interventions, or drug agents (e.g., selumetinib, basimglurant, imaging techniques), and none reference tirzepatide or its use in adolescent populations.",
+      "cited": [],
+      "says_no_match": true,
+      "latency_s": 2.38
+    },
+    "rag_v2": {
+      "concepts": {
+        "disease": null,
+        "intervention": "tirzepatide"
+      },
+      "answer": "No matching trials were found among the retrieved trials.",
+      "cited": [],
+      "cited_unverified": [],
+      "says_no_match": true,
+      "latency_s": 3.4,
+      "verifications": [
+        {
+          "nct_id": "NCT07529002",
+          "disease_match": "not_applicable",
+          "intervention_match": "absent",
+          "evidence": "Patients with pathologically confirmed newly diagnosed solid tumors (such as melanoma, gastric cancer, colorectal cancer, etc.)",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT05388370",
+          "disease_match": "not_applicable",
+          "intervention_match": "absent",
+          "evidence": "Have initial treatment with selumetinib up to 6 months (i.e.182 days)prior to enrolment into the study (i.e. signature of the ICF)",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT05059327",
+          "disease_match": "not_applicable",
+          "intervention_match": "absent",
+          "evidence": "The study intends to show that basimglurant (NOE-101) provides effective seizure control in children, adolescents and young adults with Tuberous Sclerosis Complex (TSC).",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT07382505",
+          "disease_match": "not_applicable",
+          "intervention_match": "absent",
+          "evidence": "Serial blood collection for MRD testing",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        },
+        {
+          "nct_id": "NCT04050423",
+          "disease_match": "not_applicable",
+          "intervention_match": "absent",
+          "evidence": "Patients should have the ability to understand and the willingness to sign a written Informed consent document.",
+          "quote_found": true,
+          "valid_labels": true,
+          "model_grade": 0,
+          "verified_grade": 0,
+          "dropped": false
+        }
+      ]
+    }
+  }
+]

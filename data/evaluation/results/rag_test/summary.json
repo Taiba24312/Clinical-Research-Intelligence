@@ -1,0 +1,133 @@
+{
+  "created_utc": "2026-11-04T10:19:58.969967+00:00",
+  "split": "test",
+  "queries": [
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q19",
+    "Q21",
+    "Q25",
+    "Q26"
+  ],
+  "frozen_hashes_verified": true,
+  "rag_v2_prompt_version": "v2.2",
+  "qrels": "qrels_v1.3.csv",
+  "rag_v1": {
+    "queries": 10,
+    "citations": 22,
+    "citation_validity": 1.0,
+    "match_cited": 13,
+    "match_relevant_share": 0.8461538461538461,
+    "match_unjudged": 0,
+    "partial_cited": 8,
+    "partial_relevant_share": 0.375,
+    "no_match_answers": 3,
+    "no_match_correct": 3,
+    "no_match_false": 0,
+    "queries_without_relevant_in_context": 4,
+    "claims_without_relevant": 1,
+    "grade2_not_cited": 3,
+    "median_latency_s": 5.415,
+    "mean_latency_s": 5.15
+  },
+  "rag_v2": {
+    "queries": 10,
+    "citations": 18,
+    "citation_validity": 1.0,
+    "match_cited": 17,
+    "match_relevant_share": 0.8235294117647058,
+    "match_unjudged": 0,
+    "partial_cited": 1,
+    "partial_relevant_share": 1.0,
+    "no_match_answers": 4,
+    "no_match_correct": 4,
+    "no_match_false": 0,
+    "queries_without_relevant_in_context": 4,
+    "claims_without_relevant": 0,
+    "grade2_not_cited": 2,
+    "median_latency_s": 6.890000000000001,
+    "mean_latency_s": 6.376,
+    "cited_unverified": 0,
+    "verifications": 50,
+    "quotes_not_found": 3,
+    "verifications_dropped": 1
+  },
+  "verification_agreement": {
+    "disease": {
+      "n": 32,
+      "accuracy": 0.84375,
+      "cohen_kappa": 0.6208530805687205,
+      "confusion (rows = labeler, columns = model)": {
+        "absent": {
+          "absent": 5,
+          "exact": 0
+        },
+        "broader": {
+          "absent": 1,
+          "exact": 4
+        },
+        "exact": {
+          "absent": 0,
+          "exact": 22
+        }
+      }
+    },
+    "intervention": {
+      "n": 20,
+      "accuracy": 0.85,
+      "cohen_kappa": 0.7,
+      "confusion (rows = labeler, columns = model)": {
+        "absent": {
+          "absent": 9,
+          "exact": 2
+        },
+        "exact": {
+          "absent": 1,
+          "exact": 8
+        }
+      }
+    },
+    "grade_before_quote_check": {
+      "n": 50,
+      "accuracy": 0.88,
+      "cohen_kappa": 0.7508305647840532,
+      "confusion (rows = labeler, columns = model)": {
+        "0": {
+          "0": 29,
+          "2": 1
+        },
+        "1": {
+          "0": 1,
+          "2": 1
+        },
+        "2": {
+          "0": 3,
+          "2": 15
+        }
+      }
+    },
+    "grade_after_quote_check": {
+      "n": 50,
+      "accuracy": 0.9,
+      "cohen_kappa": 0.7865072587532024,
+      "confusion (rows = labeler, columns = model)": {
+        "0": {
+          "0": 30,
+          "2": 1
+        },
+        "1": {
+          "0": 0,
+          "2": 1
+        },
+        "2": {
+          "0": 3,
+          "2": 15
+        }
+      }
+    }
+  }
+}
